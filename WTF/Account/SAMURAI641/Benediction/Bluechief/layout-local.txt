@@ -1,0 +1,8 @@
+Version: 1
+Frame: WeaponSwingTimerPlayerFrame
+FrameLevel: 1
+Anchor: BOTTOM
+X: -276
+Y: 62
+W: 200
+H: 10

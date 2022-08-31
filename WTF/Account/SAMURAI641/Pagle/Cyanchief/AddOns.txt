@@ -1,0 +1,10 @@
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+ZPerl_Options: enabled
+XPerl_TeamSpeak: disabled
+WeakAuras: enabled
+TotemTimers: enabled
+ItemRackOptions: enabled
+Questie: disabled
+ZPerl: enabled
+Bartender4: enabled

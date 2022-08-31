@@ -1,0 +1,24 @@
+VER 3 0000000001000005 "Ele" "135862"
+/cast Summon Water Elemental
+/petattack
+END
+VER 3 0000000001000001 "Freeze" "135848"
+#showtooltip
+/cast  !Freeze
+END
+VER 3 0000000001000002 "IB" "135841"
+#showtooltip
+/cancelaura Ice Block
+/cast Ice Block
+/cqs
+END
+VER 3 0000000001000004 "Petattack" "132114"
+/petattack
+END
+VER 3 0000000001000003 "Poly" "INV_MISC_QUESTIONMARK"
+#showtooltip Polymorph
+/clearfocus
+/focus
+/cast Polymorph
+/cqs
+END

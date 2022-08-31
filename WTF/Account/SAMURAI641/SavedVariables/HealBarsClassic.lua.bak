@@ -1,0 +1,12 @@
+
+HealBarSettings = {
+	["profileKeys"] = {
+		["Greenchief - Incendius"] = "Greenchief - Incendius",
+		["Joeybonzo - Incendius"] = "Joeybonzo - Incendius",
+		["Greychief - Incendius"] = "Greychief - Incendius",
+		["Cyanchief - Incendius"] = "Cyanchief - Incendius",
+		["Purplechief - Incendius"] = "Purplechief - Incendius",
+		["Bluechief - Incendius"] = "Bluechief - Incendius",
+		["Orangechief - Incendius"] = "Orangechief - Incendius",
+	},
+}

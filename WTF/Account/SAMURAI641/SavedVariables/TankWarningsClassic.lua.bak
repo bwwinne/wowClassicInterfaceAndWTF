@@ -1,0 +1,31 @@
+
+TankWarningsClassicSV = {
+	["raidSay"] = true,
+	["messages"] = {
+		["%s activated!"] = "%s activated!",
+		["%s will expire in 3 seconds!"] = "%s will expire in 3 seconds!",
+		["%s resisted!"] = "%s resisted!",
+	},
+	["noGrpDoNothing"] = true,
+	["partyYell"] = false,
+	["raidWarning"] = false,
+	["partyDoNothing"] = true,
+	["partySay"] = false,
+	["partyChat"] = true,
+	["abilities"] = {
+		["Last Stand"] = true,
+		["Mocking Blow"] = true,
+		["Taunt"] = true,
+		["Challenging Shout"] = true,
+		["Shield Wall"] = true,
+		["Challenging Roar"] = true,
+		["Growl"] = true,
+		["Frenzied Regeneration"] = true,
+	},
+	["showExpirations"] = false,
+	["raidDoNothing"] = true,
+	["raidYell"] = false,
+	["noGrpSay"] = true,
+	["noGrpYell"] = false,
+	["raidChat"] = true,
+}

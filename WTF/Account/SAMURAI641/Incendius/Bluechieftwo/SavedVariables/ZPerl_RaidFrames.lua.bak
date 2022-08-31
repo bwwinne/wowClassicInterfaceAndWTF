@@ -1,0 +1,64 @@
+
+ZPerl_Roster = {
+	["Bluechief"] = {
+	},
+	["Gorlax"] = {
+		["offline"] = 300284.557,
+	},
+	["Sockzz"] = {
+	},
+	["Ralica"] = {
+	},
+	["Dibby"] = {
+	},
+	["Lunk"] = {
+		["offline"] = 299740.125,
+	},
+	["Punchinbag"] = {
+	},
+	["Huris"] = {
+	},
+	["Achan"] = {
+	},
+	["Flexzone"] = {
+		["offline"] = 299848.07,
+	},
+	["Flashoflight"] = {
+	},
+	["Penguinporn"] = {
+	},
+	["Stp"] = {
+	},
+	["Flashofcash"] = {
+		["offline"] = 300733.824,
+	},
+	["Tocal"] = {
+	},
+	["Xorel"] = {
+	},
+	["Lilnippy"] = {
+		["offline"] = 300024.785,
+	},
+	["Crazydeath"] = {
+	},
+	["Knithar"] = {
+		["offline"] = 300847.136,
+	},
+	["Dezzie"] = {
+	},
+	["Giddley"] = {
+		["offline"] = 299837.12,
+	},
+	["Gobbles"] = {
+	},
+	["Bluechieftwo"] = {
+	},
+	["Bovinejoni"] = {
+		["offline"] = 300835.005,
+	},
+	["Yujinjaka"] = {
+		["afk"] = 300924.266,
+	},
+	["Skeeter"] = {
+	},
+}

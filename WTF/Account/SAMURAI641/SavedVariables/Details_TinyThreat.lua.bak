@@ -1,0 +1,34 @@
+
+Details_TinyThreatDB = {
+	["characters"] = {
+		["Joeybonzo - Pagle"] = "Orangechief - Incendius",
+		["Greychief - Incendius"] = "Orangechief - Incendius",
+		["Purplechief - Incendius"] = "Orangechief - Incendius",
+		["Bluechief - Incendius"] = "Orangechief - Incendius",
+		["Orangechief - Incendius"] = "Orangechief - Incendius",
+		["Redchief - Incendius"] = "Orangechief - Incendius",
+		["Greenchief - Incendius"] = "Orangechief - Incendius",
+		["Joeybonzo - Incendius"] = "Orangechief - Incendius",
+		["Bluechieftwo - Incendius"] = "Orangechief - Incendius",
+		["Yellowchief - Incendius"] = "Orangechief - Incendius",
+	},
+	["profiles"] = {
+		["Orangechief - Incendius"] = {
+			["enabled"] = true,
+			["animate"] = false,
+			["useclasscolors"] = false,
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["openedfromcommand"] = false,
+			["updatespeed"] = 0.2,
+			["dividebyhundred"] = true,
+			["showamount"] = false,
+			["useplayercolor"] = true,
+			["author"] = "Details! Team",
+			["alwaysshowme"] = true,
+		},
+	},
+}

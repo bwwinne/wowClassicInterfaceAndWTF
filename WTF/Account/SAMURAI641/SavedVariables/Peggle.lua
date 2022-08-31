@@ -1,0 +1,116 @@
+
+PeggleData = {
+	["newData"] = {
+		["levelScores"] = {
+			{
+				["score"] = 124600,
+				["progress"] = 2,
+			}, -- [1]
+			{
+				["score"] = 103150,
+				["progress"] = 1,
+			}, -- [2]
+			{
+				["score"] = 141530,
+				["progress"] = 2,
+			}, -- [3]
+			{
+				["score"] = 90980,
+				["progress"] = 1,
+			}, -- [4]
+			{
+				["score"] = 167690,
+				["progress"] = 2,
+			}, -- [5]
+			{
+				["score"] = 121970,
+				["progress"] = 2,
+			}, -- [6]
+			{
+				["score"] = 121890,
+				["progress"] = 1,
+			}, -- [7]
+			{
+				["score"] = 193350,
+				["progress"] = 2,
+			}, -- [8]
+			{
+				["score"] = 88340,
+				["progress"] = 1,
+			}, -- [9]
+			{
+				["score"] = 178870,
+				["progress"] = 2,
+			}, -- [10]
+			{
+				["score"] = 0,
+				["progress"] = 0,
+			}, -- [11]
+			{
+				["score"] = 169880,
+				["progress"] = 2,
+			}, -- [12]
+			{
+				["score"] = 158000,
+				["progress"] = 2,
+			}, -- [13]
+		},
+		["talentData"] = {
+			["activated"] = {
+				0, -- [1]
+				4, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				0, -- [7]
+				0, -- [8]
+				0, -- [9]
+				0, -- [10]
+				0, -- [11]
+			},
+		},
+	},
+	["settings"] = {
+		["openLogIn"] = false,
+		["openDeath"] = false,
+		["minimapX"] = 1594.78515625,
+		["inviteMinimap"] = true,
+		["defaultPublish"] = "GUILD",
+		["closeCombat"] = true,
+		["mouseOffTrans"] = 0.6,
+		["mouseOnTrans"] = 1,
+		["inviteRaid"] = false,
+		["openDuel"] = true,
+		["hideOutdated"] = false,
+		["closeReadyCheck"] = true,
+		["minimapAngle"] = 19.6205372819706,
+		["closeDuelComplete"] = false,
+		["soundVolume"] = 0,
+		["openFlightStart"] = false,
+		["inviteDecline"] = false,
+		["closeFlightEnd"] = false,
+		["minimapY"] = 971.851888020833,
+		["inviteChat"] = true,
+		["closePeggleLoot"] = false,
+		["showMinimapIcon"] = false,
+	},
+	["recent"] = {
+		124600, -- [1]
+		103150, -- [2]
+		141530, -- [3]
+		90980, -- [4]
+		167690, -- [5]
+		121970, -- [6]
+		121890, -- [7]
+		193350, -- [8]
+		67640, -- [9]
+		178870, -- [10]
+		nil, -- [11]
+		169880, -- [12]
+		158000, -- [13]
+	},
+	["legalDisplayed"] = true,
+	["version"] = 2.2,
+	["loggedIn"] = "Bluechief",
+}

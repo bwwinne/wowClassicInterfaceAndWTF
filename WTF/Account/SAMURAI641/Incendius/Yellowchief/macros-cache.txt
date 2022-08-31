@@ -1,0 +1,6 @@
+VER 3 0000000001000001 "attack" "132114"
+/petattack
+END
+VER 3 0000000001000002 "passive" "132118"
+/petfollow
+END

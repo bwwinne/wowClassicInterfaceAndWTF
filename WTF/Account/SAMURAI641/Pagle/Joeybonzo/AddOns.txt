@@ -1,0 +1,9 @@
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+ZPerl_Options: enabled
+XPerl_TeamSpeak: disabled
+ThreatClassic2: disabled
+Questie: disabled

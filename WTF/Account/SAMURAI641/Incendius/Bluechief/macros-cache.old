@@ -1,0 +1,6 @@
+VER 3 0000000001000001 "AoE" "136048"
+/equip Electromagnetic Gigaflux Reactivator
+/equip Ramstein's Lightning Bolts
+/use Electromagnetic Gigaflux Reactivator
+/use Ramstein's Lightning Bolts
+END

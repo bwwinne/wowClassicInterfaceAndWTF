@@ -1,0 +1,36 @@
+
+QuestLogExDB = {
+	["profileKeys"] = {
+		["Joeybonzo - Kirtonos"] = "Joeybonzo - Kirtonos",
+		["Bluechief - Benediction"] = "Bluechief - Benediction",
+		["Purplechief - Incendius"] = "Purplechief - Incendius",
+		["Bluechief - Incendius"] = "Bluechief - Incendius",
+		["Orangechief - Incendius"] = "Orangechief - Incendius",
+		["Redchief - Incendius"] = "Redchief - Incendius",
+		["Greenchief - Incendius"] = "Greenchief - Incendius",
+		["Joeybonzo - Pagle"] = "Joeybonzo - Pagle",
+		["Limegreen - Thunderfury"] = "Limegreen - Thunderfury",
+		["Bluechieftwo - Incendius"] = "Bluechieftwo - Incendius",
+		["Joeybonzo - Incendius"] = "Joeybonzo - Incendius",
+		["Greychief - Incendius"] = "Greychief - Incendius",
+		["Yellowchief - Incendius"] = "Yellowchief - Incendius",
+	},
+	["profiles"] = {
+		["Redchief - Incendius"] = {
+		},
+		["Orangechief - Incendius"] = {
+		},
+		["Joeybonzo - Pagle"] = {
+		},
+		["Greychief - Incendius"] = {
+		},
+		["Joeybonzo - Incendius"] = {
+		},
+		["Purplechief - Incendius"] = {
+		},
+		["Bluechief - Incendius"] = {
+		},
+		["Yellowchief - Incendius"] = {
+		},
+	},
+}

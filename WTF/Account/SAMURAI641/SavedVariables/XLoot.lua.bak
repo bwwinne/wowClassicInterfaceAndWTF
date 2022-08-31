@@ -1,0 +1,61 @@
+
+XLootADB = {
+	["namespaces"] = {
+		["Group"] = {
+			["profiles"] = {
+				["Default"] = {
+					["roll_anchor"] = {
+						["visible"] = false,
+					},
+					["alert_anchor"] = {
+						["visible"] = false,
+					},
+				},
+			},
+		},
+		["Frame"] = {
+			["profiles"] = {
+				["Default"] = {
+					["loot_padding_bottom"] = 5,
+					["frame_position_y"] = 497.4937744140625,
+					["loot_padding_right"] = 5,
+					["show_slot_errors"] = false,
+					["frame_scale"] = 1.2,
+					["loot_padding_left"] = 5,
+					["frame_position_x"] = 962.6542358398438,
+					["loot_padding_top"] = 5,
+					["loot_icon_size"] = 31,
+					["loot_collapse"] = true,
+				},
+			},
+		},
+		["Monitor"] = {
+			["profiles"] = {
+				["Default"] = {
+					["anchor"] = {
+						["visible"] = false,
+					},
+				},
+			},
+		},
+		["Master"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Joeybonzo - Pagle"] = "Default",
+		["Greychief - Incendius"] = "Default",
+		["Purplechief - Incendius"] = "Default",
+		["Bluechief - Incendius"] = "Default",
+		["Orangechief - Incendius"] = "Default",
+		["Redchief - Incendius"] = "Default",
+		["Greenchief - Incendius"] = "Default",
+		["Cyanchief - Incendius"] = "Default",
+		["Joeybonzo - Incendius"] = "Default",
+		["Bluechieftwo - Incendius"] = "Default",
+		["Yellowchief - Incendius"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

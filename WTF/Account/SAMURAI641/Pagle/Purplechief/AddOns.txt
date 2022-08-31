@@ -1,0 +1,5 @@
+Questie: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+ZPerl_Options: enabled
+XPerl_TeamSpeak: disabled

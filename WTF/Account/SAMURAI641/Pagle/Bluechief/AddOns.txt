@@ -1,0 +1,7 @@
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+ZPerl_Options: enabled
+XPerl_TeamSpeak: disabled
+ItemRackOptions: enabled
+Capping_Options: enabled
+Questie: disabled

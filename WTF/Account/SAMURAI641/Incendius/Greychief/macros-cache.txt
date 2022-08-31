@@ -1,0 +1,4 @@
+VER 3 0000000001000001 "wep" "132147"
+/equip The Hammer of Grace
+/equip Spirit of Aquementas
+END

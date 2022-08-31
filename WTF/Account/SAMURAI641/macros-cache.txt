@@ -1,0 +1,129 @@
+VER 3 0000000000000010 "AOE" "132341"
+/equipslot 16 Thunderfury, Blessed Blade of the Windseeker
+/equipslot 17 Force Reactive Disk
+END
+VER 3 000000000000000E "BT" "132090"
+#showtooltip Bloodthirst
+/cancelaura Greater Blessing of Salvation
+/cancelaura Prayer of Spirit
+/cancelaura Arcane Brilliance
+/cancelaura Regrowth
+/cancelaura Rejuvenation
+/cancelaura Renew
+/cancelaura Bloodthirst
+/startattack
+/cast Bloodthirst
+END
+VER 3 000000000000000A "Cam" "132096"
+/console cameraDistanceMaxZoomFactor 4
+END
+VER 3 0000000000000005 "Domo" "132115"
+/ra {Skull} Bluechief
+/ra {X} Mizz
+/ra {Square} Feathis
+/ra {Triangle} Ragezealot  - bring to 50%
+/ra {Moon} Spellslider - kill with Tri
+/ra {Star} Hecklelol
+/ra {Diamond} Cheyenne
+/ra {Circle} Fohom
+/ra Boss - Lilnippy
+END
+VER 3 0000000000000003 "DW1" "132147"
+/equipslot 16 Thunderfury, Blessed Blade of the Windseeker
+/equipslot 17 Blazeguard
+END
+VER 3 000000000000000B "DW2" "132336"
+/equipslot 17 Blade of Savagery
+/equipslot 16 Dragonscale-Encrusted Longblade
+END
+VER 3 0000000000000004 "Garr" "132112"
+/ra {Skull} Taelm
+/ra {Diamond} Necrosis
+/ra {Moon} Mizz 
+END
+VER 3 000000000000001D "GBB" "135805"
+/gbb
+END
+VER 3 0000000000000006 "Golemagg" "132115"
+/ra {skull} Taelm
+/ra {x} Bluechief - Dovah pull
+/ra {Square} Sputter -Verlia pull
+END
+VER 3 0000000000000002 "jed" "136170"
+/target jed
+END
+VER 3 000000000000000F "log" "INV_MISC_QUESTIONMARK"
+/logout
+END
+VER 3 0000000000000008 "Luci/Gehe" "132121"
+/ra {skull} Taelm
+/ra {x} Sputter
+/ra {Square} Bluechief
+END
+VER 3 0000000000000014 "MCircle" "132144"
+/tm [@mouseover,exists][@target,exists] 2
+END
+VER 3 0000000000000012 "MStar" "132144"
+/tm [@mouseover,exists][@target,exists] 1
+END
+VER 3 0000000000000015 "pet1" "132096"
+/click PetActionButton1
+END
+VER 3 0000000000000016 "pet2" "132096"
+/click PetActionButton2
+END
+VER 3 0000000000000017 "pet3" "132096"
+/click PetActionButton3
+END
+VER 3 0000000000000018 "pet4" "132096"
+/click PetActionButton4
+END
+VER 3 0000000000000019 "pet5" "132096"
+/click PetActionButton5
+END
+VER 3 000000000000001A "pet6" "132096"
+/click PetActionButton6
+END
+VER 3 000000000000001B "pet7" "132096"
+/click PetActionButton7
+END
+VER 3 0000000000000001 "Shield" "135806"
+/equipslot 16 Dragonscale-Encrusted Longblade
+/equipslot 17 Bulwark of Azzinoth
+END
+VER 3 0000000000000009 "Shoot" "132329"
+#showtooltip Throw
+/cast shoot
+/cast throw
+END
+VER 3 000000000000001C "sis" "132099"
+卄乇卂V乇NS ㄚ乇S SISㄒ乇尺
+END
+VER 3 0000000000000007 "Sulfuron" "132118"
+/ra {Skull} Mizz - Brobiwan first, Foox second
+/ra {x} Dez- jeebz first, Dowlina second
+/ra {Square} Lilnippy- Jauregul first, Seeyou second
+/ra {Moon} Feathis - Gnome first, Rage second
+END
+VER 3 000000000000000C "Sunder" "132363"
+#showtooltip Sunder Armor
+/cancelaura Greater Blessing of Salvation
+/cancelaura Prayer of Spirit
+/cancelaura Arcane Brilliance
+/cancelaura Bloodthirst
+/startattack
+/cast Sunder Armor
+END
+VER 3 0000000000000013 "Tainted Core" "132104"
+/use Tainted Core
+/y <-------TAINTED CORE TO: %T ! ! !
+/s <-------TAINTED CORE TO: %T ! ! !
+/script SendChatMessage("! ! ! YOU HAVE THE CORE ! ! !", "WHISPER", nil, UnitName("target"))
+END
+VER 3 000000000000000D "Visc shield" "132110"
+/equipslot 16 Hammer of the Northern Wind
+/equipslot 17 The Face of Death
+END
+VER 3 0000000000000011 "z1Skull" "INV_MISC_QUESTIONMARK"
+/tm [@mouseover,exists][@target,exists] 8
+END

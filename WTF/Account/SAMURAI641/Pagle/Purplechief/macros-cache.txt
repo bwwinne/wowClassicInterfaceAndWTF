@@ -1,0 +1,21 @@
+VER 3 0000000001000004 "aras" "132091"
+/tar arash-ethis
+/target arash
+END
+VER 3 0000000001000001 "Attack" "132121"
+/petattack
+END
+VER 3 0000000001000006 "EE" "132172"
+/cast !Eagle Eye
+END
+VER 3 0000000001000002 "Follow" "132114"
+/petfollow
+END
+VER 3 0000000001000003 "Stay" "132114"
+/petstay
+END
+VER 3 0000000001000005 "Tranq" "136033"
+#showtooltip Tranquilizing Shot
+/cast Tranquilizing Shot
+/s Tranq Used
+END
