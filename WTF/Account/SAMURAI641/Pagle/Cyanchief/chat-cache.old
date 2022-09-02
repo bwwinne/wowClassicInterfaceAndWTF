@@ -3,10 +3,9 @@ VERSION 7
 ADDEDVERSION 22
 
 CHANNELS
-General 0 1 0
-Trade 0 2 0
-LocalDefense 0 3 0
-LookingForGroup 0 4 0
+General 0 2 0
+Trade 0 3 0
+LocalDefense 0 4 0
 END
 
 ZONECHANNELS 0
@@ -104,7 +103,7 @@ END
 
 WINDOW 1
 NAME General
-SIZE 0
+SIZE 14
 COLOR 0 0 0 143
 LOCKED 0
 UNINTERACTABLE 0

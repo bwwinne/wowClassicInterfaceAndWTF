@@ -3,7 +3,7 @@ WeakAurasArchive: enabled
 ZPerl_Options: enabled
 XPerl_TeamSpeak: disabled
 WeakAuras: enabled
-TotemTimers: enabled
+TotemTimers: disabled
 ItemRackOptions: enabled
 Questie: disabled
 ZPerl: enabled

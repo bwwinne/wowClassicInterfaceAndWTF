@@ -1,2 +1,7 @@
 
-EncounterDetailsDB = nil
+EncounterDetailsDB = {
+	["encounter_spells"] = {
+	},
+	["emotes"] = {
+	},
+}

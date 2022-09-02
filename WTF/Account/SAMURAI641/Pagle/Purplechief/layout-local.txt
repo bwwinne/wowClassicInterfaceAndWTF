@@ -132,6 +132,13 @@ X: -50
 Y: 81
 W: 140
 H: 150
+Frame: XPerl_Player_Pet
+FrameLevel: 1
+Anchor: BOTTOM
+X: -417
+Y: 267
+W: 140
+H: 50
 Frame: XPerl_Player
 FrameLevel: 1
 Anchor: CENTER
@@ -209,13 +216,6 @@ X: 322
 Y: 295
 W: 160
 H: 60
-Frame: XPerl_Player_Pet
-FrameLevel: 1
-Anchor: BOTTOM
-X: -417
-Y: 267
-W: 140
-H: 50
 Frame: XPerl_Target
 FrameLevel: 1
 Anchor: CENTER

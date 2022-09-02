@@ -79,6 +79,9 @@ bind CTRL-E CLICK BT4Button14:LeftButton
 bind CTRL-A NONE
 bind CTRL-P ALLNAMEPLATES
 bind SHIFT-C CLICK BT4Button72:LeftButton
+bind NUMPAD5 CLICK BT4Button59:LeftButton
+bind NUMPAD1 CLICK BT4Button55:LeftButton
+bind NUMPAD3 CLICK BT4Button57:LeftButton
 bind SHIFT-Q CLICK BT4Button67:LeftButton
 bind SHIFT-E CLICK BT4Button68:LeftButton
 bind SHIFT-F CLICK BT4Button70:LeftButton
@@ -88,11 +91,8 @@ bind CAPSLOCK NONE
 bind SHIFT-G CLICK BT4Button54:LeftButton
 bind F6 RAIDTARGET3
 bind F7 RAIDTARGET2
-bind NUMPAD1 CLICK BT4Button55:LeftButton
 bind NUMPAD2 CLICK BT4Button56:LeftButton
-bind NUMPAD3 CLICK BT4Button57:LeftButton
 bind NUMPAD4 CLICK BT4Button58:LeftButton
-bind NUMPAD5 CLICK BT4Button59:LeftButton
 bind NUMPAD6 CLICK BT4Button60:LeftButton
 bind J CLICK BT4Button26:LeftButton
 bind SHIFT-Z CLICK BT4Button38:LeftButton

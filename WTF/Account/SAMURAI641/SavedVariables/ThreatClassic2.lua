@@ -12,10 +12,10 @@ ThreatClassic2DB = {
 		["Purplechief - Pagle"] = "Default",
 		["Redchief - Incendius"] = "Redchief - Incendius",
 		["Bluechief - Incendius"] = "Bluechief - Incendius",
-		["Joeybonzo - Incendius"] = "Joeybonzo - Incendius",
+		["Agengeoff - Benediction"] = "Default",
 		["Bluechief - Pagle"] = "Default",
 		["Greenchief - Incendius"] = "Greenchief - Incendius",
-		["Agengeoff - Benediction"] = "Default",
+		["Joeybonzo - Incendius"] = "Joeybonzo - Incendius",
 		["Cyanchief - Pagle"] = "Default",
 		["Yellowchief - Incendius"] = "Yellowchief - Incendius",
 	},
@@ -43,6 +43,7 @@ ThreatClassic2DB = {
 			},
 			["frame"] = {
 				["height"] = 168.585205078125,
+				["width"] = 155.370239257813,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -50,13 +51,14 @@ ThreatClassic2DB = {
 					1673.50354003906, -- [4]
 					-592.685241699219, -- [5]
 				},
-				["width"] = 155.370239257813,
 			},
 		},
 		["Purplechief - Incendius"] = {
+			["bar"] = {
+				["count"] = 7,
+			},
 			["frame"] = {
 				["height"] = 136.348175048828,
-				["width"] = 135.459106445313,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -64,15 +66,12 @@ ThreatClassic2DB = {
 					1683.933349609375, -- [4]
 					-519.677734375, -- [5]
 				},
-			},
-			["bar"] = {
-				["count"] = 7,
+				["width"] = 135.459106445313,
 			},
 		},
 		["Bluechief - Incendius"] = {
 			["frame"] = {
 				["height"] = 155.3106536865234,
-				["width"] = 151.5778656005859,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -80,6 +79,7 @@ ThreatClassic2DB = {
 					1681.086181640625, -- [4]
 					-318.0165710449219, -- [5]
 				},
+				["width"] = 151.5778656005859,
 			},
 			["general"] = {
 				["hideSolo"] = true,
@@ -89,9 +89,11 @@ ThreatClassic2DB = {
 			},
 		},
 		["Orangechief - Incendius"] = {
+			["bar"] = {
+				["count"] = 8,
+			},
 			["frame"] = {
 				["height"] = 157.207473754883,
-				["width"] = 179.074005126953,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -99,15 +101,12 @@ ThreatClassic2DB = {
 					1637.474365234375, -- [4]
 					-290.2258605957031, -- [5]
 				},
-			},
-			["bar"] = {
-				["count"] = 8,
+				["width"] = 179.074005126953,
 			},
 		},
 		["Redchief - Incendius"] = {
 			["frame"] = {
 				["height"] = 175.222274780273,
-				["width"] = 134.510955810547,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -115,6 +114,7 @@ ThreatClassic2DB = {
 					1700.02917480469, -- [4]
 					-235.233474731445, -- [5]
 				},
+				["width"] = 134.510955810547,
 			},
 		},
 		["Greenchief - Incendius"] = {
@@ -143,8 +143,8 @@ ThreatClassic2DB = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
-					1664.9697265625, -- [4]
-					-375.406982421875, -- [5]
+					1669.710327148438, -- [4]
+					-355.495849609375, -- [5]
 				},
 			},
 			["bar"] = {
@@ -157,6 +157,7 @@ ThreatClassic2DB = {
 			},
 			["frame"] = {
 				["height"] = 165.7407379150391,
+				["width"] = 150.6294708251953,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -164,13 +165,9 @@ ThreatClassic2DB = {
 					1697.207397460938, -- [4]
 					-298.60791015625, -- [5]
 				},
-				["width"] = 150.6294708251953,
 			},
 		},
 		["Joeybonzo - Incendius"] = {
-			["bar"] = {
-				["count"] = 8,
-			},
 			["frame"] = {
 				["position"] = {
 					nil, -- [1]
@@ -179,6 +176,9 @@ ThreatClassic2DB = {
 					1626.77014160156, -- [4]
 					-356.596130371094, -- [5]
 				},
+			},
+			["bar"] = {
+				["count"] = 8,
 			},
 		},
 		["Bluechieftwo - Incendius"] = {
