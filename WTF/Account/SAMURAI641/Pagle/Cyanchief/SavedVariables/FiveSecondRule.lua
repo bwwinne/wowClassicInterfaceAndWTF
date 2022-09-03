@@ -2,7 +2,7 @@
 FiveSecondRule_Options = {
 	["showTicks"] = true,
 	["flat"] = false,
-	["averageManaTick"] = 4.2,
+	["averageManaTick"] = 5.8,
 	["showSpark"] = true,
 	["statusBarBackgroundColor"] = {
 		0, -- [1]
@@ -27,22 +27,22 @@ FiveSecondRule_Options = {
 		0.95, -- [3]
 		1, -- [4]
 	},
-	["barWidth"] = 138.0000457763672,
+	["tickSizeRunningWindow"] = {
+		6, -- [1]
+		6, -- [2]
+		6, -- [3]
+		5, -- [4]
+		6, -- [5]
+	},
 	["showText"] = true,
-	["barTop"] = -671.9704284667969,
+	["barHeight"] = 12.00002861022949,
+	["barLeft"] = 618.1185913085938,
 	["statusBarColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 		0.95, -- [4]
 	},
-	["barLeft"] = 618.1185913085938,
-	["barHeight"] = 12.00002861022949,
-	["tickSizeRunningWindow"] = {
-		5, -- [1]
-		4, -- [2]
-		4, -- [3]
-		4, -- [4]
-		4, -- [5]
-	},
+	["barTop"] = -671.9704284667969,
+	["barWidth"] = 138.0000457763672,
 }

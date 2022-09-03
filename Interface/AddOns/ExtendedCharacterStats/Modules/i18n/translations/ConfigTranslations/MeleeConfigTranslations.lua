@@ -44,6 +44,13 @@ local meleeConfigTranslations = {
         ["zhCN"] = "显示/隐藏 近战暴击几率",
         ["ruRU"] = "Показать/скрыть шанс критического урона",
     },
+    ["Shows/Hides the armor penetration value."] = {
+        ["enUS"] = true,
+        ["deDE"] = "Zeigt/Versteckt die Rüstungsdurchschlagskraft.",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Показать/скрыть значение проникающую способность брони",
+    },
     ["Shows/Hides the expertise value."] = {
         ["enUS"] = true,
         ["deDE"] = "Zeigt/Versteckt die Waffenkunde.",
@@ -64,6 +71,13 @@ local meleeConfigTranslations = {
         ["frFR"] = false,
         ["zhCN"] = false,
         ["ruRU"] = "Показать/скрыть значение рейтинга скорости ближнего боя",
+    },
+    ["Shows/Hides the melee haste bonus value."] = {
+        ["enUS"] = true,
+        ["deDE"] = "Zeigt/Versteckt den Nahkampftempobonus.",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Показать/скрыть значение бонуса к скорости ближнего боя",
     },
     ["Shows/Hides the melee attack speed."] = {
         ["enUS"] = true,

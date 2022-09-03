@@ -1,7 +1,3 @@
-------------------------------------------------------------------
--- Modules
-------------------------------------------------------------------
-
 ---@class Profile
 local Profile = ECSLoader:CreateModule("Profile")
 
@@ -9,7 +5,7 @@ local Profile = ECSLoader:CreateModule("Profile")
 local Utils = ECSLoader:ImportModule("Utils")
 
 function Profile:GetProfileVersion()
-    return 13
+    return 16
 end
 
 ---@return ECSProfile
@@ -83,6 +79,14 @@ local function GetDefaultStatsProfile()
                 textColor = colors.CRIT_SECONDARY,
                 statColor = colors.CRIT_PRIMARY
             },
+            penetration = {
+                display = true,
+                isTbcOnly = true,
+                refName = "MeleeArmorPenetration",
+                text = "Armor Penetration",
+                textColor = colors.ATTACK_SPEED_SECONDARY,
+                statColor = colors.ATTACK_SPEED_PRIMARY,
+            },
             expertise = {display = true, isTbcOnly = true, refName = "Expertise", text = "Expertise"},
             expertiseRating = {display = true, isTbcOnly = true, refName = "ExpertiseRating", text = "Expertise Rating"},
             hasteRating = {
@@ -90,6 +94,14 @@ local function GetDefaultStatsProfile()
                 isTbcOnly = true,
                 refName = "MeleeHasteRating",
                 text = "Haste Rating",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
+            },
+            hasteBonus = {
+                display = true,
+                isTbcOnly = true,
+                refName = "MeleeHasteBonus",
+                text = "Haste Bonus",
                 textColor = colors.HASTE_RATING_SECONDARY,
                 statColor = colors.HASTE_RATING_PRIMARY
             },
@@ -173,11 +185,27 @@ local function GetDefaultStatsProfile()
                 textColor = colors.CRIT_SECONDARY,
                 statColor = colors.CRIT_PRIMARY
             },
+            penetration = {
+                display = true,
+                isTbcOnly = true,
+                refName = "RangedArmorPenetration",
+                text = "Armor Penetration",
+                textColor = colors.ATTACK_SPEED_SECONDARY,
+                statColor = colors.ATTACK_SPEED_PRIMARY,
+            },
             hasteRating = {
                 display = true,
                 isTbcOnly = true,
                 refName = "RangedHasteRating",
                 text = "Haste Rating",
+                textColor = colors.HASTE_RATING_SECONDARY,
+                statColor = colors.HASTE_RATING_PRIMARY
+            },
+            hasteBonus = {
+                display = true,
+                isTbcOnly = true,
+                refName = "RangedHasteBonus",
+                text = "Haste Bonus",
                 textColor = colors.HASTE_RATING_SECONDARY,
                 statColor = colors.HASTE_RATING_PRIMARY
             },
@@ -199,6 +227,7 @@ local function GetDefaultStatsProfile()
             armor = {display = true, refName = "Armor", text = "Armor"},
             critImmunity = {display = true, isTbcOnly = true, refName = "CritImmunity", text = "Crit Immune"},
             critReduction = {display = true, isTbcOnly = true, refName = "CritReduction", text = "Crit Reduction"},
+            avoidance = {display = true, refName = "Avoidance", text = "Avoidance"},
             defenseRating = {display = true, refName = "DefenseRating", text = "Defense Rating"},
             defense = {display = true, refName = "DefenseValue", text = "Defense"},
             blockChance = {display = true, refName = "BlockChance", text = "Block Chance"},
@@ -239,6 +268,13 @@ local function GetDefaultStatsProfile()
                 display = true,
                 refName = "MP5Casting",
                 text = "MP5 (Casting)",
+                textColor = colors.MP5_SECONDARY,
+                statColor = colors.MP5_PRIMARY
+            },
+            mp5NotCasting = {
+                display = true,
+                refName = "MP5NotCasting",
+                text = "MP5 (Not casting)",
                 textColor = colors.MP5_SECONDARY,
                 statColor = colors.MP5_PRIMARY
             },

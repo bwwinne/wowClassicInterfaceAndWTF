@@ -22,4 +22,18 @@ function Migration:ToLatestProfileVersion(profileVersion)
         ExtendedCharacterStats.profile.spell.hasteRating = defaultProfile.profile.spell.hasteRating
         ExtendedCharacterStats.profile.spell.hasteBonus = defaultProfile.profile.spell.hasteBonus
     end
+    if profileVersion < 14 then
+        ExtendedCharacterStats.profile.defense.avoidance = defaultProfile.profile.defense.avoidance
+        ExtendedCharacterStats.profile.melee.hasteBonus = defaultProfile.profile.melee.hasteBonus
+        ExtendedCharacterStats.profile.ranged.hasteBonus = defaultProfile.profile.ranged.hasteBonus
+    end
+    if profileVersion < 15 then
+        ExtendedCharacterStats.profile.regen.mp5NotCasting = defaultProfile.profile.regen.mp5NotCasting
+        ExtendedCharacterStats.profile.melee.penetration = defaultProfile.profile.melee.penetration
+        ExtendedCharacterStats.profile.ranged.penetration = defaultProfile.profile.ranged.penetration
+    end
+    if profileVersion < 16 then
+        ExtendedCharacterStats.profile.melee.penetration = defaultProfile.profile.melee.penetration
+        ExtendedCharacterStats.profile.ranged.penetration = defaultProfile.profile.ranged.penetration
+    end
 end

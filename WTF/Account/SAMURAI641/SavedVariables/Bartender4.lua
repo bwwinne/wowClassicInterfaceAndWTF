@@ -158,8 +158,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 3,
 							["padding"] = 3,
+							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -168,8 +168,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 3,
 							["padding"] = 3,
+							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -1433,8 +1433,8 @@ Bartender4DB = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 42.0000076293945,
-						["x"] = -221.99951171875,
+						["y"] = 42.00000762939453,
+						["x"] = -261.4700927734375,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
@@ -1961,8 +1961,8 @@ Bartender4DB = {
 					["padding"] = 1,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 81.3342895507813,
-						["x"] = -212.499633789063,
+						["y"] = 82.0000228881836,
+						["x"] = -184.482666015625,
 						["point"] = "BOTTOMRIGHT",
 					},
 				},
@@ -2707,12 +2707,12 @@ Bartender4DB = {
 			["outofrange"] = "hotkey",
 		},
 		["Redchief - Pagle"] = {
-			["focuscastmodifier"] = false,
+			["snapping"] = false,
 			["minimapIcon"] = {
 				["minimapPos"] = 316.865689373898,
 			},
 			["blizzardVehicle"] = true,
-			["snapping"] = false,
+			["focuscastmodifier"] = false,
 			["outofrange"] = "hotkey",
 		},
 		["Pagle"] = {

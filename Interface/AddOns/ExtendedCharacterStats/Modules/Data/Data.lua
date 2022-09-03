@@ -33,6 +33,13 @@ dataFunctionRefs = {
             return 0
         end
     end,
+    ["MeleeArmorPenetration"] = function()
+        if ECS.IsTBC then
+            return Data:GetArmorPenetration()
+        else
+            return 0
+        end
+    end,
     ["MeleeHitRating"] = function()
         if ECS.IsTBC then
             return Data:MeleeHitRating()
@@ -46,6 +53,13 @@ dataFunctionRefs = {
     ["MeleeHasteRating"] = function()
         if ECS.IsTBC then
             return Data:GetMeleeHasteRating()
+        else
+            return 0
+        end
+    end,
+    ["MeleeHasteBonus"] = function()
+        if ECS.IsTBC then
+            return Data:GetMeleeHasteBonus()
         else
             return 0
         end
@@ -64,10 +78,24 @@ dataFunctionRefs = {
     end,
     ["RangedHitBonus"] = function() return Data:RangeHitBonus() end,
     ["RangedHitSameLevel"] = function() return Data:RangeMissChanceSameLevel() end,
+    ["RangedArmorPenetration"] = function()
+        if ECS.IsTBC then
+            return Data:GetArmorPenetration()
+        else
+            return 0
+        end
+    end,
     ["RangedHitBossLevel"] = function() return Data:RangeMissChanceBossLevel() end,
     ["RangedHasteRating"] = function()
         if ECS.IsTBC then
             return Data:GetRangedHasteRating()
+        else
+            return 0
+        end
+    end,
+    ["RangedHasteBonus"] = function()
+        if ECS.IsTBC then
+            return Data:GetRangedHasteBonus()
         else
             return 0
         end
@@ -88,6 +116,9 @@ dataFunctionRefs = {
         else
             return 0
         end
+    end,
+    ["Avoidance"] = function()
+        return Data:GetAvoidance()
     end,
     ["DefenseRating"] = function()
         if ECS.IsTBC then
@@ -143,6 +174,7 @@ dataFunctionRefs = {
         return mp5Buffs
     end,
     ["MP5Casting"] = function() return Data:GetMP5WhileCasting() end,
+    ["MP5NotCasting"] = function() return Data:GetMP5OutsideCasting() end,
     -- Spell Power by school
     ["PhysicalDmg"] = function() return Data:GetSpellDamage(Data.PHYSICAL_SCHOOL) end,
     ["HolyDmg"] = function() return Data:GetSpellDamage(Data.HOLY_SCHOOL) end,

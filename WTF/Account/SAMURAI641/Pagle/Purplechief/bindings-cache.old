@@ -24,19 +24,19 @@ bind CTRL-F2 NONE
 bind CTRL-F3 NONE
 bind CTRL-F9 CLICK ItemRackBluechiefIncendiusHalf FR:LeftButton
 bind CTRL-F10 CLICK ItemRackBluechiefIncendiusFR:LeftButton
-bind CTRL-1 CLICK BT4Button33:LeftButton
-bind CTRL-2 CLICK BT4Button29:LeftButton
-bind CTRL-3 CLICK BT4Button25:LeftButton
-bind CTRL-4 NONE
+bind CTRL-1 BONUSACTIONBUTTON4
+bind CTRL-2 BONUSACTIONBUTTON5
+bind CTRL-3 BONUSACTIONBUTTON6
+bind CTRL-4 BONUSACTIONBUTTON7
 bind CTRL-5 NONE
 bind CTRL-6 NONE
 bind CTRL-7 CLICK BT4Button35:LeftButton
 bind CTRL-8 NONE
 bind CTRL-9 CLICK BT4Button27:LeftButton
 bind CTRL-0 CLICK BT4Button36:LeftButton
-bind SHIFT-1 BONUSACTIONBUTTON7
-bind SHIFT-2 BONUSACTIONBUTTON9
-bind SHIFT-3 BONUSACTIONBUTTON10
+bind SHIFT-1 ACTIONBUTTON7
+bind SHIFT-2 ACTIONBUTTON8
+bind SHIFT-3 ACTIONBUTTON9
 bind SHIFT-4 ACTIONBUTTON10
 bind SHIFT-5 ACTIONBUTTON11
 bind SHIFT-6 NONE
@@ -79,6 +79,9 @@ bind CTRL-E CLICK BT4Button14:LeftButton
 bind CTRL-A NONE
 bind CTRL-P ALLNAMEPLATES
 bind SHIFT-C CLICK BT4Button72:LeftButton
+bind NUMPAD5 CLICK BT4Button59:LeftButton
+bind NUMPAD1 CLICK BT4Button55:LeftButton
+bind NUMPAD3 CLICK BT4Button57:LeftButton
 bind SHIFT-Q CLICK BT4Button67:LeftButton
 bind SHIFT-E CLICK BT4Button68:LeftButton
 bind SHIFT-F CLICK BT4Button70:LeftButton
@@ -88,11 +91,8 @@ bind CAPSLOCK NONE
 bind SHIFT-G CLICK BT4Button54:LeftButton
 bind F6 RAIDTARGET3
 bind F7 RAIDTARGET2
-bind NUMPAD1 CLICK BT4Button55:LeftButton
 bind NUMPAD2 CLICK BT4Button56:LeftButton
-bind NUMPAD3 CLICK BT4Button57:LeftButton
 bind NUMPAD4 CLICK BT4Button58:LeftButton
-bind NUMPAD5 CLICK BT4Button59:LeftButton
 bind NUMPAD6 CLICK BT4Button60:LeftButton
 bind J CLICK BT4Button26:LeftButton
 bind SHIFT-Z CLICK BT4Button38:LeftButton
@@ -109,3 +109,6 @@ bind CTRL-C CLICK BT4Button18:LeftButton
 bind CTRL-Z CLICK BT4Button19:LeftButton
 bind SHIFT-X CLICK BT4Button114:LeftButton
 bind CTRL-X SITORSTAND
+bind NUMPAD7 CLICK BT4Button33:LeftButton
+bind NUMPAD8 CLICK BT4Button29:LeftButton
+bind NUMPAD9 CLICK BT4Button25:LeftButton

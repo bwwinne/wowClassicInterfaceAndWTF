@@ -1,7 +1,7 @@
 ## Interface: 11403
 ## Title: TotemTimers
 ## Author:  Xianghar
-## Version: 3.0.0-beta1
+## Version: 3.0.0
 ## SavedVariables: TotemTimers_GlobalSettings, TotemTimers_Profiles
 ## OptionalDeps: Masque
 ## LoadManagers: AddonLoader
@@ -63,7 +63,7 @@ GUI\localization.esmx.lua
 GUI\General.lua
 GUI\Timers.lua
 GUI\Trackers.lua
-vanilla\GUI\Messages.lua
+GUI\Messages.lua
 GUI\Totems.lua
 GUI\Sets.lua
 GUI\Profiles.lua

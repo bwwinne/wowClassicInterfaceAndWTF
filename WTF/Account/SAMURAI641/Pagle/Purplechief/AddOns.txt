@@ -1,5 +1,6 @@
-Questie: disabled
+Questie: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 ZPerl_Options: enabled
 XPerl_TeamSpeak: disabled
+WideQuestLog: disabled

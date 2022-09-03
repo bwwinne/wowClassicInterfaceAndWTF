@@ -73,7 +73,7 @@ ThreatPlatesDB = {
 		["Yellowchief - Incendius"] = "Default",
 	},
 	["global"] = {
-		["version"] = "10.2.11",
+		["version"] = "10.5.0-beta2",
 	},
 	["profiles"] = {
 		["Default"] = {

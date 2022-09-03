@@ -2369,10 +2369,10 @@ ZPerlConfigNew = {
 					["left"] = 561.1443821074063,
 					["width"] = false,
 				},
-				["XPerl_Raid_Title11"] = {
-					["top"] = 651.999960887431,
+				["XPerl_PetTarget"] = {
+					["top"] = 169.9519776965553,
 					["height"] = false,
-					["left"] = 608.000057888032,
+					["left"] = 586.425929954632,
 					["width"] = false,
 				},
 				["XPerl_Raid_Title9"] = {
@@ -2381,10 +2381,10 @@ ZPerlConfigNew = {
 					["left"] = 502.217812969582,
 					["width"] = false,
 				},
-				["XPerl_PetTarget"] = {
-					["top"] = 169.9519776965553,
+				["XPerl_Raid_Title5"] = {
+					["top"] = 467.111344249221,
 					["height"] = false,
-					["left"] = 586.425929954632,
+					["left"] = 248.888990948908,
 					["width"] = false,
 				},
 				["XPerl_Player_Pet"] = {
@@ -2429,10 +2429,10 @@ ZPerlConfigNew = {
 					["left"] = 1921.067016601563,
 					["width"] = false,
 				},
-				["XPerl_Raid_Title5"] = {
-					["top"] = 467.111344249221,
+				["XPerl_Raid_Title11"] = {
+					["top"] = 651.999960887431,
 					["height"] = false,
-					["left"] = 248.888990948908,
+					["left"] = 608.000057888032,
 					["width"] = false,
 				},
 				["XPerl_Raid_Title10"] = {
@@ -3311,36 +3311,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -3995,13 +3999,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[107439] = true,
 						[110214] = true,
+						[103434] = true,
 						[108649] = true,
 						[109325] = true,
 						[105171] = true,
 						[109075] = true,
-						[103434] = true,
+						[107439] = true,
 						[106794] = true,
 						[105490] = true,
 						[106730] = true,
@@ -4228,36 +4232,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["titles"] = 1,
 				["enable"] = 1,
@@ -4892,10 +4900,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[103434] = true,
-						[109075] = true,
-						[110214] = true,
 						[107439] = true,
+						[109075] = true,
+						[103434] = true,
+						[110214] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -5149,36 +5157,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -5766,13 +5778,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[110214] = true,
 						[103434] = true,
+						[107439] = true,
 						[108649] = true,
 						[106730] = true,
 						[105171] = true,
 						[109075] = true,
-						[107439] = true,
+						[110214] = true,
 						[106794] = true,
 						[105490] = true,
 						[109325] = true,
@@ -6059,36 +6071,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -6672,13 +6688,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[107439] = true,
 						[110214] = true,
+						[103434] = true,
 						[108649] = true,
 						[109325] = true,
 						[105171] = true,
 						[109075] = true,
-						[103434] = true,
+						[107439] = true,
 						[106794] = true,
 						[105490] = true,
 						[106730] = true,
@@ -6964,36 +6980,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -7665,36 +7685,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -8341,36 +8365,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -9010,13 +9038,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[106199] = true,
-						[110214] = true,
 						[103434] = true,
+						[107439] = true,
 						[108649] = true,
 						[109325] = true,
 						[105171] = true,
 						[109075] = true,
-						[107439] = true,
+						[110214] = true,
 						[106794] = true,
 						[105490] = true,
 						[106730] = true,
@@ -9273,36 +9301,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -9949,10 +9981,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[103434] = true,
-						[109075] = true,
-						[110214] = true,
 						[107439] = true,
+						[109075] = true,
+						[103434] = true,
+						[110214] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -10193,36 +10225,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -10822,10 +10858,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[110214] = true,
-						[109075] = true,
-						[107439] = true,
 						[103434] = true,
+						[109075] = true,
+						[110214] = true,
+						[107439] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -11105,36 +11141,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -11801,36 +11841,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -12353,10 +12397,10 @@ ZPerlConfigNew = {
 	["Pagle"] = {
 		["Cyanchief"] = {
 			["highlight"] = {
-				["enable"] = 1,
-				["AGGRO"] = 1,
 				["HOT"] = 1,
 				["SHIELD"] = 1,
+				["enable"] = 1,
+				["AGGRO"] = 1,
 			},
 			["optionsColour"] = {
 				["r"] = 0.7,
@@ -12493,36 +12537,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -12530,6 +12578,7 @@ ZPerlConfigNew = {
 				["size"] = {
 					["width"] = 0,
 				},
+				["enable"] = 1,
 				["group"] = {
 					1, -- [1]
 					1, -- [2]
@@ -13163,10 +13212,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[110214] = true,
-						[109075] = true,
-						[107439] = true,
 						[103434] = true,
+						[109075] = true,
+						[110214] = true,
+						[107439] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -13318,8 +13367,8 @@ ZPerlConfigNew = {
 				},
 				["Main"] = {
 					["enabled"] = true,
-					["item"] = "",
 					["FadeAmount"] = 0.5,
+					["item"] = "",
 					["HealthLowPoint"] = 0.85,
 				},
 				["NameFrame"] = {
@@ -13408,36 +13457,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -14026,13 +14079,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[107439] = true,
 						[110214] = true,
+						[103434] = true,
 						[108649] = true,
 						[106730] = true,
 						[105171] = true,
 						[109075] = true,
-						[103434] = true,
+						[107439] = true,
 						[106794] = true,
 						[105490] = true,
 						[109325] = true,
@@ -14336,36 +14389,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -14944,13 +15001,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[107439] = true,
 						[110214] = true,
+						[103434] = true,
 						[108649] = true,
 						[106730] = true,
 						[105171] = true,
 						[109075] = true,
-						[103434] = true,
+						[107439] = true,
 						[106794] = true,
 						[105490] = true,
 						[109325] = true,
@@ -15240,36 +15297,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -15932,36 +15993,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -16491,11 +16556,39 @@ ZPerlConfigNew = {
 				["AGGRO"] = 1,
 				["SHIELD"] = 1,
 			},
-			["highlightSelection"] = 1,
 			["optionsColour"] = {
 				["r"] = 0.7,
 				["g"] = 0.2,
 				["b"] = 0.2,
+			},
+			["highlightSelection"] = 1,
+			["targettargettarget"] = {
+				["debuffs"] = {
+					["enable"] = 1,
+					["curable"] = 0,
+					["size"] = 29,
+				},
+				["values"] = 1,
+				["pvpIcon"] = 1,
+				["scale"] = 0.7,
+				["mana"] = 1,
+				["healprediction"] = 1,
+				["healerMode"] = {
+					["type"] = 1,
+				},
+				["absorbs"] = 1,
+				["buffs"] = {
+					["size"] = 22,
+					["castable"] = 0,
+					["enable"] = 1,
+					["rows"] = 3,
+					["wrap"] = 1,
+					["maxrows"] = 2,
+				},
+				["percent"] = 1,
+				["size"] = {
+					["width"] = 0,
+				},
 			},
 			["rangeFinder"] = {
 				["StatsFrame"] = {
@@ -16594,36 +16687,40 @@ ZPerlConfigNew = {
 					}, -- [1]
 					{
 						["enable"] = true,
-						["name"] = "ROGUE",
+						["name"] = "DEATHKNIGHT",
 					}, -- [2]
 					{
 						["enable"] = true,
-						["name"] = "HUNTER",
+						["name"] = "ROGUE",
 					}, -- [3]
 					{
 						["enable"] = true,
-						["name"] = "MAGE",
+						["name"] = "HUNTER",
 					}, -- [4]
 					{
 						["enable"] = true,
-						["name"] = "WARLOCK",
+						["name"] = "MAGE",
 					}, -- [5]
 					{
 						["enable"] = true,
-						["name"] = "PRIEST",
+						["name"] = "WARLOCK",
 					}, -- [6]
 					{
 						["enable"] = true,
-						["name"] = "DRUID",
+						["name"] = "PRIEST",
 					}, -- [7]
 					{
 						["enable"] = true,
-						["name"] = "SHAMAN",
+						["name"] = "DRUID",
 					}, -- [8]
 					{
 						["enable"] = true,
-						["name"] = "PALADIN",
+						["name"] = "SHAMAN",
 					}, -- [9]
+					{
+						["enable"] = true,
+						["name"] = "PALADIN",
+					}, -- [10]
 				},
 				["healprediction"] = 1,
 				["precisionPercent"] = 1,
@@ -16665,33 +16762,10 @@ ZPerlConfigNew = {
 					["type"] = 1,
 				},
 			},
-			["targettargettarget"] = {
-				["debuffs"] = {
-					["enable"] = 1,
-					["curable"] = 0,
-					["size"] = 29,
-				},
-				["values"] = 1,
-				["pvpIcon"] = 1,
-				["scale"] = 0.7,
-				["mana"] = 1,
-				["healprediction"] = 1,
-				["healerMode"] = {
-					["type"] = 1,
-				},
-				["absorbs"] = 1,
-				["buffs"] = {
-					["size"] = 22,
-					["castable"] = 0,
-					["enable"] = 1,
-					["rows"] = 3,
-					["wrap"] = 1,
-					["maxrows"] = 2,
-				},
-				["percent"] = 1,
-				["size"] = {
-					["width"] = 0,
-				},
+			["minimap"] = {
+				["enable"] = 1,
+				["radius"] = 78,
+				["pos"] = 186,
 			},
 			["colour"] = {
 				["frame"] = {
@@ -16831,12 +16905,6 @@ ZPerlConfigNew = {
 					},
 				},
 			},
-			["minimap"] = {
-				["enable"] = 1,
-				["radius"] = 78,
-				["pos"] = 186,
-			},
-			["xperlOldroleicons"] = 1,
 			["focus"] = {
 				["comboindicator"] = {
 					["enable"] = 1,
@@ -16892,6 +16960,7 @@ ZPerlConfigNew = {
 				["percent"] = 1,
 				["classIcon"] = 1,
 			},
+			["xperlOldroleicons"] = 1,
 			["party"] = {
 				["debuffs"] = {
 					["halfSize"] = 1,
@@ -16942,11 +17011,38 @@ ZPerlConfigNew = {
 				["percent"] = 1,
 				["classIcon"] = 1,
 			},
-			["highlightDebuffs"] = {
+			["pettarget"] = {
+				["debuffs"] = {
+					["enable"] = 1,
+					["curable"] = 0,
+					["size"] = 29,
+				},
+				["values"] = 1,
+				["pvpIcon"] = 1,
 				["enable"] = 1,
+				["mana"] = 1,
+				["healprediction"] = 1,
+				["healerMode"] = {
+					["type"] = 1,
+				},
+				["scale"] = 0.7,
+				["absorbs"] = 1,
+				["buffs"] = {
+					["size"] = 22,
+					["castable"] = 0,
+					["enable"] = 1,
+					["rows"] = 3,
+					["wrap"] = 1,
+					["maxrows"] = 2,
+				},
+				["percent"] = 1,
+				["size"] = {
+					["width"] = 0,
+				},
+			},
+			["transparency"] = {
 				["frame"] = 1,
-				["border"] = 1,
-				["class"] = 1,
+				["text"] = 1,
 			},
 			["tooltip"] = {
 				["enable"] = 1,
@@ -17005,9 +17101,11 @@ ZPerlConfigNew = {
 					["width"] = 0,
 				},
 			},
-			["transparency"] = {
+			["highlightDebuffs"] = {
+				["enable"] = 1,
 				["frame"] = 1,
-				["text"] = 1,
+				["border"] = 1,
+				["class"] = 1,
 			},
 			["player"] = {
 				["partyNumber"] = 1,
@@ -17056,6 +17154,40 @@ ZPerlConfigNew = {
 				["percent"] = 1,
 				["classIcon"] = 1,
 			},
+			["custom"] = {
+				["enable"] = true,
+				["alpha"] = 0.5,
+				["blend"] = "ADD",
+			},
+			["focustarget"] = {
+				["debuffs"] = {
+					["enable"] = 1,
+					["curable"] = 0,
+					["size"] = 29,
+				},
+				["values"] = 1,
+				["pvpIcon"] = 1,
+				["enable"] = 1,
+				["mana"] = 1,
+				["healprediction"] = 1,
+				["healerMode"] = {
+					["type"] = 1,
+				},
+				["scale"] = 0.7,
+				["absorbs"] = 1,
+				["buffs"] = {
+					["size"] = 22,
+					["castable"] = 0,
+					["enable"] = 1,
+					["rows"] = 3,
+					["wrap"] = 1,
+					["maxrows"] = 2,
+				},
+				["percent"] = 1,
+				["size"] = {
+					["width"] = 0,
+				},
+			},
 			["pet"] = {
 				["debuffs"] = {
 					["enable"] = 1,
@@ -17094,64 +17226,6 @@ ZPerlConfigNew = {
 					["type"] = 1,
 				},
 			},
-			["focustarget"] = {
-				["debuffs"] = {
-					["enable"] = 1,
-					["curable"] = 0,
-					["size"] = 29,
-				},
-				["values"] = 1,
-				["pvpIcon"] = 1,
-				["enable"] = 1,
-				["mana"] = 1,
-				["healprediction"] = 1,
-				["healerMode"] = {
-					["type"] = 1,
-				},
-				["scale"] = 0.7,
-				["absorbs"] = 1,
-				["buffs"] = {
-					["size"] = 22,
-					["castable"] = 0,
-					["enable"] = 1,
-					["rows"] = 3,
-					["wrap"] = 1,
-					["maxrows"] = 2,
-				},
-				["percent"] = 1,
-				["size"] = {
-					["width"] = 0,
-				},
-			},
-			["pettarget"] = {
-				["debuffs"] = {
-					["enable"] = 1,
-					["curable"] = 0,
-					["size"] = 29,
-				},
-				["values"] = 1,
-				["pvpIcon"] = 1,
-				["enable"] = 1,
-				["mana"] = 1,
-				["healprediction"] = 1,
-				["healerMode"] = {
-					["type"] = 1,
-				},
-				["scale"] = 0.7,
-				["absorbs"] = 1,
-				["buffs"] = {
-					["size"] = 22,
-					["castable"] = 0,
-					["enable"] = 1,
-					["rows"] = 3,
-					["wrap"] = 1,
-					["maxrows"] = 2,
-				},
-				["percent"] = 1,
-				["size"] = {
-					["width"] = 0,
-				},
-			},
 			["buffs"] = {
 				["countdown"] = 1,
 				["cooldown"] = 1,
@@ -17169,7 +17243,7 @@ ZPerlConfigNew = {
 			},
 		},
 	},
-	["ConfigVersion"] = "6.3.3",
+	["ConfigVersion"] = "6.3.4",
 	["global"] = {
 		["highlight"] = {
 			["enable"] = 1,
@@ -17315,36 +17389,40 @@ ZPerlConfigNew = {
 				}, -- [1]
 				{
 					["enable"] = true,
-					["name"] = "ROGUE",
+					["name"] = "DEATHKNIGHT",
 				}, -- [2]
 				{
 					["enable"] = true,
-					["name"] = "HUNTER",
+					["name"] = "ROGUE",
 				}, -- [3]
 				{
 					["enable"] = true,
-					["name"] = "MAGE",
+					["name"] = "HUNTER",
 				}, -- [4]
 				{
 					["enable"] = true,
-					["name"] = "WARLOCK",
+					["name"] = "MAGE",
 				}, -- [5]
 				{
 					["enable"] = true,
-					["name"] = "PRIEST",
+					["name"] = "WARLOCK",
 				}, -- [6]
 				{
 					["enable"] = true,
-					["name"] = "DRUID",
+					["name"] = "PRIEST",
 				}, -- [7]
 				{
 					["enable"] = true,
-					["name"] = "SHAMAN",
+					["name"] = "DRUID",
 				}, -- [8]
 				{
 					["enable"] = true,
-					["name"] = "PALADIN",
+					["name"] = "SHAMAN",
 				}, -- [9]
+				{
+					["enable"] = true,
+					["name"] = "PALADIN",
+				}, -- [10]
 			},
 			["healprediction"] = 1,
 			["precisionPercent"] = 1,
@@ -17936,13 +18014,13 @@ ZPerlConfigNew = {
 				},
 				["Dragonsoul"] = {
 					[105479] = true,
-					[103434] = true,
 					[107439] = true,
+					[110214] = true,
 					[108649] = true,
 					[106730] = true,
 					[105171] = true,
 					[109075] = true,
-					[110214] = true,
+					[103434] = true,
 					[106794] = true,
 					[105490] = true,
 					[109325] = true,

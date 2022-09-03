@@ -40,21 +40,21 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["minutes"] = {
-						},
 						["soon"] = {
 						},
 						["seconds"] = {
+						},
+						["minutes"] = {
 						},
 					},
 				},
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["minutes"] = {
-						},
 						["soon"] = {
 						},
 						["seconds"] = {
+						},
+						["minutes"] = {
 						},
 					},
 				},

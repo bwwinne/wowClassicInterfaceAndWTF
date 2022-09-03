@@ -119,6 +119,10 @@ function Data:MeleeHitMissChanceSameLevel()
         missChance = DataUtils:GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
     end
 
+    if Data:GetMeleeAttackSpeedOffHand() > 0 then
+		missChance = missChance + 19;
+	end
+
     local hitValue = _Melee:GetHitRatingBonus()
     if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
         missChance = missChance - hitValue
@@ -145,6 +149,10 @@ function Data:MeleeHitMissChanceBossLevel()
     else
         missChance = DataUtils:GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
     end
+
+	if Data:GetMeleeAttackSpeedOffHand() > 0 then
+		missChance = missChance + 19;
+	end
 
     local hitValue = _Melee:GetHitRatingBonus()
     if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
@@ -173,7 +181,20 @@ function Data:GetExpertiseRating()
 end
 
 ---@return number
+function Data:GetArmorPenetration()
+    local armorPenetration = GetArmorPenetration()
+    return DataUtils:Round(armorPenetration, 0)
+end
+
+---@return number
 function Data:GetMeleeHasteRating()
     local hasteRating = GetCombatRating(CR_HASTE_MELEE)
     return DataUtils:Round(hasteRating, 0)
 end
+
+---@return string
+function Data:GetMeleeHasteBonus()
+    local hasteBonus = GetCombatRatingBonus(CR_HASTE_MELEE)
+    return DataUtils:Round(hasteBonus, 2) .. "%"
+end
+

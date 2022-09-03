@@ -1,3 +1,4 @@
-# 10.2.11 (2021-08-10)
+# @project-version@ (2022-08-31)
 
-* Fixed a Lua error that occured because of incorrectly initialized Localization [Comment #5837].
+* Added basic support for WoW Wrath of the Lich King Classic.
+* Upgrade integrated libraries (LibSharedMedia v9.2.7).

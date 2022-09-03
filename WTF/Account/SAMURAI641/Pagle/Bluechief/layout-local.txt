@@ -1,4 +1,11 @@
 Version: 1
+Frame: XPerl_Target
+FrameLevel: 1
+Anchor: CENTER
+X: 295
+Y: -246
+W: 222
+H: 62
 Frame: XPerl_RaidMonitor_Anchor
 FrameLevel: 1
 Anchor: CENTER
@@ -202,13 +209,6 @@ X: 0
 Y: -101
 W: 80
 H: 10
-Frame: XPerl_Target
-FrameLevel: 1
-Anchor: CENTER
-X: 295
-Y: -246
-W: 222
-H: 62
 Frame: XPerl_Focus
 FrameLevel: 1
 Anchor: LEFT

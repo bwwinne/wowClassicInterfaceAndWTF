@@ -5,6 +5,7 @@ XPerl_TeamSpeak: disabled
 WeakAuras: enabled
 TotemTimers: disabled
 ItemRackOptions: enabled
-Questie: disabled
+Questie: enabled
 ZPerl: enabled
 Bartender4: enabled
+WideQuestLog: disabled

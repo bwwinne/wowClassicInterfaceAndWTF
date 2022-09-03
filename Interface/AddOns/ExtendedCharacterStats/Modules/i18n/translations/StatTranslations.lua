@@ -37,6 +37,13 @@ local statTranslations = {
         ["zhCN"] = "暴击几率",
         ["ruRU"] = "Крит",
     },
+    ["Armor Penetration"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Rüstungsdurchschlagskraft",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Проник. способ. броня",
+    },
     ["Expertise"] = {
         ["enUS"] = true,
         ["deDE"] = "Waffenkunde",
@@ -149,6 +156,13 @@ local statTranslations = {
         ["zhCN"] = false,
         ["ruRU"] = "Снижение крита",
     },
+    ["Avoidance"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Vermeidung",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Избежание",
+    },
     ["Defense Rating"] = {
         ["enUS"] = true,
         ["deDE"] = "Verteidigungswertung",
@@ -232,6 +246,13 @@ local statTranslations = {
         ["frFR"] = "MP5 (Lancer)",
         ["zhCN"] = "附魔回蓝",
         ["ruRU"] = "MP5 (каст)",
+    },
+    ["MP5 (Not casting)"] = {
+        ["enUS"] = true,
+        ["deDE"] = "MP5 (Nicht zaubernd)",
+        ["frFR"] = "MP5 (pas de diffusion)",
+        ["zhCN"] = "MP5（非铸造）",
+        ["ruRU"] = "MP5 (не каст)",
     },
     ["Spell"] = {
         ["enUS"] = true,

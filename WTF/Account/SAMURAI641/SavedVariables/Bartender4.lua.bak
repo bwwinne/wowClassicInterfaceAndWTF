@@ -139,13 +139,13 @@ Bartender4DB = {
 				["Cyanchief - Incendius"] = {
 					["actionbars"] = {
 						{
-							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 42.5,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 3,
 						}, -- [1]
 						{
 							["rows"] = 3,
@@ -158,7 +158,6 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -166,9 +165,9 @@ Bartender4DB = {
 								["x"] = 230.39892578125,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 3,
 						}, -- [3]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -176,24 +175,25 @@ Bartender4DB = {
 								["x"] = 385.515502929688,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 3,
 						}, -- [4]
 						{
-							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 117.306465148926,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 3,
 						}, -- [5]
 						{
-							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 80.4799270629883,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 3,
 						}, -- [6]
 						{
 							["enabled"] = true,
@@ -223,8 +223,8 @@ Bartender4DB = {
 							},
 						}, -- [9]
 						{
-							["enabled"] = true,
 							["rows"] = 3,
+							["enabled"] = true,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 108.6678390465859,
@@ -606,13 +606,13 @@ Bartender4DB = {
 				["Bluechief - Incendius"] = {
 					["actionbars"] = {
 						{
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 42.5,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [1]
 						{
 							["rows"] = 3,
@@ -625,6 +625,7 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
+							["padding"] = 3,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -632,9 +633,9 @@ Bartender4DB = {
 								["x"] = 230.39892578125,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [3]
 						{
+							["padding"] = 3,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -642,25 +643,24 @@ Bartender4DB = {
 								["x"] = 385.515502929688,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [4]
 						{
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 117.306465148926,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [5]
 						{
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 80.4799270629883,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [6]
 						{
 							["version"] = 3,
@@ -687,8 +687,8 @@ Bartender4DB = {
 							},
 						}, -- [9]
 						{
-							["rows"] = 3,
 							["enabled"] = true,
+							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 102.030884362133,
@@ -1360,14 +1360,14 @@ Bartender4DB = {
 					},
 				},
 				["Cyanchief - Incendius"] = {
-					["padding"] = -2,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 41.05185699462891,
 						["x"] = -257.080078125,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
+					["version"] = 3,
+					["padding"] = -2,
 				},
 				["Orangechief - Incendius"] = {
 					["padding"] = -2,
@@ -1420,21 +1420,21 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["padding"] = -2,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 40.10376358032227,
 						["x"] = -257.080078125,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
-					["version"] = 3,
-					["padding"] = -2,
 				},
 				["Purplechief - Pagle"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 42.0000076293945,
-						["x"] = -221.99951171875,
+						["y"] = 42.00000762939453,
+						["x"] = -261.4700927734375,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
@@ -1540,13 +1540,13 @@ Bartender4DB = {
 					},
 				},
 				["Cyanchief - Incendius"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 5.899810908397853,
 						["x"] = -232.7422367638792,
 						["point"] = "BOTTOM",
 						["scale"] = 0.6499999761581421,
 					},
+					["version"] = 3,
 				},
 				["Orangechief - Incendius"] = {
 					["enabled"] = true,
@@ -1592,12 +1592,12 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = -18.6998291015625,
 						["x"] = 398.222259521484,
 						["point"] = "TOPLEFT",
 					},
-					["version"] = 3,
 				},
 				["Purplechief - Pagle"] = {
 					["version"] = 3,
@@ -1682,12 +1682,12 @@ Bartender4DB = {
 		["MultiCast"] = {
 			["profiles"] = {
 				["Cyanchief - Incendius"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 149.6077728271484,
 						["x"] = -114.499755859375,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 			},
 		},
@@ -1714,8 +1714,9 @@ Bartender4DB = {
 					["rightCap"] = "NONE",
 				},
 				["Cyanchief - Incendius"] = {
-					["leftCap"] = "NONE",
 					["version"] = 3,
+					["leftCap"] = "NONE",
+					["rightCap"] = "NONE",
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
@@ -1723,7 +1724,6 @@ Bartender4DB = {
 						["scale"] = 1.4,
 					},
 					["artSkin"] = "HUMAN",
-					["rightCap"] = "NONE",
 				},
 				["Orangechief - Incendius"] = {
 					["enabled"] = true,
@@ -1773,9 +1773,8 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
-					["version"] = 3,
 					["leftCap"] = "NONE",
-					["rightCap"] = "NONE",
+					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
@@ -1783,6 +1782,7 @@ Bartender4DB = {
 						["scale"] = 1.4,
 					},
 					["artSkin"] = "HUMAN",
+					["rightCap"] = "NONE",
 				},
 				["Purplechief - Pagle"] = {
 					["version"] = 3,
@@ -1895,13 +1895,13 @@ Bartender4DB = {
 					},
 				},
 				["Cyanchief - Incendius"] = {
-					["padding"] = 1,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 79.70243835449219,
 						["x"] = -185.6318359375,
 						["point"] = "BOTTOMRIGHT",
 					},
+					["padding"] = 1,
 				},
 				["Orangechief - Incendius"] = {
 					["padding"] = 5,
@@ -1949,20 +1949,20 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["padding"] = 1,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 75.90995025634766,
 						["x"] = -182.7874755859375,
 						["point"] = "BOTTOMRIGHT",
 					},
-					["padding"] = 1,
 				},
 				["Purplechief - Pagle"] = {
 					["padding"] = 1,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 81.3342895507813,
-						["x"] = -212.499633789063,
+						["y"] = 82.0000228881836,
+						["x"] = -184.482666015625,
 						["point"] = "BOTTOMRIGHT",
 					},
 				},
@@ -2059,12 +2059,12 @@ Bartender4DB = {
 					},
 				},
 				["Cyanchief - Incendius"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 192.913711547852,
 						["x"] = 346.578247070313,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Orangechief - Incendius"] = {
 					["version"] = 3,
@@ -2107,12 +2107,12 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 192.913711547852,
 						["x"] = 346.578247070313,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Purplechief - Pagle"] = {
 					["version"] = 3,
@@ -2208,12 +2208,12 @@ Bartender4DB = {
 					},
 				},
 				["Cyanchief - Incendius"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = 164.969295501709,
 						["x"] = -77.2498474121094,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Orangechief - Incendius"] = {
 					["version"] = 3,
@@ -2257,12 +2257,12 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 164.969295501709,
 						["x"] = -77.2498474121094,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Purplechief - Pagle"] = {
 					["version"] = 3,
@@ -2510,12 +2510,12 @@ Bartender4DB = {
 				},
 				["Cyanchief - Incendius"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = -0.60260009765625,
 						["x"] = 399.17041015625,
 						["point"] = "TOPLEFT",
 					},
+					["version"] = 3,
 				},
 				["Orangechief - Incendius"] = {
 					["enabled"] = true,
@@ -2564,12 +2564,12 @@ Bartender4DB = {
 				},
 				["Bluechief - Incendius"] = {
 					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = -0.60260009765625,
 						["x"] = 399.17041015625,
 						["point"] = "TOPLEFT",
 					},
-					["version"] = 3,
 				},
 				["Purplechief - Pagle"] = {
 					["enabled"] = true,
@@ -2689,8 +2689,8 @@ Bartender4DB = {
 			["outofrange"] = "hotkey",
 		},
 		["Cyanchief - Incendius"] = {
-			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
 			["minimapIcon"] = {
 				["minimapPos"] = 316.865689373898,
 			},
@@ -2707,12 +2707,12 @@ Bartender4DB = {
 			["outofrange"] = "hotkey",
 		},
 		["Redchief - Pagle"] = {
-			["focuscastmodifier"] = false,
+			["snapping"] = false,
 			["minimapIcon"] = {
 				["minimapPos"] = 316.865689373898,
 			},
 			["blizzardVehicle"] = true,
-			["snapping"] = false,
+			["focuscastmodifier"] = false,
 			["outofrange"] = "hotkey",
 		},
 		["Pagle"] = {
@@ -2726,12 +2726,12 @@ Bartender4DB = {
 			["outofrange"] = "hotkey",
 		},
 		["Bluechief - Incendius"] = {
-			["blizzardVehicle"] = true,
 			["snapping"] = false,
-			["focuscastmodifier"] = false,
 			["minimapIcon"] = {
 				["minimapPos"] = 316.865689373898,
 			},
+			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
 			["outofrange"] = "hotkey",
 		},
 		["Purplechief - Pagle"] = {
