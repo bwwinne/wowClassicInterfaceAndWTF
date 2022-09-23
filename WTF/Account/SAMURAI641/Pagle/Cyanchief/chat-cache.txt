@@ -3,9 +3,8 @@ VERSION 7
 ADDEDVERSION 22
 
 CHANNELS
-General 1 1 0
-Trade 1 2 0
-LookingForGroup 1 3 0
+General 1 2 0
+Trade 1 3 0
 LocalDefense 0 4 0
 END
 
@@ -232,7 +231,7 @@ CHANNELS
 LookingForGroup
 END
 
-ZONECHANNELS 33554432
+ZONECHANNELS 0
 
 END
 

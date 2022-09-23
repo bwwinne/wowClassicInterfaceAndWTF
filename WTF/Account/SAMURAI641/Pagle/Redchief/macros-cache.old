@@ -1,3 +1,10 @@
+VER 3 0000000001000006 "CD" "132874"
+/use Icon of the Silver Crescent
+/use Scryer's Bloodgem
+/cast Arcane Power
+/cast Presence of Mind
+/cast Icy Veins
+END
 VER 3 0000000001000005 "Ele" "135862"
 /cast Summon Water Elemental
 /petattack

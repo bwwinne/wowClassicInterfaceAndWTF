@@ -13,12 +13,19 @@ function Hooks:HookQuestLogTitle()
 
     -- We can not use hooksecurefunc because this needs to be a pre-hook to work properly unfortunately
     QuestLogTitleButton_OnClick = function(self, button)
-        if (not self) or self.isHeader or (not IsShiftKeyDown()) then
+        if (not self) or self.isHeader or (not IsShiftKeyDown()) or (not Questie.db.global.trackerEnabled) then
             baseQLTB_OnClick(self, button)
             return
         end
 
-        local questLogLineIndex = self:GetID() + FauxScrollFrame_GetOffset(QuestLogListScrollFrame)
+        local questLogLineIndex
+        if Questie.IsWotlk then
+            -- With Wotlk the offset is no longer required cause the API already hands the correct index
+            questLogLineIndex = self:GetID()
+        else
+            questLogLineIndex = self:GetID() + FauxScrollFrame_GetOffset(QuestLogListScrollFrame)
+        end
+
         local questId = GetQuestIDFromLogIndex(questLogLineIndex)
 
         if (IsModifiedClick("CHATLINK") and ChatEdit_GetActiveWindow()) then

@@ -24,7 +24,7 @@ bind CTRL-F2 NONE
 bind CTRL-F3 NONE
 bind CTRL-F9 CLICK ItemRackBluechiefIncendiusHalf FR:LeftButton
 bind CTRL-F10 CLICK ItemRackBluechiefIncendiusFR:LeftButton
-bind CTRL-1 BONUSACTIONBUTTON4
+bind CTRL-1 CLICK BT4Button33:LeftButton
 bind CTRL-2 BONUSACTIONBUTTON5
 bind CTRL-3 BONUSACTIONBUTTON6
 bind CTRL-4 BONUSACTIONBUTTON7
@@ -56,8 +56,8 @@ bind C CLICK BT4Button66:LeftButton
 bind B OPENALLBAGS
 bind SHIFT-B NONE
 bind F8 RAIDTARGET1
-bind F9 CLICK ItemRackBluechiefPagleThreat:LeftButton
-bind F10 CLICK ItemRackBluechiefPagleTank:LeftButton
+bind F9 CLICK ItemRackCyanchiefPagleEle:LeftButton
+bind F10 CLICK ItemRackCyanchiefPagleResto:LeftButton
 bind F11 NONE
 bind F12 SCREENSHOT
 bind P NAMEPLATES
@@ -66,7 +66,7 @@ bind H CLICK BT4Button33:LeftButton
 bind N TOGGLECHARACTER0
 bind U TOGGLESHEATH
 bind K CLICK BT4Button35:LeftButton
-bind L STARTAUTORUN
+bind L TOGGLEAUTORUN
 bind I TOGGLEQUESTLOG
 bind PRINTSCREEN NONE
 bind CTRL-S NONE

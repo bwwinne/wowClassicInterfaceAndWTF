@@ -4,4 +4,5 @@ ZPerl_Options: enabled
 XPerl_TeamSpeak: disabled
 ItemRackOptions: enabled
 Capping_Options: enabled
-Questie: disabled
+Questie: enabled
+WideQuestLog: disabled

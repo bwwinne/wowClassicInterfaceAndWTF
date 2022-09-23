@@ -6,4 +6,5 @@ WeakAurasArchive: enabled
 ZPerl_Options: enabled
 XPerl_TeamSpeak: disabled
 ThreatClassic2: disabled
-Questie: disabled
+Questie: enabled
+WideQuestLog: disabled

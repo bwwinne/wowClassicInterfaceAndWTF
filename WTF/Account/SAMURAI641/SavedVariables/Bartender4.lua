@@ -90,8 +90,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -100,8 +100,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -256,8 +256,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -266,8 +266,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -305,13 +305,13 @@ Bartender4DB = {
 				["Orangechief - Pagle"] = {
 					["actionbars"] = {
 						{
-							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 41.75,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 6,
 						}, -- [1]
 						{
 							["enabled"] = false,
@@ -323,7 +323,6 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
@@ -331,9 +330,9 @@ Bartender4DB = {
 								["x"] = -82,
 								["point"] = "BOTTOMRIGHT",
 							},
+							["padding"] = 5,
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
@@ -341,24 +340,25 @@ Bartender4DB = {
 								["x"] = -42,
 								["point"] = "BOTTOMRIGHT",
 							},
+							["padding"] = 5,
 						}, -- [4]
 						{
-							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 110,
 								["x"] = 3,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 6,
 						}, -- [5]
 						{
-							["padding"] = 6,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 110,
 								["x"] = -510,
 								["point"] = "BOTTOM",
 							},
+							["padding"] = 6,
 						}, -- [6]
 						{
 						}, -- [7]
@@ -391,8 +391,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 3,
 							["padding"] = 3,
+							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -401,8 +401,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 3,
 							["padding"] = 3,
+							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -486,8 +486,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -496,8 +496,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -606,13 +606,13 @@ Bartender4DB = {
 				["Bluechief - Incendius"] = {
 					["actionbars"] = {
 						{
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 42.5,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [1]
 						{
 							["rows"] = 3,
@@ -625,6 +625,7 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
+							["padding"] = 3,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -632,9 +633,9 @@ Bartender4DB = {
 								["x"] = 230.39892578125,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [3]
 						{
+							["padding"] = 3,
 							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
@@ -642,25 +643,24 @@ Bartender4DB = {
 								["x"] = 385.515502929688,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [4]
 						{
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 117.306465148926,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [5]
 						{
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 80.4799270629883,
 								["x"] = -236.999938964844,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 3,
 						}, -- [6]
 						{
 							["version"] = 3,
@@ -687,8 +687,8 @@ Bartender4DB = {
 							},
 						}, -- [9]
 						{
-							["rows"] = 3,
 							["enabled"] = true,
+							["rows"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 102.030884362133,
@@ -792,8 +792,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -802,8 +802,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -860,8 +860,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -870,8 +870,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -906,7 +906,7 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -922,7 +922,7 @@ Bartender4DB = {
 							["version"] = 3,
 							["position"] = {
 								["y"] = -227.5,
-								["x"] = -231.499877929688,
+								["x"] = -231.4998779296875,
 								["point"] = "CENTER",
 							},
 						}, -- [2]
@@ -994,8 +994,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1004,8 +1004,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1060,8 +1060,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1070,8 +1070,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1106,7 +1106,7 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -1122,7 +1122,7 @@ Bartender4DB = {
 							["version"] = 3,
 							["position"] = {
 								["y"] = -227.5,
-								["x"] = -231.4998779296875,
+								["x"] = -231.499877929688,
 								["point"] = "CENTER",
 							},
 						}, -- [2]
@@ -1194,8 +1194,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1204,8 +1204,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1261,8 +1261,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -1271,8 +1271,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 3,
 							["rows"] = 3,
+							["padding"] = 3,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 120.500022888184,
@@ -1337,6 +1337,8 @@ Bartender4DB = {
 				},
 			},
 		},
+		["LibDualSpec-1.0"] = {
+		},
 		["MicroMenu"] = {
 			["profiles"] = {
 				["Joeybonzo - Pagle"] = {
@@ -1344,7 +1346,7 @@ Bartender4DB = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 42.00000762939453,
-						["x"] = -221.99951171875,
+						["x"] = -264.314208984375,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
@@ -1380,14 +1382,14 @@ Bartender4DB = {
 					},
 				},
 				["Orangechief - Pagle"] = {
-					["padding"] = -2,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 42,
 						["x"] = 33,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
 					},
+					["version"] = 3,
+					["padding"] = -2,
 				},
 				["Redchief - Pagle"] = {
 					["padding"] = -2,
@@ -1420,14 +1422,14 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["padding"] = -2,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 40.10376358032227,
 						["x"] = -257.080078125,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
-					["version"] = 3,
-					["padding"] = -2,
 				},
 				["Purplechief - Pagle"] = {
 					["padding"] = -2,
@@ -1459,7 +1461,7 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
@@ -1489,7 +1491,7 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
@@ -1559,12 +1561,12 @@ Bartender4DB = {
 				},
 				["Orangechief - Pagle"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 54,
 						["x"] = -514,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Redchief - Pagle"] = {
 					["version"] = 3,
@@ -1592,12 +1594,12 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = -18.6998291015625,
 						["x"] = 398.222259521484,
 						["point"] = "TOPLEFT",
 					},
-					["version"] = 3,
 				},
 				["Purplechief - Pagle"] = {
 					["version"] = 3,
@@ -1624,7 +1626,7 @@ Bartender4DB = {
 						["point"] = "TOPLEFT",
 					},
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1651,7 +1653,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1736,12 +1738,12 @@ Bartender4DB = {
 				},
 				["Orangechief - Pagle"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Redchief - Pagle"] = {
 					["leftCap"] = "NONE",
@@ -1773,9 +1775,8 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
-					["version"] = 3,
 					["leftCap"] = "NONE",
-					["rightCap"] = "NONE",
+					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
@@ -1783,6 +1784,7 @@ Bartender4DB = {
 						["scale"] = 1.4,
 					},
 					["artSkin"] = "HUMAN",
+					["rightCap"] = "NONE",
 				},
 				["Purplechief - Pagle"] = {
 					["version"] = 3,
@@ -1813,7 +1815,7 @@ Bartender4DB = {
 					["artSkin"] = "HUMAN",
 					["rightCap"] = "NONE",
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1840,7 +1842,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1875,12 +1877,12 @@ Bartender4DB = {
 		["BagBar"] = {
 			["profiles"] = {
 				["Joeybonzo - Pagle"] = {
-					["onebag"] = true,
 					["padding"] = 1,
+					["onebag"] = true,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 107.6000928878784,
-						["x"] = -107.2715606689453,
+						["y"] = 111.250002861023,
+						["x"] = -103.2836456298828,
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1.75,
 					},
@@ -1913,13 +1915,13 @@ Bartender4DB = {
 					},
 				},
 				["Orangechief - Pagle"] = {
-					["padding"] = 5,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 41,
 						["x"] = 296,
 						["point"] = "BOTTOM",
 					},
+					["padding"] = 5,
 				},
 				["Redchief - Pagle"] = {
 					["padding"] = 1,
@@ -1949,13 +1951,13 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["padding"] = 1,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 75.90995025634766,
 						["x"] = -182.7874755859375,
 						["point"] = "BOTTOMRIGHT",
 					},
-					["padding"] = 1,
 				},
 				["Purplechief - Pagle"] = {
 					["padding"] = 1,
@@ -1984,7 +1986,7 @@ Bartender4DB = {
 						["point"] = "BOTTOMRIGHT",
 					},
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["padding"] = 5,
 					["version"] = 3,
 					["position"] = {
@@ -2011,7 +2013,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["padding"] = 5,
 					["version"] = 3,
 					["position"] = {
@@ -2036,6 +2038,154 @@ Bartender4DB = {
 						["y"] = 79.7024383544922,
 						["x"] = -214.075439453125,
 						["point"] = "BOTTOMRIGHT",
+					},
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Joeybonzo - Pagle"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50003051757813,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Greychief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 192.913711547852,
+						["x"] = 346.578247070313,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Cyanchief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 192.913711547852,
+						["x"] = 346.578247070313,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Orangechief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.5000305175781,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Orangechief - Pagle"] = {
+					["position"] = {
+						["y"] = 42.50003051757813,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+					["version"] = 3,
+				},
+				["Redchief - Pagle"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 192.913711547852,
+						["x"] = 346.578247070313,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Pagle"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50003051757813,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Purplechief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -151.272171020508,
+						["x"] = -391.277587890625,
+						["point"] = "CENTER",
+					},
+				},
+				["Bluechief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 192.913711547852,
+						["x"] = 346.578247070313,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Purplechief - Pagle"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -151.272171020508,
+						["x"] = -391.277587890625,
+						["point"] = "CENTER",
+					},
+				},
+				["Redchief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.5000305175781,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Bluechieftwo - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 192.913711547852,
+						["x"] = 346.578247070313,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Agengeoff - Benediction"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50003051757813,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Bluechief - Pagle"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50003051757813,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Greenchief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.5000305175781,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Joeybonzo - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.5000305175781,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Cyanchief - Pagle"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50003051757813,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
+				},
+				["Yellowchief - Incendius"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 192.913711547852,
+						["x"] = 346.578247070313,
+						["point"] = "BOTTOM",
 					},
 				},
 			},
@@ -2077,12 +2227,12 @@ Bartender4DB = {
 					},
 				},
 				["Orangechief - Pagle"] = {
-					["version"] = 3,
 					["position"] = {
 						["y"] = -14.99998474121094,
 						["x"] = -82.49993896484375,
 						["point"] = "CENTER",
 					},
+					["version"] = 3,
 				},
 				["Redchief - Pagle"] = {
 					["version"] = 3,
@@ -2109,12 +2259,12 @@ Bartender4DB = {
 					},
 				},
 				["Bluechief - Incendius"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 164.969295501709,
 						["x"] = -77.2498474121094,
 						["point"] = "BOTTOM",
 					},
-					["version"] = 3,
 				},
 				["Purplechief - Pagle"] = {
 					["version"] = 3,
@@ -2140,11 +2290,11 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -14.9999847412109,
-						["x"] = -82.4999389648438,
+						["y"] = -14.99998474121094,
+						["x"] = -82.49993896484375,
 						["point"] = "CENTER",
 					},
 				},
@@ -2164,11 +2314,11 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.49993896484375,
+						["y"] = -14.9999847412109,
+						["x"] = -82.4999389648438,
 						["point"] = "CENTER",
 					},
 				},
@@ -2185,154 +2335,6 @@ Bartender4DB = {
 					["position"] = {
 						["y"] = 164.969295501709,
 						["x"] = -77.2498474121094,
-						["point"] = "BOTTOM",
-					},
-				},
-			},
-		},
-		["Vehicle"] = {
-			["profiles"] = {
-				["Joeybonzo - Pagle"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50003051757813,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Greychief - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 192.913711547852,
-						["x"] = 346.578247070313,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Cyanchief - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 192.913711547852,
-						["x"] = 346.578247070313,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Orangechief - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.5000305175781,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Orangechief - Pagle"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50003051757813,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Redchief - Pagle"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 192.913711547852,
-						["x"] = 346.578247070313,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Pagle"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50003051757813,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Purplechief - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -151.272171020508,
-						["x"] = -391.277587890625,
-						["point"] = "CENTER",
-					},
-				},
-				["Bluechief - Incendius"] = {
-					["position"] = {
-						["y"] = 192.913711547852,
-						["x"] = 346.578247070313,
-						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["Purplechief - Pagle"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -151.272171020508,
-						["x"] = -391.277587890625,
-						["point"] = "CENTER",
-					},
-				},
-				["Redchief - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.5000305175781,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Bluechieftwo - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 192.913711547852,
-						["x"] = 346.578247070313,
-						["point"] = "BOTTOM",
-					},
-				},
-				["Joeybonzo - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.5000305175781,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Bluechief - Pagle"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50003051757813,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Greenchief - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.5000305175781,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Agengeoff - Benediction"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50003051757813,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Cyanchief - Pagle"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50003051757813,
-						["x"] = 104.500244140625,
-						["point"] = "CENTER",
-					},
-				},
-				["Yellowchief - Incendius"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 192.913711547852,
-						["x"] = 346.578247070313,
 						["point"] = "BOTTOM",
 					},
 				},
@@ -2438,7 +2440,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 143,
@@ -2462,7 +2464,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 143,
@@ -2528,12 +2530,12 @@ Bartender4DB = {
 				},
 				["Orangechief - Pagle"] = {
 					["enabled"] = true,
-					["version"] = 3,
 					["position"] = {
 						["y"] = 61,
 						["x"] = -514,
 						["point"] = "BOTTOM",
 					},
+					["version"] = 3,
 				},
 				["Redchief - Pagle"] = {
 					["enabled"] = true,
@@ -2564,12 +2566,12 @@ Bartender4DB = {
 				},
 				["Bluechief - Incendius"] = {
 					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = -0.60260009765625,
 						["x"] = 399.17041015625,
 						["point"] = "TOPLEFT",
 					},
-					["version"] = 3,
 				},
 				["Purplechief - Pagle"] = {
 					["enabled"] = true,
@@ -2598,7 +2600,7 @@ Bartender4DB = {
 						["point"] = "TOPLEFT",
 					},
 				},
-				["Joeybonzo - Incendius"] = {
+				["Agengeoff - Benediction"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -2625,7 +2627,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Agengeoff - Benediction"] = {
+				["Joeybonzo - Incendius"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -2667,10 +2669,10 @@ Bartender4DB = {
 		["Purplechief - Pagle"] = "Purplechief - Pagle",
 		["Redchief - Incendius"] = "Redchief - Incendius",
 		["Bluechieftwo - Incendius"] = "Bluechieftwo - Incendius",
-		["Joeybonzo - Incendius"] = "Joeybonzo - Incendius",
+		["Agengeoff - Benediction"] = "Agengeoff - Benediction",
 		["Bluechief - Pagle"] = "Bluechief - Incendius",
 		["Greenchief - Incendius"] = "Greenchief - Incendius",
-		["Agengeoff - Benediction"] = "Agengeoff - Benediction",
+		["Joeybonzo - Incendius"] = "Joeybonzo - Incendius",
 		["Cyanchief - Pagle"] = "Cyanchief - Incendius",
 		["Yellowchief - Incendius"] = "Yellowchief - Incendius",
 	},
@@ -2707,12 +2709,12 @@ Bartender4DB = {
 			["outofrange"] = "hotkey",
 		},
 		["Redchief - Pagle"] = {
-			["snapping"] = false,
+			["focuscastmodifier"] = false,
 			["minimapIcon"] = {
 				["minimapPos"] = 316.865689373898,
 			},
 			["blizzardVehicle"] = true,
-			["focuscastmodifier"] = false,
+			["snapping"] = false,
 			["outofrange"] = "hotkey",
 		},
 		["Pagle"] = {
@@ -2726,12 +2728,12 @@ Bartender4DB = {
 			["outofrange"] = "hotkey",
 		},
 		["Bluechief - Incendius"] = {
-			["blizzardVehicle"] = true,
-			["focuscastmodifier"] = false,
 			["snapping"] = false,
 			["minimapIcon"] = {
 				["minimapPos"] = 316.865689373898,
 			},
+			["blizzardVehicle"] = true,
+			["focuscastmodifier"] = false,
 			["outofrange"] = "hotkey",
 		},
 		["Purplechief - Pagle"] = {
@@ -2756,7 +2758,7 @@ Bartender4DB = {
 			["focuscastmodifier"] = false,
 			["outofrange"] = "hotkey",
 		},
-		["Joeybonzo - Incendius"] = {
+		["Agengeoff - Benediction"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -2771,7 +2773,7 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Agengeoff - Benediction"] = {
+		["Joeybonzo - Incendius"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",

@@ -7,7 +7,7 @@ bind RIGHT TOGGLECHARACTER0
 bind Q CLICK BT4Button61:LeftButton
 bind E CLICK BT4Button62:LeftButton
 bind NUMPAD0 NONE
-bind X CLICK BT4Button113:LeftButton
+bind X CLICK BT4Button39:LeftButton
 bind Z CLICK BT4Button37:LeftButton
 bind NUMLOCK NONE
 bind BUTTON4 NONE
@@ -107,5 +107,5 @@ bind ALT-DOWN MASTERVOLUMEDOWN
 bind CTRL-F CLICK BT4Button16:LeftButton
 bind CTRL-C CLICK BT4Button18:LeftButton
 bind CTRL-Z CLICK BT4Button19:LeftButton
-bind SHIFT-X CLICK BT4Button114:LeftButton
+bind SHIFT-X CLICK BT4Button40:LeftButton
 bind CTRL-X SITORSTAND

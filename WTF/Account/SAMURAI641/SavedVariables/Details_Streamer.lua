@@ -3,18 +3,18 @@ Details_StreamerDB = {
 	["characters"] = {
 		["Joeybonzo - Pagle"] = "Bluechief - Incendius",
 		["Redchief - Pagle"] = "Bluechief - Incendius",
-		["Purplechief - Pagle"] = "Bluechief - Incendius",
-		["Greychief - Incendius"] = "Bluechief - Incendius",
-		["Joeybonzo - Incendius"] = "Bluechief - Incendius",
-		["Purplechief - Incendius"] = "Bluechief - Incendius",
 		["Bluechieftwo - Incendius"] = "Bluechief - Incendius",
+		["Greychief - Incendius"] = "Bluechief - Incendius",
+		["Agengeoff - Benediction"] = "Bluechief - Incendius",
+		["Purplechief - Incendius"] = "Bluechief - Incendius",
+		["Purplechief - Pagle"] = "Bluechief - Incendius",
 		["Orangechief - Incendius"] = "Bluechief - Incendius",
 		["Redchief - Incendius"] = "Bluechief - Incendius",
 		["Greenchief - Incendius"] = "Bluechief - Incendius",
-		["Bluechief - Incendius"] = "Bluechief - Incendius",
-		["Bluechief - Pagle"] = "Bluechief - Incendius",
 		["Orangechief - Pagle"] = "Bluechief - Incendius",
-		["Agengeoff - Benediction"] = "Bluechief - Incendius",
+		["Bluechief - Pagle"] = "Bluechief - Incendius",
+		["Bluechief - Incendius"] = "Bluechief - Incendius",
+		["Joeybonzo - Incendius"] = "Bluechief - Incendius",
 		["Cyanchief - Pagle"] = "Bluechief - Incendius",
 		["Yellowchief - Incendius"] = "Bluechief - Incendius",
 	},
@@ -53,7 +53,7 @@ Details_StreamerDB = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["use_spark"] = true,
+			["y"] = -4.57763671875e-05,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -61,13 +61,14 @@ Details_StreamerDB = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
-			["y"] = -4.57763671875e-05,
-			["x"] = 0.000152587890625,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
+			["use_spark"] = true,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -79,12 +80,11 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["x"] = 0.000152587890625,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["font_size"] = 10,
+			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
