@@ -483,9 +483,9 @@ AtlasLootClassicDB = {
 			[28298] = "honorA:9500",
 			[32987] = "honorA:3800",
 			[35065] = "honorA:5700",
-			[35161] = "honorA:7600",
-			[35129] = "honorA:5700",
 			[31407] = "honorA:3800",
+			[35129] = "honorA:5700",
+			[35161] = "honorA:7600",
 			[33325] = "BoJ:35",
 			[28294] = "honorA:9500",
 			[28942] = "honorA:7600",
@@ -512,8 +512,8 @@ AtlasLootClassicDB = {
 			[30768] = "BoJ:20",
 			[28302] = "honorA:4750",
 			[16478] = "honorA:3902:pvpAlterac:3",
-			[31855] = "honorA:50",
 			[32988] = "honorA:5320",
+			[31855] = "honorA:50",
 			[35066] = "honorA:9500",
 			[28313] = "honorA:4750",
 			[35130] = "honorA:5700",
@@ -525,8 +525,8 @@ AtlasLootClassicDB = {
 			[33067] = "honorA:3990",
 			[28946] = "honorA:3800",
 			[32031] = "honorA:6650",
-			[28994] = "honorA:3800",
 			[41588] = "honorA:5700",
+			[28994] = "honorA:3800",
 			[33974] = "BoJ:60",
 			[33584] = "BoJ:75",
 			[29382] = "BoJ:25",
@@ -862,9 +862,6 @@ AtlasLootClassicDB = {
 		["Agengeoff - Benediction"] = {
 		},
 		["Cyanchief - Pagle"] = {
-			["minimap"] = {
-				["minimapPos"] = 206.6746285892019,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -873,14 +870,16 @@ AtlasLootClassicDB = {
 					-14.19257545471191, -- [4]
 					49.29626083374023, -- [5]
 				},
-				["selectedGameVersion"] = 2,
 				["selected"] = {
 					nil, -- [1]
-					"HyjalSummit", -- [2]
-					5, -- [3]
+					"HallsOfReflection", -- [2]
+					3, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["minimapPos"] = 206.6746285892019,
 			},
 		},
 		["Yellowchief - Incendius"] = {

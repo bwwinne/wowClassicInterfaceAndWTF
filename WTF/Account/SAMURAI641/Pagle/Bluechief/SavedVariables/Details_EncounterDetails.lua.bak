@@ -2,163 +2,13 @@
 EncounterDetailsDB = {
 	["emotes"] = {
 		{
-			{
-				11.76200000010431, -- [1]
-				"Come, my minions. Deal with this traitor as he deserves!", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				18.66200000001118, -- [1]
-				"I will deal with these mongrels! Strike now, friends! Strike at the Betrayer!", -- [2]
-				"Akama", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				78.11300000001211, -- [1]
-				"Stare into the eyes of the Betrayer!", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				152.1760000000941, -- [1]
-				"Is this it, mortals? Is this all the fury you can muster?", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [4]
-			{
-				160.2470000000903, -- [1]
-				"Their fury pales before mine, Illidan. We have some unsettled business between us.", -- [2]
-				"Maiev Shadowsong", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				169.8860000000568, -- [1]
-				"Maiev... How is it even possible?", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				176.4440000000177, -- [1]
-				"My long hunt is finally over. Today, Justice will be done!", -- [2]
-				"Maiev Shadowsong", -- [3]
-				7, -- [4]
-			}, -- [7]
-			{
-				220.1820000000298, -- [1]
-				"It is finished. You are beaten.", -- [2]
-				"Maiev Shadowsong", -- [3]
-				7, -- [4]
-			}, -- [8]
-			{
-				226.6220000000903, -- [1]
-				"You have won... Maiev. But the huntress... is nothing without the hunt. You... are nothing... without me.", -- [2]
-				"Illidan Stormrage", -- [3]
-				7, -- [4]
-			}, -- [9]
-			["boss"] = "Illidan Stormrage",
+			["boss"] = "Pathaleon the Calculator",
 		}, -- [1]
 		{
-			{
-				11.11900000006426, -- [1]
-				"Diel fin'al.", -- [2]
-				"High Nethermancer Zerevor", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				15.86900000006426, -- [1]
-				"Sha'amoor ara mashal?", -- [2]
-				"High Nethermancer Zerevor", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				18.00500000000466, -- [1]
-				"You are mine!", -- [2]
-				"Gathios the Shatterer", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				28.83600000001025, -- [1]
-				"I'm full of surprises!", -- [2]
-				"Lady Malande", -- [3]
-				7, -- [4]
-			}, -- [4]
-			{
-				34.01300000003539, -- [1]
-				"Enjoy your final moments.", -- [2]
-				"Gathios the Shatterer", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				50.17099999997299, -- [1]
-				"You are mine!", -- [2]
-				"Gathios the Shatterer", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				69.14899999997579, -- [1]
-				"I'm full of surprises!", -- [2]
-				"Lady Malande", -- [3]
-				7, -- [4]
-			}, -- [7]
-			{
-				77.43000000005122, -- [1]
-				"You wish to kill me? You first!", -- [2]
-				"Veras Darkshadow", -- [3]
-				7, -- [4]
-			}, -- [8]
-			{
-				84.17900000000373, -- [1]
-				"You are mine!", -- [2]
-				"Gathios the Shatterer", -- [3]
-				7, -- [4]
-			}, -- [9]
-			{
-				108.2060000000056, -- [1]
-				"I'm full of surprises!", -- [2]
-				"Lady Malande", -- [3]
-				7, -- [4]
-			}, -- [10]
-			["boss"] = "The Illidari Council",
+			["boss"] = "Nethermancer Sepethrea",
 		}, -- [2]
 		{
-			{
-				6.101999999955297, -- [1]
-				"Don't be shy.", -- [2]
-				"Mother Shahraz", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				23.75799999991432, -- [1]
-				"You play, you pay.", -- [2]
-				"Mother Shahraz", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				36.87199999997392, -- [1]
-				"You seem a little tense...", -- [2]
-				"Mother Shahraz", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				57.92799999995623, -- [1]
-				"Enjoying yourselves?", -- [2]
-				"Mother Shahraz", -- [3]
-				7, -- [4]
-			}, -- [4]
-			{
-				64.4539999999106, -- [1]
-				"%s goes into a frenzy!", -- [2]
-				"Mother Shahraz", -- [3]
-				1, -- [4]
-			}, -- [5]
-			{
-				64.4539999999106, -- [1]
-				"Stop toying with my emotions!", -- [2]
-				"Mother Shahraz", -- [3]
-				7, -- [4]
-			}, -- [6]
-			["boss"] = "Mother Shahraz",
+			["boss"] = "Gatewatcher Iron-Hand",
 		}, -- [3]
 	},
 	["encounter_spells"] = {
@@ -283,6 +133,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illidari Archon",
 		},
+		[39346] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Raging Flames",
+		},
 		[41917] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -396,6 +255,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Apoko",
 		},
+		[27634] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Garaxxas",
+		},
 		[45032] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -443,6 +312,16 @@ EncounterDetailsDB = {
 				["SPELL_HEAL"] = true,
 			},
 			["source"] = "Kalecgos",
+		},
+		[46182] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Eramas Brightblaze",
 		},
 		[16496] = {
 			["school"] = 1,
@@ -569,6 +448,16 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Yazzai",
+		},
+		[46183] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Eramas Brightblaze",
 		},
 		[40594] = {
 			["school"] = 8,
@@ -994,12 +883,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Priestess Delrissa",
 		},
+		[39096] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Mechano-Lord Capacitus",
+		},
 		[46282] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Entropius",
+		},
+		[44286] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Garaxxas",
 		},
 		[33619] = {
 			["school"] = 2,
@@ -1106,6 +1010,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Hand of the Deceiver",
+		},
+		[44271] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Garaxxas",
 		},
 		[27581] = {
 			["school"] = 1,
@@ -1512,6 +1425,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illidari Battle-mage",
 		},
+		[28445] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Garaxxas",
+		},
 		[42023] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -1521,6 +1442,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Ashtongue Elementalist",
+		},
+		[40904] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Illidan Stormrage",
 		},
 		[45664] = {
 			["school"] = 32,
@@ -1564,6 +1494,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gurtogg Bloodboil",
 		},
+		[35283] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Raging Flames",
+		},
+		[55095] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Rune Weapon",
+		},
 		[41177] = {
 			["school"] = 1,
 			["token"] = {
@@ -1571,6 +1515,23 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Ashtongue Rogue",
+		},
+		[40880] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Mother Shahraz",
+		},
+		[35311] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Gatewatcher Gyro-Kill",
 		},
 		[15576] = {
 			["school"] = 1,
@@ -1589,6 +1550,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lady Sacrolash",
 		},
+		[44164] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Fizzle",
+		},
 		[40251] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -1599,13 +1569,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Teron Gorefiend",
 		},
-		[40810] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Mother Shahraz",
-		},
 		[6788] = {
 			["school"] = 2,
 			["type"] = "DEBUFF",
@@ -1613,6 +1576,41 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Priestess Delrissa",
+		},
+		[46153] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Selin Fireheart",
+		},
+		[40810] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Mother Shahraz",
+		},
+		[41337] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Essence of Anger",
+		},
+		[15232] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ellrys Duskhallow",
 		},
 		[27615] = {
 			["school"] = 1,
@@ -1623,6 +1621,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kagani Nightstrike",
 		},
+		[44136] = {
+			["school"] = 16,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Garaxxas",
+		},
 		[44978] = {
 			["school"] = 64,
 			["type"] = "DEBUFF",
@@ -1631,6 +1636,13 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Kalecgos",
+		},
+		[45892] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Kil'jaeden",
 		},
 		[45010] = {
 			["school"] = 64,
@@ -1650,6 +1662,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sinister Reflection",
 		},
+		[22907] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Garaxxas",
+		},
 		[41481] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
@@ -1662,6 +1683,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "High Nethermancer Zerevor",
 		},
+		[45860] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "Power of the Blue Flight",
+		},
 		[42024] = {
 			["school"] = 8,
 			["token"] = {
@@ -1671,14 +1699,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ashtongue Elementalist",
 		},
-		[40904] = {
-			["school"] = 32,
+		[45333] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Illidan Stormrage",
+			["source"] = "Grand Warlock Alythess",
 		},
 		[41545] = {
 			["school"] = 32,
@@ -1714,27 +1740,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Priestess Delrissa",
 		},
-		[44164] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Fizzle",
-		},
-		[55095] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Rune Weapon",
-		},
-		[44196] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Phoenix",
-		},
 		[41098] = {
 			["school"] = 1,
 			["token"] = {
@@ -1743,14 +1748,37 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shadowmoon Weapon Master",
 		},
-		[41097] = {
+		[40601] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Shadowmoon Weapon Master",
+			["source"] = "Gurtogg Bloodboil",
+		},
+		[44196] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Phoenix",
+		},
+		[44314] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Selin Fireheart",
+		},
+		[45031] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Sathrovarr the Corruptor",
 		},
 		[41178] = {
 			["school"] = 1,
@@ -1783,21 +1811,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sathrovarr the Corruptor",
 		},
-		[39665] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[47076] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Sinister Reflection",
+		},
+		[41475] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Shadowmoon Weapon Master",
-		},
-		[42317] = {
-			["school"] = 2,
-			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Ashtongue Spiritbinder",
+			["source"] = "Lady Malande",
 		},
 		[46191] = {
 			["school"] = 4,
@@ -1814,34 +1844,31 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mutant War Hound",
 		},
-		[15232] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Ellrys Duskhallow",
-		},
-		[46153] = {
+		[44120] = {
 			["school"] = 64,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Selin Fireheart",
-		},
-		[39837] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "High Warlord Naj'entus",
+			["source"] = "Eramas Brightblaze",
+		},
+		[41469] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Gathios the Shatterer",
+		},
+		[40457] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Gurtogg Bloodboil",
 		},
 		[45442] = {
 			["school"] = 32,
@@ -1879,23 +1906,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mother Shahraz",
 		},
-		[41453] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[40647] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Gathios the Shatterer",
+			["source"] = "Illidan Stormrage",
 		},
-		[41475] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[46163] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Lady Malande",
 		},
 		[38384] = {
 			["school"] = 16,
@@ -1907,14 +1934,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Yazzai",
 		},
-		[27619] = {
-			["school"] = 16,
+		[45027] = {
+			["school"] = 64,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "Yazzai",
+			["source"] = "Kalecgos",
 		},
 		[41482] = {
 			["school"] = 16,
@@ -1926,16 +1953,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "High Nethermancer Zerevor",
 		},
-		[45342] = {
+		[45741] = {
 			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Grand Warlock Alythess",
+			["source"] = "Kil'jaeden",
 		},
 		[42025] = {
 			["school"] = 2,
@@ -1995,13 +2020,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Priestess Delrissa",
 		},
-		[44314] = {
-			["school"] = 4,
+		[40076] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Selin Fireheart",
+			["source"] = "Coilskar Wrangler",
 		},
 		[40604] = {
 			["school"] = 8,
@@ -2011,14 +2038,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gurtogg Bloodboil",
 		},
-		[45031] = {
-			["school"] = 32,
+		[36021] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Sathrovarr the Corruptor",
+			["source"] = "Pathaleon the Calculator",
 		},
 		[45235] = {
 			["school"] = 4,
@@ -2029,42 +2056,46 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Warlock Alythess",
 		},
-		[47076] = {
-			["school"] = 32,
+		[47072] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Sinister Reflection",
 		},
-		[45860] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "Power of the Blue Flight",
-		},
-		[45333] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Grand Warlock Alythess",
-		},
-		[40593] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Fel Geyser",
-		},
-		[41469] = {
+		[44291] = {
 			["school"] = 2,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Priestess Delrissa",
+		},
+		[41452] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Gathios the Shatterer",
+		},
+		[40610] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+		},
+		[42058] = {
+			["school"] = 2,
+			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Gathios the Shatterer",
@@ -2078,32 +2109,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Priestess Delrissa",
 		},
-		[41254] = {
+		[45909] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Bonechewer Brawler",
+			["source"] = "Armageddon Target",
 		},
-		[45741] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[39855] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Blade of Azzinoth",
+		},
+		[40593] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Kil'jaeden",
-		},
-		[45004] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Kalecgos",
+			["source"] = "Fel Geyser",
 		},
 		[27584] = {
 			["school"] = 1,
@@ -2115,35 +2141,32 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Warlord Salaris",
 		},
-		[45027] = {
-			["school"] = 64,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "Kalecgos",
-		},
-		[47072] = {
-			["school"] = 64,
+		[45122] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Sinister Reflection",
+			["source"] = "Kalecgos",
 		},
-		[41978] = {
-			["school"] = 8,
+		[45004] = {
+			["school"] = 64,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Ashtongue Rogue",
+			["source"] = "Kalecgos",
+		},
+		[40631] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Flame of Azzinoth",
 		},
 		[40860] = {
 			["school"] = 32,
@@ -2172,13 +2195,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Parasitic Shadowfiend",
 		},
-		[46082] = {
-			["school"] = 32,
+		[47002] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Void Spawn",
+			["source"] = "Felmyst",
 		},
 		[19983] = {
 			["school"] = 1,
@@ -2196,22 +2221,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gathios the Shatterer",
 		},
-		[41467] = {
-			["school"] = 2,
+		[41978] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Gathios the Shatterer",
+			["source"] = "Ashtongue Rogue",
 		},
-		[41483] = {
-			["school"] = 64,
+		[46082] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "High Nethermancer Zerevor",
+			["source"] = "Void Spawn",
 		},
 		[41499] = {
 			["school"] = 1,
@@ -2229,10 +2255,10 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Warlord Salaris",
 		},
-		[42058] = {
+		[41470] = {
 			["school"] = 2,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Gathios the Shatterer",
 		},
@@ -2259,54 +2285,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kael'thas Sunstrider",
 		},
-		[46163] = {
-			["school"] = 4,
+		[38595] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-		},
-		[40076] = {
-			["school"] = 8,
-			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Coilskar Wrangler",
+			["source"] = "Ellrys Duskhallow",
 		},
-		[40610] = {
-			["school"] = 4,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-		},
-		[44198] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Phoenix",
-		},
-		[45909] = {
+		[46875] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Armageddon Target",
-		},
-		[45779] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Volatile Felfire Fiend",
+			["source"] = "Hand of the Deceiver",
 		},
 		[41180] = {
 			["school"] = 1,
@@ -2315,6 +2309,22 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Ashtongue Defender",
+		},
+		[44198] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Phoenix",
+		},
+		[40481] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Gurtogg Bloodboil",
 		},
 		[45256] = {
 			["school"] = 32,
@@ -2326,24 +2336,39 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lady Sacrolash",
 		},
-		[45122] = {
-			["school"] = 1,
+		[45779] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Volatile Felfire Fiend",
+		},
+		[41450] = {
+			["school"] = 2,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Gathios the Shatterer",
+		},
+		[41001] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Kalecgos",
+			["source"] = "Mother Shahraz",
 		},
-		[41452] = {
-			["school"] = 2,
+		[41476] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Gathios the Shatterer",
+			["source"] = "Veras Darkshadow",
 		},
 		[45332] = {
 			["school"] = 32,
@@ -2352,13 +2377,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lady Sacrolash",
 		},
-		[40631] = {
-			["school"] = 4,
+		[41455] = {
+			["school"] = 2,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Flame of Azzinoth",
+			["source"] = "Lady Malande",
 		},
 		[44342] = {
 			["school"] = 64,
@@ -2376,39 +2402,38 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Essence of Suffering",
 		},
-		[47002] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[41483] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Felmyst",
-		},
-		[38595] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ellrys Duskhallow",
+			["source"] = "High Nethermancer Zerevor",
 		},
-		[39855] = {
-			["school"] = 1,
+		[41467] = {
+			["school"] = 2,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Blade of Azzinoth",
+			["source"] = "Gathios the Shatterer",
 		},
-		[40481] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[27619] = {
+			["school"] = 16,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Yazzai",
+		},
+		[40491] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Gurtogg Bloodboil",
 		},
@@ -2431,29 +2456,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dragonmaw Wind Reaver",
 		},
-		[41001] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Mother Shahraz",
-		},
-		[41476] = {
+		[41254] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Veras Darkshadow",
+			["source"] = "Bonechewer Brawler",
 		},
-		[46875] = {
-			["school"] = 1,
+		[46238] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+		},
+		[47071] = {
+			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Hand of the Deceiver",
+			["source"] = "Sinister Reflection",
 		},
 		[45029] = {
 			["school"] = 32,
@@ -2476,21 +2500,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Wretched Bruiser",
 		},
-		[41470] = {
-			["school"] = 2,
+		[12540] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Gathios the Shatterer",
+			["source"] = "Kagani Nightstrike",
 		},
-		[41450] = {
-			["school"] = 2,
+		[13787] = {
+			["school"] = 32,
 			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Gathios the Shatterer",
+			["source"] = "Shadowmoon Deathshaper",
 		},
 		[42027] = {
 			["school"] = 8,
@@ -2501,23 +2528,27 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ashtongue Spiritbinder",
 		},
-		[41455] = {
-			["school"] = 2,
+		[45342] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Lady Malande",
+			["source"] = "Grand Warlock Alythess",
 		},
-		[40491] = {
+		[39837] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Gurtogg Bloodboil",
+			["source"] = "High Warlord Naj'entus",
 		},
 		[45141] = {
 			["school"] = 4,
@@ -2545,11 +2576,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Yazzai",
 		},
-		[46238] = {
-			["school"] = 32,
+		[39665] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
+			["source"] = "Shadowmoon Weapon Master",
 		},
 		[46227] = {
 			["school"] = 1,
@@ -2570,43 +2603,38 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phoenix",
 		},
-		[44291] = {
+		[42317] = {
 			["school"] = 2,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Priestess Delrissa",
+			["source"] = "Ashtongue Spiritbinder",
 		},
-		[12540] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Kagani Nightstrike",
-		},
-		[41337] = {
+		[44141] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Essence of Anger",
+			["source"] = "Ellrys Duskhallow",
 		},
-		[13787] = {
-			["school"] = 32,
+		[41097] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Shadowmoon Deathshaper",
+			["source"] = "Shadowmoon Weapon Master",
+		},
+		[41249] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Hungering Soul Fragment",
 		},
 		[44279] = {
 			["school"] = 4,
@@ -2643,37 +2671,36 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Teron Gorefiend",
 		},
-		[40457] = {
+		[15589] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Gurtogg Bloodboil",
+			["source"] = "Bloodwarder Slayer",
 		},
-		[45892] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Kil'jaeden",
-		},
-		[47071] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Sinister Reflection",
-		},
-		[40647] = {
+		[35161] = {
 			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Mechano-Lord Capacitus",
+		},
+		[12531] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Illidan Stormrage",
+			["source"] = "Bloodwarder Slayer",
+		},
+		[14309] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Garaxxas",
 		},
 		[41341] = {
 			["school"] = 1,
@@ -2690,13 +2717,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Priestess Delrissa",
 		},
-		[44141] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[41453] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ellrys Duskhallow",
+			["source"] = "Gathios the Shatterer",
 		},
 		[40878] = {
 			["school"] = 32,
@@ -2705,20 +2733,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dragonmaw Wind Reaver",
 		},
-		[41249] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Hungering Soul Fragment",
-		},
-		[40601] = {
+		[35326] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Gurtogg Bloodboil",
+			["source"] = "Gatewatcher Iron-Hand",
+		},
+		[35152] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Nether Charge",
 		},
 		[44503] = {
 			["school"] = 4,
@@ -2728,14 +2755,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Wretched Husk",
 		},
-		[40880] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[36992] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Mother Shahraz",
+			["source"] = "Pathaleon the Calculator",
 		},
 	},
 }

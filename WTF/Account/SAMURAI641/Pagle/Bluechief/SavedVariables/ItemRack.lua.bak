@@ -416,5 +416,5 @@ ItemRackUser = {
 	["Buttons"] = {
 	},
 	["MenuScale"] = 0.85,
-	["CurrentSet"] = "T3",
+	["CurrentSet"] = "Tank",
 }

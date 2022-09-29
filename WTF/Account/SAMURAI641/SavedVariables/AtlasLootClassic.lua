@@ -466,7 +466,7 @@ AtlasLootClassicDB = {
 			[35065] = "honorA:5700",
 			[28346] = "honorA:2375",
 			[35129] = "honorA:5700",
-			[35161] = "honorA:7600",
+			[31407] = "honorA:3800",
 			[33325] = "BoJ:35",
 			[28294] = "honorA:9500",
 			[28942] = "honorA:7600",
@@ -494,7 +494,7 @@ AtlasLootClassicDB = {
 			[28940] = "honorA:3800",
 			[16478] = "honorA:3902:pvpAlterac:3",
 			[34577] = "honorA:3990",
-			[31855] = "honorA:50",
+			[32988] = "honorA:5320",
 			[35066] = "honorA:9500",
 			[28313] = "honorA:4750",
 			[35130] = "honorA:5700",
@@ -507,7 +507,7 @@ AtlasLootClassicDB = {
 			[28946] = "honorA:3800",
 			[32031] = "honorA:6650",
 			[23572] = "BoJ:10",
-			[28994] = "honorA:3800",
+			[41588] = "honorA:5700",
 			[32054] = "honorA:3990",
 			[28358] = "honorA:4750",
 			[34578] = "honorA:3990",
@@ -534,13 +534,13 @@ AtlasLootClassicDB = {
 			[29382] = "BoJ:25",
 			[33584] = "BoJ:75",
 			[33974] = "BoJ:60",
-			[41588] = "honorA:5700",
+			[28994] = "honorA:3800",
 			[33067] = "honorA:3990",
 			[33309] = "honorA:3325",
 			[34162] = "BoJ:75",
 			[29368] = "BoJ:25",
 			[41589] = "honorA:5700",
-			[32988] = "honorA:5320",
+			[31855] = "honorA:50",
 			[28302] = "honorA:4750",
 			[33501] = "BoJ:75",
 			[32962] = "honorA:3990",
@@ -555,7 +555,7 @@ AtlasLootClassicDB = {
 			[28691] = "honorA:3800",
 			[33853] = "honorA:5130",
 			[30769] = "BoJ:30",
-			[31407] = "honorA:3800",
+			[35161] = "honorA:7600",
 			[16479] = "honorA:3902:pvpWarsong:3",
 			[28959] = "honorA:7600",
 			[32990] = "honorA:5320",
@@ -862,15 +862,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Cyanchief - Pagle"] = {
+			["minimap"] = {
+				["minimapPos"] = 206.6746285892019,
+			},
 			["GUI"] = {
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HyjalSummit", -- [2]
-					5, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
 				["point"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -878,9 +873,13 @@ AtlasLootClassicDB = {
 					-14.19257545471191, -- [4]
 					49.29626083374023, -- [5]
 				},
-			},
-			["minimap"] = {
-				["minimapPos"] = 206.6746285892019,
+				["selected"] = {
+					nil, -- [1]
+					"HallsOfReflection", -- [2]
+					3, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Yellowchief - Incendius"] = {

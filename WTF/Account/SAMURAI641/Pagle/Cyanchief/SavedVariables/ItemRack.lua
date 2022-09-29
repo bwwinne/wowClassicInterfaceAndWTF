@@ -7,7 +7,7 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["SetMenuWrap"] = "OFF",
-	["CurrentSet"] = "Ele",
+	["EnablePerSetQueues"] = "OFF",
 	["Sets"] = {
 		["Ele"] = {
 			["key"] = "F9",
@@ -104,8 +104,7 @@ ItemRackUser = {
 	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
-	["Buttons"] = {
-	},
+	["Alpha"] = 1,
 	["ItemsUsed"] = {
 	},
 	["Events"] = {
@@ -114,10 +113,11 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["EnableEvents"] = "ON",
 	["Hidden"] = {
 	},
-	["Alpha"] = 1,
+	["EnableEvents"] = "ON",
+	["Buttons"] = {
+	},
 	["MenuScale"] = 0.85,
-	["EnablePerSetQueues"] = "OFF",
+	["CurrentSet"] = "Ele",
 }
