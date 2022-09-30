@@ -19,20 +19,6 @@ function TotemTimers.CreateWeaponTracker()
     weapon = XiTimers:new(2)
 
     weapon.button.icons[1]:SetTexture(SpellTextures[SpellIDs.RockbiterWeapon])
-    if TotemTimers.ActiveProfile.LastWeaponEnchant == 5 or TotemTimers.ActiveProfile.LastWeaponEnchant == 6 then
-        weapon.button.icons[1]:SetTexture(SpellTextures[SpellIDs.WindfuryWeapon])
-        weapon.button.icons[2]:SetTexture(SpellTextures[TotemTimers.ActiveProfile.LastWeaponEnchant == 5 and SpellIDs.FlametongueWeapon or SpellIDs.FrostbrandWeapon])
-    else
-        if TotemTimers.ActiveProfile.LastWeaponEnchant then
-            local enchantID = tonumber(TotemTimers.ActiveProfile.LastWeaponEnchant)
-            if not enchantID then
-                enchantID = NameToSpellID[TotemTimers.StripRank(TotemTimers.ActiveProfile.LastWeaponEnchant)]
-            end
-            local texture = GetSpellTexture(enchantID)
-            weapon.button.icons[1]:SetTexture(texture)
-            weapon.button.icons[2]:SetTexture(texture)
-        end
-    end
 
     weapon.button.anchorframe = TotemTimers_TrackerFrame
     weapon.timeStyle = "blizz"
@@ -50,7 +36,7 @@ function TotemTimers.CreateWeaponTracker()
     end
     TotemTimers.SetNumWeaponTimers()
 
-    weapon.actionBar = TTActionBars:new(7, weapon.button, nil, TotemTimers_TrackerFrame, "weapontimer")
+    weapon.actionBar = TTActionBars:new(8, weapon.button, nil, TotemTimers_TrackerFrame, "weapontimer")
 
     weapon.button.tooltip = TotemTimers.Tooltips.WeaponTimer:new(weapon.button)
 
@@ -58,32 +44,43 @@ function TotemTimers.CreateWeaponTracker()
         if name == "spell1" then
             TotemTimers.ActiveProfile.LastWeaponEnchant = self:GetAttribute("spell1")
         elseif name == "spell2" or name == "spell3" then
-            TotemTimers.ActiveProfile.LastWeaponEnchant2 = self:GetAttribute("spell2") or elf:GetAttribute("spell3")
+            TotemTimers.ActiveProfile.LastWeaponEnchant2 = self:GetAttribute("spell2") or self:GetAttribute("spell3")
         elseif name == "doublespell2" then
             local ds2 = self:GetAttribute("doublespell2")
             if ds2 then
-                if ds2 == SpellNames[SpellIDs.FlametongueWeapon] then
+                local ds1 = self:GetAttribute("doublespell1")
+                if ds1 ~= SpellNames[SpellIDs.WindfuryWeapon] then
+                    TotemTimers.ActiveProfile.LastWeaponEnchant = 7
+                elseif ds2 == SpellNames[SpellIDs.FlametongueWeapon] then
                     TotemTimers.ActiveProfile.LastWeaponEnchant = 5
                 elseif ds2 == SpellNames[SpellIDs.FrostbrandWeapon] then
                     TotemTimers.ActiveProfile.LastWeaponEnchant = 6
                 end
             end
         end
+        local spellType = name:sub(1, -2)
+        for i=1,2 do
+            if not self.timer.timersRunning[i] then self.icons[i]:SetTexture(GetSpellTexture(self:GetAttribute(spellType..i))) end
+        end
     end
 
     weapon.button:SetAttribute("_onattributechanged", [[ if name == "spell1" or name == "doublespell1" or name == "doublespell2" or name == "spell2" or name == "spell3" then
                                                              control:CallMethod("SaveLastEnchant", name)
+                                                         end
+                                                         if name == "doublespell1" or name == "doublespell2" then
+                                                            if self:GetAttribute(name) then self:SetAttribute("ds", 1) end
+                                                         elseif name == "ds" then
+                                                            local ds = self:GetAttribute("ds")
+                                                            self:SetAttribute("macrotext", "/cast [@none] "..self:GetAttribute("doublespell"..ds).."\n/use "..(15+ds).."\n/click StaticPopup1Button1")
                                                          end]])
 
     weapon.button:WrapScript(weapon.button, "PostClick", [[ if button == "LeftButton" then
                                                                  local ds1 = self:GetAttribute("doublespell1")
                                                                  if ds1 then
                                                                      if IsControlKeyDown() or self:GetAttribute("ds") ~= 1 then
-                                                                         self:SetAttribute("macrotext", "/cast "..ds1)
- 																		self:SetAttribute("ds",1)
+ 																		 self:SetAttribute("ds",1)
                                                                      else
-                                                                         self:SetAttribute("macrotext", "/cast "..self:GetAttribute("doublespell2"))
- 																		self:SetAttribute("ds",2)
+ 																		 self:SetAttribute("ds",2)
                                                                      end
                                                                  end
                                                             end]])
@@ -125,17 +122,19 @@ table.insert(TotemTimers.Modules, TotemTimers.CreateWeaponTracker)
 
 function TotemTimers.SetWeaponTrackerSpells()
     weapon.actionBar:ResetSpells()
-    if AvailableSpells[SpellIDs.WindfuryWeapon] then
-        weapon.actionBar:AddSpell(SpellNames[SpellIDs.WindfuryWeapon])
+    for i = 1,weapon.actionBar.numbuttons do
+        local button = weapon.actionBar.buttons[i]
+        button.icons[1]:ClearAllPoints()
+        button.icons[2]:ClearAllPoints()
+        button.icons[1]:SetPoint("LEFT", button)
+        button.icons[2]:SetPoint("LEFT", button, "CENTER")
     end
-    if AvailableSpells[SpellIDs.RockbiterWeapon] then
-        weapon.actionBar:AddSpell(SpellNames[SpellIDs.RockbiterWeapon])
-    end
-    if AvailableSpells[SpellIDs.FlametongueWeapon] then
-        weapon.actionBar:AddSpell(SpellNames[SpellIDs.FlametongueWeapon])
-    end
-    if AvailableSpells[SpellIDs.FrostbrandWeapon] then
-        weapon.actionBar:AddSpell(SpellNames[SpellIDs.FrostbrandWeapon])
+
+    for _,spellID in pairs({SpellIDs.WindfuryWeapon, SpellIDs.RockbiterWeapon,
+                SpellIDs.FlametongueWeapon, SpellIDs.FrostbrandWeapon, SpellIDs.EarthlivingWeapon}) do
+        if AvailableSpells[spellID] then
+            weapon.actionBar:AddSpell(spellID)
+        end
     end
 
     if AvailableTalents.DualWield then
@@ -144,6 +143,16 @@ function TotemTimers.SetWeaponTrackerSpells()
         end
         if AvailableSpells[SpellIDs.WindfuryWeapon] and AvailableSpells[SpellIDs.FrostbrandWeapon] then
             weapon.actionBar:AddDoubleSpell(SpellIDs.WindfuryWeapon, SpellIDs.FrostbrandWeapon)
+        end
+        if AvailableSpells[SpellIDs.FlametongueWeapon]
+                and SpellIDs.FlametongueWeapon  ~= select(7, GetSpellInfo(SpellNames[SpellIDs.FlametongueWeapon])) then
+            weapon.actionBar:AddDoubleSpell(SpellIDs.FlametongueWeapon, SpellIDs.FlametongueWeapon)
+            --set ft-1/ft-button visually apart from ft-button by switching texture positions
+            local button = weapon.actionBar.buttons[weapon.actionBar.numspells]
+            button.icons[1]:ClearAllPoints()
+            button.icons[2]:ClearAllPoints()
+            button.icons[1]:SetPoint("LEFT", button, "CENTER")
+            button.icons[2]:SetPoint("LEFT", button)
         end
     end
 end

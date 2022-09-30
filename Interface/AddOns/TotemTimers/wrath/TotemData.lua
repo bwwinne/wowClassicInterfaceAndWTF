@@ -68,6 +68,7 @@ TotemTimers.SpellIDs = {
     NaturesSwiftness = 16188,
     Riptide = 61295,
     ShamanisticRage = 30823,
+    TidalForce = 55198,
     Thunderstorm = 51490,
     WindShear = 57994,
 
@@ -163,7 +164,7 @@ TotemData = {
     },
     [SpellIDs.Flametongue] = {
         element = FIRE_TOTEM_SLOT,
-        --rangeCheck = 20,
+        buff = 52109,
     },
     [SpellIDs.FireElemental] = {
         element = FIRE_TOTEM_SLOT,
@@ -175,12 +176,12 @@ TotemData = {
     [SpellIDs.HealingStream] = {
 		element = WATER_TOTEM_SLOT,
 		warningPoint = 4,
-        buff = 5672,
+        rangeCheck = 30,
 	},
     [SpellIDs.ManaTide] = {
         element = WATER_TOTEM_SLOT,
         warningPoint = 2,
-        buff = 16191,
+        rangeCheck = 30,
     },
     [SpellIDs.Cleansing] = {
         element = WATER_TOTEM_SLOT,
@@ -208,6 +209,7 @@ TotemData = {
     },
     [SpellIDs.Windfury] = {
         element = AIR_TOTEM_SLOT,
+        buff = 8515,
         --rangeCheck = 20,
     },
     [SpellIDs.Sentry] = {
@@ -239,7 +241,6 @@ TotemTimers.TotemCooldowns = {
         SpellIDs.ManaTide,
     },
     [FIRE_TOTEM_SLOT] = {
-        SpellIDs.FireNova,
         SpellIDs.FireElemental,
     },
     [AIR_TOTEM_SLOT] = {
@@ -298,6 +299,12 @@ TotemTimers.WeaponEnchants = {
     [543] = SpellIDs.Flametongue,
     [1683] = SpellIDs.Flametongue,
     [2637] = SpellIDs.Flametongue,
+    [3345] = SpellIDs.EarthlivingWeapon,
+    [3346] = SpellIDs.EarthlivingWeapon,
+    [3347] = SpellIDs.EarthlivingWeapon,
+    [3348] = SpellIDs.EarthlivingWeapon,
+    [3349] = SpellIDs.EarthlivingWeapon,
+    [3350] = SpellIDs.EarthlivingWeapon,
 }
 
 for i = 3018, 3044 do TotemTimers.WeaponEnchants[i] = SpellIDs.RockbiterWeapon end
@@ -320,9 +327,90 @@ TotemTimers.ShieldButtons = {
     SpellIDs.LightningShield,
     SpellIDs.WaterShield,
     SpellIDs.TotemicCall,
+    SpellIDs.EarthShield,
 }
 
 TotemTimers.ShieldSpells = {
     SpellIDs.LightningShield,
     SpellIDs.WaterShield,
+    SpellIDs.EarthShield,
+}
+
+TotemTimers.CombatCooldownSpells = {
+    [2] = {
+        SpellIDs.StormStrike,
+        SpellIDs.FlameShock,
+        SpellIDs.EarthShock,
+        SpellIDs.FireNova,
+        SpellIDs.LavaLash,
+        SpellIDs.WindShear,
+        SpellIDs.Searing,
+        SpellIDs.Magma,
+    },
+    [1] = {
+        SpellIDs.FlameShock,
+        SpellIDs.EarthShock,
+        SpellIDs.ChainLightning,
+        SpellIDs.LightningBolt,
+        SpellIDs.LavaBurst,
+        SpellIDs.Thunderstorm,
+        SpellIDs.WindShear,
+
+    },
+    [3] = {
+        SpellIDs.Riptide,
+        SpellIDs.FlameShock,
+        SpellIDs.EarthShock,
+        SpellIDs.WindShear,
+    },
+}
+
+
+TotemTimers.LongCooldownSpells = {
+    {
+        spell = SpellIDs.FireElemental,
+        totem = SpellIDs.FireElemental,
+        element = FIRE_TOTEM_SLOT,
+        customOnEvent = "CDTotemEvent",
+    },
+    {
+        spell = SpellIDs.EarthElemental,
+        totem = SpellIDs.EarthElemental,
+        element = EARTH_TOTEM_SLOT,
+        customOnEvent = "CDTotemEvent",
+    },
+    {
+        spell = SpellIDs.ElementalMastery,
+        buff = SpellIDs.ElementalMastery,
+    },
+    {
+        spell = SpellIDs.TidalForce,
+        buff = 55166,
+    },
+    {
+        spell = SpellIDs.NaturesSwiftness,
+        buff = SpellIDs.NaturesSwiftness,
+    },
+    {
+        spell = SpellIDs.ManaTide,
+        totem = SpellIDs.ManaTide,
+        element = WATER_TOTEM_SLOT,
+        customOnEvent = "CDTotemEvent",
+    },
+    {
+        spell = SpellIDs.ShamanisticRage,
+        buff = SpellIDs.ShamanisticRage,
+    },
+    {
+        spell = SpellIDs.FeralSpirit,
+        customOnEvent = "FeralSpiritEvent",
+    },
+    {
+        spell = SpellIDs.Bloodlust,
+        buff = SpellIDs.Bloodlust,
+    },
+    {
+        spell = SpellIDs.Heroism,
+        buff = SpellIDs.Heroism,
+    },
 }

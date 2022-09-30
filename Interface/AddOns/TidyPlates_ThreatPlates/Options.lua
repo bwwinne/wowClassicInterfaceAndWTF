@@ -2083,7 +2083,22 @@ local function CreateComboPointsWidgetOptions()
               Addon.Widgets:UpdateSettings(MAP_OPTION_TO_WIDGET[info[2]])
             end,
             hasAlpha = false,
-            hidden = function() return Addon.PlayerClass ~= "ROGUE" end
+            hidden = function() return db.ComboPoints.Specialization ~= "ROGUE" or (Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC) end
+          },
+          ColorDeathrune = {
+            name = L["Death Rune"],
+            type = "color",
+            order = 180,
+            get = function(info)
+              local color = db.ComboPoints.ColorBySpec.DEATHKNIGHT.DeathRune or t.RGB(0, 0, 0)
+              return color.r, color.g, color.b
+            end,
+            set = function(info, r, g, b)
+              db.ComboPoints.ColorBySpec.DEATHKNIGHT.DeathRune = t.RGB(r * 255, g * 255, b * 255)
+              Addon.Widgets:UpdateSettings(MAP_OPTION_TO_WIDGET[info[2]])
+            end,
+            hasAlpha = false,
+            hidden = function() return db.ComboPoints.Specialization ~= "DEATHKNIGHT" or not Addon.IS_WRATH_CLASSIC end
           },
         },
       },
@@ -4910,6 +4925,11 @@ local function CreateBlizzardSettings()
     end,
   }
 
+  func_handler.SetValueEnable = function(self, info, val)
+    func_handler.SetValue(self, info, val)
+    Addon:ForceUpdateFrameOnShow()
+  end
+
   local entry = {
     name = L["Blizzard Settings"],
     order = 140,
@@ -4956,7 +4976,7 @@ local function CreateBlizzardSettings()
                   cvars[#cvars + 1] = "clampTargetNameplateToScreen"
                 end
                 
-                if not (Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC) then            
+                if not Addon.WOW_USES_CLASSIC_NAMEPLATES then            
                   cvars[#cvars + 1] = "nameplateResourceOnTarget"
                 end
 
@@ -5093,7 +5113,7 @@ local function CreateBlizzardSettings()
             inline = true,
             set = SetValue,
             get = GetValue,
-            disabled = function() return (Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC) and (db.ShowFriendlyBlizzardNameplates or db.ShowEnemyBlizzardNameplates) end,
+            disabled = function() return Addon.WOW_USES_CLASSIC_NAMEPLATES and (db.ShowFriendlyBlizzardNameplates or db.ShowEnemyBlizzardNameplates) end,
             args = {
               Description = {
                 type = "description",
@@ -5314,7 +5334,7 @@ local function CreateBlizzardSettings()
         order = 45,
         type = "group",
         inline = false,
-        hidden = function() return Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC end,
+        hidden = function() return Addon.WOW_USES_CLASSIC_NAMEPLATES end,
         args = {
           HideBuffs = {
             type = "toggle",
@@ -5409,6 +5429,7 @@ local function CreateBlizzardSettings()
     order = 2,
     type = "toggle",
     width = "full",
+    set = "SetValueEnable",
     arg = { "BlizzardSettings", "Names", "Enabled" },
   }
 

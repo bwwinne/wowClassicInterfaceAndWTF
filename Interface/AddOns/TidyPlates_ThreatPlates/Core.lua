@@ -63,7 +63,7 @@ local function CalculateSynchedNameplateSize()
   return width, height
 end
 
-if Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC then
+if Addon.WOW_USES_CLASSIC_NAMEPLATES then
   Addon.SetBaseNamePlateSize = function(self)
     local db = self.db.profile
 
@@ -167,7 +167,7 @@ local EVENTS = {
   --"PLAYER_TALENT_UPDATE"
 
   "PLAYER_ENTERING_WORLD",
-  "PLAYER_LOGIN",
+  --"PLAYER_LOGIN",
   --"PLAYER_LOGOUT",
   "PLAYER_REGEN_ENABLED",
   "PLAYER_REGEN_DISABLED",
@@ -422,7 +422,7 @@ function TidyPlatesThreat:OnEnable()
   Addon:CheckForFirstStartUp()
   Addon:CheckForIncompatibleAddons()
 
-  if not (Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC) then
+  if not Addon.WOW_USES_CLASSIC_NAMEPLATES then
     CVars:OverwriteBoolProtected("nameplateResourceOnTarget", Addon.db.profile.PersonalNameplate.ShowResourceOnTarget)
   end
 
@@ -585,11 +585,8 @@ end
 --function TidyPlatesThreat:PLAYER_LEAVING_WORLD()
 --end
 
-function TidyPlatesThreat:PLAYER_LOGIN(...)
-  if Addon.db.char.welcome then
-    Addon.Logging.Info(L["|cff89f559Threat Plates:|r Welcome back |cff"]..t.HCC[Addon.PlayerClass]..UnitName("player").."|r!!")
-  end
-end
+-- function TidyPlatesThreat:PLAYER_LOGIN(...)
+-- end
 
 --function TidyPlatesThreat:PLAYER_LOGOUT(...)
 --end

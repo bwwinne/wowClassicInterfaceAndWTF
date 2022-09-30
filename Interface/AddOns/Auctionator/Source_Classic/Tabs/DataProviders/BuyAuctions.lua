@@ -68,6 +68,8 @@ end
 function AuctionatorBuyAuctionsDataProviderMixin:SetAuctions(entries)
   self.allAuctions = {}
   self:ImportAdditionalResults(entries)
+  self:PopulateAuctions()
+  self:SetSelectedIndex(1)
 end
 
 function AuctionatorBuyAuctionsDataProviderMixin:SetQuery(itemLink)
@@ -101,7 +103,23 @@ function AuctionatorBuyAuctionsDataProviderMixin:ReceiveEvent(eventName, eventDa
     if self.gotAllResults then
       Auctionator.EventBus:Unregister(self, BUY_EVENTS)
     end
+
     self:ImportAdditionalResults(eventData)
+
+    if not self.requestAllResults and #self.allAuctions > 0 then
+      Auctionator.AH.AbortQuery()
+      self.gotAllResults = true
+    end
+
+    self:PopulateAuctions()
+
+    if self.gotAllResults then
+      self:ReportNewMinPrice()
+      self:SetSelectedIndex(1)
+
+      Auctionator.EventBus:Fire(self, Auctionator.Buying.Events.ViewSetup, result)
+    end
+
   elseif eventName == Auctionator.AH.Events.ScanAborted then
     Auctionator.EventBus:Unregister(self, BUY_EVENTS)
     self.onSearchEnded()
@@ -132,11 +150,10 @@ function AuctionatorBuyAuctionsDataProviderMixin:ImportAdditionalResults(results
   for _, entry in ipairs(results) do
     local itemID = entry.info[Auctionator.Constants.AuctionItemInfo.ItemID]
     local itemString = Auctionator.Search.GetCleanItemLink(entry.itemLink)
-    if self.searchKey == itemString and Auctionator.Utilities.ToUnitPrice(entry) ~= 0 then
+    if self.searchKey == itemString then
       table.insert(self.allAuctions, entry)
     end
   end
-  self:PopulateAuctions()
 end
 
 local function ToStackSize(entry)
@@ -148,8 +165,6 @@ end
 
 function AuctionatorBuyAuctionsDataProviderMixin:PopulateAuctions()
   self:Reset()
-
-  local gotResult = false
 
   table.sort(self.allAuctions, function(a, b)
     local unitA = Auctionator.Utilities.ToUnitPrice(a)
@@ -169,6 +184,7 @@ function AuctionatorBuyAuctionsDataProviderMixin:PopulateAuctions()
     end
   end)
 
+  local bidOnlyItems = false
   local results = {}
   for _, auction in ipairs(self.allAuctions) do
     local newEntry = {
@@ -190,12 +206,6 @@ function AuctionatorBuyAuctionsDataProviderMixin:PopulateAuctions()
       newEntry.stackPrice = nil
     end
 
-    if newEntry.unitPrice ~= nil then
-      gotResult = true
-    else
-      newEntry.otherSellers = ""
-    end
-
     if newEntry.isOwned then
       newEntry.otherSellers = GREEN_FONT_COLOR:WrapTextInColorCode(AUCTIONATOR_L_YOU)
       newEntry.isOwnedText = AUCTIONATOR_L_UNDERCUT_YES
@@ -204,43 +214,70 @@ function AuctionatorBuyAuctionsDataProviderMixin:PopulateAuctions()
     end
     Auctionator.Utilities.SetStacksText(newEntry)
 
-    local prevResult = results[#results] or {}
-    if prevResult.unitPrice == newEntry.unitPrice and
-       prevResult.stackSize == newEntry.stackSize and
-       prevResult.itemLink == newEntry.itemLink and 
-       prevResult.otherSellers == newEntry.otherSellers and
-       (prevResult.bidAmount == newEntry.bidAmount or prevResult.unitPrice == nil) then
-      prevResult.numStacks = prevResult.numStacks + 1
-      Auctionator.Utilities.SetStacksText(prevResult)
+    if newEntry.unitPrice == nil then
+      bidOnlyItems = true
     else
-      prevResult.nextEntry = newEntry
-      table.insert(results, newEntry)
+      local prevResult = results[#results] or {}
+      if prevResult.unitPrice == newEntry.unitPrice and
+         prevResult.stackSize == newEntry.stackSize and
+         prevResult.itemLink == newEntry.itemLink and
+         prevResult.otherSellers == newEntry.otherSellers and
+         (prevResult.bidAmount == newEntry.bidAmount or prevResult.unitPrice == nil) then
+        prevResult.numStacks = prevResult.numStacks + 1
+        Auctionator.Utilities.SetStacksText(prevResult)
+      else
+        prevResult.nextEntry = newEntry
+        table.insert(results, newEntry)
+      end
+      results[#results].page = math.min(results[#results].page, auction.page)
     end
-    results[#results].page = math.min(results[#results].page, auction.page)
   end
 
-  if not self.requestAllResults and gotResult and not self.gotAllResults then
-    Auctionator.AH.AbortQuery()
-    self.gotAllResults = true
+  if bidOnlyItems then
+    table.insert(results, {
+      itemLink = self.query.itemLink,
+      unitPrice = nil,
+      stackPrice = nil,
+      stackSize = 0,
+      numStacks = 0,
+      isOwned = false,
+      otherSellers = "",
+      bidAmount = 0,
+      isSelected = false,
+      notReady = true,
+      query = self.query,
+      page = 0,
+    })
+    results[#results].availablePretty = AUCTIONATOR_L_BID_ONLY_AVAILABLE
   end
 
   self:AppendEntries(results, self.gotAllResults)
+  self.currentResults = results
+end
 
-  if self.gotAllResults then
-    self:ReportNewMinPrice()
+function AuctionatorBuyAuctionsDataProviderMixin:PurgeAndReplaceOwnedAuctions(ownedAuctions)
+  if self.query ~= nil then
+    self.onPreserveScroll()
+    local prevSelectedIndex = self:GetSelectedIndex()
 
-    -- Enable selection
-    for _, result in ipairs(results) do
-      result.notReady = false
-    end
-
-    for _, result in ipairs(results) do
-      if result.unitPrice ~= nil then
-        result.isSelected = true
-        Auctionator.EventBus:Fire(self, Auctionator.Buying.Events.AuctionFocussed, result)
-        break
+    local newAllAuctions = {}
+    for _, entry in ipairs(self.allAuctions) do
+      if ToOwner(entry) ~= (GetUnitName("player")) then
+        table.insert(newAllAuctions, entry)
       end
     end
+
+    self.allAuctions = newAllAuctions
+
+    for _, entry in ipairs(ownedAuctions) do
+      entry.page = 0
+      entry.query = self.query
+    end
+
+    self:ImportAdditionalResults(ownedAuctions)
+    self:PopulateAuctions()
+
+    self:SetSelectedIndex(prevSelectedIndex or 1)
   end
 end
 
@@ -267,6 +304,26 @@ function AuctionatorBuyAuctionsDataProviderMixin:ReportNewMinPrice()
           Auctionator.Database:SetPrice(key, minPrice, available)
         end
       end)
+    end
+  end
+end
+
+function AuctionatorBuyAuctionsDataProviderMixin:GetSelectedIndex()
+  for index, result in ipairs(self.currentResults) do
+    if result.isSelected then
+      return index
+    end
+  end
+end
+
+function AuctionatorBuyAuctionsDataProviderMixin:SetSelectedIndex(newSelectedIndex)
+  for index, result in ipairs(self.currentResults) do
+    result.notReady = false
+    result.isSelected = false
+
+    if index == newSelectedIndex then
+      result.isSelected = true
+      Auctionator.EventBus:Fire(self, Auctionator.Buying.Events.AuctionFocussed, result)
     end
   end
 end

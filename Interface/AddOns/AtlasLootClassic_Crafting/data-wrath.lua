@@ -1850,16 +1850,18 @@ data["InscriptionWrath"] = {
 				{ 17, 56952 }, -- Glyph of Rake / 310
 				{ 18, 56957 }, -- Glyph of Shred / 260
 				{ 19, 64258 }, -- Glyph of Monsoon / 250
-				{ 20, 56956 }, -- Glyph of Rip / 200
-				{ 21, 56953 }, -- Glyph of Rebirth / 170
-				{ 22, 56948 }, -- Glyph of Insect Swarm / 150
-				{ 23, 56951 }, -- Glyph of Moonfire / 130
-				{ 24, 56945 }, -- Glyph of Healing Touch / 115
-				{ 25, 48121 }, -- Glyph of Entangling Roots / 100
-				{ 26, 67600 }, -- Glyph of Claw / 100
-				{ 27, 56961 }, -- Glyph of Maul / 90
-				{ 28, 56963 }, -- Glyph of Wrath / 85
-				{ 29, 56955 }, -- Glyph of Rejuvenation / 80
+				{ 20, 56959 }, -- Glyph of Starfire / 220
+				{ 21, 56956 }, -- Glyph of Rip / 200
+				{ 22, 56953 }, -- Glyph of Rebirth / 170
+				{ 23, 56948 }, -- Glyph of Insect Swarm / 150
+				{ 24, 56951 }, -- Glyph of Moonfire / 130
+				{ 25, 56945 }, -- Glyph of Healing Touch / 115
+				{ 26, 48121 }, -- Glyph of Entangling Roots / 100
+				{ 27, 67600 }, -- Glyph of Claw / 100
+				{ 28, 56961 }, -- Glyph of Maul / 90
+				{ 29, 56963 }, -- Glyph of Wrath / 85
+				{ 30, 56955 }, -- Glyph of Rejuvenation / 80
+
 			},
 			[MINOR_GLYPHS_DIFF] = {
 				{ 1, 58288 }, -- Glyph of Unburdened Rebirth / 105
@@ -1904,7 +1906,12 @@ data["InscriptionWrath"] = {
 			name = AL["Misc"],
 			[NORMAL_DIFF] = {
 				{ 1, 59387 },	-- Certificate of Ownership
-				{ 16, 52739 },	-- Armor Vellum
+				{ 3, 52739 },	-- Armor Vellum
+				{ 4, 59499 },	-- Armor Vellum II
+				{ 5, 59500 },	-- Armor Vellum III
+				{ 18, 52840 },	-- Weapon Vellum
+				{ 19, 59488 },	-- Weapon Vellum II
+				{ 20, 59501 },	-- Weapon Vellum III
 			}
 		},
 	}
@@ -2012,6 +2019,16 @@ data["CookingWrath"] = {
 			},
 		},
 		{
+			name = ALIL["Spell Power"],
+			[NORMAL_DIFF] = {
+				{ 1, 45550 },	-- Shoveltusk Steak
+				{ 2, 45564 },	-- Smoked Salmon
+				{ 16, 45556 },	-- Tender Shoveltusk Steak
+				{ 17, 45568 },	-- Firecracker Salmon
+			},
+		},
+
+		{
 			name = ALIL["Attack Power"].." + "..ALIL["Spell Power"],
 			[NORMAL_DIFF] = {
 				{ 1, 58065 },	-- Dalaran Clam Chowder
@@ -2042,7 +2059,9 @@ data["CookingWrath"] = {
 			name = AL["Feast"],
 			[NORMAL_DIFF] = {
 				{ 1, 45554 },	-- Great Feast
+				{ 3, 58528 },   -- Small Feast
 				{ 16, 57423 },	-- Fish Feast
+				{ 18, 58527 },  -- Gigantic Feast
 			},
 		},
 		{
@@ -2067,7 +2086,11 @@ data["CookingWrath"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 57438 },	-- Blackened Worg Steak
 				{ 2, 57443 },	-- Tracker Snacks
+				{ 4, 58523 },   -- Bad Clams
+				{ 5, 58521 },   -- Last Week's Mammoth
 				{ 16, 57435 },	-- Critter Bites
+				{ 19, 58525 },  -- Haunted Herring
+				{ 20, 58512 },  -- Tasty Cupcake
 			},
 		},
 	}

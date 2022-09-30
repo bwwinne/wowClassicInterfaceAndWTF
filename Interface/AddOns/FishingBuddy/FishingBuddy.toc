@@ -1,7 +1,8 @@
-## Interface: 20501
+## Interface: 11403
+
 ## Globe: check-classic
-## Title: Fishing Buddy (Crusade)
-## Version: 0.7.8
+## Title: Fishing Buddy (Crusade/WoTLK)
+## Version: 0.8
 ## X-Curse-Project-ID: 500433
 ## X-WoWI-ID: 26108
 ## Notes: Help with fishing related tasks -- clothing, fish information, etc.

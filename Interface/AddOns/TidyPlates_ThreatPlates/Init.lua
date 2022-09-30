@@ -11,14 +11,14 @@ local ThreatPlates = Addon.ThreatPlates
 ---------------------------------------------------------------------------------------------------
 
 -- Lua APIs
-local string, format = string, format
+local string, floor = string, floor
 local rawset = rawset
 
 -- WoW APIs
 local UnitClass = UnitClass
 
 -- ThreatPlates APIs
-
+local UnitDetailedThreatSituation = UnitDetailedThreatSituation
 
 ---------------------------------------------------------------------------------------------------
 -- WoW Version Check
@@ -29,6 +29,7 @@ Addon.IS_WRATH_CLASSIC = (GetClassicExpansionLevel and GetClassicExpansionLevel(
 Addon.IS_MAINLINE = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE)
 -- Addon.IS_TBC_CLASSIC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC and LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_BURNING_CRUSADE)
 -- Addon.IS_WRATH_CLASSIC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC and LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_WRATH_OF_THE_LICH_KING)
+Addon.WOW_USES_CLASSIC_NAMEPLATES = (Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC)
 
 ---------------------------------------------------------------------------------------------------
 -- Libraries
@@ -106,6 +107,24 @@ Addon.Cache = {
 Addon.Data = {}
 Addon.Logging = {}
 Addon.Debug = {}
+
+---------------------------------------------------------------------------------------------------
+-- Addon-wide wrapper functions for WoW Classic
+---------------------------------------------------------------------------------------------------
+
+if Addon.IS_CLASSIC or Addon.IS_TBC_CLASSIC or Addon.IS_WRATH_CLASSIC then
+  Addon.UnitDetailedThreatSituationWrapper = function(source, target)
+    local is_tanking, status, threatpct, rawthreatpct, threat_value = UnitDetailedThreatSituation(source, target)
+
+    if (threat_value) then
+      threat_value = floor(threat_value / 100)
+    end
+
+    return is_tanking, status, threatpct, rawthreatpct, threat_value
+  end
+else
+	Addon.UnitDetailedThreatSituationWrapper = UnitDetailedThreatSituation
+end
 
 ---------------------------------------------------------------------------------------------------
 -- Aura Highlighting

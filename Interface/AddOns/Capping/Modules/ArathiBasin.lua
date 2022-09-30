@@ -6,7 +6,6 @@ do
 end
 
 local instanceIdToMapId = {
-	[529] = 1461, -- Arathi Basin Classic
 	[2107] = 93, -- Arathi Basin
 	[1681] = 837, -- Arathi Basin Snowy PvP Brawl
 	[2177] = 1383, -- Arathi Basin Brawl Vs AI

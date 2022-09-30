@@ -20,9 +20,17 @@ Quartz3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
-		["Mirror"] = {
-		},
 		["EnemyCasts"] = {
+		},
+		["Player"] = {
+			["profiles"] = {
+				["Default"] = {
+					["y"] = -208.0370025634766,
+					["point"] = "CENTER",
+					["texture"] = "Perl v2",
+					["x"] = -0.05157470703125,
+				},
+			},
 		},
 		["GCD"] = {
 		},
@@ -47,15 +55,7 @@ Quartz3DB = {
 		},
 		["Range"] = {
 		},
-		["Player"] = {
-			["profiles"] = {
-				["Default"] = {
-					["y"] = -208.0370025634766,
-					["point"] = "CENTER",
-					["texture"] = "Perl v2",
-					["x"] = -0.05157470703125,
-				},
-			},
+		["Mirror"] = {
 		},
 		["Latency"] = {
 		},
@@ -72,10 +72,10 @@ Quartz3DB = {
 		["Purplechief - Pagle"] = "Default",
 		["Redchief - Incendius"] = "Default",
 		["Bluechief - Incendius"] = "Default",
-		["Agengeoff - Benediction"] = "Default",
+		["Joeybonzo - Incendius"] = "Default",
 		["Bluechief - Pagle"] = "Default",
 		["Orangechief - Pagle"] = "Default",
-		["Joeybonzo - Incendius"] = "Default",
+		["Agengeoff - Benediction"] = "Default",
 		["Cyanchief - Pagle"] = "Default",
 		["Yellowchief - Incendius"] = "Default",
 	},

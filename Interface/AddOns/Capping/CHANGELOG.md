@@ -1,7 +1,7 @@
 # Capping
 
-## [v1-bcc](https://github.com/BigWigsMods/Capping/tree/v1-bcc) (2021-06-01)
-[Full Changelog](https://github.com/BigWigsMods/Capping/compare/v9.0.16...v1-bcc) [Previous Releases](https://github.com/BigWigsMods/Capping/releases)
+## [v9.2.8](https://github.com/BigWigsMods/Capping/tree/v9.2.8) (2022-09-28)
+[Full Changelog](https://github.com/BigWigsMods/Capping/compare/v9.2.7...v9.2.8) [Previous Releases](https://github.com/BigWigsMods/Capping/releases)
 
-- Fix luacheck issues  
-- BCC support  
+- Backport the score fixes to all classic versions  
+- Update zhTW/zhCN (#124)  

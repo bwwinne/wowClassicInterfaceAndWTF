@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.05 (7th September 2022)
+-- 	Leatrix Plus 3.0.14 (30th September 2022)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.05"
+	LeaPlusLC["AddonVer"] = "3.0.14"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -84,6 +84,21 @@
 	function LeaPlusLC:HideConfigPanels()
 		for k, v in pairs(LeaConfigList) do
 			v:Hide()
+		end
+	end
+
+	-- Decline a shared quest if needed
+	function LeaPlusLC:CheckIfQuestIsSharedAndShouldBeDeclined()
+		if LeaPlusLC["NoSharedQuests"] == "On" then
+			local npcName = UnitName("questnpc")
+			if npcName then
+				if UnitInParty(npcName) or UnitInRaid(npcName) then
+					if not LeaPlusLC:FriendCheck(npcName) then
+						DeclineQuest()
+						return
+					end
+				end
+			end
 		end
 	end
 
@@ -540,6 +555,7 @@
 		or	(LeaPlusLC["RecentChatWindow"]		~= LeaPlusDB["RecentChatWindow"])		-- Recent chat window
 		or	(LeaPlusLC["MaxChatHstory"]			~= LeaPlusDB["MaxChatHstory"])			-- Increase chat history
 		or	(LeaPlusLC["FilterChatMessages"]	~= LeaPlusDB["FilterChatMessages"])		-- Filter chat messages
+		or	(LeaPlusLC["RestoreChatMessages"]	~= LeaPlusDB["RestoreChatMessages"])	-- Restore chat messages
 
 		-- Text
 		or	(LeaPlusLC["HideErrorMessages"]		~= LeaPlusDB["HideErrorMessages"])		-- Hide error messages
@@ -846,6 +862,14 @@
 
 				},
 
+				-- Ripper (Arcanite ripper guitar sound)
+				["MuteRipper"] = {
+
+					-- sound/events/
+					"archaniteripper.ogg#567384",
+
+				},
+
 				-- Striders (footsteps are in another setting)
 				["MuteStriders"] = {
 
@@ -914,6 +938,7 @@
 
 			LeaPlusLC:MakeTx(SoundPanel, "Misc", 388, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteAdal", "A'dal", 388, -92, false, "If checked, A'dal in Shattrath City will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteRipper", "Ripper", 388, -112, false, "If checked, the Arcanite Ripper guitar sound will be muted.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
@@ -1337,6 +1362,12 @@
 				end
 			end
 
+			-- Create tables for specific NPC IDs
+			local npcTable = {
+				-- Stable masters (https://www.wowhead.com/wotlk/npcs?filter=27;1;0)
+				9988, 21518, 15131, 10055, 21517, 11069, 9985, 22469, 19476, 21336, 10060, 16586, 16094, 18250, 16824, 23392, 15722, 9977, 19018, 9987, 19368, 6749, 10058, 22468, 11104, 9986, 13617, 10046, 10048, 10051, 10053, 10054, 17485, 18244, 10045, 24974, 16665, 25037, 16656, 10057, 18984, 9984, 11105, 10056, 16185, 10059, 16764, 11119, 14741, 10085, 10061, 19019, 10052, 10047, 10063, 9979, 17666, 11117, 10049, 17896, 9983, 24905, 9989, 9982, 10050, 9980, 9981, 10062, 9976, 9978, 13616,
+			}
+
 			-- Create gossip event frame
 			local gossipFrame = CreateFrame("FRAME")
 
@@ -1364,6 +1395,11 @@
 						then
 							SkipGossip()
 							return
+						else
+							-- Skip gossip for specific NPCs
+							if GetNumGossipOptions() == 1 and GetNumGossipAvailableQuests() == 0 and GetNumGossipActiveQuests() == 0 and tContains(npcTable, tonumber(npcID)) and not IsShiftKeyDown() then
+								SelectGossipOption(1)
+							end
 						end
 					end
 				end
@@ -1874,6 +1910,11 @@
 
 			-- Event handler
 			qFrame:SetScript("OnEvent", function(self, event, arg1)
+
+				-- Block shared quests if option is enabled
+				if event == "QUEST_DETAIL" then
+					LeaPlusLC:CheckIfQuestIsSharedAndShouldBeDeclined()
+				end
 
 				-- Clear progress items when quest interaction has ceased
 				if event == "QUEST_FINISHED" then
@@ -3136,6 +3177,158 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		-- Block shared quests (no reload needed)
+		----------------------------------------------------------------------
+
+		do
+
+			local eFrame = CreateFrame("FRAME")
+			eFrame:SetScript("OnEvent", LeaPlusLC.CheckIfQuestIsSharedAndShouldBeDeclined)
+
+			-- Function to set event
+			local function SetSharedQuestsFunc()
+				if LeaPlusLC["NoSharedQuests"] == "On" then
+					eFrame:RegisterEvent("QUEST_DETAIL")
+				else
+					eFrame:UnregisterEvent("QUEST_DETAIL")
+				end
+			end
+
+			-- Set event when option is clicked and on startup
+			LeaPlusCB["NoSharedQuests"]:HookScript("OnClick", SetSharedQuestsFunc)
+			SetSharedQuestsFunc()
+
+		end
+
+		----------------------------------------------------------------------
+		-- Restore chat messages
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["RestoreChatMessages"] == "On" then
+
+			local historyFrame = CreateFrame("FRAME")
+			historyFrame:RegisterEvent("PLAYER_LOGIN")
+			historyFrame:RegisterEvent("PLAYER_LOGOUT")
+
+			local FCF_IsChatWindowIndexActive = FCF_IsChatWindowIndexActive
+			local GetMessageInfo = GetMessageInfo
+			local GetNumMessages = GetNumMessages
+
+			-- Use function from Dragonflight
+			local function FCF_IsChatWindowIndexActive(chatWindowIndex)
+				local shown = select(7, FCF_GetChatWindowInfo(chatWindowIndex))
+				if shown then
+					return true
+				end
+				local chatFrame = _G["ChatFrame" .. chatWindowIndex]
+				return (chatFrame and chatFrame.isDocked)
+			end
+
+			-- Save chat messages on logout
+			historyFrame:SetScript("OnEvent", function(self, event)
+				if event == "PLAYER_LOGOUT" then
+					local name, realm = UnitFullName("player")
+					LeaPlusDB["ChatHistoryName"] = name .. "-" .. realm
+					LeaPlusDB["ChatHistoryTime"] = GetServerTime()
+					for i = 1, 50 do
+						if i ~= 2 and _G["ChatFrame" .. i] then
+							if FCF_IsChatWindowIndexActive(i) then
+								LeaPlusDB["ChatHistory" .. i] = {}
+								local chtfrm = _G["ChatFrame" .. i]
+								local NumMsg = chtfrm:GetNumMessages()
+								local StartMsg = 1
+								if NumMsg > 128 then StartMsg = NumMsg - 127 end
+								for iMsg = StartMsg, NumMsg do
+									local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
+									if chatMessage then
+										if r and g and b then
+											local colorCode = RGBToColorCode(r, g, b)
+											chatMessage = colorCode .. chatMessage
+										end
+										tinsert(LeaPlusDB["ChatHistory" .. i], chatMessage)
+									end
+								end
+							end
+						end
+					end
+				end
+			end)
+
+			-- Restore chat messages on login
+			local name, realm = UnitFullName("player")
+			if LeaPlusDB["ChatHistoryName"] and LeaPlusDB["ChatHistoryTime"] then
+				local timeDiff = GetServerTime() - LeaPlusDB["ChatHistoryTime"]
+				if LeaPlusDB["ChatHistoryName"] == name .. "-" .. realm and timeDiff and timeDiff < 10 then -- reload must be done within 15 seconds
+
+					-- Store chat messages from current session and clear chat
+					for i = 1, 50 do
+						if i ~= 2 and _G["ChatFrame" .. i] and FCF_IsChatWindowIndexActive(i) then
+							LeaPlusDB["ChatTemp" .. i] = {}
+							local chtfrm = _G["ChatFrame" .. i]
+							local NumMsg = chtfrm:GetNumMessages()
+							for iMsg = 1, NumMsg do
+								local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
+								if chatMessage then
+									if r and g and b then
+										local colorCode = RGBToColorCode(r, g, b)
+										chatMessage = colorCode .. chatMessage
+									end
+									tinsert(LeaPlusDB["ChatTemp" .. i], chatMessage)
+								end
+							end
+							chtfrm:Clear()
+						end
+					end
+
+					-- Restore chat messages from previous session
+					for i = 1, 50 do
+						if i ~= 2 and _G["ChatFrame" .. i] and LeaPlusDB["ChatHistory" .. i] and FCF_IsChatWindowIndexActive(i) then
+							LeaPlusDB["ChatHistory" .. i .. "Count"] = 0
+							-- Add previous session messages to chat
+							for k = 1, #LeaPlusDB["ChatHistory" .. i] do
+								if LeaPlusDB["ChatHistory" .. i][k] ~= string.match(LeaPlusDB["ChatHistory" .. i][k], "|cffffd800" .. L["Restored"] .. " " .. ".*" .. " " .. L["message"] .. ".*.|r") then
+									_G["ChatFrame" .. i]:AddMessage(LeaPlusDB["ChatHistory" .. i][k])
+									LeaPlusDB["ChatHistory" .. i .. "Count"] = LeaPlusDB["ChatHistory" .. i .. "Count"] + 1
+								end
+							end
+							-- Show how many messages were restored
+							if LeaPlusDB["ChatHistory" .. i .. "Count"] == 1 then
+								_G["ChatFrame" .. i]:AddMessage("|cffffd800" .. L["Restored"] .. " " .. LeaPlusDB["ChatHistory" .. i .. "Count"] .. " " .. L["message from previous session"] .. ".|r")
+							else
+								_G["ChatFrame" .. i]:AddMessage("|cffffd800" .. L["Restored"] .. " " .. LeaPlusDB["ChatHistory" .. i .. "Count"] .. " " .. L["messages from previous session"] .. ".|r")
+							end
+						else
+							-- No messages to restore
+							LeaPlusDB["ChatHistory" .. i] = nil
+						end
+					end
+
+					-- Restore chat messages from this session
+					for i = 1, 50 do
+						if i ~= 2 and _G["ChatFrame" .. i] and LeaPlusDB["ChatTemp" .. i] and FCF_IsChatWindowIndexActive(i) then
+							for k = 1, #LeaPlusDB["ChatTemp" .. i] do
+								_G["ChatFrame" .. i]:AddMessage(LeaPlusDB["ChatTemp" .. i][k])
+							end
+						end
+					end
+
+				end
+			end
+
+		else
+
+			-- Option is disabled so clear any messages from saved variables
+			LeaPlusDB["ChatHistoryName"] = nil
+			LeaPlusDB["ChatHistoryTime"] = nil
+			for i = 1, 50 do
+				LeaPlusDB["ChatHistory" .. i] = nil
+				LeaPlusDB["ChatTemp" .. i] = nil
+				LeaPlusDB["ChatHistory" .. i .. "Count"] = nil
+			end
+
+		end
 
 		----------------------------------------------------------------------
 		-- Enhance minimap
@@ -4796,7 +4989,9 @@
 		if LeaPlusLC["ShowFlightTimes"] == "On" then
 
 			-- Load flight data
-			Leatrix_Plus:LoadFlightData()
+			Leatrix_Plus["FlightData"] = {}
+			Leatrix_Plus:LoadFlightDataAlliance()
+			Leatrix_Plus:LoadFlightDataHorde()
 
 			-- Minimum time difference (in seconds) to flight data entry before flight report window is shown
 			local timeBuffer = 15
@@ -4937,6 +5132,7 @@
 
 			-- Show progress bar when flight is taken
 			hooksecurefunc("TakeTaxiNode", function(node)
+				if UnitAffectingCombat("player") then return end
 				if editFrame:IsShown() then editFrame:Hide() end
 				for i = 1, NumTaxiNodes() do
 					local nodeType = TaxiNodeGetType(i)
@@ -4988,13 +5184,17 @@
 
 						-- Handle flight time not correct or flight does not exist in database
 						local timeStart = GetTime()
-						C_Timer.After(5, function()
+						C_Timer.After(1, function()
 							if UnitOnTaxi("player") then
-								if MainMenuBarVehicleLeaveButton:IsEnabled() then
-									flightFrame:RegisterEvent("PLAYER_CONTROL_GAINED")
-								end
+								-- Player is on a taxi so register when taxi lands
+								flightFrame:RegisterEvent("PLAYER_CONTROL_GAINED")
 							else
+								-- Player is not on a taxi so delete the flight progress bar
 								flightFrame:UnregisterEvent("PLAYER_CONTROL_GAINED")
+								if LeaPlusLC.FlightProgressBar then
+									LeaPlusLC.FlightProgressBar:Stop()
+									LeaPlusLC.FlightProgressBar = nil
+								end
 							end
 						end)
 						flightFrame:SetScript("OnEvent", function()
@@ -5411,6 +5611,14 @@
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockSpellLinks", "Block spell links during combat", 16, -92, false, "If checked, messages containing spell links will be blocked while you are in combat.|n|nThis is useful for blocking spell interrupt spam.|n|nThis applies to the say, party, raid, instance and emote channels.")
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockDrunkenSpam", "Block drunken spam", 16, -112, false, "If checked, drunken messages will be blocked unless they apply to your character.|n|nThis applies to the system channel.")
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockDuelSpam", "Block duel spam", 16, -132, false, "If checked, duel victory and retreat messages will be blocked unless your character took part in the duel.|n|nThis applies to the system channel.")
+
+			-- Lock block drunken spam option for zhTW
+			if GameLocale == "zhTW" then
+				LeaPlusLC:LockItem(LeaPlusCB["BlockDrunkenSpam"], true)
+				LeaPlusLC["BlockDrunkenSpam"] = "Off"
+				LeaPlusDB["BlockDrunkenSpam"] = "Off"
+				LeaPlusCB["BlockDrunkenSpam"].tiptext = LeaPlusCB["BlockDrunkenSpam"].tiptext .. "|n|n|cff00AAFF" .. L["Cannot use this with your locale."]
+			end
 
 			-- Help button hidden
 			ChatFilterPanel.h:Hide()
@@ -7081,9 +7289,9 @@
 
 			local function SetHeadersButton()
 				if LeaPlusCB["ToggleQuestHeaders"].collapsed then
-					LeaPlusCB["ToggleQuestHeaders"]:SetText("Expand")
+					LeaPlusCB["ToggleQuestHeaders"]:SetText(L["Expand"])
 				else
-					LeaPlusCB["ToggleQuestHeaders"]:SetText("Collapse")
+					LeaPlusCB["ToggleQuestHeaders"]:SetText(L["Collapse"])
 				end
 				local headerButtonWidth = LeaPlusCB["ToggleQuestHeaders"]:GetFontString():GetStringWidth() + 13.6
 				if headerButtonWidth > 120 then headerButtonWidth = 120 end
@@ -7110,30 +7318,23 @@
 			if LeaPlusLC["EnhanceQuestTaller"] == "On" then
 
 				-- Set increased height of quest log frame and maximum number of quests listed
-				local tall, numTallQuests = 73, 21
+				local tall, numTallQuests = 70, 4
 
 				-- Make the quest log frame double-wide
 				UIPanelWindows["QuestLogFrame"] = {area = "override", pushable = 0, xoffset = -16, yoffset = 12, bottomClampOverride = 140 + 12, width = 682, height = 487, whileDead = 1}
 
 				-- Size the quest log frame
 				QuestLogFrame:SetWidth(682)
-				QuestLogFrame:SetHeight(487 + tall)
-
-				QuestLogListScrollFrame:ClearAllPoints()
-				QuestLogListScrollFrame:SetPoint("TOPLEFT", QuestLogFrame, "TOPLEFT", 19, -75)
-
-				-- Position bottom-right close button
-				QuestLogFrameCancelButton:ClearAllPoints()
-				QuestLogFrameCancelButton:SetPoint("BOTTOMRIGHT", QuestLogFrame, "BOTTOMRIGHT", -10, 54)
+				QuestLogFrame:SetHeight(444 + tall)
 
 				hooksecurefunc("QuestLogDetailFrame_AttachToQuestLog", function()
 					QuestLogDetailScrollFrame:ClearAllPoints()
 					QuestLogDetailScrollFrame:SetPoint("TOPLEFT", QuestLogListScrollFrame, "TOPRIGHT", 28, -1)
-					QuestLogDetailScrollFrame:SetHeight(336 + tall)
+					QuestLogDetailScrollFrame:SetHeight(331 + tall)
 				end)
 
 				-- Expand the quest list to full height
-				QuestLogListScrollFrame:SetHeight(336 + tall - 2) -- Minus 2 for a slight bufffer
+				QuestLogListScrollFrame:SetHeight(336 + tall - 4) -- Minus 4 for a slight bufffer
 
 				-- Create additional quest rows
 				local oldQuestsDisplayed = QUESTS_DISPLAYED
@@ -7154,40 +7355,29 @@
 				-- Set top left texture
 				regions[2]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus")
 				regions[2]:SetTexCoord(0.25, 0.75, 0, 1)
-				regions[2]:SetSize(512, 512)
+				regions[2]:SetSize(512, 506)
 
 				-- Set top right texture
 				regions[3]:ClearAllPoints()
 				regions[3]:SetPoint("TOPLEFT", regions[2], "TOPRIGHT", 0, 0)
 				regions[3]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus")
 				regions[3]:SetTexCoord(0.75, 1, 0, 1)
-				regions[3]:SetSize(256, 512)
-
-				-- Position and resize abandon button
-				if not LeaPlusLC.ElvUI then
-					hooksecurefunc("QuestLogControlPanel_UpdatePosition", function()
-						if QuestLogFrame:IsShown() then
-							QuestLogControlPanel:ClearAllPoints()
-							QuestLogControlPanel:SetPoint("BOTTOMLEFT", QuestLogFrame, "BOTTOMLEFT", 18, 50)
-						end
-					end)
-				end
+				regions[3]:SetSize(256, 506)
 
 				-- Position and size close button
 				if LeaPlusLC.ElvUI then
 					QuestLogFrameCancelButton:ClearAllPoints()
-					QuestLogFrameCancelButton:SetPoint("BOTTOMRIGHT", QuestLogFrame, "BOTTOMRIGHT", -10, 12)
+					QuestLogFrameCancelButton:SetPoint("BOTTOMRIGHT", QuestLogFrame, "BOTTOMRIGHT", -10, 11)
 					QuestLogFrameCancelButton:SetHeight(20)
-					QuestLogFrame:SetHeight(447 + tall)
 				end
 
 				-- Empty quest frame
 				QuestLogNoQuestsText:ClearAllPoints()
-				QuestLogNoQuestsText:SetPoint("TOP", QuestLogListScrollFrame, 0, -50)
+				QuestLogNoQuestsText:SetPoint("CENTER", QuestLogListScrollFrame, 0, 0)
 				hooksecurefunc(EmptyQuestLogFrame, "Show", function()
 					EmptyQuestLogFrame:ClearAllPoints()
-					EmptyQuestLogFrame:SetPoint("BOTTOMLEFT", QuestLogFrame, "BOTTOMLEFT", 20, 30)
-					EmptyQuestLogFrame:SetHeight(457)
+					EmptyQuestLogFrame:SetPoint("BOTTOMLEFT", QuestLogFrame, "BOTTOMLEFT", 20, -4)
+					EmptyQuestLogFrame:SetHeight(447)
 				end)
 
 			end
@@ -8095,6 +8285,7 @@
 			BuffFrame:SetPoint(LeaPlusLC["BuffFrameA"], UIParent, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"])
 			BuffFrame:SetScale(LeaPlusLC["BuffFrameScale"])
 			TemporaryEnchantFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+			ConsolidatedBuffs:SetScale(LeaPlusLC["BuffFrameScale"])
 
 			-- Set buff frame position when the game resets it
 			hooksecurefunc("UIParent_UpdateTopFramePositions", function()
@@ -8170,6 +8361,7 @@
 			LeaPlusCB["BuffFrameScale"]:HookScript("OnValueChanged", function()
 				BuffFrame:SetScale(LeaPlusLC["BuffFrameScale"])
 				TemporaryEnchantFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+				ConsolidatedBuffs:SetScale(LeaPlusLC["BuffFrameScale"])
 				dragframe:SetScale(LeaPlusLC["BuffFrameScale"])
 				-- Show formatted slider value
 				LeaPlusCB["BuffFrameScale"].f:SetFormattedText("%.0f%%", LeaPlusLC["BuffFrameScale"] * 100)
@@ -8234,6 +8426,7 @@
 					BuffFrame:SetPoint(LeaPlusLC["BuffFrameA"], UIParent, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"])
 					BuffFrame:SetScale(LeaPlusLC["BuffFrameScale"])
 					TemporaryEnchantFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+					ConsolidatedBuffs:SetScale(LeaPlusLC["BuffFrameScale"])
 				else
 					-- Find out if the UI has a non-standard scale
 					if GetCVar("useuiscale") == "1" then
@@ -9782,6 +9975,9 @@
 
 			-- Create locale specific level string
 			LT["LevelLocale"] = strtrim(strtrim(string.gsub(TOOLTIP_UNIT_LEVEL, "%%s", "")))
+			if GameLocale == "ruRU" then
+				LT["LevelLocale"] = "-ro уровня"
+			end
 
 			-- Tooltip
 			LT["ColorBlind"] = GetCVar("colorblindMode")
@@ -9823,8 +10019,23 @@
 			LeaPlusLC:MakeCB(SideTip, "TipShowRank", "Show guild ranks for your guild", 16, -92, false, "If checked, guild ranks will be shown for players in your guild.")
 			LeaPlusLC:MakeCB(SideTip, "TipShowOtherRank", "Show guild ranks for other guilds", 16, -112, false, "If checked, guild ranks will be shown for players who are not in your guild.")
 			LeaPlusLC:MakeCB(SideTip, "TipShowTarget", "Show unit targets", 16, -132, false, "If checked, unit targets will be shown.")
-			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -152, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
-			LeaPlusLC:MakeCB(SideTip, "TipNoHealthBar", "Hide the health bar", 16, -172, true, "If checked, the health bar will not be shown.")
+			LeaPlusLC:MakeCB(SideTip, "TipNoHealthBar", "Hide the health bar", 16, -152, true, "If checked, the health bar will not be shown.")
+
+			LeaPlusLC:MakeTx(SideTip, "Hide tooltips", 16, -192)
+			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -212, false, "If checked, tooltips for world units will be hidden during combat.")
+			LeaPlusLC:MakeCB(SideTip, "TipHideShiftOverride", "Show tooltips with shift key", 16, -232, false, "If checked, you can hold shift while tooltips are hidden to show them temporarily.")
+
+			-- Handle show tooltips with shift key lock
+			local function SetTipHideShiftOverrideFunc()
+				if LeaPlusLC["TipHideInCombat"] == "On" then
+					LeaPlusLC:LockItem(LeaPlusCB["TipHideShiftOverride"], false)
+				else
+					LeaPlusLC:LockItem(LeaPlusCB["TipHideShiftOverride"], true)
+				end
+			end
+
+			LeaPlusCB["TipHideInCombat"]:HookScript("OnClick", SetTipHideShiftOverrideFunc)
+			SetTipHideShiftOverrideFunc()
 
 			LeaPlusLC:CreateDropDown("TooltipAnchorMenu", "Anchor", SideTip, 146, "TOPLEFT", 356, -115, {L["None"], L["Overlay"], L["Cursor"], L["Cursor Left"], L["Cursor Right"]}, "")
 
@@ -9889,7 +10100,8 @@
 				LeaPlusLC["TipShowRank"] = "On"
 				LeaPlusLC["TipShowOtherRank"] = "Off"
 				LeaPlusLC["TipShowTarget"] = "On"
-				LeaPlusLC["TipHideInCombat"] = "Off"
+				LeaPlusLC["TipHideInCombat"] = "Off"; SetTipHideShiftOverrideFunc()
+				LeaPlusLC["TipHideShiftOverride"] = "On"
 				LeaPlusLC["LeaPlusTipSize"] = 1.00
 				LeaPlusLC["TipOffsetX"] = -13
 				LeaPlusLC["TipOffsetY"] = 94
@@ -9938,7 +10150,8 @@
 					LeaPlusLC["TipShowRank"] = "On"
 					LeaPlusLC["TipShowOtherRank"] = "Off"
 					LeaPlusLC["TipShowTarget"] = "On"
-					LeaPlusLC["TipHideInCombat"] = "Off"
+					LeaPlusLC["TipHideInCombat"] = "Off"; SetTipHideShiftOverrideFunc()
+					LeaPlusLC["TipHideShiftOverride"] = "On"
 					LeaPlusLC["LeaPlusTipSize"] = 1.25
 					LeaPlusLC["TipOffsetX"] = -13
 					LeaPlusLC["TipOffsetY"] = 94
@@ -10108,9 +10321,11 @@
 				if GetMouseFocus() == WorldFrame then
 					LT["Unit"] = "mouseover"
 					-- Hide and quit if tips should be hidden during combat
-					if LeaPlusLC["TipHideInCombat"] == "On" and UnitAffectingCombat("player") and not IsShiftKeyDown() then
-						GameTooltip:Hide()
-						return
+					if LeaPlusLC["TipHideInCombat"] == "On" and UnitAffectingCombat("player") then
+						if not IsShiftKeyDown() or LeaPlusLC["TipHideShiftOverride"] == "Off" then
+							GameTooltip:Hide()
+							return
+						end
 					end
 				else
 					LT["Unit"] = select(2, GameTooltip:GetUnit())
@@ -10242,29 +10457,61 @@
 
 				if LT["TipIsPlayer"] then
 
-					-- Show level
-					if LT["Reaction"] < 5 then
-						if LT["UnitLevel"] == -1 then
-							LT["InfoText"] = ("|cffff3333" .. ttLevel .. " ??|cffffffff")
-						else
-							LT["LevelColor"] = GetCreatureDifficultyColor(LT["UnitLevel"])
-							LT["LevelColor"] = string.format('%02x%02x%02x', LT["LevelColor"].r * 255, LT["LevelColor"].g * 255, LT["LevelColor"].b * 255)
-							LT["InfoText"] = ("|cff" .. LT["LevelColor"] .. LT["LevelLocale"] .. " " .. LT["UnitLevel"] .. "|cffffffff")
+					if GameLocale == "ruRU" then
+
+						LT["InfoText"] = ""
+
+						-- Show race
+						if LT["PlayerRace"] then
+							LT["InfoText"] = LT["InfoText"] .. LT["PlayerRace"] .. ","
 						end
+
+						-- Show class
+						LT["InfoText"] = LT["InfoText"] .. " " .. LT["LpTipClassColor"] .. LT["Class"] .. "|r " or LT["InfoText"] .. "|r "
+
+						-- Show level
+						if LT["Reaction"] < 5 then
+							if LT["UnitLevel"] == -1 then
+								LT["InfoText"] = LT["InfoText"] .. ("|cffff3333" .. "??-ro" .. " " .. ttLevel .. "|cffffffff")
+							else
+								LT["LevelColor"] = GetCreatureDifficultyColor(LT["UnitLevel"])
+								LT["LevelColor"] = string.format('%02x%02x%02x', LT["LevelColor"].r * 255, LT["LevelColor"].g * 255, LT["LevelColor"].b * 255)
+								LT["InfoText"] = LT["InfoText"] .. ("|cff" .. LT["LevelColor"] .. LT["UnitLevel"] .. LT["LevelLocale"] .. "|cffffffff")
+							end
+						else
+							LT["InfoText"] = LT["InfoText"] .. LT["UnitLevel"] .. LT["LevelLocale"]
+						end
+
+						-- Show information line
+						_G["GameTooltipTextLeft" .. LT["InfoLine"]]:SetText(LT["InfoText"] .. "|cffffffff|r")
+
 					else
-						LT["InfoText"] = LT["LevelLocale"] .. " " .. LT["UnitLevel"]
+
+						-- Show level
+						if LT["Reaction"] < 5 then
+							if LT["UnitLevel"] == -1 then
+								LT["InfoText"] = ("|cffff3333" .. ttLevel .. " ??|cffffffff")
+							else
+								LT["LevelColor"] = GetCreatureDifficultyColor(LT["UnitLevel"])
+								LT["LevelColor"] = string.format('%02x%02x%02x', LT["LevelColor"].r * 255, LT["LevelColor"].g * 255, LT["LevelColor"].b * 255)
+								LT["InfoText"] = ("|cff" .. LT["LevelColor"] .. LT["LevelLocale"] .. " " .. LT["UnitLevel"] .. "|cffffffff")
+							end
+						else
+							LT["InfoText"] = LT["LevelLocale"] .. " " .. LT["UnitLevel"]
+						end
+
+						-- Show race
+						if LT["PlayerRace"] then
+							LT["InfoText"] = LT["InfoText"] .. " " .. LT["PlayerRace"]
+						end
+
+						-- Show class
+						LT["InfoText"] = LT["InfoText"] .. " " .. LT["LpTipClassColor"] .. LT["Class"] or LT["InfoText"]
+
+						-- Show information line
+						_G["GameTooltipTextLeft" .. LT["InfoLine"]]:SetText(LT["InfoText"] .. "|cffffffff|r")
+
 					end
-
-					-- Show race
-					if LT["PlayerRace"] then
-						LT["InfoText"] = LT["InfoText"] .. " " .. LT["PlayerRace"]
-					end
-
-					-- Show class
-					LT["InfoText"] = LT["InfoText"] .. " " .. LT["LpTipClassColor"] .. LT["Class"] or LT["InfoText"]
-
-					-- Show information line
-					_G["GameTooltipTextLeft" .. LT["InfoLine"]]:SetText(LT["InfoText"] .. "|cffffffff|r")
 
 				end
 
@@ -10305,21 +10552,46 @@
 					-- Show level line
 					if LT["MobInfoLine"] > 1 then
 
-						-- Level ?? mob
-						if LT["UnitLevel"] == -1 then
-							LT["InfoText"] = "|cffff3333" .. ttLevel .. " ??|cffffffff "
+						if GameLocale == "ruRU" then
 
-						-- Mobs within level range
+							LT["InfoText"] = ""
+
+							-- Show creature type and classification
+							LT["CreatureType"] = UnitCreatureType(LT["Unit"])
+							if (LT["CreatureType"]) and not (LT["CreatureType"] == "Not specified") then
+								LT["InfoText"] = LT["InfoText"] .. "|cffffffff" .. LT["CreatureType"] .. "|cffffffff "
+							end
+
+							-- Level ?? mob
+							if LT["UnitLevel"] == -1 then
+								LT["InfoText"] = LT["InfoText"] .. "|cffff3333" .. "??-ro " .. ttLevel .. "|cffffffff "
+
+							-- Mobs within level range
+							else
+								LT["MobColor"] = GetCreatureDifficultyColor(LT["UnitLevel"])
+								LT["MobColor"] = string.format('%02x%02x%02x', LT["MobColor"].r * 255, LT["MobColor"].g * 255, LT["MobColor"].b * 255)
+								LT["InfoText"] = LT["InfoText"] .. "|cff" .. LT["MobColor"] .. LT["UnitLevel"] .. LT["LevelLocale"] .. "|cffffffff "
+							end
+
 						else
-							LT["MobColor"] = GetCreatureDifficultyColor(LT["UnitLevel"])
-							LT["MobColor"] = string.format('%02x%02x%02x', LT["MobColor"].r * 255, LT["MobColor"].g * 255, LT["MobColor"].b * 255)
-							LT["InfoText"] = "|cff" .. LT["MobColor"] .. LT["LevelLocale"] .. " " .. LT["UnitLevel"] .. "|cffffffff "
-						end
 
-						-- Show creature type and classification
-						LT["CreatureType"] = UnitCreatureType(LT["Unit"])
-						if (LT["CreatureType"]) and not (LT["CreatureType"] == "Not specified") then
-							LT["InfoText"] = LT["InfoText"] .. "|cffffffff" .. LT["CreatureType"] .. "|cffffffff "
+							-- Level ?? mob
+							if LT["UnitLevel"] == -1 then
+								LT["InfoText"] = "|cffff3333" .. ttLevel .. " ??|cffffffff "
+
+							-- Mobs within level range
+							else
+								LT["MobColor"] = GetCreatureDifficultyColor(LT["UnitLevel"])
+								LT["MobColor"] = string.format('%02x%02x%02x', LT["MobColor"].r * 255, LT["MobColor"].g * 255, LT["MobColor"].b * 255)
+								LT["InfoText"] = "|cff" .. LT["MobColor"] .. LT["LevelLocale"] .. " " .. LT["UnitLevel"] .. "|cffffffff "
+							end
+
+							-- Show creature type and classification
+							LT["CreatureType"] = UnitCreatureType(LT["Unit"])
+							if (LT["CreatureType"]) and not (LT["CreatureType"] == "Not specified") then
+								LT["InfoText"] = LT["InfoText"] .. "|cffffffff" .. LT["CreatureType"] .. "|cffffffff "
+							end
+
 						end
 
 						-- Rare, elite and boss mobs
@@ -10654,7 +10926,7 @@
 			maintitle:ClearAllPoints()
 			maintitle:SetPoint("TOP", 0, -72)
 
-			local expTitle = LeaPlusLC:MakeTx(interPanel, "Burning Crusade Classic", 0, 0)
+			local expTitle = LeaPlusLC:MakeTx(interPanel, "Wrath of the Lich King Classic", 0, 0)
 			expTitle:SetFont(expTitle:GetFont(), 32)
 			expTitle:ClearAllPoints()
 			expTitle:SetPoint("TOP", 0, -152)
@@ -11820,6 +12092,7 @@
 				LeaPlusLC:LoadVarChk("NoDuelRequests", "Off")				-- Block duels
 				LeaPlusLC:LoadVarChk("NoPartyInvites", "Off")				-- Block party invites
 				LeaPlusLC:LoadVarChk("NoFriendRequests", "Off")				-- Block friend requests
+				LeaPlusLC:LoadVarChk("NoSharedQuests", "Off")				-- Block shared quests
 
 				LeaPlusLC:LoadVarChk("AcceptPartyFriends", "Off")			-- Party from friends
 				LeaPlusLC:LoadVarChk("InviteFromWhisper", "Off")			-- Invite from whispers
@@ -11847,6 +12120,7 @@
 				LeaPlusLC:LoadVarChk("BlockSpellLinks", "Off")				-- Block spell links
 				LeaPlusLC:LoadVarChk("BlockDrunkenSpam", "Off")				-- Block drunken spam
 				LeaPlusLC:LoadVarChk("BlockDuelSpam", "Off")				-- Block duel spam
+				LeaPlusLC:LoadVarChk("RestoreChatMessages", "Off")			-- Restore chat messages
 
 				-- Text
 				LeaPlusLC:LoadVarChk("HideErrorMessages", "Off")			-- Hide error messages
@@ -11888,6 +12162,7 @@
 				LeaPlusLC:LoadVarChk("TipShowOtherRank", "Off")				-- Show rank for other guilds
 				LeaPlusLC:LoadVarChk("TipShowTarget", "On")					-- Show target
 				LeaPlusLC:LoadVarChk("TipHideInCombat", "Off")				-- Hide tooltips during combat
+				LeaPlusLC:LoadVarChk("TipHideShiftOverride", "On")			-- Hide tooltips shift override
 				LeaPlusLC:LoadVarChk("TipNoHealthBar", "Off")				-- Hide health bar
 				LeaPlusLC:LoadVarNum("LeaPlusTipSize", 1.00, 0.50, 2.00)	-- Tooltip scale slider
 				LeaPlusLC:LoadVarNum("TipOffsetX", -13, -5000, 5000)		-- Tooltip X offset
@@ -12061,6 +12336,7 @@
 							LockOption("UseArrowKeysInChat", "Chat") -- Use arrow keys in chat
 							LockOption("NoChatFade", "Chat") -- Disable chat fade
 							LockOption("MaxChatHstory", "Chat") -- Increase chat history
+							LockOption("RestoreChatMessages", "Chat") -- Restore chat messages
 						end
 
 						-- Minimap
@@ -12183,6 +12459,7 @@
 			LeaPlusDB["NoDuelRequests"] 		= LeaPlusLC["NoDuelRequests"]
 			LeaPlusDB["NoPartyInvites"]			= LeaPlusLC["NoPartyInvites"]
 			LeaPlusDB["NoFriendRequests"]		= LeaPlusLC["NoFriendRequests"]
+			LeaPlusDB["NoSharedQuests"]			= LeaPlusLC["NoSharedQuests"]
 
 			LeaPlusDB["AcceptPartyFriends"]		= LeaPlusLC["AcceptPartyFriends"]
 			LeaPlusDB["InviteFromWhisper"]		= LeaPlusLC["InviteFromWhisper"]
@@ -12210,6 +12487,7 @@
 			LeaPlusDB["BlockSpellLinks"]		= LeaPlusLC["BlockSpellLinks"]
 			LeaPlusDB["BlockDrunkenSpam"]		= LeaPlusLC["BlockDrunkenSpam"]
 			LeaPlusDB["BlockDuelSpam"]			= LeaPlusLC["BlockDuelSpam"]
+			LeaPlusDB["RestoreChatMessages"]	= LeaPlusLC["RestoreChatMessages"]
 
 			-- Text
 			LeaPlusDB["HideErrorMessages"]		= LeaPlusLC["HideErrorMessages"]
@@ -12252,6 +12530,7 @@
 			LeaPlusDB["TipShowOtherRank"]		= LeaPlusLC["TipShowOtherRank"]
 			LeaPlusDB["TipShowTarget"]			= LeaPlusLC["TipShowTarget"]
 			LeaPlusDB["TipHideInCombat"]		= LeaPlusLC["TipHideInCombat"]
+			LeaPlusDB["TipHideShiftOverride"]	= LeaPlusLC["TipHideShiftOverride"]
 			LeaPlusDB["TipNoHealthBar"]			= LeaPlusLC["TipNoHealthBar"]
 			LeaPlusDB["LeaPlusTipSize"]			= LeaPlusLC["LeaPlusTipSize"]
 			LeaPlusDB["TipOffsetX"]				= LeaPlusLC["TipOffsetX"]
@@ -13517,32 +13796,6 @@
 					LeaPlusLC.MarkerFrame.Toggle = false
 				end
 				return
-			elseif str == "af" then
-				-- Automatically follow player target using ticker
-				if LeaPlusLC.followTick then
-					-- Existing ticker is active so cancel it
-					LeaPlusLC.followTick:Cancel()
-					LeaPlusLC.followTick = nil
-					FollowUnit("player")
-					LeaPlusLC:Print("AutoFollow disabled.")
-				else
-					-- No ticker is active so create one
-					local targetName, targetRealm = UnitName("target")
-					if not targetName or not UnitIsPlayer("target") or UnitIsUnit("player", "target") then
-						LeaPlusLC:Print("Invalid target.")
-						return
-					end
-					if targetRealm then targetName = targetName .. "-" .. targetRealm end
-					if LeaPlusLC.followTick then
-						LeaPlusLC.followTick:Cancel()
-					end
-					FollowUnit(targetName, true)
-					LeaPlusLC.followTick = C_Timer.NewTicker(0.5, function()
-						FollowUnit(targetName, true)
-					end)
-					LeaPlusLC:Print(L["AutoFollow"] .. ": |cffffffff" .. targetName .. "|r.")
-				end
-				return
 			elseif str == "pos" then
 				-- Map POI code builder
 				local mapID = C_Map.GetBestMapForUnit("player") or nil
@@ -14304,6 +14557,8 @@
 				LeaPlusDB["NoDuelRequests"] = "On"				-- Block duels
 				LeaPlusDB["NoPartyInvites"] = "Off"				-- Block party invites
 				LeaPlusDB["NoFriendRequests"] = "Off"			-- Block friend requests
+				LeaPlusDB["NoSharedQuests"] = "Off"				-- Block shared quests
+
 				LeaPlusDB["AcceptPartyFriends"] = "On"			-- Party from friends
 				LeaPlusDB["InviteFromWhisper"] = "On"			-- Invite from whispers
 				LeaPlusDB["InviteFriendsOnly"] = "On"			-- Restrict invites to friends
@@ -14329,6 +14584,7 @@
 				LeaPlusDB["BlockSpellLinks"] = "On"				-- Block spell links
 				LeaPlusDB["BlockDrunkenSpam"] = "On"			-- Block drunken spam
 				LeaPlusDB["BlockDuelSpam"] = "On"				-- Block duel spam
+				LeaPlusDB["RestoreChatMessages"] = "On"			-- Restore chat messages
 
 				-- Text
 				LeaPlusDB["HideErrorMessages"] = "On"			-- Hide error messages
@@ -14672,7 +14928,7 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Character"					, 	146, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateQuests"			,	"Automate quests"				,	146, -92, 	false,	"If checked, quests will be selected, accepted and turned-in automatically.|n|nQuests which have a gold requirement will not be turned-in automatically.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateGossip"			,	"Automate gossip"				,	146, -112, 	false,	"If checked, you can hold down the alt key while opening a gossip window to automatically select a single gossip item.|n|nIf the gossip item type is banker, taxi, trainer, vendor or battlemaster, gossip will be skipped without needing to hold the alt key.  You can hold the shift key down to prevent this.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateGossip"			,	"Automate gossip"				,	146, -112, 	false,	"If checked, you can hold down the alt key while opening a gossip window to automatically select a single gossip item.|n|nIf the gossip item type is banker, taxi, trainer, vendor, battlemaster or stable master, gossip will be skipped without needing to hold the alt key.  You can hold the shift key down to prevent this.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptSummon"			,	"Accept summon"					, 	146, -132, 	false,	"If checked, summon requests will be accepted automatically unless you are in combat.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptRes"				,	"Accept resurrection"			, 	146, -152, 	false,	"If checked, resurrection requests will be accepted automatically.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoReleasePvP"			,	"Release in PvP"				, 	146, -172, 	false,	"If checked, you will release automatically after you die in a battleground.|n|nYou will not release automatically if you have the ability to self-resurrect.")
@@ -14697,6 +14953,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoDuelRequests"			, 	"Block duels"					,	146, -92, 	false,	"If checked, duel requests will be blocked unless the player requesting the duel is a friend.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoPartyInvites"			, 	"Block party invites"			, 	146, -112, 	false,	"If checked, party invitations will be blocked unless the player inviting you is a friend.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoFriendRequests"			, 	"Block friend requests"			, 	146, -132, 	false,	"If checked, BattleTag and Real ID friend requests will be automatically declined.|n|nEnabling this option will automatically decline any pending requests.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoSharedQuests"			, 	"Block shared quests"			, 	146, -152, 	false,	"If checked, shared quests will be declined unless the player sharing the quest is a friend.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AcceptPartyFriends"		, 	"Party from friends"			, 	340, -92, 	false,	"If checked, party invitations from friends will be automatically accepted unless you are queued for a battleground.")
@@ -14735,6 +14992,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RecentChatWindow"			,	"Recent chat window"			, 	340, -192, 	true,	"If checked, you can hold down the control key and click a chat tab to view recent chat in a copy-friendly window.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -212, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).|n|nEnabling this option may prevent some chat text from showing during login.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FilterChatMessages"		, 	"Filter chat messages"			,	340, -232, 	true,	"If checked, you can block spell links, drunken spam and duel spam.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RestoreChatMessages"		, 	"Restore chat messages"			,	340, -252, 	true,	"If checked, recent chat will be restored when you reload your interface.")
 
 	LeaPlusLC:CfgBtn("FilterChatMessagesBtn", LeaPlusCB["FilterChatMessages"])
 

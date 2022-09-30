@@ -1,3 +1,30 @@
+3.0.11 - 28th September 2022
+- Maintenance update.
+
+3.0.08 - 21st September 2022
+- Updated dungeon and raid icon meeting stone requirements for Blackrock Mountain, Karazhan, Zul'Gurub, Zul'Aman, Onyxia's Lair, Caverns of Time and Ahn'Qiraj.
+- Added zone levels for Azuremyst Isle, Bloodmyst Isle, Eversong Woods, Ghostlands and Isle of Quel'Danas.
+- File structure updates.
+
+3.0.07 - 14th September 2022
+- Locale updates.
+
+3.0.06 - 7th September 2022
+- Updated icon for Dire Maul East (side entrance).
+
+3.0.05 - 1st September 2022
+- Added points of interest.
+
+3.0.04 - 31st August 2022
+- File layout fix and Eastern Plaguelands fix #2.
+
+3.0.02 - 31st August 2022
+- Fixed an issue with Eastern Plaguelands explored map showing unexplored areas.
+
+3.0.01 - 31st August 2022
+- Added some points of interest icons.
+- Fixed an issue which caused a texture to be shown behind the map if the map border was enabled and map opacity was not 100%.
+
 3.0.00 - 29th August 2022
 - Welcome to Wrath of the Lich King!
 - Removed BCC transitional code.

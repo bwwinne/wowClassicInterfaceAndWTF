@@ -1,10 +1,9 @@
 # Auctionator
 
-## [9.2.31](https://github.com/Auctionator/Auctionator/tree/9.2.31) (2022-08-31)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/9.2.30...9.2.31) 
+## [9.2.40](https://github.com/Auctionator/Auctionator/tree/9.2.40) (2022-09-27)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/9.2.39...9.2.40) 
 
-- Wrath: Selling: Add Glyphs category for bag view  
-- Update issue template  
-- Update issue templates  
-- [Fixes #1185] Safety feature for undercutting  
-- Fix infinite loading in Cancelling tab when no auctions posted  
+- Classic: Add prospecting values for Cobalt, Saronite and Titanium  
+- Update TaintLess patch (version 22-09-15)  
+- Classic: Buying: Code cleanup  
+- Classic: Consistent folder names for ShoppingLists/Shopping  

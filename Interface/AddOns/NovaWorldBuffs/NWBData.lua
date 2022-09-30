@@ -123,10 +123,11 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 		--data = args[2]; --Data (everything after version arg).
 		--remoteVersion = "0";
 	--end
-	if (tonumber(remoteVersion) < 1.83) then
-		data = args[3];
+	if (not remoteVersion or not tonumber(remoteVersion) or tonumber(remoteVersion) < 1.83) then
+		--data = args[3];
 		--NWB:extractSettings(data, sender, distribution);
-		--return;
+		--Just ignore versions this old now.
+		return;
 	end
 	NWB.hasAddon[sender] = (remoteVersion or "0");
 	--Trying to fix double guild msg bug, extract settings from data first even if the rest fails for some reason.
@@ -181,7 +182,7 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 			NWB:doNpcWalkingMsg(type, layer, sender);
 		end
 	end
-	if (tonumber(remoteVersion) < 2.28) then
+	if (tonumber(remoteVersion) < 2.35) then
 		if (cmd == "requestData" and distribution == "GUILD") then
 			if (not NWB:getGuildDataStatus()) then
 				NWB:sendSettings("GUILD");
@@ -532,7 +533,7 @@ function NWB:requestData(distribution, target, prio)
 	data = NWB.serializer:Serialize(data);
 	NWB.lastDataSent = GetServerTime();
 	if (NWB:isClassicCheck()) then
-		NWB:sendComm(distribution, "requestData " .. version .. " " .. data, target, prio);
+		NWB:sendComm(distribution, "requestData " .. version .. " " .. self.k() .. " " .. data, target, prio);
 	else
 		NWB:requestSettings(distribution, target, prio);
 	end
@@ -621,7 +622,7 @@ function NWB:createData(distribution, noLogs)
 		data.terokFaction = NWB.data.terokFaction;
 	end
 	if (NWB.isWrath and NWB.data.wintergrasp and tonumber(NWB.data.wintergrasp)
-			and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 10860) then
+			and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 86400) then
 		data.wintergrasp = NWB.data.wintergrasp;
 		data.wintergraspTime = NWB.data.wintergraspTime;
 		--data.wintergraspFaction = NWB.data.wintergraspFaction;
@@ -942,7 +943,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 	end
 	if (not type or type == "wintergrasp") then
 		if (NWB.isWrath and NWB.data.wintergrasp and tonumber(NWB.data.wintergrasp)
-				and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 10860) then
+				and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 86400) then
 			data.wintergrasp = NWB.data.wintergrasp;
 			data.wintergraspTime = NWB.data.wintergraspTime;
 			data.wintergraspFaction = NWB.data.wintergraspFaction;
@@ -1207,13 +1208,17 @@ function NWB:extractSettings(dataReceived, sender, distribution)
 	end
 	data = NWB:convertKeys(data, nil, distribution);
 	local nameOnly, realm = strsplit("-", sender, 2);
-	for k, v in pairs(data) do
-		if (type(v) == "table" and string.match(k, nameOnly) and string.match(k, "%-") and next(v)) then
-			--NWB:debug("Extracted settings from:", sender);
-			NWB.data[k] = v;
-			--Keep a timestamp for data cleanup funcs.
-			NWB.data[k].updated = GetServerTime();
+	if (data) then
+		for k, v in pairs(data) do
+			if (type(v) == "table" and string.match(k, nameOnly) and string.match(k, "%-") and next(v)) then
+				--NWB:debug("Extracted settings from:", sender);
+				NWB.data[k] = v;
+				--Keep a timestamp for data cleanup funcs.
+				NWB.data[k].updated = GetServerTime();
+			end
 		end
+	else
+		NWB:debug("bad convert keys data from", sender);
 	end
 end
 
@@ -1273,7 +1278,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 	end
 	local hasNewData, newFlowerData, hasNewTerok;
 	--Insert our layered data here.
-	if (NWB.isLayered and data.layers and self.j(elapsed) and (NWB.isClassic or distribution == "GUILD" or time > 50)) then
+	if (NWB.isLayered and data.layers and self.j(elapsed) and (NWB.isClassic or distribution == "GUILD" or time > 5)) then
 		--There's a lot of ugly shit in this function trying to quick fix timer bugs for this layered stuff...
 		for k, _ in pairs(data.layers) do
 			if (type(k) ~= "number") then
@@ -1376,7 +1381,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 								if ((type(k) == "string" and (string.match(k, "flower") and NWB.db.global.syncFlowersAll)
 										or (not NWB.db.global.receiveGuildDataOnly)
 										or (NWB.db.global.receiveGuildDataOnly and distribution == "GUILD"))
-										and (NWB.isClassic or distribution == "GUILD" or time > 50)) then
+										and (NWB.isClassic or distribution == "GUILD" or time > 5)) then
 									if (NWB.validKeys[k] and tonumber(v)) then
 										--If data is numeric (a timestamp) then check it's newer than our current timer.
 										if (v ~= nil) then
@@ -1512,7 +1517,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 		--bad argument #1 to 'match' (string expected, got table)
 		if (self.j(elapsed) and (type(k) == "string" and (string.match(k, "flower") and NWB.db.global.syncFlowersAll)
 				or (not NWB.db.global.receiveGuildDataOnly)
-				or (NWB.db.global.receiveGuildDataOnly and distribution == "GUILD")) and (NWB.isClassic or time > 50)) then
+				or (NWB.db.global.receiveGuildDataOnly and distribution == "GUILD")) and (NWB.isClassic or time > 5)) then
 			if (NWB.validKeys[k] and tonumber(v)) then
 				--If data is numeric (a timestamp) then check it's newer than our current timer.
 				if (v ~= nil) then
@@ -3716,7 +3721,7 @@ function NWB:updateTerokkarMarkers(type, layer)
 		end
 		local timeString = L["noTimer"];
 		if (NWB.data.layers[layer] and _G[type .. layer .. "NWBTerokkarMap"]) then
-			if (NWB.db.global.showExpiredTimersTerok and time < 1 and time > -3599) then
+			if (NWB.db.global.showExpiredTimersTerok and time < 0 and time > -3599) then
 				time = time * -1;
 				local minutes = string.format("%02.f", math.floor(time / 60));
 			    local seconds = string.format("%02.f", math.floor(time - minutes * 60));
@@ -3760,17 +3765,17 @@ function NWB:updateTerokkarMarkers(type, layer)
 			time = 0;
 		end
 		if (NWB.data["terokTowers"] and _G[type .. "NWBTerokkarMap"]) then
-			if (NWB.db.global.showExpiredTimersTerok and time < 1 and time > -3599) then
+			if (NWB.db.global.showExpiredTimersTerok and time < 0 and time > -3599) then
 				time = time * -1;
 				local minutes = string.format("%02.f", math.floor(time / 60));
 			    local seconds = string.format("%02.f", math.floor(time - minutes * 60));
 				timeString = "|Cffff2500-" .. minutes .. ":" .. seconds .. " (expired)|r";
-				if (NWB.data.layers[layer]["terokFaction"] == 2) then
-		    		_G[type .. layer .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\alliancetower.blp");
-		    	elseif (NWB.data.layers[layer]["terokFaction"] == 3) then
-		    		_G[type .. layer .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\hordetower.blp");
+				if (NWB.data[layer]["terokFaction"] == 2) then
+		    		_G[type .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\alliancetower.blp");
+		    	elseif (NWB.data[layer]["terokFaction"] == 3) then
+		    		_G[type .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\hordetower.blp");
 		    	else
-		    		_G[type .. layer .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\neutraltower.blp");
+		    		_G[type .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\neutraltower.blp");
 		    	end
 			elseif (time > 0) then
 				local endTime = NWB:getTerokEndTime(NWB.data.terokTowers, NWB.data.terokTowersTime);
@@ -3809,7 +3814,7 @@ function NWB:updateWintergraspMarkers(type, layer)
 	end
 	_G[type .. "NWBTerokkarMap"].fsTitle:SetText("|cFFFFFF00Wintergrasp");
 	if (NWB.data.wintergrasp and _G[type .. "NWBTerokkarMap"]) then
-		if (NWB.db.global.showExpiredTimersTerok and time < 1 and time > -3599) then
+		if (NWB.db.global.showExpiredTimersTerok and time < 0 and time > -3599) then
 			time = time * -1;
 			local minutes = string.format("%02.f", math.floor(time / 60));
 		    local seconds = string.format("%02.f", math.floor(time - minutes * 60));
@@ -3896,7 +3901,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.timerFrame:SetWidth(54);
 			obj.timerFrame:SetHeight(24);
 			obj.lastUpdate = 0;
-			if (NWB.isTBC) then
+			if (NWB.isTBC or NWB.isWrathPrepatch) then
 				obj.resetType = L["Terokkar Towers"];
 				obj:SetScript("OnUpdate", function(self)
 					--Update timer when map is open.
@@ -4024,7 +4029,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.timerFrame:SetWidth(54);
 			obj.timerFrame:SetHeight(24);
 			obj.lastUpdate = 0;
-			if (NWB.isTBC) then
+			if (NWB.isTBC or NWB.isWrathPrepatch) then
 				obj.resetType = L["Terokkar Towers"];
 				obj:SetScript("OnUpdate", function(self)
 					--Update timer when map is open.
@@ -4346,6 +4351,70 @@ if (NWB.isWrath and not NWB.isWrathPrepatch) then
 			desc = "Within the Halls of Lightning, Loken is poised to put an end to our world. Need I say more.",
 		},
 	};
+	NWB.pvpDailies = {
+		--Horde.
+		[11342] = {
+			id = 1,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[11339] = {
+			id = 2,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[11340] = {
+			id = 3,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[11341] = {
+			id = 4,
+			name = "Call to Arms: Eye of the Storm",
+			desc = "Win an Eye of the Storm battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[13407] = {
+			id = 9,
+			name = "Call to Arms: Strand of the Ancients",
+			desc = "Win a Strand of the Ancients battleground match and return to an Horde Warbringer at any Horde capital city.",
+		},
+		[14164] = {
+			id = 10,
+			name = "Call to Arms: Isle of Conquest",
+			desc = "Win an Isle of Conquest battleground match and return to an Horde Warbringer at any Horde capital city.",
+		},
+		--Alliance.
+		[11338] = {
+			id = 5,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[11335] = {
+			id = 6,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[11336] = {
+			id = 7,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[11337] = {
+			id = 8,
+			name = "Call to Arms: Eye of the Storm",
+			desc = "Win an Eye of the Storm battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[13405] = {
+			id = 11,
+			name = "Call to Arms: Strand of the Ancients",
+			desc = "Win a Strand of the Ancients battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[14163] = {
+			id = 12,
+			name = "Call to Arms: Isle of Conquest",
+			desc = "Win an Isle of Conquest battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+	};
 elseif (NWB.isTBC or NWB.isWrathPrepatch) then
 	NWB.dungeonDailies = {
 		[11389] = {
@@ -4543,73 +4612,87 @@ elseif (NWB.isTBC or NWB.isWrathPrepatch) then
 					.. "Shattrath's Lower City to collect the reward.",
 		},
 	};
+	NWB.pvpDailies = {
+		--Horde.
+		[14183] = {
+			id = 1,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[14181] = {
+			id = 2,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[13428] = {
+			id = 3,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[14182] = {
+			id = 4,
+			name = "Call to Arms: Eye of the Storm",
+			desc = "Win an Eye of the Storm battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		--Alliance.
+		[14180] = {
+			id = 5,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[14178] = {
+			id = 6,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[13427] = {
+			id = 7,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[14179] = {
+			id = 8,
+			name = "Call to Arms: Eye of the Storm",
+			desc = "Win an Eye of the Storm battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+	};
+else
+	NWB.pvpDailies = {
+		--Horde.
+		[14183] = {
+			id = 1,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[14181] = {
+			id = 2,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[13428] = {
+			id = 3,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		--Alliance.
+		[14180] = {
+			id = 5,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[14178] = {
+			id = 6,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[13427] = {
+			id = 7,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+	};
 end
 
-NWB.pvpDailies = {
-	--Horde.
-	[11342] = {
-		id = 1,
-		name = "Call to Arms: Warsong Gulch",
-		desc = "Win a Warsong Gulch battleground match and return to a Horde Warbringer at any Horde capital city.",
-	},
-	[11339] = {
-		id = 2,
-		name = "Call to Arms: Arathi Basin",
-		desc = "Win an Arathi Basin battleground match and return to a Horde Warbringer at any Horde capital city.",
-	},
-	[11340] = {
-		id = 3,
-		name = "Call to Arms: Alterac Valley",
-		desc = "Win an Alterac Valley battleground match and return to a Horde Warbringer at any Horde capital city.",
-	},
-	[11341] = {
-		id = 4,
-		name = "Call to Arms: Eye of the Storm",
-		desc = "Win an Eye of the Storm battleground match and return to a Horde Warbringer at any Horde capital city.",
-	},
-	[13407] = {
-		id = 9,
-		name = "Call to Arms: Strand of the Ancients",
-		desc = "Win a Strand of the Ancients battleground match and return to an Horde Warbringer at any Horde capital city.",
-	},
-	[14164] = {
-		id = 10,
-		name = "Call to Arms: Isle of Conquest",
-		desc = "Win an Isle of Conquest battleground match and return to an Horde Warbringer at any Horde capital city.",
-	},
-	--Alliance.
-	[11338] = {
-		id = 5,
-		name = "Call to Arms: Warsong Gulch",
-		desc = "Win a Warsong Gulch battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
-	},
-	[11335] = {
-		id = 6,
-		name = "Call to Arms: Arathi Basin",
-		desc = "Win an Arathi Basin battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
-	},
-	[11336] = {
-		id = 7,
-		name = "Call to Arms: Alterac Valley",
-		desc = "Win an Alterac Valley battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
-	},
-	[11337] = {
-		id = 8,
-		name = "Call to Arms: Eye of the Storm",
-		desc = "Win an Eye of the Storm battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
-	},
-	[13405] = {
-		id = 11,
-		name = "Call to Arms: Strand of the Ancients",
-		desc = "Win a Strand of the Ancients battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
-	},
-	[14163] = {
-		id = 12,
-		name = "Call to Arms: Isle of Conquest",
-		desc = "Win an Isle of Conquest battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
-	},
-};
-	
 --Update data with localized names.
 function NWB:populateDailyData()
 	for k, v in pairs(NWB.heroicDailies) do
@@ -4758,7 +4841,7 @@ local lastGossipOpen = 0;
 local lastGossipClosed = 0;
 local lastNpcID = 0;
 f:SetScript('OnEvent', function(self, event, ...)
-	if (NWB.isClassic) then
+	if (NWB.isClassic or not NWB.heroicDailies) then
 		return;
 	end
 	if (event == "GOSSIP_SHOW") then

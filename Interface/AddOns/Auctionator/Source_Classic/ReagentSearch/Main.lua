@@ -2,15 +2,27 @@ function Auctionator.ReagentSearch.DoTradeSkillReagentsSearch()
   local recipeIndex = GetTradeSkillSelectionIndex()
   local recipeInfo =  { GetTradeSkillInfo(recipeIndex) }
 
-  local items = {recipeInfo[1]}
+  local items = {}
+
+  local linkName = Auctionator.Utilities.GetNameFromLink(GetTradeSkillItemLink(recipeIndex) or "")
+
+  if linkName and linkName ~= "" then
+    table.insert(items, linkName)
+  else
+    table.insert(items, recipeInfo[1])
+  end
 
   for reagentIndex = 1, GetTradeSkillNumReagents(recipeIndex) do
     local reagentName = GetTradeSkillReagentInfo(recipeIndex, reagentIndex)
     table.insert(items, reagentName)
   end
 
-  -- Exact search to avoid spurious results, say with "Runecloth"
-  Auctionator.API.v1.MultiSearchExact(AUCTIONATOR_L_REAGENT_SEARCH, items)
+  if recipeInfo[5] == ENSCRIBE then
+    Auctionator.API.v1.MultiSearch(AUCTIONATOR_L_REAGENT_SEARCH, items)
+  else
+    -- Exact search to avoid spurious results, say with "Runecloth"
+    Auctionator.API.v1.MultiSearchExact(AUCTIONATOR_L_REAGENT_SEARCH, items)
+  end
 end
 
 function Auctionator.ReagentSearch.GetSkillReagentsTotal()
@@ -44,6 +56,10 @@ function Auctionator.ReagentSearch.GetAHProfit()
   local recipeIndex = GetTradeSkillSelectionIndex()
   local recipeLink =  GetTradeSkillItemLink(recipeIndex)
   local count = GetTradeSkillNumMade(recipeIndex)
+
+  if recipeLink == nil or recipeLink:match("enchant:") then
+    return nil
+  end
 
   local currentAH = Auctionator.API.v1.GetAuctionPriceByItemLink(AUCTIONATOR_L_REAGENT_SEARCH, recipeLink)
   if currentAH == nil then

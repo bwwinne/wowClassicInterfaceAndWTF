@@ -55,6 +55,9 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["CONFIG_ENCHANT_GENERIC_TOOLTIP"] = "Show enchant tooltips"
   L["ENCHANT_TOOLTIP_TOOLTIP_HEADER"] = "Enchant Tooltip Information"
   L["ENCHANT_TOOLTIP_TOOLTIP_TEXT"] = "Show enchant information in tooltip on mouseover."
+  L["CONFIG_PROSPECT_TOOLTIP"] = "Show prospect value for ore from jewelcrafting in tooltips"
+  L["PROSPECT_TOOLTIP_TOOLTIP_HEADER"] = "Prospect Tooltip Information"
+  L["PROSPECT_TOOLTIP_TOOLTIP_TEXT"] = "Show jewelcrafting prospecting estimated value in tooltip on mouseover."
   L["CONFIG_STACK_TOOLTIP"] = "Show stack price when holding shift."
   L["STACK_TOOLTIP_TOOLTIP_HEADER"] = "Stack Prices"
   L["STACK_TOOLTIP_TOOLTIP_TEXT"] = "When selected, the shift key must be held to see stack prices. When not selected, stack prices show by default."
@@ -115,6 +118,7 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["TRANSLATORS_ITALIAN"] = "Italian"
   L["TRANSLATORS_KOREAN"] = "Korean"
   L["TRANSLATORS_RUSSIAN"] = "Russian"
+  L["TRANSLATORS_TURKISH_INFO"] = "Turkish (available separately)"
 
   L["STACK_AUCTION_INFO"] = "%s for %s (at %s each)"
   L["BIDDING_AUCTION_INFO"] = "%s bidding at %s"
@@ -143,6 +147,7 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["UNKNOWN"] = "unknown"
   L["VENDOR"] = "Vendor"
   L["DISENCHANT"] = "Disenchant"
+  L["PROSPECT"] = "Prospect"
   L["TOTAL_ITEMS_COLORED"] = "Total |cFFAAAAFF %s items|r"
 
   L["DELETE_LIST_NONE_SELECTED"] = "You must select a list to delete."
@@ -197,6 +202,7 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["SELLERS_COLUMN"] = "Seller(s)"
   L["SELLERS_OVERFLOW_TEXT"] = "%s, and %s more"
   L["OWNED_COLUMN"] = "Owned?"
+  L["IS_TOP_COLUMN"] = "Top?"
   L["YOU_COLUMN"] = "You?"
 
   L["FULL_SCAN_BUTTON"] = "Full Scan"
@@ -432,6 +438,7 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["CONFIRM_POST_LOW_PRICE"] = "The price of %s looks a bit low. Are you sure you want to post at that price?"
   L["CONFIRM_POST_BELOW_VENDOR"] = "You can make more gold selling this to a vendor. Are you sure you want to post at that price?"
   L["CONFIRM_POST_PRICE_DROP"] = "The unit price of %s is a large price drop. Are you sure you want to post at that price?"
+  L["POST_ATTEMPT_FAILED"] = "Your last post attempt didn't work. Try again."
 
   L["DEFAULT_TAB"] = "Default Tab"
   L["DEFAULT_TAB_TEXT"] = "shows as the default tab"
@@ -458,6 +465,9 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["CONFIG_SELLING_CONFIRM_LOW_PRICE"] = "Confirm posting items at an unusually low price"
   L["CONFIG_SELLING_CONFIRM_LOW_PRICE_TOOLTIP_HEADER"] = "Confirm Posting Low Price"
   L["CONFIG_SELLING_CONFIRM_LOW_PRICE_TOOLTIP_TEXT"] = "Lets you remove the confirmation dialog that appears when posting an item at an unusually low price."
+  L["CONFIG_SELLING_SPLIT_PANELS"] = "Show split panel view between current prices and historical prices"
+  L["CONFIG_SELLING_SPLIT_PANELS_TOOLTIP_HEADER"] = "Split Panels View"
+  L["CONFIG_SELLING_SPLIT_PANELS_TOOLTIP_TEXT"] = "Normally the historical prices are on a tab inside the Selling tab, instead this makes the current prices always visible, but the historical prices show as a panel below them."
   L["CONFIG_BAG_COLLAPSED"] = "Bag sections start collapsed (reload required)"
   L["CONFIG_BAG_COLLAPSED_TOOLTIP_HEADER"] = "Bag collapsing on start"
   L["CONFIG_BAG_COLLAPSED_TOOLTIP_TEXT"] = "If this option is on the bag sections will start closed, instead of open."
@@ -544,6 +554,7 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["ERROR_REOPEN_AUCTION_HOUSE"] = "Unable to complete action, please close and reopen the Auction House."
   L["X_STACK_OF_X"] = "%s stack of %s"
   L["X_STACKS_OF_X"] = "%s stacks of %s"
+  L["BID_ONLY_AVAILABLE"] = "bid only available"
   L["BUYING_X_FOR_X"] = "Buying %s for %s"
   L["BRACKETS_X_EACH"] = "(%s each)"
   L["ALREADY_PURCHASED_X"] = "Already purchased %s"
@@ -561,6 +572,9 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["CONFIG_SHOPPING_ALWAYS_LOAD_MORE"] = "Always load all available results."
   L["CONFIG_SHOPPING_ALWAYS_LOAD_MORE_TOOLTIP_HEADER"] = "Always load more"
   L["CONFIG_SHOPPING_ALWAYS_LOAD_MORE_TOOLTIP_TEXT"] = "While still getting an accurate minimum price some pages are skipped to speed up the shopping search. This prevents any pages from being skipped and ensures all possible results display."
+  L["CONFIG_SELLING_GREY_POST_BUTTON"] = "Grey (disable) the post button when a post may fail"
+  L["CONFIG_SELLING_GREY_POST_BUTTON_TOOLTIP_HEADER"] = "Grey post button"
+  L["CONFIG_SELLING_GREY_POST_BUTTON_TOOLTIP_TEXT"] = "When a post may fail the post button will be greyed out (disabled). Turn this option off to avoid waiting for the button to enable so you can attempt to post sooner."
 
   return L
 end

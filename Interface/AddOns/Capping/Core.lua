@@ -407,11 +407,11 @@ do
 			end
 		end
 
-		local GetIconAndTextWidgetVisualizationInfo = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo
+		local GetDoubleStatusBarWidgetVisualizationInfo = C_UIWidgetManager.GetDoubleStatusBarWidgetVisualizationInfo
 		local ceil, floor = math.ceil, math.floor
 		local function ScorePredictor(widgetInfo)
-			if widgetInfo and widgetInfo.widgetID == 1893 then
-				local dataTbl = GetIconAndTextWidgetVisualizationInfo(widgetInfo.widgetID)
+			if widgetInfo and (widgetInfo.widgetID == 1671 or widgetInfo.widgetID == 2074) then -- The 1671 widget is used for all BGs with score predictors, but DG uses 2074
+				local dataTbl = GetDoubleStatusBarWidgetVisualizationInfo(widgetInfo.widgetID)
 				if not dataTbl or not dataTbl.leftBarMax then return end
 				if prevTime == 0 then
 					prevTime = GetTime()
@@ -493,7 +493,7 @@ do
 		--	n:SetPoint("BOTTOM", f, "TOP")
 		--	n:SetText(1)
 		--end
-		--for i = 2, 50 do
+		--for i = 2, 250 do
 		--	local f = CreateFrame("Frame", nil, UIParent)
 		--	f:SetPoint("LEFT", frames[i-1], "RIGHT", 10, 0)
 		--	f:SetSize(24,24)
@@ -513,11 +513,11 @@ do
 		--end
 		local iconDataConflict = {
 			-- Graveyard
-			[3] = "colorAlliance",
-			[13] = "colorHorde",
+			[4] = "colorAlliance",
+			[14] = "colorHorde",
 			-- Tower
-			[8] = "colorAlliance",
-			[11] = "colorHorde",
+			[9] = "colorAlliance",
+			[12] = "colorHorde",
 			-- Mine/Stone
 			[17] = "colorAlliance",
 			[19] = "colorHorde",
@@ -588,11 +588,11 @@ do
 							curMod:StopBar(name)
 							if icon == 136 or icon == 138 then -- Workshop in IoC
 								curMod:StartBar(GetSpellInfo(56661), 181, 252187, icon == 136 and "colorAlliance" or "colorHorde") -- Build Siege Engine, 252187 = ability_vehicle_siegeengineram
-							elseif icon == 1 or icon == 2 then
-								-- Horde mine, Alliance mine
+							elseif icon == 2 or icon == 3 or icon == 151 or icon == 153 or icon == 18 or icon == 20 then
+								-- Horde mine, Alliance mine, Alliance Refinery, Horde Refinery, Alliance Quarry, Horde Quarry
 								local _, _, _, id = UnitPosition("player")
 								if id == 30 or id == 628 or id == 2197 then -- Alterac Valley, IoC, Korrak's Revenge (WoW 15th)
-									local bar = curMod:StartBar(name, 3600, GetIconData(icon), icon == 2 and "colorAlliance" or "colorHorde", true) -- Paused bar for mine status
+									local bar = curMod:StartBar(name, 3600, GetIconData(icon), (icon == 3 or icon == 151 or icon == 18) and "colorAlliance" or "colorHorde", true) -- Paused bar for mine status
 									bar:Pause()
 									bar:SetTimeVisibility(false)
 									bar:Set("capping:customchat", function() end)
@@ -655,11 +655,11 @@ do
 				local atlasName = tbl.atlasName
 				if icon then
 					landmarkCache[tbl.name] = icon
-					if icon == 1 or icon == 2 then
+					if icon == 2 or icon == 3 or icon == 151 or icon == 153 or icon == 18 or icon == 20 then
 						-- Horde mine, Alliance mine, Alliance Refinery, Horde Refinery, Alliance Quarry, Horde Quarry
 						local _, _, _, id = UnitPosition("player")
 						if id == 30 or id == 628 or id == 2197 then -- Alterac Valley, IoC, Korrak's Revenge (WoW 15th)
-							local bar = self:StartBar(tbl.name, 3600, GetIconData(icon), icon == 2 and "colorAlliance" or "colorHorde", true) -- Paused bar for mine status
+							local bar = self:StartBar(tbl.name, 3600, GetIconData(icon), (icon == 3 or icon == 151 or icon == 18) and "colorAlliance" or "colorHorde", true) -- Paused bar for mine status
 							bar:Pause()
 							bar:SetTimeVisibility(false)
 							bar:Set("capping:customchat", function() end)
@@ -759,7 +759,7 @@ function core:ADDON_LOADED(addon)
 
 		frame:ClearAllPoints()
 		frame:SetPoint(db.profile.position[1], UIParent, db.profile.position[2], db.profile.position[3], db.profile.position[4])
-		local bg = frame:CreateTexture(nil, "PARENT")
+		local bg = frame:CreateTexture()
 		bg:SetAllPoints(frame)
 		bg:SetColorTexture(0, 1, 0, 0.3)
 		frame.bg = bg
@@ -788,12 +788,12 @@ core:RegisterEvent("ADDON_LOADED")
 do
 	local loc = GetLocale()
 	local needsLocale = {
-		--deDE = "German",
-		--esES = "Spanish",
-		--esMX = "Spanish MX",
-		--itIT = "Italian",
-		--koKR = "Korean",
-		--zhTW = "zhTW",
+		deDE = "German",
+		esES = "Spanish",
+		esMX = "Spanish MX",
+		itIT = "Italian",
+		koKR = "Korean",
+		zhTW = "zhTW",
 	}
 	if needsLocale[loc] then
 		function core:LOADING_SCREEN_DISABLED()
@@ -827,8 +827,8 @@ do
 end
 
 function core:Test(locale)
-	core:StartBar(locale.queueBars, 100, 136106, "colorQueue") -- Interface/Icons/Spell_nature_timestop
-	core:StartBar(locale.otherBars, 75, 132333, "colorOther") -- Interface/Icons/Ability_warrior_battleshout
+	core:StartBar(locale.queueBars, 100, 236396, "colorQueue") -- Interface/Icons/Achievement_BG_winWSG
+	core:StartBar(locale.otherBars, 75, 1582141, "colorOther") -- Interface/Icons/Achievement_PVP_Legion03
 	core:StartBar(locale.allianceBars, 45, 132486, "colorAlliance") -- Interface/Icons/INV_BannerPVP_02
 	core:StartBar(locale.hordeBars, 25, 132485, "colorHorde") -- Interface/Icons/INV_BannerPVP_01
 end
@@ -844,6 +844,15 @@ do
 	frame:RegisterForDrag("LeftButton")
 	frame:SetClampedToScreen(true)
 	frame:Show()
+	local tooltip = CreateFrame("GameTooltip", "CappingTooltip", UIParent, "GameTooltipTemplate")
+	frame:SetScript("OnEnter", function(f)
+		tooltip:ClearLines()
+		tooltip:SetOwner(f, db.profile.growUp and "ANCHOR_TOP" or "ANCHOR_BOTTOM")
+		tooltip:AddLine(L.anchorTooltip, 0.2, 1, 0.2, 1)
+		tooltip:AddLine(L.anchorTooltipNote, 1, 1, 1, 1)
+		tooltip:Show()
+	end)
+	frame:SetScript("OnLeave", function() tooltip:Hide() end)
 	frame:SetScript("OnDragStart", function(f) f:StartMoving() end)
 	frame:SetScript("OnDragStop", function(f)
 		f:StopMovingOrSizing()

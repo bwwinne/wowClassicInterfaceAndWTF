@@ -2,6 +2,8 @@ if select(2, UnitClass("player")) ~= "SHAMAN" then
     return
 end
 
+local _, TotemTimers = ...
+
 local L = LibStub("AceLocale-3.0"):GetLocale("TotemTimers", true)
 
 local HBD = LibStub("HereBeDragons-2.0")
@@ -56,7 +58,7 @@ end
 
         tt.button.anchorframe = TotemTimersFrame
         tt.button:RegisterForClicks("AnyDown")
-        tt.button:SetAttribute("*type2", "macro")
+        --tt.button:SetAttribute("*type2", "macro")
         tt.button:SetAttribute("*type3", "macro")
         tt.button:SetAttribute("*type1", "spell")
         tt.button.bar:SetStatusBarColor(0.7, 1, 0.7, 0.8)
@@ -78,8 +80,32 @@ end
 
         tt.button.tooltip = TotemTimers.Tooltips.Totem:new(tt.button)
 
-        tt.button:SetAttribute("_onattributechanged", [[ if name == "*spell1" then
+        tt.button:SetAttribute("_onattributechanged", [[ if name == "*spell1" then 
                                                             control:CallMethod("UpdateMiniIconAndProfile")
+															local mspell = self:GetAttribute("mspell")															
+															if mspell then 
+																local mspellDisabled = self:GetAttribute("mspelldisabled"..mspell)
+																if not mspellDisabled then
+																	self:SetAttribute("mspell"..mspell, self:GetAttribute("*spell1"))
+																end
+															end
+                                                         elseif name == "mspell" then
+															local mspell = self:GetAttribute("mspell")
+															if mspell then															
+																self:ChildUpdate("mspell", self:GetAttribute("action"..mspell))
+																self:ChildUpdate("mspelldisabled", self:GetAttribute("mspelldisabled"..mspell))	
+																local spell = self:GetAttribute("mspell"..mspell)
+																if spell then self:SetAttribute("*spell1", spell) end
+															else
+																self:ChildUpdate("mspell", nil)
+															end
+														 elseif name:sub(1,14) == "mspelldisabled" then	
+															local mspell = tonumber(name:sub(15))
+															local disabled = self:GetAttribute(name)
+															local activeMspell = self:GetAttribute("mspell")
+															if mspell == activeMspell then
+																self:ChildUpdate("mspelldisabled", disabled)
+															end
                                                          elseif name == "state-invehicle" then
                                                             if value == "show" and self:GetAttribute("active") then
                                                                 self:Show()
@@ -91,11 +117,17 @@ end
                                                          end]])
         tt.button:WrapScript(tt.button, "OnClick", [[ if button == "Button4" then
                                                           control:ChildUpdate("toggle")
+													  elseif button == "RightButton" and IsControlKeyDown() and not PlayerInCombat() then
+													      local mspell = self:GetAttribute("mspell")
+														  if mspell then
+															  local disabled = not self:GetAttribute("mspelldisabled"..mspell)
+													          self:SetAttribute("mspelldisabled"..mspell, disabled)
+													          self:CallMethod("DisableMultiSpell", mspell, disabled)
+														  end
                                                       end ]])
-        tt.button:SetAttribute("_childupdate-mspell", [[ self:SetAttribute("mspell", tostring(message))
-                                                         self:ChildUpdate("mspell", self:GetAttribute("action"..message))
-                                                         self:SetAttribute("*spell1", self:GetAttribute("mspell"..message) or 0)
-                                                      ]])
+		
+		--declare empty function here for classic and tbc
+		tt.button.DisableMultiSpell = function(self, multispell, disable) end		
 
         tt.Activate = function(self)
             if self.active then return end
@@ -124,34 +156,26 @@ end
                 end
             end
 
-            local lastTotem = activeProfile.LastTotems[self.nr]
+            local lastTotem = TotemTimers.GetBaseSpellID(activeProfile.LastTotems[self.nr])
 
-            -- get rank 1 spell id of totem while spellbook is not loaded
-            -- get name of totem without rank and get spell id from that
-            if not tonumber(lastTotem) then
-                lastTotem = TotemTimers.StripRank(lastTotem)
-            else
-                lastTotem = GetSpellInfo(lastTotem)
-            end
-
-            lastTotem = NameToSpellID[lastTotem]
-
-            if not lastTotem or not AvailableSpells[lastTotem] then
-                --[[when switching specs this part gets executed several times, once for switching and then for each talent (because of events fired)
-                    so totems from talents are sometimes not available at this point.
-                    lasttotem is saved and restored if not nil so that talent totems aren't replaced when switching specs ]]
-                for k, v in pairs(TotemData) do
-                    if AvailableSpells[k] and v.element == self.nr then
-                        self.button:SetAttribute("*spell1", k)
-                        self.button.icon:SetTexture(GetSpellTexture(k))
-                        break
+            if not self.timersRunning[1] then
+                if not lastTotem or not AvailableSpells[lastTotem] then
+                    --[[when switching specs this part gets executed several times, once for switching and then for each talent (because of events fired)
+                        so totems from talents are sometimes not available at this point.
+                        lasttotem is saved and restored if not nil so that talent totems aren't replaced when switching specs ]]
+                    for k, v in pairs(TotemData) do
+                        if AvailableSpells[k] and v.element == self.nr then
+                            self.button:SetAttribute("*spell1", k)
+                            self.button.icon:SetTexture(GetSpellTexture(k))
+                            break
+                        end
                     end
+                    -- restore saved totem if not nil
+                    activeProfile.LastTotems[self.nr] = lastTotem or activeProfile.LastTotems[self.nr]
+                else
+                    self.button:SetAttribute("*spell1", lastTotem)
+                    self.button.icon:SetTexture(GetSpellTexture(lastTotem))
                 end
-                -- restore saved totem if not nil
-                activeProfile.LastTotems[self.nr] = lastTotem or activeProfile.LastTotems[self.nr]
-            else
-                self.button:SetAttribute("*spell1", lastTotem)
-                self.button.icon:SetTexture(GetSpellTexture(TotemTimers.StripRank(lastTotem)))
             end
         end
 
@@ -179,7 +203,6 @@ end
             XiTimers.Update(self, elapsed)
             if self.timers[1] > 0 then
                 self:SetOutOfRange(not TotemTimers.GetPlayerRange(self.button.element))
-                --print(TotemTimers.GetPlayerRange(self.button.element))
                 local count = TotemTimers.GetOutOfRange(self.button.element)
                 if count > 0 then
                     self.button.rangeCount:SetText(count)
@@ -201,10 +224,13 @@ end
         end)
 
         if LE_EXPANSION_LEVEL_CURRENT > LE_EXPANSION_BURNING_CRUSADE then
-            for mspellID,action in pairs(MultiCastActions[e]) do
-                tt.button:SetAttribute("action"..mspellID, action)
-                local _,spell,_ = GetActionInfo(action)
-                tt.button:SetAttribute("mspell"..mspellID,spell)
+
+			tt.button.DisableMultiSpell = function(self, multispell, disable)
+                if not multispell or InCombatLockdown() then return end
+                local action = self:GetAttribute("action"..multispell)
+                SetMultiCastSpell(action, not disable and self:GetAttribute("*spell1") or nil)
+                TotemTimers.ActiveProfile.DisabledMultiSpells[TotemTimers.Specialization..multispell..self.timer.nr] = disable
+                TotemTimers_MultiSpell:UpdateTexture()
             end
         end
 
@@ -217,7 +243,7 @@ end
         local playerRange = frame:CreateTexture(nil, "OVERLAY", nil, 7);
         tt.button.playerRange = playerRange;
         --create player and party range dots
-        playerRange:SetTexture("Interface\\AddOns\\TotemTimers\\dot");
+        playerRange:SetTexture("Interface\\AddOns\\TotemTimers\\textures\\dot");
         playerRange:SetSize(7, 7)
         playerRange:SetPoint("TOPLEFT", tt.button, "TOPLEFT", 1, -1);
         playerRange:SetVertexColor(0.68,0.1,0.12)
@@ -227,7 +253,7 @@ end
 
         for i = 1, 4 do
             local partyRange = tt.button:CreateTexture(nil, "OVERLAY")
-            partyRange:SetTexture("Interface\\AddOns\\TotemTimers\\dot");
+            partyRange:SetTexture("Interface\\AddOns\\TotemTimers\\textures\\dot");
             partyRange:SetSize(7, 7)
             if i == 1 then
                 partyRange:SetPoint("TOPRIGHT", tt.button, "TOPLEFT", 0, 0);
@@ -448,7 +474,8 @@ function TotemTimers.ChangeTotemOrder(self, _, _, totem1)
         return
     end
     --_, totem1 = GetSpellBookItemInfo(totem1, BOOKTYPE_SPELL)
-    local totem2 = self:GetAttribute("spellid")
+    totem1 = TotemTimers.GetBaseSpellID(totem1)
+    local totem2 = TotemTimers.GetBaseSpellID(self:GetAttribute("*spell1"))
     local nr = self:GetParent().element
     if nr and totem1 and totem2 and TotemData[totem1].element == TotemData[totem2].element then
         local Order = TotemTimers.ActiveProfile.TotemOrder[nr]
@@ -488,7 +515,7 @@ function TotemTimers.CreateCastButtons()
             button:SetAttribute("SpellIDs", TotemTimers.NameToSpellID)
 
             button:SetAttribute("_ondragstart", [[if IsShiftKeyDown() and self:GetAttribute("*spell1")~=0 then
-                                                                            return "spell", self:GetAttribute("spellid")
+                                                                            return "spell", self:GetAttribute("*spell1")
                                                                        else control:CallMethod("StartBarDrag") end]])
             button:SetAttribute("_onreceivedrag", [[ if kind == "spell" then
                                                                             control:CallMethod("ChangeTotemOrder", value, ...)
@@ -496,6 +523,7 @@ function TotemTimers.CreateCastButtons()
                                                                        end]])
             if LE_EXPANSION_LEVEL_CURRENT > LE_EXPANSION_BURNING_CRUSADE then
                 button:SetAttribute("_childupdate-mspell", [[ self:SetAttribute("*action*", message) ]])
+                button:SetAttribute("_childupdate-mspelldisabled", [[ if message then self:SetAttribute("*type2", nil) else self:SetAttribute("*type2", "multispell") end]])
                 local multispell = TotemTimers.ActiveProfile.LastMultiCastSpell or SpellIDs.CallOfElements
                 button:SetAttribute("*action*", MultiCastActions[i][multispell])
                 button:SetAttribute("*type2", "multispell")

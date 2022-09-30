@@ -7,8 +7,8 @@ end
 
 local hasPrinted = false
 do
-	local UnitGUID, strsplit, GetNumGossipActiveQuests, SelectGossipActiveQuest = UnitGUID, strsplit, GetNumGossipActiveQuests, SelectGossipActiveQuest
-	local tonumber, SelectGossipOption, GetGossipOptions, GetItemCount, SelectGossipAvailableQuest = tonumber, SelectGossipOption, GetGossipOptions, GetItemCount, SelectGossipAvailableQuest
+	local UnitGUID, strsplit, GetNumGossipActiveQuests, SelectGossipActiveQuest = UnitGUID, strsplit, C_GossipInfo.GetNumActiveQuests, C_GossipInfo.SelectActiveQuest
+	local tonumber, SelectGossipOption, GetGossipOptions, GetItemCount, SelectGossipAvailableQuest = tonumber, C_GossipInfo.SelectOption, C_GossipInfo.GetOptions, GetItemCount, C_GossipInfo.SelectAvailableQuest
 	function mod:GOSSIP_SHOW()
 		local target = UnitGUID("npc")
 		if target then
@@ -16,7 +16,8 @@ do
 			local mobId = tonumber(id)
 			if mobId == 13176 or mobId == 13257 then -- Smith Regzar, Murgot Deepforge
 				-- Open Quest to Smith or Murgot
-				if GetGossipOptions() and strmatch(GetGossipOptions(), L.upgradeToTrigger) then
+				local tbl = GetGossipOptions()
+				if tbl[1] and tbl[1].name and strmatch(tbl[1].name, L.upgradeToTrigger) then
 					SelectGossipOption(1)
 				elseif GetItemCount(17422) >= 20 then -- Armor Scraps 17422
 					SelectGossipAvailableQuest(1)
@@ -82,12 +83,12 @@ local hereFromTheStart, hasData = true, true
 local stopTimer = nil
 local function allow() hereFromTheStart = false end
 local function stop() hereFromTheStart = true hasData = true stopTimer = nil end
---local GetScoreInfo = C_PvP.GetScoreInfo
+local GetScoreInfo = C_PvP.GetScoreInfo
 local SendAddonMessage = C_ChatInfo.SendAddonMessage
 local function AVSyncRequest()
 	for i = 1, 80 do
-		local _, _, _, _, _, _, _, _, _, _, damageDone = GetBattlefieldScore(i)
-		if damageDone and damageDone ~= 0 then
+		local scoreTbl = GetScoreInfo(i)
+		if scoreTbl and scoreTbl.damageDone and scoreTbl.damageDone ~= 0 then
 			hereFromTheStart = true
 			hasData = false
 			mod:Timer(0.5, allow)
@@ -96,6 +97,7 @@ local function AVSyncRequest()
 			return
 		end
 	end
+
 	hereFromTheStart = true
 	hasData = true
 end
@@ -163,13 +165,18 @@ do
 	local RequestBattlefieldScoreData = RequestBattlefieldScoreData
 	function mod:EnterZone()
 		hasPrinted = false
-		self:StartFlagCaptures(245, 1459)
-		self:SetupHealthCheck("11946", L.hordeBoss, "Horde Boss", 134170, "colorAlliance") -- Interface/Icons/Inv_misc_head_orc_01
-		self:SetupHealthCheck("11948", L.allianceBoss, "Alliance Boss", 134159, "colorHorde") -- Interface/Icons/inv_misc_head_dwarf_01
-		self:SetupHealthCheck("11947", L.galvangar, "Galvangar", 134170, "colorAlliance") -- Interface/Icons/Inv_misc_head_orc_01
-		self:SetupHealthCheck("11949", L.balinda, "Balinda", 134167, "colorHorde") -- Interface/Icons/inv_misc_head_human_02
-		self:SetupHealthCheck("13419", L.ivus, "Ivus", 132129, "colorAlliance") -- Interface/Icons/ability_druid_forceofnature
-		self:SetupHealthCheck("13256", L.lokholar, "Lokholar", 135861, "colorHorde") -- Interface/Icons/spell_frost_summonwaterelemental
+		local _, _, _, _, _, _, _, id = GetInstanceInfo()
+		if id == 1537 then
+			self:StartFlagCaptures(242, 1537) -- Korrak's Revenge (WoW 15th)
+		else
+			self:StartFlagCaptures(242, 91)
+		end
+		self:SetupHealthCheck("11946", L.hordeBoss, "Horde Boss", 236452, "colorAlliance") -- Interface/Icons/Achievement_Character_Orc_Male
+		self:SetupHealthCheck("11948", L.allianceBoss, "Alliance Boss", 236444, "colorHorde") -- Interface/Icons/Achievement_Character_Dwarf_Male
+		self:SetupHealthCheck("11947", L.galvangar, "Galvangar", 236452, "colorAlliance") -- Interface/Icons/Achievement_Character_Orc_Male
+		self:SetupHealthCheck("11949", L.balinda, "Balinda", 236447, "colorHorde") -- Interface/Icons/Achievement_Character_Human_Female
+		self:SetupHealthCheck("13419", L.ivus, "Ivus", 874581, "colorAlliance") -- Interface/Icons/inv_pet_ancientprotector_winter
+		self:SetupHealthCheck("13256", L.lokholar, "Lokholar", 1373132, "colorHorde") -- Interface/Icons/Inv_infernalmounice.blp
 		self:RegisterEvent("CHAT_MSG_ADDON")
 		self:RegisterEvent("GOSSIP_SHOW")
 		self:RegisterEvent("QUEST_PROGRESS")

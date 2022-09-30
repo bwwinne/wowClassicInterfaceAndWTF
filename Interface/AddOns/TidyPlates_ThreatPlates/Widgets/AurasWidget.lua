@@ -175,6 +175,7 @@ local CROWD_CONTROL_SPELLS_RETAIL = {
   [3355] = LOC_INCAPACITATE,    -- Freezing Trap (Blizzard)
   [24394] = LOC_STUN,           -- Intimidation (Blizzard)
   [117405] = PC_ROOT,           -- Binding Shot
+  [117526] = PC_ROOT,           -- Binding Shot (Root)
   [202914] = CC_SILENCE,        -- Spider Sting (Honor)
   [135299] = PC_SNARE,          -- Tar Trap (Honor)
   --[147362] = CC_SILENCE,        -- Counter Shot
@@ -309,6 +310,7 @@ local CROWD_CONTROL_SPELLS_RETAIL = {
   [213688] = LOC_STUN,        -- Fel Cleave aura from Call Fel Lord (Honor)
   [233582] = PC_SNARE,        -- Entrenched in Flame
   [5484] = LOC_FEAR,          -- Howl of Terror
+  [22703] = LOC_STUN,         -- Infernal Awakening
 
   ---------------------------------------------------------------------------------------------------
   -- Warrior
@@ -343,6 +345,7 @@ local CROWD_CONTROL_SPELLS_RETAIL = {
   [198909] = LOC_DISORIENT, -- Song of Chi-Ji (Blizzard)
   [116095] = PC_SNARE,      -- Disable
   [123586] = PC_SNARE,      -- Flying Serpent Kick
+  [324382] = PC_ROOT,       -- Clash
 
   ---------------------------------------------------------------------------------------------------
   -- Racial Traits and other specia sources
@@ -493,6 +496,7 @@ local CROWD_CONTROL_SPELLS_WRATH_CLASSIC = {
     [42950] = LOC_DISORIENT,                 -- Rank 6
   [31589] = PC_SNARE,                      -- Slow
   -- Frostbolt - not added as it has 100% uptime
+  [44572] = LOC_STUN,                      -- Deep Freeze
 
   ---------------------------------------------------------------------------------------------------
   -- Paladin
@@ -536,11 +540,6 @@ local CROWD_CONTROL_SPELLS_WRATH_CLASSIC = {
   [1833] = LOC_STUN,                       -- Cheap Shot
   [1725] = LOC_DISORIENT,                  -- Distract
   [1776] = LOC_INCAPACITATE,               -- Gouge
-    [1777] = LOC_INCAPACITATE,               -- Rank 2
-    [8629] = LOC_INCAPACITATE,               -- Rank 3
-    [11285] = LOC_INCAPACITATE,              -- Rank 4
-    [11286] = LOC_INCAPACITATE,              -- Rank 5
-    [38764] = LOC_INCAPACITATE,              -- Rank 6
   [18425] = LOC_SLEEP,                     -- Kick - Silenced - Triggered By: Improved Kick
   [408] = LOC_STUN,                        -- Kidney Shot
     [8643] = LOC_STUN,                       -- Rank 2
@@ -608,9 +607,6 @@ local CROWD_CONTROL_SPELLS_WRATH_CLASSIC = {
   [12809] = LOC_STUN,                      -- Concussion Blow
   [676] = PC_DISARM,                       -- Disarm
   [1715] = PC_SNARE,                       -- Hamstring
-    [7372] = PC_SNARE,                       -- Rank 2
-    [7373] = PC_SNARE,                       -- Rank 3
-    [25212] = PC_SNARE,                       -- Rank 4
   [23694] = PC_ROOT,                       -- Improved Hamstring - Triggered By: Improved Hamstring
   [20253] = LOC_STUN,                      -- Intercept Stun - Triggered By: Intercept
     [20614] = LOC_STUN,                      -- Rank 2

@@ -5,7 +5,7 @@
 ---------------------------------------------------------------------------------------------------
 local L = Addon.ThreatPlates.L
 
-Addon.DEBUG = Addon.ThreatPlates.Meta("version") == "10.5.0-beta2"
+Addon.DEBUG = Addon.ThreatPlates.Meta("version") == "10.5.3-beta1"
 
 local function toggleDPS()
 	if Addon.db.profile.optionRoleDetectionAutomatic then
@@ -245,11 +245,10 @@ local function ChatCommandDebug(cmd_list)
 		print("GetClassicExpansionLevel():", GetClassicExpansionLevel and GetClassicExpansionLevel() or nil)		
 		print("TOC Version:", wowTOC)		
 		print("Addon --------")		
-		print("    IS_CLASSIC:", WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)		
-		print("    IS_TBC_CLASSIC:", WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC and LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_BURNING_CRUSADE)		
-		print("    IS_WRATH_CLASSIC:", WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC and LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_WRATH_OF_THE_LICH_KING)		
-		print("    IS_WRATH_CLASSIC Two:", GetClassicExpansionLevel and GetClassicExpansionLevel() == LE_EXPANSION_WRATH_OF_THE_LICH_KING)		
-		print("    IS_MAINLINE:", WOW_PROJECT_ID == WOW_PROJECT_MAINLINE)
+		print("    IS_CLASSIC:", Addon.IS_CLASSIC)		
+		print("    IS_TBC_CLASSIC:", Addon.IS_TBC_CLASSIC)		
+		print("    IS_WRATH_CLASSIC:", Addon.IS_WRATH_CLASSIC)		
+		print("    IS_MAINLINE:", Addon.IS_MAINLINE)
 	else
 		Addon.Logging.Error(L["Unknown option: "] .. command)
 		PrintHelp()

@@ -1,9 +1,5 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.2.0",
-	},
 	["profileKeys"] = {
 		["Joeybonzo - Pagle"] = "Default",
 		["Greychief - Incendius"] = "Default",
@@ -16,12 +12,16 @@ OmniCCDB = {
 		["Purplechief - Pagle"] = "Default",
 		["Redchief - Incendius"] = "Default",
 		["Bluechief - Incendius"] = "Default",
-		["Joeybonzo - Incendius"] = "Default",
+		["Agengeoff - Benediction"] = "Default",
 		["Bluechief - Pagle"] = "Default",
 		["Greenchief - Incendius"] = "Default",
-		["Agengeoff - Benediction"] = "Default",
+		["Joeybonzo - Incendius"] = "Default",
 		["Cyanchief - Pagle"] = "Default",
 		["Yellowchief - Incendius"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.2.0",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -40,9 +40,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -50,9 +50,9 @@ OmniCCDB = {
 				},
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},

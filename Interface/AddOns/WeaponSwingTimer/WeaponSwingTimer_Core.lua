@@ -10,7 +10,7 @@ addon_data.core.all_timers = {
     addon_data.player, addon_data.target
 }
 
-local version = "6.5.4"
+local version = "8.1.0"
 
 local load_message = L["Thank you for installing WeaponSwingTimer Version"] .. " " .. version .. 
                      " " .. L["by WatchYourSixx! Use |cFFFFC300/wst|r for more options."]
@@ -52,7 +52,7 @@ swing_reset_spells['DRUID'] = {
     -- --[[ Innervate ]]
     -- --[[ Insect Storm ]]
     -- --[[ Mark of the Wild ]]
-    --[[ Maul ]]                        6807, 6808, 6809, 8972, 9745, 9880, 9881
+    --[[ Maul ]]                        6807, 6808, 6809, 8972, 9745, 9880, 9881, 26996, 48479, 48480
     -- --[[ Moonfire ]]
     -- --[[ Moonkin Form ]]
     -- --[[ Nature's Grasp ]]
@@ -114,7 +114,7 @@ swing_reset_spells['HUNTER'] = {
     -- --[[ Mongoose Bite ]]
     -- --[[ Multi-Shot ]]
     -- --[[ Rapid Fire ]]
-    --[[ Raptor Strike ]]               2973, 14260, 14261, 14262, 14263, 14264, 14265, 14266, 27014
+    --[[ Raptor Strike ]]               2973, 14260, 14261, 14262, 14263, 14264, 14265, 14266, 27014, 48995, 48996
     -- --[[ Readiness ]]
     -- --[[ Revive Pet ]]
     -- --[[ Scare Beast ]]
@@ -488,14 +488,14 @@ swing_reset_spells['WARRIOR'] = {
     -- --[[ Bloodthirst ]]
     -- --[[ Challenging Shout ]]
     -- --[[ Charge ]]
-    --[[ Cleave ]]                  845, 7369, 11608, 11609, 20569, 25231,
+    --[[ Cleave ]]                  845, 7369, 11608, 11609, 20569, 25231, 47519, 47520,
     -- --[[ Death Wish ]]
     -- --[[ Defensive Stance ]]
     -- --[[ Demoralizing Shout ]]
     -- --[[ Disarm ]]
     -- --[[ Execute ]]
     -- --[[ Hamstring ]]
-    --[[ Heroic Strike ]]           78, 284, 285, 1608, 11564, 11565, 11566, 11567, 25286, 29707, 30324,
+    --[[ Heroic Strike ]]           78, 284, 285, 1608, 11564, 11565, 11566, 11567, 25286, 29707, 30324, 47450, 47449,
     -- --[[ Intercept ]]
     -- --[[ Intimidating Shout ]]
     -- --[[ Last Stand ]]
@@ -515,7 +515,7 @@ swing_reset_spells['WARRIOR'] = {
     -- --[[ Shoot Bow ]]
     -- --[[ Shoot Crossbow ]]
     -- --[[ Shoot Gun ]]
-    --[[ Slam ]]                    1464, 8820, 11604, 11605, 25241, 25242
+    -- --[[ Slam ]]                    
     -- --[[ Sunder Armor ]]
     -- --[[ Sweeping Strikes ]]
     -- --[[ Taunt ]]
@@ -587,50 +587,50 @@ addon_data.core.MissHandler = function(unit, miss_type, is_offhand, is_player)
         if unit == "player" then
             -- parry haste calculations:
             -- if swing is below 20%, do nothing.
-            -- if swing is between 20% and 60%, reduce by 20%.
-            -- if swing is above 60%, reduce by 40%.
-            min_swing_time = addon_data.target.main_weapon_speed * 0.2
-            med_swing_time = addon_data.target.main_weapon_speed * 0.6
+            -- if swing is above 20%, reduce by 40% of main_weapon_speed
+            -- if new swing is below 20%, set to 20% (parry cannot reduce swing timer below 20%)
+            local min_swing_time = addon_data.target.main_weapon_speed * 0.2
+
             if min_swing_time >= addon_data.target.main_swing_timer then
-            -- do nothing
-        elseif (min_swing_time < addon_data.target.main_swing_timer) and (addon_data.target.main_swing_timer < med_swing_time) then
-                addon_data.target.main_swing_timer = addon_data.target.main_swing_timer 
-                * 0.2
-            elseif addon_data.target.main_swing_timer >= med_swing_time then
-                addon_data.target.main_swing_timer = addon_data.target.main_swing_timer 
-                * 0.4
+                -- do nothing
+			else
+                addon_data.target.main_swing_timer = addon_data.target.main_swing_timer - (addon_data.target.main_weapon_speed * 0.4)
+
+                if addon_data.target.main_swing_timer < min_swing_time then
+                    addon_data.target.main_swing_timer = min_swing_time
+                end
             end
             if not is_offhand then
-		-- resets swing timer if it's not an extra attack, attempt to fix random resets mid-swing
-		if (addon_data.player.extra_attacks_flag == false) then
-			addon_data.player.ResetMainSwingTimer()
-		end
-		addon_data.player.extra_attacks_flag = false
+			-- resets swing timer if it's not an extra attack, attempt to fix random resets mid-swing
+				if (addon_data.player.extra_attacks_flag == false) then
+					addon_data.player.ResetMainSwingTimer()
+				end
+			addon_data.player.extra_attacks_flag = false
             else
                 addon_data.player.ResetOffSwingTimer()
             end
         elseif unit == "target" and is_player then
             -- parry haste calculations:
             -- if swing is below 20%, do nothing.
-            -- if swing is between 20% and 60%, reduce by 20%.
-            -- if swing is above 60%, reduce by 40%.
-            min_swing_time = addon_data.player.main_weapon_speed * 0.2
-            med_swing_time = addon_data.player.main_weapon_speed * 0.6
+            -- if swing is above 20%, reduce by 40% of main_weapon_speed
+            -- if new swing is below 20%, set to 20% (parry cannot reduce swing timer below 20%)
+            local min_swing_time = addon_data.player.main_weapon_speed * 0.2
+
             if min_swing_time >= addon_data.player.main_swing_timer then
-            -- do nothing
-            elseif (min_swing_time < addon_data.player.main_swing_timer) and (addon_data.player.main_swing_timer < med_swing_time) then
-                addon_data.player.main_swing_timer = addon_data.player.main_swing_timer 
-                * 0.2
-            elseif addon_data.player.main_swing_timer >= med_swing_time then
-                addon_data.player.main_swing_timer = addon_data.player.main_swing_timer 
-                * 0.4
+                -- do nothing
+			else
+                addon_data.player.main_swing_timer = addon_data.player.main_swing_timer - (addon_data.player.main_weapon_speed * 0.4)
+
+                if addon_data.player.main_swing_timer < min_swing_time then
+                    addon_data.player.main_swing_timer = min_swing_time
+                end
             end
             if not is_offhand then
                 addon_data.target.ResetMainSwingTimer()
             else
                 addon_data.target.ResetOffSwingTimer()
             end
-        elseif unit == "target" then
+		elseif unit == "target" then
             -- do nothing
         else
             addon_data.utils.PrintMsg(L["Unexpected Unit Type in MissHandler()."])
@@ -651,7 +651,7 @@ addon_data.core.MissHandler = function(unit, miss_type, is_offhand, is_player)
             else
                 addon_data.target.ResetOffSwingTimer()
             end 
-        else
+		else
             addon_data.utils.PrintMsg(L["Unexpected Unit Type in MissHandler()."])
         end
     end
@@ -736,6 +736,7 @@ local function CoreFrame_OnEvent(self, event, ...)
     elseif event == "UNIT_SPELLCAST_FAILED" then
 		addon_data.castbar.OnUnitSpellCastFailed(args[1], args[3])
     elseif event == "UNIT_SPELLCAST_INTERRUPTED" then
+        addon_data.player.OnUnitSpellCastInterrupted(args[1], args[3])
 		addon_data.hunter.OnUnitSpellCastInterrupted(args[1], args[3])
 		addon_data.castbar.OnUnitSpellCastInterrupted(args[1], args[3])
     elseif event == "UNIT_SPELLCAST_FAILED_QUIET" then

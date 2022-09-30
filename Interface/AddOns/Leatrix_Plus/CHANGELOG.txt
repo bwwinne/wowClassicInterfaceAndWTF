@@ -1,3 +1,37 @@
+3.0.14 - 30th September 2022
+- Changes to file structure.
+- Added flight times.
+
+3.0.13 - 29th September 2022
+- Added lots and lots of flight times.  There are now 4378 flight times stored in Leatrix Plus for Wrath Classic.
+
+3.0.12 - 28th September 2022
+- Added lots and lots of flight times.  There are now 4275 flight times stored in Leatrix Plus for Wrath Classic.
+
+3.0.11 - 28th September 2022
+- Added lots and lots of flight times.  There are now 4122 flight times stored in Leatrix Plus for Wrath Classic.
+
+3.0.10 - 28th September 2022
+- For 'Automate gossip' ('Automation'), stable master gossip will now be skipped as long as there are no other gossip options.  You can hold shift to prevent this.
+- Added Wrath of the Lich King main title music (media > various > main titles).
+- Added lots and lots of flight times.  There are now 4003 flight times stored in Leatrix Plus for Wrath Classic.
+
+3.0.09 - 27th September 2022
+- Added a new option 'Restore chat messages' ('Chat').  If enabled, you can reload your UI without losing your recent chat messages.
+- Added a new option 'Block shared quests' ('Social').  If enabled, shared quests will be automatically declined unless the player sharing the quest is a friend.
+- Added lots and lots of flight times.  There are now 3845 flight times stored in Leatrix Plus for Wrath Classic.
+
+3.0.08 - 21st September 2022
+- For 'Mute game sounds' ('System'), you can now mute the Arcanite Ripper guitar sound.
+- For 'Manage buffs' ('Frames'), fixed an issue which caused buff icons to overlap each other at higher scale values.  The scale slider will now affect the consolidated buff icon too.
+- Added lots of flight times.  There are now 3726 flight times stored in Leatrix Plus for Wrath Classic.
+
+3.0.07 - 14th September 2022
+- For 'Enhance tooltip' ('Interface'), if you use the setting to hide tooltips for world units during combat, you can now specify whether holding shift should override that setting or not.  Also some locale updates.
+- For 'Show flight times' ('Interface'), the flight progress bar will no longer show if you are in combat when you attempt to take a flight.  A few seconds into the flight, there is an additional check to make sure you are actually on the taxi.  If you are not, the flight progress bar will be hidden.
+- For 'Enhance quest log' ('Interface'), fixed a minor issue which quest list alignment.
+- Added lots of flight times.  There are now 3657 flight times stored in Leatrix Plus for Wrath Classic.
+
 3.0.05 - 7th September 2022
 - For 'Enhance questlog', there is a new setting in the configuration panel to show a toggle headers button.  It's enabled by default.  The toggle headers button allows you to collapse and expand all quest headers in one click.
 - Added lots of flight times.  There are now 3590 flight times stored in Leatrix Plus for Wrath Classic.

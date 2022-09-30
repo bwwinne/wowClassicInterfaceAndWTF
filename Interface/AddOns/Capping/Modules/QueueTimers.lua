@@ -14,13 +14,13 @@ TIMER_TYPE_PLAYER_COUNTDOWN = 3;
 function mod:START_TIMER(timerType, timeSeconds)
 	if timerType == 3 then return end
 
-	--for i = 1, #TimerTracker.timerList do
-	--	TimerTracker.timerList[i].bar:Hide() -- Hide the Blizz start timer
-	--end
+	for i = 1, #TimerTracker.timerList do
+		TimerTracker.timerList[i].bar:Hide() -- Hide the Blizz start timer
+	end
 
 	local bar = self:GetBar(L.battleBegins)
 	if not bar or timeSeconds > bar.remaining+1 or timeSeconds < bar.remaining-1 then -- Don't restart bars for subtle changes +/- 1s
-		self:StartBar(L.battleBegins, timeSeconds, 136106, "colorOther") -- Interface/Icons/Spell_nature_timestop
+		self:StartBar(L.battleBegins, timeSeconds, 618859, "colorOther") -- 618859 = Interface/Icons/achievement_challengemode_platinum
 	end
 end
 mod:RegisterEvent("START_TIMER")
@@ -50,7 +50,7 @@ do -- estimated wait timer and port timer
 				bar:Stop()
 			end
 
-			bar = self:StartBar(mapName, GetBattlefieldPortExpiration(queueId), 136106, "colorOther", true) -- Interface/Icons/Spell_nature_timestop
+			bar = self:StartBar(mapName, GetBattlefieldPortExpiration(queueId), 132327, "colorOther", true) -- 132327 = Interface/Icons/Ability_TownWatch
 			bar:Set("capping:queueid", queueId)
 			queueBars[queueId] = bar
 
@@ -79,19 +79,35 @@ do -- estimated wait timer and port timer
 
 			if estremain > 1 then -- Not a paused queue (0) and not a negative queue (in queue longer than estimated time).
 				if not bar or estremain > bar.remaining+10 or estremain < bar.remaining-10 or bar:GetLabel() ~= mapName then -- Don't restart bars for subtle changes +/- 10s
+					local icon
+					for i = 1, GetNumBattlegroundTypes() do
+						local name,_,_,_,_,_,_,_,_,bgIcon = GetBattlegroundInfo(i)
+						if name == mapName then
+							icon = bgIcon
+							break
+						end
+					end
 					if bar then
 						bar:Stop()
 					end
-					bar = self:StartBar(mapName, estremain, 136106, "colorQueue", true) -- Interface/Icons/Spell_nature_timestop
+					bar = self:StartBar(mapName, estremain, icon or 134400, "colorQueue", true) -- Question mark icon for random battleground (134400) Interface/Icons/INV_Misc_QuestionMark
 					bar:Set("capping:queueid", queueId)
 					queueBars[queueId] = bar
 				end
 			else -- Negative queue (in queue longer than estimated time) or 0 queue (paused)
 				if not bar or bar.remaining ~= 1 then
+					local icon
+					for i = 1, GetNumBattlegroundTypes() do
+						local name,_,_,_,_,_,_,_,_,bgIcon = GetBattlegroundInfo(i)
+						if name == mapName then
+							icon = bgIcon
+							break
+						end
+					end
 					if bar then
 						bar:Stop()
 					end
-					bar = self:StartBar(mapName, 1, 136106, "colorQueue", true) -- Interface/Icons/Spell_nature_timestop
+					bar = self:StartBar(mapName, 1, icon or 134400, "colorQueue", true) -- Question mark icon for random battleground (134400) Interface/Icons/INV_Misc_QuestionMark
 					bar:Pause()
 					bar.remaining = 1
 					bar:SetTimeVisibility(false)

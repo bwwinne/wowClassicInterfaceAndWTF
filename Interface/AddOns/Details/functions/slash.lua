@@ -11,6 +11,13 @@ local UnitGUID = UnitGUID
 local tonumber= tonumber 
 local LoggingCombat = LoggingCombat
 
+SLASH_DUMPTABLE1 = "/dumpt"
+function SlashCmdList.DUMPTABLE(msg, editbox)
+	local result = "return function() return " .. msg .. " end"
+	local extractValue = loadstring(result)
+	return Details:Dump(extractValue()())
+end
+
 SLASH_DETAILS1, SLASH_DETAILS2, SLASH_DETAILS3 = "/details", "/dt", "/de"
 
 function SlashCmdList.DETAILS (msg, editbox)
@@ -1559,6 +1566,12 @@ function SlashCmdList.DETAILS (msg, editbox)
 		end
 		return
 
+	elseif (msg == "generatespelllist") then
+		Details.GenerateSpecSpellList()
+
+	elseif (msg == "survey") then
+		Details.Survey.OpenSurveyPanel()
+
 	elseif (msg == "share") then
 	
 		local f = {}
@@ -1696,21 +1709,19 @@ function SlashCmdList.DETAILS (msg, editbox)
 		print (" ")
 
 		if (DetailsFramework.IsWotLKWow()) then
-			--wraft of the lich kind classic
-			local v = _detalhes.game_version .. "." .. (_detalhes.wotlk_counter)
-			print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00DETAILS! VERSION|r: |cFFFFAA00BCC" .. _detalhes.wotlk_counter)
+			--wraft of the lich kind classic, the retail version of details should work on lich king, so let's print here the retail build counter
+			print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00DETAILS! VERSION|r: |cFFFFAA00W" .. _detalhes.build_counter)
 			print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00GAME VERSION|r: |cFFFFAA00" .. _detalhes.game_version)
 
-		elseif (DetailsFramework.IsTBCWow()) then
-			--the burning crusade classic
-			local v = _detalhes.game_version .. "." .. (_detalhes.bcc_counter)
-			print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00DETAILS! VERSION|r: |cFFFFAA00BCC" .. _detalhes.bcc_counter)
-			print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00GAME VERSION|r: |cFFFFAA00" .. _detalhes.game_version)
 		else
 			--retail
 			local v = _detalhes.game_version .. "." .. (_detalhes.build_counter >= _detalhes.alpha_build_counter and _detalhes.build_counter or _detalhes.alpha_build_counter)
 			print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00DETAILS! VERSION|r: |cFFFFAA00R" .. (_detalhes.build_counter >= _detalhes.alpha_build_counter and _detalhes.build_counter or _detalhes.alpha_build_counter))
 			print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00GAME VERSION|r: |cFFFFAA00" .. _detalhes.game_version)
+		end
+
+		if (DetailsFramework.IsDragonflight()) then
+			print("Dragonflight BETA VERSION:", _detalhes.dragonflight_beta_version)
 		end
 	end
 end
@@ -1958,6 +1969,8 @@ end
 
 if (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	SLASH_KEYSTONE1 = "/keystone"
+	SLASH_KEYSTONE2 = "/keys"
+	SLASH_KEYSTONE3 = "/key"
 
 	function SlashCmdList.KEYSTONE(msg, editbox)
 		local openRaidLib = LibStub:GetLibrary("LibOpenRaid-1.0")
@@ -1995,7 +2008,7 @@ if (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 				local statusBar = DetailsFramework:CreateStatusBar(f)
 				statusBar.text = statusBar:CreateFontString(nil, "overlay", "GameFontNormal")
 				statusBar.text:SetPoint("left", statusBar, "left", 5, 0)
-				statusBar.text:SetText("From Details! Damage Meter | Built with Details! Framework | Data from Open Raid Library")
+				statusBar.text:SetText("By Terciob | From Details! Damage Meter|Built with Details! Framework | Data from Open Raid Library")
 				DetailsFramework:SetFontSize(statusBar.text, 11)
 				DetailsFramework:SetFontColor(statusBar.text, "gray")
 
@@ -2004,8 +2017,8 @@ if (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 					{text = "Class", width = 40, canSort = true, dataType = "number", order = "DESC", offset = 0},
 					{text = "Player Name", width = 140, canSort = true, dataType = "string", order = "DESC", offset = 0},
 					{text = "Level", width = 60, canSort = true, dataType = "number", order = "DESC", offset = 0, selected = true},
-					{text = "Dungeon", width = 120, canSort = true, dataType = "string", order = "DESC", offset = 0},
-					{text = "Classic Dungeon", width = 120, canSort = true, dataType = "string", order = "DESC", offset = 0},
+					{text = "Dungeon", width = 240, canSort = true, dataType = "string", order = "DESC", offset = 0},
+					--{text = "Classic Dungeon", width = 120, canSort = true, dataType = "string", order = "DESC", offset = 0},
 					{text = "Mythic+ Rating", width = 100, canSort = true, dataType = "number", order = "DESC", offset = 0},
 				}
 
@@ -2065,7 +2078,7 @@ if (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 							line.playerNameText.text = unitName
 							line.keystoneLevelText.text = level
 							line.dungeonNameText.text = mapName
-							DetailsFramework:TruncateText(line.dungeonNameText, 120)
+							DetailsFramework:TruncateText(line.dungeonNameText, 240)
 							line.classicDungeonNameText.text = mapNameChallenge or ""
 							DetailsFramework:TruncateText(line.classicDungeonNameText, 120)
 							line.inMyParty = inMyParty > 0
@@ -2178,7 +2191,7 @@ if (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 					line:AddFrameToHeaderAlignment(playerNameText)
 					line:AddFrameToHeaderAlignment(keystoneLevelText)
 					line:AddFrameToHeaderAlignment(dungeonNameText)
-					line:AddFrameToHeaderAlignment(classicDungeonNameText)
+					--line:AddFrameToHeaderAlignment(classicDungeonNameText)
 					line:AddFrameToHeaderAlignment(ratingText)
 					
 					line:AlignWithHeader(f.Header, "left")

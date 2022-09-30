@@ -1435,9 +1435,9 @@ FishingBuddy.OnLoad = function(self)
     self:RegisterEvent("LOOT_READY");
     self:RegisterEvent("LOOT_CLOSED");
 
-    self:RegisterEvent("CURSOR_UPDATE");
+    self:RegisterEvent("CURSOR_CHANGED");
 
-    -- Handle item lock separately to reduce churn during world load
+-- Handle item lock separately to reduce churn during world load
     -- self:RegisterEvent("ITEM_LOCK_CHANGED");
     -- self:RegisterEvent("PLAYER_EQUIPMENT_CHANGED");
     -- self:RegisterEvent("WEAR_EQUIPMENT_SET");

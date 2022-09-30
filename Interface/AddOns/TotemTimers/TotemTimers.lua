@@ -67,7 +67,8 @@ local function TotemTimers_OnEvent(self, event, ...)
 		else
 			TotemTimers.ChangedTalents()        
 		end --]]
-    elseif event == "SPELLS_CHANGED" then
+    elseif event == "SPELLS_CHANGED" or event == "CHARACTER_POINTS_CHANGED"
+            or event == "PLAYER_TALENT_UPDATE" then
         if InCombatLockdown() then
             updateAfterCombat = true
         else
@@ -140,31 +141,24 @@ function TotemTimers.SetupGlobals()
         TotemTimersFrame:RegisterEvent("PLAYER_REGEN_ENABLED")
         TotemTimersFrame:RegisterEvent("ADDON_LOADED")
         TotemTimersFrame:RegisterEvent("CHARACTER_POINTS_CHANGED")
-		-- TotemTimersFrame:RegisterEvent("PLAYER_TALENT_UPDATE")
         TotemTimersFrame:RegisterEvent("PLAYER_LOGOUT")
         TotemTimersFrame:RegisterEvent("UPDATE_BINDINGS")
         -- TotemTimersFrame:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
+        if WOW_PROJECT_ID > WOW_PROJECT_BURNING_CRUSADE_CLASSIC then
+            TotemTimersFrame:RegisterEvent("PLAYER_TALENT_UPDATE")
+        end
 
-        --TotemTimers_UpdateRaid()
-		--TotemTimers.InitMasque()
+		TotemTimers.InitMasque()
 		-- TotemTimers.RangeFrame:RegisterEvent("GROUP_ROSTER_UPDATE")
         -- TotemTimers.RangeFrame:Show()
         TotemTimers.SetCastButtonSpells()
-        -- activate shield timer after reloading ui
-        if XiTimers.timers[6].active then
-            TotemTimers.ShieldEvent(XiTimers.timers[6].button, "", "player")
-        end  
 
-        --TotemTimers.OrderCDs("2")
-        --TotemTimers.OrderCDs("1")
         
         TotemTimers_OnEvent("PLAYER_ALIVE") -- simulate PLAYER_ALIVE event in case the ui is reloaded
         XiTimers.invokeOOCFader()
         TotemTimersFrame:SetScript("OnUpdate", XiTimers.UpdateTimers)
 		TotemTimersFrame:EnableMouse(false)
         XiTimers.InitWarnings(TotemTimers.ActiveProfile.Warnings)
-
-        if TotemTimers.CustomInit then TotemTimers.CustomInit() end
 
         -- TotemTimers.LayoutCrowdControl()
         --TotemTimers.ApplySkin()
@@ -174,7 +168,7 @@ function TotemTimers.SetupGlobals()
 	end
 	TotemTimers.UpdateMacro()
 	TotemTimers_IsSetUp = true
-    TotemTimersFrame:UnregisterEvent("PLAYER_ENTERING_WORLD")
+    --TotemTimersFrame:UnregisterEvent("PLAYER_ENTERING_WORLD")
 end
 
 function TotemTimers_Slash(msg)

@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 101085
+local MINOR_VERSION = 101086
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -36,7 +36,7 @@ if ( GetBuildInfo ) then
     WOW.major = tonumber(maj);
     WOW.minor = tonumber(min);
     WOW.dot = tonumber(dot);
-    WOW.classic = (_G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC or _G.WOW_PROJECT_ID == _G.WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
+    WOW.classic = (_G.WOW_PROJECT_ID ~= _G.WOW_PROJECT_MAINLINE)
 else
     WOW.major = 1;
     WOW.minor = 9;
@@ -903,7 +903,7 @@ local infoslot = nil;
 function FishLib:GetInfoSlot()
     if not infoslot then
         infoslot = {}
-        for idx=1,17,1 do
+        for idx=1,18,1 do
             infoslot[slotinfo[idx].id] = slotinfo[idx]
         end
     end
@@ -1499,12 +1499,8 @@ function FishLib:GetCurrentMapContinent(debug)
 end
 
 function FishLib:GetCurrentMapId()
-    if not self:IsClassic() and select(4, GetBuildInfo()) < 80000 then
-        return GetCurrentMapAreaID()
-    else
-        local _, _, zone, mapId = LT:GetBestZoneCoordinate()
-        return mapId or 0
-    end
+    local _, _, zone, mapId = LT:GetBestZoneCoordinate()
+    return mapId or 0
 end
 
 function FishLib:GetZoneInfo()

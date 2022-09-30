@@ -58,6 +58,14 @@ TotemTimers.SpellIDs = {
     LightningBolt = 403,
     ChainLightning = 421,
 
+    Bloodlust = 2825,
+    ChainLightning = 421,
+    ElementalMastery = 16166,
+    Heroism = 32182,
+    LightningBolt = 403,
+    NaturesSwiftness = 16188,
+    ShamanisticRage = 30823,
+
     --EnamoredWaterSpirit = 24854 -- Water Totem trinket
     --[[
     PrimalStrike = 73899,
@@ -329,9 +337,71 @@ TotemTimers.ShieldButtons = {
     SpellIDs.LightningShield,
     SpellIDs.WaterShield,
     SpellIDs.TotemicCall,
+    SpellIDs.EarthShield,
 }
 
 TotemTimers.ShieldSpells = {
     SpellIDs.LightningShield,
     SpellIDs.WaterShield,
+    SpellIDs.EarthShield,
+}
+
+TotemTimers.CombatCooldownSpells = {
+    [2] = {
+        [1] = SpellIDs.StormStrike,
+        [2] = SpellIDs.FlameShock,
+        [3] = SpellIDs.EarthShock,
+        [4] = SpellIDs.Searing,
+    },
+    [1] = {
+        [1] = SpellIDs.ChainLightning,
+        [2] = SpellIDs.LightningBolt,
+        [3] = SpellIDs.FlameShock,
+        [4] = SpellIDs.EarthShock,
+    },
+    [3] = {
+        [1] = SpellIDs.FlameShock,
+        [2] = SpellIDs.EarthShock,
+    },
+}
+
+TotemTimers.LongCooldownSpells = {
+    {
+        spell = SpellIDs.FireElemental,
+        totem = SpellIDs.FireElemental,
+        element = FIRE_TOTEM_SLOT,
+        customOnEvent = "CDTotemEvent",
+    },
+    {
+        spell = SpellIDs.EarthElemental,
+        totem = SpellIDs.EarthElemental,
+        element = EARTH_TOTEM_SLOT,
+        customOnEvent = "CDTotemEvent",
+    },
+    {
+        spell = SpellIDs.ElementalMastery,
+        buff = SpellIDs.ElementalMastery,
+    },
+    {
+        spell = SpellIDs.NaturesSwiftness,
+        buff = SpellIDs.NaturesSwiftness,
+    },
+    {
+        spell = SpellIDs.ManaTide,
+        totem = SpellIDs.ManaTide,
+        element = WATER_TOTEM_SLOT,
+        customOnEvent = "CDTotemEvent",
+    },
+    {
+        spell = SpellIDs.ShamanisticRage,
+        buff = SpellIDs.ShamanisticRage,
+    },
+    {
+        spell = SpellIDs.Bloodlust,
+        buff = SpellIDs.Bloodlust,
+    },
+    {
+        spell = SpellIDs.Heroism,
+        buff = SpellIDs.Heroism,
+    },
 }
