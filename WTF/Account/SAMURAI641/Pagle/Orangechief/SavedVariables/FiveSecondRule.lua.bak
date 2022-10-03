@@ -1,6 +1,6 @@
 
 FiveSecondRule_Options = {
-	["showTicks"] = true,
+	["showTicks"] = false,
 	["flat"] = false,
 	["averageManaTick"] = 0,
 	["showSpark"] = true,

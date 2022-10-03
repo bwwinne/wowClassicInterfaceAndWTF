@@ -2369,10 +2369,10 @@ ZPerlConfigNew = {
 					["left"] = 561.1443821074063,
 					["width"] = false,
 				},
-				["XPerl_PetTarget"] = {
-					["top"] = 169.9519776965553,
+				["XPerl_Raid_Title5"] = {
+					["top"] = 467.111344249221,
 					["height"] = false,
-					["left"] = 586.425929954632,
+					["left"] = 248.888990948908,
 					["width"] = false,
 				},
 				["XPerl_Raid_Title9"] = {
@@ -2381,10 +2381,10 @@ ZPerlConfigNew = {
 					["left"] = 502.217812969582,
 					["width"] = false,
 				},
-				["XPerl_Raid_Title5"] = {
-					["top"] = 467.111344249221,
+				["XPerl_Raid_Title11"] = {
+					["top"] = 651.999960887431,
 					["height"] = false,
-					["left"] = 248.888990948908,
+					["left"] = 608.000057888032,
 					["width"] = false,
 				},
 				["XPerl_Player_Pet"] = {
@@ -2429,10 +2429,10 @@ ZPerlConfigNew = {
 					["left"] = 1921.067016601563,
 					["width"] = false,
 				},
-				["XPerl_Raid_Title11"] = {
-					["top"] = 651.999960887431,
+				["XPerl_PetTarget"] = {
+					["top"] = 169.9519776965553,
 					["height"] = false,
-					["left"] = 608.000057888032,
+					["left"] = 586.425929954632,
 					["width"] = false,
 				},
 				["XPerl_Raid_Title10"] = {
@@ -3999,13 +3999,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[110214] = true,
 						[103434] = true,
+						[107439] = true,
 						[108649] = true,
 						[109325] = true,
 						[105171] = true,
 						[109075] = true,
-						[107439] = true,
+						[110214] = true,
 						[106794] = true,
 						[105490] = true,
 						[106730] = true,
@@ -4900,10 +4900,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[107439] = true,
-						[109075] = true,
-						[103434] = true,
 						[110214] = true,
+						[109075] = true,
+						[107439] = true,
+						[103434] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -5778,13 +5778,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[103434] = true,
 						[107439] = true,
+						[110214] = true,
 						[108649] = true,
 						[106730] = true,
 						[105171] = true,
 						[109075] = true,
-						[110214] = true,
+						[103434] = true,
 						[106794] = true,
 						[105490] = true,
 						[109325] = true,
@@ -6688,13 +6688,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[110214] = true,
 						[103434] = true,
+						[107439] = true,
 						[108649] = true,
 						[109325] = true,
 						[105171] = true,
 						[109075] = true,
-						[107439] = true,
+						[110214] = true,
 						[106794] = true,
 						[105490] = true,
 						[106730] = true,
@@ -9038,13 +9038,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[106199] = true,
-						[103434] = true,
 						[107439] = true,
+						[110214] = true,
 						[108649] = true,
 						[109325] = true,
 						[105171] = true,
 						[109075] = true,
-						[110214] = true,
+						[103434] = true,
 						[106794] = true,
 						[105490] = true,
 						[106730] = true,
@@ -9981,10 +9981,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[107439] = true,
-						[109075] = true,
-						[103434] = true,
 						[110214] = true,
+						[109075] = true,
+						[107439] = true,
+						[103434] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -10858,10 +10858,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[103434] = true,
-						[109075] = true,
-						[110214] = true,
 						[107439] = true,
+						[109075] = true,
+						[103434] = true,
+						[110214] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -12397,10 +12397,11 @@ ZPerlConfigNew = {
 	["Pagle"] = {
 		["Cyanchief"] = {
 			["highlight"] = {
-				["enable"] = 1,
-				["AGGRO"] = 1,
 				["HOT"] = 1,
 				["SHIELD"] = 1,
+				["enable"] = 1,
+				["HEAL"] = 1,
+				["AGGRO"] = 1,
 			},
 			["optionsColour"] = {
 				["r"] = 0.7,
@@ -12437,6 +12438,7 @@ ZPerlConfigNew = {
 				},
 			},
 			["rangeFinder"] = {
+				["enabled"] = true,
 				["StatsFrame"] = {
 					["spell"] = "Lesser Healing Wave",
 					["FadeAmount"] = 0.5,
@@ -12449,6 +12451,7 @@ ZPerlConfigNew = {
 					["item"] = "",
 					["FadeAmount"] = 0.5,
 					["HealthLowPoint"] = 0.85,
+					["interact"] = 5,
 				},
 				["NameFrame"] = {
 					["spell"] = "Lesser Healing Wave",
@@ -12616,8 +12619,14 @@ ZPerlConfigNew = {
 				["pos"] = 186,
 			},
 			["colour"] = {
+				["classic"] = 1,
 				["class"] = 1,
-				["guildList"] = 1,
+				["border"] = {
+					["a"] = 1,
+					["r"] = 0.5,
+					["g"] = 0.5,
+					["b"] = 0.5,
+				},
 				["reaction"] = {
 					["tapped"] = {
 						["r"] = 0.5,
@@ -12650,13 +12659,7 @@ ZPerlConfigNew = {
 						["b"] = 1,
 					},
 				},
-				["frame"] = {
-					["a"] = 1,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["classic"] = 1,
+				["classbarBright"] = 1,
 				["gradient"] = {
 					["enable"] = 1,
 					["s"] = {
@@ -12672,12 +12675,13 @@ ZPerlConfigNew = {
 						["b"] = 0.1,
 					},
 				},
-				["border"] = {
+				["frame"] = {
 					["a"] = 1,
-					["r"] = 0.5,
-					["g"] = 0.5,
-					["b"] = 0.5,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
 				},
+				["guildList"] = 1,
 				["bar"] = {
 					["rage"] = {
 						["r"] = 1,
@@ -12998,6 +13002,7 @@ ZPerlConfigNew = {
 				["values"] = 1,
 				["absorbs"] = 1,
 				["healerMode"] = {
+					["enable"] = false,
 					["type"] = 1,
 				},
 				["buffs"] = {
@@ -13212,10 +13217,10 @@ ZPerlConfigNew = {
 						[105171] = true,
 						[105490] = true,
 						[106794] = true,
-						[103434] = true,
-						[109075] = true,
-						[110214] = true,
 						[107439] = true,
+						[109075] = true,
+						[103434] = true,
+						[110214] = true,
 					},
 					["Trial of the Crusader"] = {
 						[66237] = true,
@@ -13306,8 +13311,8 @@ ZPerlConfigNew = {
 			["maximumScale"] = 1.5,
 			["bar"] = {
 				["texture"] = {
-					"Perl v2", -- [1]
-					"Interface\\Addons\\ZPerl\\Images\\XPerl_StatusBar", -- [2]
+					"Aluminium", -- [1]
+					"Interface\\Addons\\TidyPlates_ThreatPlates\\Artwork\\Aluminium.tga", -- [2]
 				},
 				["background"] = 1,
 				["fadeTime"] = 0.5,
@@ -14080,13 +14085,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[110214] = true,
 						[103434] = true,
+						[107439] = true,
 						[108649] = true,
 						[106730] = true,
 						[105171] = true,
 						[109075] = true,
-						[107439] = true,
+						[110214] = true,
 						[106794] = true,
 						[105490] = true,
 						[109325] = true,
@@ -15002,13 +15007,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[110214] = true,
 						[103434] = true,
+						[107439] = true,
 						[108649] = true,
 						[106730] = true,
 						[105171] = true,
 						[109075] = true,
-						[107439] = true,
+						[110214] = true,
 						[106794] = true,
 						[105490] = true,
 						[109325] = true,
@@ -17347,13 +17352,13 @@ ZPerlConfigNew = {
 					},
 					["Dragonsoul"] = {
 						[105479] = true,
-						[107439] = true,
 						[110214] = true,
+						[103434] = true,
 						[108649] = true,
 						[109325] = true,
 						[105171] = true,
 						[109075] = true,
-						[103434] = true,
+						[107439] = true,
 						[106794] = true,
 						[105490] = true,
 						[106730] = true,
@@ -18237,13 +18242,13 @@ ZPerlConfigNew = {
 				},
 				["Dragonsoul"] = {
 					[105479] = true,
-					[107439] = true,
 					[110214] = true,
+					[103434] = true,
 					[108649] = true,
 					[106730] = true,
 					[105171] = true,
 					[109075] = true,
-					[103434] = true,
+					[107439] = true,
 					[106794] = true,
 					[105490] = true,
 					[109325] = true,

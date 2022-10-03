@@ -3,6 +3,18 @@ WeakAurasSaved = {
 	["dynamicIconCache"] = {
 	},
 	["editor_tab_spaces"] = 4,
+	["editor_font_size"] = 12,
+	["login_squelch_time"] = 10,
+	["lastArchiveClear"] = 1582156160,
+	["minimap"] = {
+		["minimapPos"] = 344.288079374912,
+		["hide"] = false,
+	},
+	["lastUpgrade"] = 1657752898,
+	["dbVersion"] = 53,
+	["clearOldHistory"] = 30,
+	["registered"] = {
+	},
 	["displays"] = {
 		["SSC/TK - Domination"] = {
 			["iconSource"] = 0,
@@ -56,11 +68,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -109,11 +121,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"37122", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -251,25 +263,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "4BBgtIyCn)1",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -295,7 +290,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Tems' SSC/TK Pack"] = {
 			["arcLength"] = 360,
@@ -440,14 +452,8 @@ WeakAurasSaved = {
 			["version"] = 19,
 			["subRegions"] = {
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["config"] = {
-			},
+			["sort"] = "none",
+			["uid"] = "tTYuPJKaORB",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -467,6 +473,16 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["config"] = {
+			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["rowSpace"] = 1,
+			["animate"] = true,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -487,24 +503,20 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["gridType"] = "RD",
-			["animate"] = true,
-			["rowSpace"] = 1,
 			["scale"] = 0.75,
-			["selfPoint"] = "LEFT",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["sort"] = "none",
-			["rotation"] = 0,
 			["limit"] = 5,
+			["yOffset"] = 141.33293038727,
+			["rotation"] = 0,
 			["constantFactor"] = "RADIUS",
 			["internalVersion"] = 53,
 			["borderOffset"] = 4,
@@ -514,16 +526,16 @@ WeakAurasSaved = {
 			["gridWidth"] = 5,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["grow"] = "RIGHT",
-			["uid"] = "tTYuPJKaORB",
-			["borderInset"] = 1,
 			["xOffset"] = 198.30933172125,
+			["borderInset"] = 1,
+			["selfPoint"] = "LEFT",
+			["gridType"] = "RD",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["yOffset"] = 141.33293038727,
+			["grow"] = "RIGHT",
 		},
 		["BT - Whirling Blade"] = {
 			["iconSource"] = 0,
@@ -577,11 +589,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -630,11 +642,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -774,6 +786,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -786,13 +800,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -816,8 +829,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Council - Dampen Magic"] = {
 			["iconSource"] = 0,
@@ -873,11 +885,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"41478", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -1018,6 +1030,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1030,13 +1044,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -1060,8 +1073,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Council - Flamestrike"] = {
 			["iconSource"] = 0,
@@ -1117,11 +1129,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -1174,11 +1186,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -1318,6 +1330,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1330,13 +1344,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -1360,8 +1373,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Crush"] = {
 			["iconSource"] = -1,
@@ -1516,8 +1528,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 110,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -1551,7 +1563,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 110,
 		},
 		["Reaver - Arcane Orbs"] = {
 			["iconSource"] = 0,
@@ -1715,25 +1727,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "a3ymeb5a0Yk",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -1759,7 +1754,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Anetheron - Sleep"] = {
 			["iconSource"] = 0,
@@ -1817,13 +1829,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -1939,6 +1951,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -1951,13 +1965,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -1981,8 +1994,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Gurtogg - Fel Rage"] = {
 			["iconSource"] = 0,
@@ -2037,11 +2049,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -2091,13 +2103,13 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["useName"] = true,
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -2275,6 +2287,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -2287,13 +2301,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -2346,8 +2359,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Solarian - Phase 3"] = {
 			["iconSource"] = 0,
@@ -2401,8 +2413,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -2418,7 +2430,7 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -2556,25 +2568,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "AT2JYMgHZ0v",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -2636,7 +2631,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Gorefiend - Crushing Shadows"] = {
 			["iconSource"] = 0,
@@ -2690,13 +2702,13 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["useName"] = true,
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -2836,6 +2848,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -2848,13 +2862,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -2878,8 +2891,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Rain of Chaos"] = {
 			["iconSource"] = 0,
@@ -2931,11 +2943,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -2985,11 +2997,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -3038,11 +3050,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -3182,6 +3194,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -3194,13 +3208,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -3224,8 +3237,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Brez"] = {
 			["sparkWidth"] = 10,
@@ -3258,10 +3270,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -3584,13 +3596,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -3706,6 +3718,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -3718,13 +3732,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -3748,8 +3761,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Council - Circle of Healing Melee"] = {
 			["iconSource"] = 0,
@@ -3804,11 +3816,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -3943,6 +3955,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -3955,13 +3969,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -3985,8 +3998,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Conflagration"] = {
 			["iconSource"] = 0,
@@ -4199,26 +4211,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "eWkkmSI1cRI",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} CONFLAG ON ME! MOVE AWAY FROM %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -4244,7 +4238,25 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} CONFLAG ON ME! MOVE AWAY FROM %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Solarian - Arcane Torrent"] = {
 			["iconSource"] = 0,
@@ -4298,8 +4310,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -4315,7 +4327,7 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -4453,25 +4465,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "qAolrV2nevf",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -4497,7 +4492,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Raid Mana"] = {
 			["outline"] = "OUTLINE",
@@ -4533,12 +4545,12 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_START",
 						["customDuration"] = "\n\n",
 						["customName"] = "function()\n    return aura_env.text;\nend",
-						["events"] = "UNIT_POWER_FREQUENT",
+						["custom"] = "-- Trigger\nfunction()\n    local now = GetTime();\n    -- Once Per Throttle (Default 1 Second)\n    if (aura_env.lastRun == nil or aura_env.lastRun + (aura_env.config.throttle / 1000) < now) then\n        local percentTable = aura_env.createPercentTable()\n        local sortedTable = aura_env.createSortedTable(percentTable)\n        \n        aura_env.text = aura_env.createDisplayText(sortedTable, percentTable)\n        aura_env.lastRun = now;\n        return true;\n    end\n    -- Loop Through Each Member Of Raid\n    -- If They Qualify (Class, PowerType, Not On NameBlackList)\n    -- Add To Table, With UnitID + Mana Percent\n    -- Create Sort Mana Percent By Highest To Lowest (Key: Sort #, Value: Unit ID)\n    -- Loop Through Mana Percent Table Print Name + Class Color : Mana Percent\n    -- Always True, Load Only In Instances?\nend",
 						["custom_type"] = "status",
 						["check"] = "update",
+						["events"] = "UNIT_POWER_FREQUENT",
 						["spellIds"] = {
 						},
-						["custom"] = "-- Trigger\nfunction()\n    local now = GetTime();\n    -- Once Per Throttle (Default 1 Second)\n    if (aura_env.lastRun == nil or aura_env.lastRun + (aura_env.config.throttle / 1000) < now) then\n        local percentTable = aura_env.createPercentTable()\n        local sortedTable = aura_env.createSortedTable(percentTable)\n        \n        aura_env.text = aura_env.createDisplayText(sortedTable, percentTable)\n        aura_env.lastRun = now;\n        return true;\n    end\n    -- Loop Through Each Member Of Raid\n    -- If They Qualify (Class, PowerType, Not On NameBlackList)\n    -- Add To Table, With UnitID + Mana Percent\n    -- Create Sort Mana Percent By Highest To Lowest (Key: Sort #, Value: Unit ID)\n    -- Loop Through Mana Percent Table Print Name + Class Color : Mana Percent\n    -- Always True, Load Only In Instances?\nend",
 						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
@@ -4601,8 +4613,8 @@ WeakAurasSaved = {
 			["displayText_format_n_format"] = "none",
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
+			["preferToUpdate"] = false,
 			["wordWrap"] = "WordWrap",
-			["selfPoint"] = "TOPLEFT",
 			["conditions"] = {
 			},
 			["url"] = "https://wago.io/jJ_lqGGhH/7",
@@ -4790,7 +4802,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["selfPoint"] = "TOPLEFT",
 		},
 		["Missing Defense/Res 73L"] = {
 			["iconSource"] = -1,
@@ -4945,8 +4957,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 110,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -4980,7 +4992,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 110,
 		},
 		["SS"] = {
 			["sparkWidth"] = 10,
@@ -5013,10 +5025,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -5374,6 +5386,47 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["shadowYOffset"] = -1,
+			["desaturate"] = false,
+			["font"] = "Friz Quadrata TT",
+			["version"] = 7,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["height"] = 64,
+			["displayText"] = " Three stacks of Meteor Slash on %1.affected!\n",
+			["load"] = {
+				["zoneIds"] = "",
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "725",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
+			["cooldown"] = false,
+			["conditions"] = {
+			},
+			["fontSize"] = 19,
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = false,
+			["shadowXOffset"] = 1,
+			["automaticWidth"] = "Auto",
+			["uid"] = "eNQdbfug41V",
 			["actions"] = {
 				["start"] = {
 					["glow_color"] = {
@@ -5401,53 +5454,12 @@ WeakAurasSaved = {
 					["stop_sound"] = true,
 				},
 			},
-			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["version"] = 7,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-			},
-			["height"] = 64,
-			["authorOptions"] = {
-			},
-			["load"] = {
-				["zoneIds"] = "",
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["encounterid"] = "725",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-			},
-			["cooldown"] = false,
-			["conditions"] = {
-			},
-			["fontSize"] = 19,
-			["wordWrap"] = "WordWrap",
-			["preferToUpdate"] = false,
-			["shadowXOffset"] = 1,
-			["displayText"] = " Three stacks of Meteor Slash on %1.affected!\n",
-			["uid"] = "eNQdbfug41V",
-			["parent"] = "Fusion: Sunwell",
 			["regionType"] = "text",
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["automaticWidth"] = "Auto",
-			["displayText_format_1.affected_format"] = "none",
+			["authorOptions"] = {
+			},
+			["wordWrap"] = "WordWrap",
 			["displayText_format_p_time_precision"] = 1,
 			["justify"] = "LEFT",
 			["cooldownTextDisabled"] = false,
@@ -5455,14 +5467,14 @@ WeakAurasSaved = {
 			["semver"] = "1.0.6",
 			["tocversion"] = 20504,
 			["id"] = "Brut: Metor Slash x3",
-			["cooldownEdge"] = false,
+			["xOffset"] = -0.0001220703125,
 			["alpha"] = 1,
 			["width"] = 64,
-			["selfPoint"] = "CENTER",
+			["displayText_format_1.affected_format"] = "none",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["shadowYOffset"] = -1,
+			["parent"] = "Fusion: Sunwell",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -5472,7 +5484,7 @@ WeakAurasSaved = {
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["xOffset"] = -0.0001220703125,
+			["preferToUpdate"] = false,
 		},
 		["Lurker - Whirl"] = {
 			["iconSource"] = 0,
@@ -5526,8 +5538,8 @@ WeakAurasSaved = {
 						["unit"] = "group",
 						["duration"] = "17",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["use_count"] = false,
 						["debuffType"] = "HARMFUL",
 						["type"] = "addons",
@@ -5540,7 +5552,7 @@ WeakAurasSaved = {
 						["remaining_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -5590,8 +5602,8 @@ WeakAurasSaved = {
 						["unit"] = "group",
 						["duration"] = "17",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["use_count"] = false,
 						["debuffType"] = "HARMFUL",
 						["type"] = "addons",
@@ -5604,7 +5616,7 @@ WeakAurasSaved = {
 						["remaining_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -5743,25 +5755,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "VATBwVp5k3N",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -5787,7 +5782,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Fusion: Sunwell"] = {
 			["controlledChildren"] = {
@@ -5900,10 +5912,10 @@ WeakAurasSaved = {
 			["id"] = "Fusion: Sunwell",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["borderInset"] = 1,
 			["uid"] = "daxyuVTcVZT",
 			["config"] = {
 			},
-			["borderInset"] = 1,
 			["xOffset"] = 0,
 			["conditions"] = {
 			},
@@ -5967,13 +5979,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -6089,6 +6101,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -6101,13 +6115,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -6131,8 +6144,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Archimonde - Air Burst Clickable Tear"] = {
 			["iconSource"] = 0,
@@ -6379,18 +6391,18 @@ WeakAurasSaved = {
 			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
-					["do_custom"] = false,
 					["do_message"] = false,
 					["custom"] = "aura_env.button = CreateFrame(\"Button\", \"mcoTear2\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", [[\n/use item:4541\n]])",
+					["do_custom"] = false,
 				},
 				["init"] = {
 					["custom"] = "aura_env.button = CreateFrame(\"Button\", \"mcoTear2\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", [[\n/use item:24494\n]])\n\n\n\n",
 					["do_custom"] = true,
 				},
 				["finish"] = {
-					["do_custom"] = false,
 					["do_message"] = false,
 					["custom"] = "",
+					["do_custom"] = false,
 				},
 			},
 			["selfPoint"] = "CENTER",
@@ -6398,15 +6410,15 @@ WeakAurasSaved = {
 			},
 			["displayIcon"] = "Interface\\Icons\\Spell_Arcane_Arcane01",
 			["uid"] = "qi7Bbh2Q(0l",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["zoom"] = 0.3,
 			["semver"] = "1.0.9",
 			["tocversion"] = 20503,
 			["id"] = "Archimonde - Air Burst Clickable Tear",
 			["width"] = 56,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -6523,15 +6535,15 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["unevent"] = "timed",
 						["type"] = "aura2",
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -6705,26 +6717,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "FbHs7tIDQ(X",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} SLUDGE ON ME! HEAL %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -6750,7 +6744,25 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} SLUDGE ON ME! HEAL %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Leotheras - Whirlwind Ends"] = {
 			["iconSource"] = 0,
@@ -7013,25 +7025,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "ztR2d)aS7b(",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -7057,7 +7052,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Winterchill - Death and Decay"] = {
 			["iconSource"] = 0,
@@ -7115,13 +7127,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -7175,13 +7187,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["type"] = "combatlog",
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -7235,13 +7247,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["type"] = "combatlog",
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -7379,6 +7391,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -7391,13 +7405,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -7421,8 +7434,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Phoenix Egg"] = {
 			["iconSource"] = 0,
@@ -7635,25 +7647,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = true,
 			["uid"] = "IeME00zltjB",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -7679,7 +7674,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Supremus - Phase 2"] = {
 			["iconSource"] = 0,
@@ -7733,8 +7745,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -7751,7 +7763,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -7918,6 +7930,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -7930,13 +7944,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -7986,8 +7999,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Burn: > 14 Sec"] = {
 			["outline"] = "OUTLINE",
@@ -8059,8 +8071,7 @@ WeakAurasSaved = {
 				},
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
+			["displayText"] = " ",
 			["font"] = "Friz Quadrata TT",
 			["version"] = 7,
 			["subRegions"] = {
@@ -8090,31 +8101,13 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = true,
 			},
-			["displayText"] = " ",
+			["shadowYOffset"] = -1,
 			["cooldown"] = false,
 			["fontSize"] = 12,
 			["conditions"] = {
 			},
-			["parent"] = "Fusion: Sunwell",
-			["shadowXOffset"] = 1,
 			["automaticWidth"] = "Auto",
-			["selfPoint"] = "CENTER",
-			["uid"] = "f92yWf0f6ja",
-			["regionType"] = "text",
-			["xOffset"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["wordWrap"] = "WordWrap",
-			["displayText_format_p_time_precision"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.6",
-			["zoom"] = 0,
-			["justify"] = "LEFT",
-			["tocversion"] = 20504,
-			["id"] = "Burn: > 14 Sec",
-			["url"] = "https://wago.io/BHC3XxUdm/7",
-			["alpha"] = 1,
-			["width"] = 64,
+			["shadowXOffset"] = 1,
 			["actions"] = {
 				["start"] = {
 					["glow_frame_type"] = "UNITFRAME",
@@ -8136,10 +8129,29 @@ WeakAurasSaved = {
 					["hide_all_glows"] = true,
 				},
 			},
+			["xOffset"] = 0,
+			["uid"] = "f92yWf0f6ja",
+			["regionType"] = "text",
+			["wordWrap"] = "WordWrap",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["preferToUpdate"] = false,
+			["displayText_format_p_time_precision"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.6",
+			["zoom"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 20504,
+			["id"] = "Burn: > 14 Sec",
+			["authorOptions"] = {
+			},
+			["alpha"] = 1,
+			["width"] = 64,
+			["url"] = "https://wago.io/BHC3XxUdm/7",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["shadowYOffset"] = -1,
+			["selfPoint"] = "CENTER",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -8149,7 +8161,7 @@ WeakAurasSaved = {
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["preferToUpdate"] = false,
+			["parent"] = "Fusion: Sunwell",
 		},
 		["Bloodlust 2"] = {
 			["sparkWidth"] = 10,
@@ -8185,10 +8197,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -8400,11 +8412,15 @@ WeakAurasSaved = {
 			["displayIcon"] = "136012",
 			["icon"] = true,
 			["xOffset"] = 0,
-			["uid"] = "ia3c7ih5HmN",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["config"] = {
-			},
+			["uid"] = "ia3c7ih5HmN",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["icon_side"] = "LEFT",
 			["anchorFrameType"] = "SCREEN",
@@ -8424,11 +8440,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["sparkOffsetY"] = 0,
@@ -8526,11 +8538,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -8581,11 +8593,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -8724,25 +8736,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "xPaoPxl5zn1",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -8768,7 +8763,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Council - Circle of Healing Ranged"] = {
 			["iconSource"] = 0,
@@ -8823,11 +8835,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -8962,6 +8974,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -8974,13 +8988,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -9004,8 +9017,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC - Spore Quake"] = {
 			["iconSource"] = 0,
@@ -9058,11 +9070,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -9200,25 +9212,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "aPXxnxBRn4H",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -9244,7 +9239,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT - Sunder Armor"] = {
 			["iconSource"] = 0,
@@ -9298,11 +9310,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -9458,6 +9470,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -9470,13 +9484,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -9500,8 +9513,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Archimonde - Grip of the Legion"] = {
 			["iconSource"] = 0,
@@ -9556,11 +9568,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -9678,6 +9690,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} CURSE ON %c {rt7}",
@@ -9691,13 +9705,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -9721,8 +9734,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Illidan - Shadow Prison"] = {
 			["iconSource"] = 0,
@@ -9780,13 +9792,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -9902,6 +9914,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -9914,13 +9928,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -9944,8 +9957,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Leotheras - Banish"] = {
 			["iconSource"] = 0,
@@ -10149,25 +10161,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "VI8IIzH1YKo",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -10193,7 +10188,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Heroism"] = {
 			["sparkWidth"] = 10,
@@ -10226,10 +10238,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -10557,11 +10569,11 @@ WeakAurasSaved = {
 							"41453", -- [2]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -10690,6 +10702,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -10702,13 +10716,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -10732,8 +10745,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Solarian - Astromancer Split"] = {
 			["iconSource"] = 0,
@@ -10787,8 +10799,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -10804,7 +10816,7 @@ WeakAurasSaved = {
 						["type"] = "combatlog",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -10853,8 +10865,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -10870,7 +10882,7 @@ WeakAurasSaved = {
 						["type"] = "combatlog",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -10919,8 +10931,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -10936,7 +10948,7 @@ WeakAurasSaved = {
 						["type"] = "combatlog",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -10985,8 +10997,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -11002,7 +11014,7 @@ WeakAurasSaved = {
 						["type"] = "combatlog",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -11212,25 +11224,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "XFZ4nyAQrHN",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -11297,7 +11292,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Kaelthas - Nether Vapor"] = {
 			["iconSource"] = 0,
@@ -11510,25 +11522,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "AEqwUvH8LY2",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -11554,7 +11549,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Akama - Rain of Fire"] = {
 			["iconSource"] = 0,
@@ -11608,8 +11620,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -11626,7 +11638,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -11675,8 +11687,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -11693,7 +11705,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -11833,6 +11845,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -11845,13 +11859,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -11875,8 +11888,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["TK - Charged Arcane Explosion"] = {
 			["iconSource"] = 0,
@@ -11930,11 +11942,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -12072,25 +12084,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Z1aPb9Ns6bJ",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -12116,7 +12111,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Archimonde - Soul Charge"] = {
 			["iconSource"] = -1,
@@ -12171,11 +12183,11 @@ WeakAurasSaved = {
 							"32053", -- [1]
 							"32054", -- [2]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -12329,6 +12341,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -12341,13 +12355,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -12399,62 +12412,84 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
-		["Twins: Dark Touched > 7"] = {
-			["outline"] = "OUTLINE",
-			["iconSource"] = -1,
-			["wagoID"] = "BHC3XxUdm",
+		["Archimonde - Fear"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "Y5J7NdyVH",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
-			["displayText_format_p_time_format"] = 0,
-			["customTextUpdate"] = "event",
-			["cooldownEdge"] = false,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/Y5J7NdyVH/8",
 			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["rem"] = "11",
-						["useStacks"] = true,
+						["npcId"] = "16024",
+						["spellId"] = "28433",
 						["auranames"] = {
+							"31970", -- [1]
 						},
-						["unit"] = "raid",
-						["stacks"] = "7",
-						["debuffType"] = "HARMFUL",
-						["showClones"] = true,
-						["useName"] = false,
-						["stacksOperator"] = ">",
-						["useExactSpellId"] = true,
-						["use_includePets"] = true,
+						["duration"] = "40",
+						["amount"] = "0",
+						["group_count"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_eventtype"] = true,
+						["event"] = "Combat Events",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["use_spellId"] = false,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["useGroup_count"] = true,
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
+						["group_countOperator"] = ">",
+						["useExactSpellId"] = false,
+						["unit"] = "player",
+						["debuffType"] = "HARMFUL",
+						["use_genericShowOn"] = true,
+						["useName"] = true,
+						["unevent"] = "timed",
+						["auraspellids"] = {
+							"38215", -- [1]
 						},
-						["event"] = "Health",
+						["use_threatUnit"] = true,
+						["use_npcId"] = true,
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["realSpellName"] = "Impale",
+						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"45347", -- [1]
-						},
-						["remOperator"] = "<",
 						["type"] = "aura2",
-						["subeventSuffix"] = "_CAST_START",
-						["useRem"] = false,
+						["use_aggro"] = true,
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["useAffected"] = true,
+						["names"] = {
+						},
 					},
 					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
 					},
 				}, -- [1]
+				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
 			["internalVersion"] = 53,
 			["keepAspectRatio"] = false,
 			["animation"] = {
@@ -12466,9 +12501,10 @@ WeakAurasSaved = {
 				},
 				["main"] = {
 					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
 					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "spiralandpulse",
+					["duration_type"] = "seconds",
 				},
 				["finish"] = {
 					["type"] = "none",
@@ -12478,22 +12514,51 @@ WeakAurasSaved = {
 				},
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
-			["font"] = "Friz Quadrata TT",
-			["version"] = 7,
+			["version"] = 8,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
 				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "FEARED",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_justify"] = "CENTER",
+				}, -- [2]
 			},
 			["height"] = 64,
 			["load"] = {
-				["zoneIds"] = "",
-				["size"] = {
-					["multi"] = {
-					},
-				},
+				["use_never"] = false,
 				["talent"] = {
 					["multi"] = {
 					},
@@ -12502,77 +12567,72 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "725",
-				["class"] = {
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["size"] = {
 					["multi"] = {
+						["fortyman"] = true,
 					},
 				},
-				["use_encounterid"] = false,
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["WARRIOR"] = true,
+						["PRIEST"] = true,
+					},
+				},
+				["zone"] = "Serpentshrine Cavern",
+				["use_zoneIds"] = true,
+				["encounterid"] = "622",
+				["zoneIds"] = "329",
 			},
-			["displayText"] = " ",
-			["cooldown"] = false,
-			["fontSize"] = 12,
-			["conditions"] = {
-			},
-			["parent"] = "Fusion: Sunwell",
-			["shadowXOffset"] = 1,
-			["automaticWidth"] = "Auto",
-			["selfPoint"] = "CENTER",
-			["uid"] = "h6AuVTgHvhc",
-			["regionType"] = "text",
-			["xOffset"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["wordWrap"] = "WordWrap",
-			["displayText_format_p_time_precision"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.6",
 			["zoom"] = 0,
-			["justify"] = "LEFT",
-			["tocversion"] = 20504,
-			["id"] = "Twins: Dark Touched > 7",
-			["url"] = "https://wago.io/BHC3XxUdm/7",
-			["alpha"] = 1,
-			["width"] = 64,
+			["config"] = {
+			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
-					["glow_color"] = {
-						0.70980392156863, -- [1]
-						0, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glow_thickness"] = 2,
-					["glow_action"] = "show",
-					["do_glow"] = true,
-					["glow_frame_type"] = "UNITFRAME",
-					["glow_border"] = true,
-					["glow_length"] = 20,
-					["use_glow_color"] = true,
-					["glow_type"] = "Pixel",
-					["glow_lines"] = 10,
-					["glow_frequency"] = 0,
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["init"] = {
 				},
 				["finish"] = {
-					["hide_all_glows"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
 				},
 			},
-			["config"] = {
-			},
-			["inverse"] = false,
-			["shadowYOffset"] = -1,
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["fixedWidth"] = 200,
+			["regionType"] = "icon",
 			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["displayIcon"] = 136147,
+			["cooldownEdge"] = true,
+			["xOffset"] = 0,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.3",
+			["tocversion"] = 20503,
+			["id"] = "Archimonde - Fear",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["uid"] = "HvwogBf9RpQ",
+			["inverse"] = false,
+			["parent"] = "Tems' BT/MH Pack",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
 		},
 		["Rampage Timer"] = {
 			["iconSource"] = 0,
@@ -12862,21 +12922,8 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 0,
 			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 2,
 			["desc"] = "This WA is designed to help improve your Rampage uptime by providing visual ques showing the status of your Rampage buff.\n\nThere are three icon possibilities:\n\n1) Saturated Icon + Glow:   Rampage IS NOT active on you, but is currently useable.\n\n2) Saturated Icon + Glow + Countdown:   Rampage IS active on you, but will be expiring within 10 seconds. Rampage is currently useable. Refresh!\n\n3) Desaturated Icon + Countdown:   Rampage IS active on you. The countdown indicates the exact amount of time remaining on the buff. The count on the bottom-right indicates the # of stacks currently applied.\n\n+  Crit Timer:   This bar tracks the 5 second window following a Critical Strike that Rampage is useable (provided you also have 20 Rage). ",
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\SharpPunch.ogg",
-					["do_sound"] = false,
-				},
-				["finish"] = {
-					["do_message"] = false,
-				},
-				["init"] = {
-					["do_custom"] = false,
-				},
-			},
 			["cooldown"] = false,
 			["conditions"] = {
 				{
@@ -12983,7 +13030,20 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 2,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\SharpPunch.ogg",
+					["do_sound"] = false,
+				},
+				["finish"] = {
+					["do_message"] = false,
+				},
+				["init"] = {
+					["do_custom"] = false,
+				},
+			},
 		},
 		["Morogrim - Pierce Armor"] = {
 			["iconSource"] = 0,
@@ -13035,11 +13095,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "50",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -13049,7 +13109,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -13188,25 +13248,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "SfAznI14u8d",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -13232,7 +13275,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Illidan - Enrage"] = {
 			["iconSource"] = 0,
@@ -13290,13 +13350,13 @@ WeakAurasSaved = {
 							"40683", -- [1]
 						},
 						["useName"] = false,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -13434,6 +13494,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["do_loop"] = false,
@@ -13449,13 +13511,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -13479,8 +13540,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Res to Cap Title"] = {
 			["iconSource"] = -1,
@@ -13635,8 +13695,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 200,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -13670,7 +13730,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 200,
 		},
 		["Kaelthas - Bellowing Roar"] = {
 			["iconSource"] = 0,
@@ -13883,25 +13943,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "tNZPV2TS41A",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -13927,7 +13970,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Reliquary - Active Boss"] = {
 			["iconSource"] = -1,
@@ -13985,11 +14045,11 @@ WeakAurasSaved = {
 							"41350", -- [2]
 							"41337", -- [3]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -14293,6 +14353,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -14305,13 +14367,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -14389,8 +14450,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC - Shatter Armor"] = {
 			["iconSource"] = 0,
@@ -14443,11 +14503,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -14585,25 +14645,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "N)RIV8EPQqJ",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -14629,7 +14672,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Illidan - Aura of the Dead"] = {
 			["iconSource"] = 0,
@@ -14688,13 +14748,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["type"] = "combatlog",
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -14832,6 +14892,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -14844,13 +14906,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -14874,8 +14935,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Reliquary - Soul Drain"] = {
 			["iconSource"] = 0,
@@ -14929,11 +14989,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -15074,6 +15134,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} DRAIN ON %c {rt7}",
@@ -15087,13 +15149,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -15117,26 +15178,20 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
-		["Kalecgos: Decurse"] = {
+		["Encapsulate Debuff"] = {
 			["outline"] = "OUTLINE",
 			["iconSource"] = -1,
-			["wagoID"] = "BHC3XxUdm",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["wagoID"] = "Fh-HW-Mmt",
+			["parent"] = "Encapsulate Nearby",
 			["displayText_format_p_time_dynamic_threshold"] = 60,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["displayText_format_p_time_format"] = 0,
 			["customTextUpdate"] = "event",
-			["cooldownEdge"] = false,
+			["automaticWidth"] = "Auto",
 			["icon"] = true,
 			["triggers"] = {
 				{
@@ -15144,26 +15199,27 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["type"] = "aura2",
 						["auranames"] = {
-							"Curse of Boundless Agony", -- [1]
+							"45665", -- [1]
 						},
-						["debuffType"] = "HARMFUL",
-						["useName"] = true,
-						["use_includePets"] = true,
-						["unit"] = "raid",
-						["rem"] = "15",
+						["useRem"] = false,
+						["event"] = "Health",
+						["unit"] = "group",
+						["names"] = {
+						},
 						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
+						["rem"] = "5",
+						["remOperator"] = ">",
+						["useName"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["remOperator"] = "<",
-						["names"] = {
-						},
-						["event"] = "Health",
-						["useRem"] = true,
+						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
+				["disjunctive"] = "any",
+				["customTriggerLogic"] = "\n\n",
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_format"] = "timed",
@@ -15171,41 +15227,37 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
+					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
+					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
+					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
 			},
+			["shadowYOffset"] = -1,
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
 			["font"] = "Friz Quadrata TT",
-			["version"] = 7,
+			["version"] = 3,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
 				}, -- [1]
 			},
 			["height"] = 64,
+			["url"] = "https://wago.io/Fh-HW-Mmt/3",
 			["load"] = {
-				["zoneIds"] = "",
-				["size"] = {
-					["multi"] = {
-					},
-				},
+				["use_encounterid"] = true,
 				["talent"] = {
 					["multi"] = {
 					},
@@ -15214,72 +15266,74 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "724",
+				["encounterid"] = "726",
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = true,
-			},
-			["displayText"] = " ",
-			["cooldown"] = false,
-			["fontSize"] = 12,
-			["conditions"] = {
-			},
-			["parent"] = "Fusion: Sunwell",
-			["shadowXOffset"] = 1,
-			["automaticWidth"] = "Auto",
-			["selfPoint"] = "CENTER",
-			["uid"] = "n3oM)WP8YTN",
-			["regionType"] = "text",
-			["xOffset"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["wordWrap"] = "WordWrap",
-			["displayText_format_p_time_precision"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.6",
-			["zoom"] = 0,
-			["justify"] = "LEFT",
-			["tocversion"] = 20504,
-			["id"] = "Kalecgos: Decurse",
-			["url"] = "https://wago.io/BHC3XxUdm/7",
-			["alpha"] = 1,
-			["width"] = 64,
-			["actions"] = {
-				["start"] = {
-					["glow_frame_type"] = "UNITFRAME",
-					["glow_thickness"] = 2,
-					["glow_action"] = "show",
-					["glow_color"] = {
-						0.73333333333333, -- [1]
-						0.34901960784314, -- [2]
-						1, -- [3]
-						1, -- [4]
+				["size"] = {
+					["multi"] = {
 					},
-					["use_glow_color"] = true,
-					["glow_type"] = "Pixel",
-					["do_glow"] = true,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["hide_all_glows"] = true,
 				},
 			},
+			["information"] = {
+			},
+			["fixedWidth"] = 200,
+			["fontSize"] = 12,
+			["source"] = "import",
+			["authorOptions"] = {
+			},
+			["shadowXOffset"] = 1,
+			["xOffset"] = 0,
+			["wordWrap"] = "WordWrap",
 			["config"] = {
 			},
+			["regionType"] = "text",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["width"] = 64,
+			["alpha"] = 1,
+			["selfPoint"] = "CENTER",
+			["displayText_format_p_time_precision"] = 1,
+			["cooldownTextDisabled"] = false,
+			["justify"] = "LEFT",
+			["zoom"] = 0,
+			["semver"] = "1.0.2",
+			["tocversion"] = 20504,
+			["id"] = "Encapsulate Debuff",
+			["actions"] = {
+				["start"] = {
+					["custom"] = "local unit = aura_env.state.unit\n\nlocal duration = 10\nlocal interval = 0.2\n\nlocal callback = function()\n    WeakAuras.ScanEvents(\"ENCAPSULATE_RANGE_CHECK\", unit)\nend\n\naura_env.tickers[unit] = C_Timer.NewTicker(interval, callback, duration / interval)\n\n\n\n",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+					["custom"] = "local unit = aura_env.state.unit\n\naura_env.tickers[unit]:Cancel()",
+					["do_custom"] = true,
+				},
+				["init"] = {
+					["custom"] = "aura_env.tickers = {}",
+					["do_custom"] = true,
+				},
+			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["displayText"] = "",
+			["uid"] = "2Ibg2IXi8ke",
 			["inverse"] = false,
-			["shadowYOffset"] = -1,
+			["cooldownEdge"] = false,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["fixedWidth"] = 200,
-			["information"] = {
+			["conditions"] = {
 			},
+			["cooldown"] = false,
 			["preferToUpdate"] = false,
 		},
 		["Mother Vorwärts"] = {
@@ -15313,13 +15367,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 3 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
+						["events"] = "RAID_TARGET_UPDATE",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
-						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 3 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -15460,13 +15514,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 3 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
+						["events"] = "RAID_TARGET_UPDATE",
 						["custom_type"] = "stateupdate",
 						["check"] = "event",
 						["subeventPrefix"] = "SPELL",
-						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 3 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -15628,11 +15682,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "2.5",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -15642,7 +15696,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -15781,25 +15835,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "CZ)6PXf9FAe",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -15825,204 +15862,6 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
-		},
-		["TK - Overcharge"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "20036",
-						["spellId"] = "37104",
-						["auranames"] = {
-							"35035", -- [1]
-						},
-						["duration"] = "2",
-						["amount"] = "0",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_debuffClass"] = false,
-						["use_eventtype"] = true,
-						["event"] = "Combat Log",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["use_spellId"] = true,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
-						["names"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["use_aggro"] = true,
-						["debuffType"] = "HELPFUL",
-						["useName"] = true,
-						["type"] = "combatlog",
-						["unevent"] = "timed",
-						["auraspellids"] = {
-							"38626", -- [1]
-						},
-						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["use_genericShowOn"] = true,
-						["unit"] = "target",
-						["useExactSpellId"] = false,
-						["useAffected"] = true,
-						["subeventPrefix"] = "SPELL",
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "spiralandpulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 19,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "HEAL TANK",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glow"] = true,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [3]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = false,
-				["use_zone"] = false,
-				["zoneIds"] = "334",
-				["encounterid"] = "2458",
-				["use_zoneIds"] = true,
-				["zone"] = "Tempest Keep",
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["PRIEST"] = true,
-						["WARRIOR"] = true,
-					},
-				},
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "ed7L)c8DinY",
-			["authorOptions"] = {
-			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -16033,39 +15872,176 @@ WeakAurasSaved = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 				["init"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
+		},
+		["Kalecgos: Decurse"] = {
+			["outline"] = "OUTLINE",
+			["iconSource"] = -1,
+			["wagoID"] = "BHC3XxUdm",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["displayText_format_p_time_format"] = 0,
+			["customTextUpdate"] = "event",
+			["cooldownEdge"] = false,
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["showClones"] = true,
+						["type"] = "aura2",
+						["auranames"] = {
+							"Curse of Boundless Agony", -- [1]
+						},
+						["debuffType"] = "HARMFUL",
+						["useName"] = true,
+						["use_includePets"] = true,
+						["unit"] = "raid",
+						["rem"] = "15",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["remOperator"] = "<",
+						["names"] = {
+						},
+						["event"] = "Health",
+						["useRem"] = true,
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+			["displayText_format_p_format"] = "timed",
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["displayText"] = " ",
+			["font"] = "Friz Quadrata TT",
+			["version"] = 7,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["height"] = 64,
+			["load"] = {
+				["zoneIds"] = "",
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "724",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+			},
+			["shadowYOffset"] = -1,
+			["cooldown"] = false,
+			["fontSize"] = 12,
 			["conditions"] = {
 			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
+			["automaticWidth"] = "Auto",
+			["shadowXOffset"] = 1,
+			["actions"] = {
+				["start"] = {
+					["glow_frame_type"] = "UNITFRAME",
+					["glow_thickness"] = 2,
+					["glow_action"] = "show",
+					["glow_color"] = {
+						0.73333333333333, -- [1]
+						0.34901960784314, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
+					["do_glow"] = true,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["hide_all_glows"] = true,
+				},
+			},
+			["xOffset"] = 0,
+			["uid"] = "n3oM)WP8YTN",
+			["regionType"] = "text",
+			["wordWrap"] = "WordWrap",
 			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "TK - Overcharge",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
 			["frameStrata"] = 1,
+			["preferToUpdate"] = false,
+			["displayText_format_p_time_precision"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.6",
+			["zoom"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 20504,
+			["id"] = "Kalecgos: Decurse",
+			["authorOptions"] = {
+			},
+			["alpha"] = 1,
+			["width"] = 64,
+			["url"] = "https://wago.io/BHC3XxUdm/7",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 135732,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
+			["selfPoint"] = "CENTER",
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
-			["xOffset"] = 0,
+			["fixedWidth"] = 200,
+			["information"] = {
+			},
+			["parent"] = "Fusion: Sunwell",
 		},
 		["Supremus - Fixate"] = {
 			["iconSource"] = 0,
@@ -16117,10 +16093,10 @@ WeakAurasSaved = {
 						["use_status"] = false,
 						["useGroup_count"] = true,
 						["subeventPrefix"] = "SPELL",
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "target",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["group_countOperator"] = ">",
 						["names"] = {
 						},
@@ -16139,7 +16115,7 @@ WeakAurasSaved = {
 						["use_destFlags2"] = false,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -16188,8 +16164,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -16206,7 +16182,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -16346,6 +16322,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} FIXATE ON %c {rt7}",
@@ -16359,13 +16337,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -16389,8 +16366,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["TK - Arcane Flurry"] = {
 			["iconSource"] = 0,
@@ -16444,11 +16420,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -16499,11 +16475,11 @@ WeakAurasSaved = {
 							"38626", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -16642,25 +16618,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "tBwforet9el",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -16686,7 +16645,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Mother Direction Decider"] = {
 			["controlledChildren"] = {
@@ -16790,14 +16766,14 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 20503,
 			["id"] = "Mother Direction Decider",
-			["borderInset"] = 1,
+			["xOffset"] = 0,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "CENTER",
-			["uid"] = "FSWnsHwx6xr",
-			["xOffset"] = 0,
 			["config"] = {
 			},
+			["borderInset"] = 1,
+			["uid"] = "FSWnsHwx6xr",
 			["conditions"] = {
 			},
 			["information"] = {
@@ -16854,11 +16830,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -16997,6 +16973,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -17009,13 +16987,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -17039,8 +17016,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Pyroblast"] = {
 			["iconSource"] = 0,
@@ -17256,25 +17232,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "wl(TNnBKU5d",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -17300,7 +17259,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Alar - Ember of Alar"] = {
 			["iconSource"] = 0,
@@ -17354,8 +17330,8 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = "<=",
 						["use_aggro"] = true,
 						["subeventPrefix"] = "SPELL",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
 						["message"] = "The Lurker Below takes a deep breath",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
@@ -17369,7 +17345,7 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -17508,25 +17484,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "UUSzhjq6ERv",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -17552,7 +17511,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Illidan - Blaze"] = {
 			["iconSource"] = 0,
@@ -17611,13 +17587,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["type"] = "combatlog",
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -17671,13 +17647,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["type"] = "combatlog",
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -17793,6 +17769,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -17805,13 +17783,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -17835,8 +17812,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Mind Control"] = {
 			["iconSource"] = 0,
@@ -17941,8 +17917,8 @@ WeakAurasSaved = {
 						["range_operator"] = "<=",
 						["spellName"] = "Intangible Presence",
 						["showClones"] = false,
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["use_eventtype"] = true,
+						["useExactSpellId"] = false,
 						["useAffected"] = true,
 						["percenthealth"] = "20",
 						["event"] = "Range Check",
@@ -17960,10 +17936,10 @@ WeakAurasSaved = {
 						["use_status"] = false,
 						["useGroup_count"] = true,
 						["unit"] = "player",
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["genericShowOn"] = "showOnCooldown",
 						["subeventPrefix"] = "SPELL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_aggro"] = true,
 						["destUnit"] = "player",
 						["names"] = {
@@ -17982,7 +17958,7 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -17990,7 +17966,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = false,
-						["useExactSpellId"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -18171,25 +18147,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "o7N08dBYL2c",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -18215,7 +18174,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Akama - Debilitating Poison"] = {
 			["iconSource"] = 0,
@@ -18269,8 +18245,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -18287,7 +18263,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -18405,6 +18381,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} POISON ON %c {rt7}",
@@ -18418,13 +18396,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -18448,8 +18425,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["TK - Power Infusion"] = {
 			["iconSource"] = 0,
@@ -18503,11 +18479,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -18558,11 +18534,11 @@ WeakAurasSaved = {
 							"38626", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -18701,25 +18677,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "jHtXVQVzcDa",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -18745,7 +18704,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Gurtogg - Bloodboil"] = {
 			["iconSource"] = 0,
@@ -18799,8 +18775,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -18817,7 +18793,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -18936,6 +18912,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "BB on me, NEXT!",
@@ -18949,13 +18927,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -18979,8 +18956,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Res"] = {
 			["iconSource"] = -1,
@@ -19135,8 +19111,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 265,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -19170,7 +19146,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 265,
 		},
 		["MH - Banshee Curse"] = {
 			["iconSource"] = 0,
@@ -19222,11 +19198,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -19367,6 +19343,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} CURSE ON %c {rt7}",
@@ -19380,13 +19358,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -19410,8 +19387,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC - Refreshing Mist"] = {
 			["iconSource"] = 0,
@@ -19464,11 +19440,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -19606,25 +19582,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "7fHIic59RVV",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -19650,7 +19609,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Mana Tide"] = {
 			["sparkWidth"] = 10,
@@ -19683,10 +19659,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -20106,8 +20082,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -20141,7 +20117,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 		},
 		["Kaelthas - Fireball"] = {
 			["iconSource"] = 0,
@@ -20357,25 +20333,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "5QrQ8TI6A6G",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -20401,7 +20360,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Illidan - Parastic Shadowfiend"] = {
 			["iconSource"] = 0,
@@ -20458,11 +20434,11 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -20601,6 +20577,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} PARASITES ON %c in 10 {rt7}",
@@ -20614,13 +20592,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -20695,8 +20672,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Missing Staff"] = {
 			["iconSource"] = 0,
@@ -20751,10 +20727,10 @@ WeakAurasSaved = {
 						["use_status"] = false,
 						["useGroup_count"] = true,
 						["range"] = "12",
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_aggro"] = true,
 						["use_unit"] = true,
 						["names"] = {
@@ -20773,7 +20749,7 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = ">",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -20984,25 +20960,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "RKEXH27ncO(",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -21028,7 +20987,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Alar - Dive Bomb"] = {
 			["iconSource"] = 0,
@@ -21083,8 +21059,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "nameplate",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["threatUnit"] = "target",
@@ -21102,7 +21078,7 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = "<=",
 						["use_text"] = true,
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -21151,8 +21127,8 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = "<=",
 						["use_aggro"] = true,
 						["subeventPrefix"] = "SPELL",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
 						["message"] = "Dive Bomb",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
@@ -21166,7 +21142,7 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -21305,25 +21281,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "iSlsOwkVLzG",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -21349,7 +21308,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Reaver - Knock Away"] = {
 			["iconSource"] = 0,
@@ -21403,8 +21379,8 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = "<=",
 						["use_aggro"] = true,
 						["subeventPrefix"] = "SPELL",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
 						["message"] = "The Lurker Below takes a deep breath",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
@@ -21418,7 +21394,7 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -21557,25 +21533,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Kx33wza8C)f",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -21601,7 +21560,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["SSC - Toxic Pool"] = {
 			["iconSource"] = 0,
@@ -21654,11 +21630,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -21796,25 +21772,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "KnYdEXNY)dp",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -21840,7 +21799,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Leotheras - Phase 2"] = {
 			["iconSource"] = 0,
@@ -21894,8 +21870,8 @@ WeakAurasSaved = {
 						},
 						["duration"] = "5",
 						["use_aggro"] = true,
+						["use_npcId"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_threatUnit"] = true,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
 						["type"] = "event",
@@ -21908,7 +21884,7 @@ WeakAurasSaved = {
 						["group_countOperator"] = ">",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -21957,8 +21933,8 @@ WeakAurasSaved = {
 						},
 						["duration"] = "5",
 						["use_aggro"] = true,
+						["use_npcId"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_threatUnit"] = true,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
 						["type"] = "event",
@@ -21971,7 +21947,7 @@ WeakAurasSaved = {
 						["group_countOperator"] = ">",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -22145,25 +22121,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "PQYuXl4FbWV",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -22189,7 +22148,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Shahraz - Fatal Attraction"] = {
 			["iconSource"] = 0,
@@ -22244,11 +22220,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -22389,6 +22365,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} ATTRACTION ON %c {rt7}",
@@ -22402,13 +22380,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -22432,8 +22409,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Flame Strike"] = {
 			["iconSource"] = 0,
@@ -22646,25 +22622,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "1FDRDnuGqLQ",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -22690,7 +22649,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Gorefiend - Incinerate"] = {
 			["iconSource"] = 0,
@@ -22744,8 +22720,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -22762,7 +22738,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -22880,6 +22856,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -22892,13 +22870,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -22922,8 +22899,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC - Frightening Shout"] = {
 			["iconSource"] = 0,
@@ -22976,11 +22952,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -23119,25 +23095,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "vEB5fM4BhAk",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -23163,7 +23122,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT - Ice Trap"] = {
 			["iconSource"] = 0,
@@ -23216,11 +23192,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -23339,6 +23315,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -23351,13 +23329,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -23381,8 +23358,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Council - Reflective Shield"] = {
 			["iconSource"] = 0,
@@ -23438,11 +23414,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"41475", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -23559,6 +23535,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -23571,13 +23549,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -23601,8 +23578,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Illidan - Phase 2"] = {
 			["iconSource"] = 0,
@@ -23660,13 +23636,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -23782,6 +23758,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -23794,13 +23772,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -23824,8 +23801,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Focused"] = {
 			["user_y"] = 0,
@@ -23862,25 +23838,11 @@ WeakAurasSaved = {
 			["endAngle"] = 360,
 			["internalVersion"] = 53,
 			["selfPoint"] = "CENTER",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.1420136094093323, -- [4]
 			},
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
@@ -23894,28 +23856,21 @@ WeakAurasSaved = {
 			["backgroundOffset"] = 2,
 			["useAdjustededMax"] = false,
 			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.1420136094093323, -- [4]
-			},
+			["fontSize"] = 12,
 			["startAngle"] = 0,
 			["crop_x"] = 0.41,
-			["fontSize"] = 12,
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
 			["mirror"] = false,
 			["useAdjustededMin"] = false,
 			["regionType"] = "progresstexture",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["authorOptions"] = {
 			},
 			["blendMode"] = "ADD",
-			["authorOptions"] = {
+			["foregroundColor"] = {
+				0.02745098039215686, -- [1]
+				0.3019607843137255, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["config"] = {
 			},
@@ -23948,15 +23903,36 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["alpha"] = 0.37,
 			["width"] = 409,
-			["foregroundColor"] = {
-				0.02745098039215686, -- [1]
-				0.3019607843137255, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 			["uid"] = "JBLbbwbW1nf",
 			["inverse"] = false,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["orientation"] = "VERTICAL",
 			["conditions"] = {
 				{
@@ -24078,15 +24054,15 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "CENTER",
-			["borderInset"] = 1,
-			["xOffset"] = 0,
 			["uid"] = "O2rvAUTEE1N",
+			["xOffset"] = 0,
+			["config"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["config"] = {
-			},
+			["borderInset"] = 1,
 		},
 		["Morogrim - Watery Grave"] = {
 			["iconSource"] = 0,
@@ -24138,11 +24114,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -24152,7 +24128,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -24291,26 +24267,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "fJu)W2qovUM",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} GRAVE ON ME! HEAL %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -24336,7 +24294,25 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} GRAVE ON ME! HEAL %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT - Cloud of Disease"] = {
 			["iconSource"] = 0,
@@ -24390,11 +24366,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -24534,6 +24510,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -24546,13 +24524,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -24576,8 +24553,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Vashj - MC CD"] = {
 			["iconSource"] = 0,
@@ -24629,11 +24605,11 @@ WeakAurasSaved = {
 						["message"] = "You may want to take cover",
 						["duration"] = "4",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "event",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -24643,7 +24619,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -24691,11 +24667,11 @@ WeakAurasSaved = {
 						["message"] = "You may want to take cover",
 						["duration"] = "21",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -24705,7 +24681,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -24880,25 +24856,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Gk0Lrqs50vM",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -24949,7 +24908,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["VIctory Rush"] = {
 			["iconSource"] = -1,
@@ -25182,13 +25158,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["type"] = "combatlog",
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -25304,6 +25280,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} INFERNAL ON %c {rt7}",
@@ -25317,13 +25295,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -25347,8 +25324,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Shell of Life"] = {
 			["iconSource"] = 0,
@@ -25403,11 +25379,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -25546,6 +25522,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -25558,13 +25536,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -25588,8 +25565,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Alar - Flame Quills"] = {
 			["iconSource"] = 0,
@@ -25641,11 +25617,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -25655,7 +25631,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -25794,25 +25770,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "7bRwhN05kUl",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = true,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Sound\\Interface\\RaidWarning.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -25838,7 +25797,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = true,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Sound\\Interface\\RaidWarning.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Archimonde - Phase 2"] = {
 			["iconSource"] = 0,
@@ -26039,6 +26015,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -26051,13 +26029,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -26081,8 +26058,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Naj'entus - Impaling Spine"] = {
 			["iconSource"] = 0,
@@ -26134,11 +26110,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -26278,6 +26254,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} IMPALE ON %c ! FREE ME {rt7}",
@@ -26291,13 +26269,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -26321,1142 +26298,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-		},
-		["Kaelthas - Mind Control Debuff"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "18806",
-						["spellId"] = 33387,
-						["auranames"] = {
-							"36797", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["message_operator"] = "find('%s')",
-						["destUnit"] = "player",
-						["amount"] = "0",
-						["group_count"] = "0",
-						["range_operator"] = "<=",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["group_countOperator"] = ">",
-						["percenthealth"] = "20",
-						["event"] = "Range Check",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "",
-						["use_spellId"] = true,
-						["percenthealth_operator"] = "<=",
-						["use_range"] = true,
-						["use_messageType"] = false,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_status"] = false,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_aggro"] = true,
-						["useGroup_count"] = true,
-						["duration"] = "5",
-						["unit"] = "player",
-						["range"] = "12",
-						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
-						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
-						["useExactSpellId"] = false,
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["use_destName"] = false,
-						["use_cloneId"] = false,
-						["debuffType"] = "HARMFUL",
-						["useName"] = true,
-						["type"] = "aura2",
-						["unevent"] = "timed",
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["use_unit"] = true,
-						["use_sourceNpcId"] = false,
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["genericShowOn"] = "showOnCooldown",
-						["use_message"] = true,
-						["use_percenthealth"] = true,
-						["useAffected"] = true,
-						["message"] = "Thaladred the Darkener sets eyes on",
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "spiralandpulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 19,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "MC ON YOU",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [2]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%affected",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_BOTTOM",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [3]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glow"] = true,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [4]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["zoneIds"] = "334",
-				["encounterid"] = "733",
-				["use_zoneIds"] = true,
-				["zone"] = "Tempest Keep",
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["PRIEST"] = true,
-						["WARRIOR"] = true,
-					},
-				},
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "lnTsVepQUXz",
-			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} MC ON ME! FREE %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
-			["conditions"] = {
-			},
 			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "Kaelthas - Mind Control Debuff",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 136206,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["xOffset"] = 0,
-		},
-		["Mother Links 2"] = {
-			["outline"] = "OUTLINE",
-			["wagoID"] = "7p-NQ6ZJu",
-			["xOffset"] = 0,
-			["displayText"] = "%p",
-			["yOffset"] = -5,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "event",
-			["url"] = "https://wago.io/7p-NQ6ZJu/1",
-			["actions"] = {
-				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Left.ogg",
-					["do_sound"] = true,
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "aura_env.marks = {\n    [1] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_1\",\n    [2] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_2\",\n    [3] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_3\",\n    [4] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_4\",\n    [5] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_5\",\n    [6] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_6\",\n    [7] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_7\",\n    [8] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_8\",\n}",
-					["do_custom"] = true,
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "custom",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["unit"] = "player",
-						["names"] = {
-						},
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 2 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
-						["spellIds"] = {
-						},
-						["custom_type"] = "stateupdate",
-						["check"] = "event",
-						["subeventPrefix"] = "SPELL",
-						["events"] = "RAID_TARGET_UPDATE",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
-			["displayText_format_p_format"] = "timed",
-			["internalVersion"] = 53,
-			["selfPoint"] = "BOTTOM",
-			["anchorFrameType"] = "SCREEN",
-			["desaturate"] = false,
-			["rotation"] = 270,
-			["font"] = "Friz Quadrata TT",
-			["version"] = 1,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-			},
-			["height"] = 200,
-			["rotate"] = true,
-			["load"] = {
-				["use_zoneIds"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["zoneIds"] = "339",
-				["encounterid"] = "607",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["preferToUpdate"] = false,
-			["fontSize"] = 12,
-			["parent"] = "Mother Direction Decider 2",
-			["conditions"] = {
-			},
-			["shadowXOffset"] = 1,
-			["wordWrap"] = "WordWrap",
-			["mirror"] = false,
-			["displayText_format_p_time_dynamic"] = false,
-			["regionType"] = "texture",
-			["authorOptions"] = {
-			},
-			["blendMode"] = "BLEND",
-			["config"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				0.45490196078431, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["displayText_format_p_time_precision"] = 1,
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\targeting-mark.tga",
-			["frameStrata"] = 1,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["justify"] = "LEFT",
-			["tocversion"] = 20503,
-			["id"] = "Mother Links 2",
-			["semver"] = "1.0.0",
-			["alpha"] = 1,
-			["width"] = 200,
-			["automaticWidth"] = "Auto",
-			["uid"] = "Twco49A2UL1",
-			["shadowYOffset"] = -1,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["fixedWidth"] = 200,
-			["information"] = {
-			},
-			["discrete_rotation"] = 0,
-		},
-		["Kaelthas - Gravity Lapse"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "18806",
-						["spellId"] = "35941",
-						["auranames"] = {
-							"36731", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["message_operator"] = "find('%s')",
-						["destUnit"] = "player",
-						["amount"] = "0",
-						["group_count"] = "0",
-						["range_operator"] = "<=",
-						["spellName"] = "Gravity Lapse",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["group_countOperator"] = ">",
-						["percenthealth"] = "20",
-						["event"] = "Combat Log",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "",
-						["use_spellId"] = true,
-						["percenthealth_operator"] = "<=",
-						["use_range"] = true,
-						["use_messageType"] = false,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_status"] = false,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_aggro"] = true,
-						["useGroup_count"] = true,
-						["duration"] = "3",
-						["unit"] = "player",
-						["range"] = "12",
-						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
-						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
-						["useExactSpellId"] = false,
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["use_destName"] = false,
-						["use_cloneId"] = false,
-						["debuffType"] = "HARMFUL",
-						["useName"] = true,
-						["type"] = "combatlog",
-						["unevent"] = "timed",
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["use_unit"] = true,
-						["use_sourceNpcId"] = false,
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["genericShowOn"] = "showOnCooldown",
-						["use_message"] = true,
-						["use_percenthealth"] = true,
-						["useAffected"] = true,
-						["message"] = "Thaladred the Darkener sets eyes on",
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "spiralandpulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 19,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "SPREAD",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glow"] = true,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [3]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["zoneIds"] = "334",
-				["encounterid"] = "733",
-				["use_zoneIds"] = true,
-				["zone"] = "Tempest Keep",
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["PRIEST"] = true,
-						["WARRIOR"] = true,
-					},
-				},
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "42lCtrViLC4",
-			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "Kaelthas - Gravity Lapse",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 136111,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["xOffset"] = 0,
-		},
-		["Gorefiend - Shadow of Death"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "Y5J7NdyVH",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/Y5J7NdyVH/8",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "16024",
-						["spellId"] = "28433",
-						["auranames"] = {
-							"40251", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["amount"] = "0",
-						["group_count"] = "0",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["event"] = "Combat Events",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["use_spellId"] = false,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
-						["subeventPrefix"] = "SPELL",
-						["useAffected"] = true,
-						["useExactSpellId"] = false,
-						["group_countOperator"] = ">",
-						["useName"] = true,
-						["use_npcId"] = true,
-						["debuffType"] = "HARMFUL",
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["type"] = "aura2",
-						["realSpellName"] = "Impale",
-						["unevent"] = "timed",
-						["duration"] = "40",
-						["unit"] = "player",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["use_aggro"] = true,
-						["matchesShowOn"] = "showOnActive",
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["fetchRaidMark"] = false,
-						["names"] = {
-						},
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "spiralandpulse",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 8,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "YOU'RE DYING",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 16,
-					["anchorXOffset"] = 0,
-					["text_justify"] = "CENTER",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glow"] = true,
-					["glowLength"] = 10,
-					["glowType"] = "buttonOverlay",
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [3]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["WARRIOR"] = true,
-						["PRIEST"] = true,
-					},
-				},
-				["zone"] = "Serpentshrine Cavern",
-				["use_zoneIds"] = true,
-				["encounterid"] = "604",
-				["zoneIds"] = "339",
-			},
-			["zoom"] = 0,
-			["config"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 135752,
-			["cooldownEdge"] = true,
-			["xOffset"] = 0,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.3",
-			["tocversion"] = 20503,
-			["id"] = "Gorefiend - Shadow of Death",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["uid"] = "QREKKdswLsh",
-			["inverse"] = false,
-			["parent"] = "Tems' BT/MH Pack",
-			["conditions"] = {
-				{
-					["check"] = {
-						["op"] = "<",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "buffed",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["op"] = "<",
-								["variable"] = "expirationTime",
-								["value"] = "8",
-							}, -- [2]
-						},
-						["value"] = "8",
-						["variable"] = "expirationTime",
-						["trigger"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["message"] = "%c dying in 8",
-								["message_type"] = "YELL",
-								["custom"] = "function() return UnitName(\"player\") end",
-								["message_format_c_format"] = "none",
-							},
-							["property"] = "chat",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["op"] = "<",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "buffed",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["op"] = "<",
-								["variable"] = "expirationTime",
-								["value"] = "5",
-							}, -- [2]
-						},
-						["value"] = "5",
-						["variable"] = "expirationTime",
-						["trigger"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["message"] = "%c dying in 5",
-								["message_type"] = "YELL",
-								["custom"] = "function() return UnitName(\"player\") end",
-								["message_format_c_format"] = "none",
-							},
-							["property"] = "chat",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["check"] = {
-						["op"] = "<",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "buffed",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["op"] = "<",
-								["variable"] = "expirationTime",
-								["value"] = "4",
-							}, -- [2]
-						},
-						["value"] = "4",
-						["variable"] = "expirationTime",
-						["trigger"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["message"] = "%c dying in 4",
-								["message_type"] = "YELL",
-								["custom"] = "function() return UnitName(\"player\") end",
-								["message_format_c_format"] = "none",
-							},
-							["property"] = "chat",
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["check"] = {
-						["op"] = "<",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "buffed",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["op"] = "<",
-								["variable"] = "expirationTime",
-								["value"] = "3",
-							}, -- [2]
-						},
-						["value"] = "3",
-						["variable"] = "expirationTime",
-						["trigger"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["message"] = "%c dying in 3",
-								["message_type"] = "YELL",
-								["custom"] = "function() return UnitName(\"player\") end",
-								["message_format_c_format"] = "none",
-							},
-							["property"] = "chat",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["check"] = {
-						["op"] = "<",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "buffed",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["op"] = "<",
-								["variable"] = "expirationTime",
-								["value"] = "2",
-							}, -- [2]
-						},
-						["value"] = "2",
-						["variable"] = "expirationTime",
-						["trigger"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["message"] = "%c dying in 2",
-								["message_type"] = "YELL",
-								["custom"] = "function() return UnitName(\"player\") end",
-								["message_format_c_format"] = "none",
-							},
-							["property"] = "chat",
-						}, -- [1]
-					},
-				}, -- [5]
-				{
-					["check"] = {
-						["op"] = "<",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "buffed",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["op"] = "<",
-								["variable"] = "expirationTime",
-								["value"] = "1",
-							}, -- [2]
-						},
-						["value"] = "1",
-						["variable"] = "expirationTime",
-						["trigger"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								["message"] = "%c dying in 1",
-								["message_type"] = "YELL",
-								["custom"] = "function() return UnitName(\"player\") end",
-								["message_format_c_format"] = "none",
-							},
-							["property"] = "chat",
-						}, -- [1]
-					},
-				}, -- [6]
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
 		},
 		["Shahraz - Prismatic Aura"] = {
 			["iconSource"] = -1,
@@ -27517,11 +26359,11 @@ WeakAurasSaved = {
 							"40882", -- [5]
 							"40896", -- [6]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -28047,6 +26889,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -28059,13 +26903,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -28198,7 +27041,1096 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
+		},
+		["Mother Links 2"] = {
+			["outline"] = "OUTLINE",
+			["wagoID"] = "7p-NQ6ZJu",
+			["xOffset"] = 0,
+			["displayText"] = "%p",
+			["yOffset"] = -5,
+			["anchorPoint"] = "CENTER",
+			["customTextUpdate"] = "event",
+			["url"] = "https://wago.io/7p-NQ6ZJu/1",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Left.ogg",
+					["do_sound"] = true,
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "aura_env.marks = {\n    [1] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_1\",\n    [2] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_2\",\n    [3] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_3\",\n    [4] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_4\",\n    [5] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_5\",\n    [6] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_6\",\n    [7] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_7\",\n    [8] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_8\",\n}",
+					["do_custom"] = true,
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["unit"] = "player",
+						["names"] = {
+						},
+						["spellIds"] = {
+						},
+						["events"] = "RAID_TARGET_UPDATE",
+						["custom_type"] = "stateupdate",
+						["check"] = "event",
+						["subeventPrefix"] = "SPELL",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 2 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+			["displayText_format_p_format"] = "timed",
+			["internalVersion"] = 53,
+			["selfPoint"] = "BOTTOM",
+			["anchorFrameType"] = "SCREEN",
+			["desaturate"] = false,
+			["rotation"] = 270,
+			["font"] = "Friz Quadrata TT",
+			["version"] = 1,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["height"] = 200,
+			["rotate"] = true,
+			["load"] = {
+				["use_zoneIds"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["zoneIds"] = "339",
+				["encounterid"] = "607",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["preferToUpdate"] = false,
+			["fontSize"] = 12,
+			["parent"] = "Mother Direction Decider 2",
+			["conditions"] = {
+			},
+			["shadowXOffset"] = 1,
+			["wordWrap"] = "WordWrap",
+			["mirror"] = false,
+			["displayText_format_p_time_dynamic"] = false,
+			["regionType"] = "texture",
 			["authorOptions"] = {
+			},
+			["blendMode"] = "BLEND",
+			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				0.45490196078431, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_p_time_precision"] = 1,
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\targeting-mark.tga",
+			["frameStrata"] = 1,
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["justify"] = "LEFT",
+			["tocversion"] = 20503,
+			["id"] = "Mother Links 2",
+			["semver"] = "1.0.0",
+			["alpha"] = 1,
+			["width"] = 200,
+			["automaticWidth"] = "Auto",
+			["uid"] = "Twco49A2UL1",
+			["shadowYOffset"] = -1,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["fixedWidth"] = 200,
+			["information"] = {
+			},
+			["discrete_rotation"] = 0,
+		},
+		["Kaelthas - Gravity Lapse"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "u2Waemdhl",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/u2Waemdhl/19",
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["npcId"] = "18806",
+						["spellId"] = "35941",
+						["auranames"] = {
+							"36731", -- [1]
+						},
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["destUnit"] = "player",
+						["amount"] = "0",
+						["group_count"] = "0",
+						["range_operator"] = "<=",
+						["spellName"] = "Gravity Lapse",
+						["showClones"] = false,
+						["use_eventtype"] = true,
+						["group_countOperator"] = ">",
+						["percenthealth"] = "20",
+						["event"] = "Combat Log",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["sourceNpcId"] = "",
+						["use_spellId"] = true,
+						["percenthealth_operator"] = "<=",
+						["use_range"] = true,
+						["use_messageType"] = false,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_status"] = false,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_aggro"] = true,
+						["useGroup_count"] = true,
+						["duration"] = "3",
+						["unit"] = "player",
+						["range"] = "12",
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
+						["useExactSpellId"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["use_destName"] = false,
+						["use_cloneId"] = false,
+						["debuffType"] = "HARMFUL",
+						["useName"] = true,
+						["type"] = "combatlog",
+						["unevent"] = "timed",
+						["auraspellids"] = {
+							"38215", -- [1]
+						},
+						["use_unit"] = true,
+						["use_sourceNpcId"] = false,
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["use_threatUnit"] = true,
+						["use_spellName"] = false,
+						["spellIds"] = {
+						},
+						["genericShowOn"] = "showOnCooldown",
+						["use_message"] = true,
+						["use_percenthealth"] = true,
+						["useAffected"] = true,
+						["message"] = "Thaladred the Darkener sets eyes on",
+					},
+					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "spiralandpulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 19,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "SPREAD",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = true,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
+			},
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["zoneIds"] = "334",
+				["encounterid"] = "733",
+				["use_zoneIds"] = true,
+				["zone"] = "Tempest Keep",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["PRIEST"] = true,
+						["WARRIOR"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+						["fortyman"] = true,
+					},
+				},
+			},
+			["cooldownTextDisabled"] = false,
+			["uid"] = "42lCtrViLC4",
+			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "Kaelthas - Gravity Lapse",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 136111,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
+		},
+		["Gorefiend - Shadow of Death"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "Y5J7NdyVH",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/Y5J7NdyVH/8",
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["npcId"] = "16024",
+						["spellId"] = "28433",
+						["auranames"] = {
+							"40251", -- [1]
+						},
+						["use_genericShowOn"] = true,
+						["amount"] = "0",
+						["group_count"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_eventtype"] = true,
+						["event"] = "Combat Events",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["use_spellId"] = false,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["useGroup_count"] = true,
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
+						["useAffected"] = true,
+						["useExactSpellId"] = false,
+						["group_countOperator"] = ">",
+						["useName"] = true,
+						["use_threatUnit"] = true,
+						["debuffType"] = "HARMFUL",
+						["auraspellids"] = {
+							"38215", -- [1]
+						},
+						["type"] = "aura2",
+						["use_npcId"] = true,
+						["unevent"] = "timed",
+						["duration"] = "40",
+						["unit"] = "player",
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["realSpellName"] = "Impale",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
+						["use_aggro"] = true,
+						["matchesShowOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["fetchRaidMark"] = false,
+						["names"] = {
+						},
+					},
+					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "spiralandpulse",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 8,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "YOU'RE DYING",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 16,
+					["anchorXOffset"] = 0,
+					["text_justify"] = "CENTER",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glow"] = true,
+					["glowLength"] = 10,
+					["glowType"] = "buttonOverlay",
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
+			},
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["size"] = {
+					["multi"] = {
+						["fortyman"] = true,
+					},
+				},
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["WARRIOR"] = true,
+						["PRIEST"] = true,
+					},
+				},
+				["zone"] = "Serpentshrine Cavern",
+				["use_zoneIds"] = true,
+				["encounterid"] = "604",
+				["zoneIds"] = "339",
+			},
+			["zoom"] = 0,
+			["config"] = {
+			},
+			["authorOptions"] = {
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+			},
+			["regionType"] = "icon",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 135752,
+			["cooldownEdge"] = true,
+			["xOffset"] = 0,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.3",
+			["tocversion"] = 20503,
+			["id"] = "Gorefiend - Shadow of Death",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["uid"] = "QREKKdswLsh",
+			["inverse"] = false,
+			["parent"] = "Tems' BT/MH Pack",
+			["conditions"] = {
+				{
+					["check"] = {
+						["op"] = "<",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "buffed",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["op"] = "<",
+								["variable"] = "expirationTime",
+								["value"] = "8",
+							}, -- [2]
+						},
+						["value"] = "8",
+						["variable"] = "expirationTime",
+						["trigger"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["message"] = "%c dying in 8",
+								["message_type"] = "YELL",
+								["custom"] = "function() return UnitName(\"player\") end",
+								["message_format_c_format"] = "none",
+							},
+							["property"] = "chat",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["op"] = "<",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "buffed",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["op"] = "<",
+								["variable"] = "expirationTime",
+								["value"] = "5",
+							}, -- [2]
+						},
+						["value"] = "5",
+						["variable"] = "expirationTime",
+						["trigger"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["message"] = "%c dying in 5",
+								["message_type"] = "YELL",
+								["custom"] = "function() return UnitName(\"player\") end",
+								["message_format_c_format"] = "none",
+							},
+							["property"] = "chat",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["check"] = {
+						["op"] = "<",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "buffed",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["op"] = "<",
+								["variable"] = "expirationTime",
+								["value"] = "4",
+							}, -- [2]
+						},
+						["value"] = "4",
+						["variable"] = "expirationTime",
+						["trigger"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["message"] = "%c dying in 4",
+								["message_type"] = "YELL",
+								["custom"] = "function() return UnitName(\"player\") end",
+								["message_format_c_format"] = "none",
+							},
+							["property"] = "chat",
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["check"] = {
+						["op"] = "<",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "buffed",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["op"] = "<",
+								["variable"] = "expirationTime",
+								["value"] = "3",
+							}, -- [2]
+						},
+						["value"] = "3",
+						["variable"] = "expirationTime",
+						["trigger"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["message"] = "%c dying in 3",
+								["message_type"] = "YELL",
+								["custom"] = "function() return UnitName(\"player\") end",
+								["message_format_c_format"] = "none",
+							},
+							["property"] = "chat",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["check"] = {
+						["op"] = "<",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "buffed",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["op"] = "<",
+								["variable"] = "expirationTime",
+								["value"] = "2",
+							}, -- [2]
+						},
+						["value"] = "2",
+						["variable"] = "expirationTime",
+						["trigger"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["message"] = "%c dying in 2",
+								["message_type"] = "YELL",
+								["custom"] = "function() return UnitName(\"player\") end",
+								["message_format_c_format"] = "none",
+							},
+							["property"] = "chat",
+						}, -- [1]
+					},
+				}, -- [5]
+				{
+					["check"] = {
+						["op"] = "<",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "buffed",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["op"] = "<",
+								["variable"] = "expirationTime",
+								["value"] = "1",
+							}, -- [2]
+						},
+						["value"] = "1",
+						["variable"] = "expirationTime",
+						["trigger"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								["message"] = "%c dying in 1",
+								["message_type"] = "YELL",
+								["custom"] = "function() return UnitName(\"player\") end",
+								["message_format_c_format"] = "none",
+							},
+							["property"] = "chat",
+						}, -- [1]
+					},
+				}, -- [6]
+			},
+			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
+		},
+		["Alar - Flame Patch"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "u2Waemdhl",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/u2Waemdhl/19",
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["npcId"] = "21964",
+						["spellId"] = "35383",
+						["auranames"] = {
+							"35383", -- [1]
+						},
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["use_sourceNpcId"] = false,
+						["amount"] = "0",
+						["group_count"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["useExactSpellId"] = false,
+						["event"] = "Combat Log",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["sourceNpcId"] = "",
+						["use_spellId"] = true,
+						["use_destUnit"] = true,
+						["use_track"] = true,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_aggro"] = true,
+						["useGroup_count"] = true,
+						["group_countOperator"] = ">",
+						["use_messageType"] = false,
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
+						["destUnit"] = "player",
+						["duration"] = "3",
+						["message"] = "The Lurker Below takes a deep breath",
+						["names"] = {
+						},
+						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
+						["use_cloneId"] = false,
+						["debuffType"] = "HARMFUL",
+						["type"] = "combatlog",
+						["useName"] = true,
+						["unevent"] = "timed",
+						["auraspellids"] = {
+							"38215", -- [1]
+						},
+						["subeventSuffix"] = "_AURA_APPLIED",
+						["unit"] = "player",
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["use_npcId"] = true,
+						["use_spellName"] = false,
+						["spellIds"] = {
+						},
+						["use_status"] = false,
+						["use_message"] = true,
+						["subeventPrefix"] = "SPELL",
+						["useAffected"] = true,
+						["use_eventtype"] = true,
+					},
+					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "spiralandpulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 19,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "MOVE OUT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = true,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
+			},
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["zoneIds"] = "334",
+				["encounterid"] = "730",
+				["use_zoneIds"] = true,
+				["zone"] = "Tempest Keep",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["PRIEST"] = true,
+						["WARRIOR"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+						["fortyman"] = true,
+					},
+				},
+			},
+			["cooldownTextDisabled"] = false,
+			["uid"] = ")apqgL11bI(",
+			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "Alar - Flame Patch",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 135819,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
 			},
 		},
 		["MH - Anti Magic Shell"] = {
@@ -28251,11 +28183,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -28374,6 +28306,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -28386,13 +28320,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -28416,16 +28349,11 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Shout Reminder"] = {
 			["outline"] = "OUTLINE",
-			["color"] = {
-				1, -- [1]
-				0.611764705882353, -- [2]
-				0.235294117647059, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["displayText"] = "Shout!",
 			["shadowYOffset"] = -1,
@@ -28479,40 +28407,6 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 53,
-			["selfPoint"] = "BOTTOM",
-			["font"] = "Friz Quadrata TT",
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-			},
-			["load"] = {
-				["use_class"] = true,
-				["zoneIds"] = "",
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-					},
-				},
-				["use_combat"] = true,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fontSize"] = 43,
-			["shadowXOffset"] = 1,
-			["regionType"] = "text",
-			["wordWrap"] = "WordWrap",
-			["justify"] = "LEFT",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -28533,15 +28427,49 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["font"] = "Friz Quadrata TT",
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["load"] = {
+				["use_class"] = true,
+				["zoneIds"] = "",
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 43,
+			["shadowXOffset"] = 1,
+			["regionType"] = "text",
+			["selfPoint"] = "BOTTOM",
+			["justify"] = "LEFT",
+			["wordWrap"] = "WordWrap",
 			["id"] = "Shout Reminder",
 			["xOffset"] = -0.51824951171875,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["fixedWidth"] = 200,
+			["uid"] = "tOeIPWUM2jm",
+			["yOffset"] = -168.7695007324219,
 			["config"] = {
 			},
-			["yOffset"] = -168.7695007324219,
-			["uid"] = "tOeIPWUM2jm",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -28553,7 +28481,11 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				0.611764705882353, -- [2]
+				0.235294117647059, -- [3]
+				1, -- [4]
 			},
 		},
 		["Fathom Lord - Tidal Surge"] = {
@@ -28606,11 +28538,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "2.5",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "unit",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -28620,7 +28552,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -28762,25 +28694,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "xt8kZZ9shxS",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -28806,7 +28721,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Burn:  <= 14 seconds"] = {
 			["outline"] = "OUTLINE",
@@ -28879,8 +28811,7 @@ WeakAurasSaved = {
 				},
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
+			["displayText"] = " ",
 			["font"] = "Friz Quadrata TT",
 			["version"] = 7,
 			["subRegions"] = {
@@ -28910,31 +28841,13 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = true,
 			},
-			["displayText"] = " ",
+			["shadowYOffset"] = -1,
 			["cooldown"] = false,
 			["fontSize"] = 12,
 			["conditions"] = {
 			},
-			["parent"] = "Fusion: Sunwell",
-			["shadowXOffset"] = 1,
 			["automaticWidth"] = "Auto",
-			["selfPoint"] = "CENTER",
-			["uid"] = "bQhdJ1Oe(v3",
-			["regionType"] = "text",
-			["xOffset"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["wordWrap"] = "WordWrap",
-			["displayText_format_p_time_precision"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.6",
-			["zoom"] = 0,
-			["justify"] = "LEFT",
-			["tocversion"] = 20504,
-			["id"] = "Burn:  <= 14 seconds",
-			["url"] = "https://wago.io/BHC3XxUdm/7",
-			["alpha"] = 1,
-			["width"] = 64,
+			["shadowXOffset"] = 1,
 			["actions"] = {
 				["start"] = {
 					["glow_color"] = {
@@ -28958,10 +28871,29 @@ WeakAurasSaved = {
 					["hide_all_glows"] = true,
 				},
 			},
+			["xOffset"] = 0,
+			["uid"] = "bQhdJ1Oe(v3",
+			["regionType"] = "text",
+			["wordWrap"] = "WordWrap",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["preferToUpdate"] = false,
+			["displayText_format_p_time_precision"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.6",
+			["zoom"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 20504,
+			["id"] = "Burn:  <= 14 seconds",
+			["authorOptions"] = {
+			},
+			["alpha"] = 1,
+			["width"] = 64,
+			["url"] = "https://wago.io/BHC3XxUdm/7",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["shadowYOffset"] = -1,
+			["selfPoint"] = "CENTER",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -28971,9 +28903,9 @@ WeakAurasSaved = {
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["preferToUpdate"] = false,
+			["parent"] = "Fusion: Sunwell",
 		},
-		["TK - Hammer of Justice"] = {
+		["Fathom Lord - Tidal Surge 2"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "u2Waemdhl",
 			["color"] = {
@@ -28993,51 +28925,60 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["npcId"] = "20036",
-						["spellId"] = 37254,
+						["npcId"] = "21964",
+						["spellId"] = 38358,
 						["auranames"] = {
-							"10308", -- [1]
+							"38358", -- [1]
 						},
-						["duration"] = "8",
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["use_sourceNpcId"] = true,
 						["amount"] = "0",
+						["group_count"] = "0",
 						["spellName"] = "Intangible Presence",
 						["showClones"] = false,
-						["use_debuffClass"] = false,
 						["use_eventtype"] = true,
 						["event"] = "Cast",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["sourceNpcId"] = "21215",
 						["use_spellId"] = true,
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["use_amount"] = true,
 						["use_destFlags2"] = false,
 						["use_status"] = false,
+						["useGroup_count"] = true,
+						["group_countOperator"] = ">",
 						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
-						["names"] = {
-						},
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["subeventPrefix"] = "SPELL",
+						["use_messageType"] = false,
+						["message"] = "The Lurker Below takes a deep breath",
+						["duration"] = "2.5",
 						["use_aggro"] = true,
-						["debuffType"] = "HARMFUL",
-						["useName"] = true,
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
+						["use_cloneId"] = false,
+						["debuffType"] = "HARMFUL",
+						["realSpellName"] = "Intangible Presence",
+						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
-							"38626", -- [1]
+							"38215", -- [1]
 						},
-						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["use_genericShowOn"] = true,
-						["unit"] = "player",
+						["names"] = {
+						},
+						["use_message"] = true,
 						["useExactSpellId"] = false,
 						["useAffected"] = true,
-						["subeventPrefix"] = "SPELL_BUILDING",
+						["use_unit"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -29108,7 +29049,7 @@ WeakAurasSaved = {
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 16,
+					["text_fontSize"] = 18,
 					["anchorXOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 				}, -- [2]
@@ -29146,12 +29087,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_encounterid"] = false,
+				["use_encounterid"] = true,
 				["use_zone"] = false,
-				["zoneIds"] = "334",
-				["encounterid"] = "2458",
+				["zoneIds"] = "332",
+				["encounterid"] = "626",
 				["use_zoneIds"] = true,
-				["zone"] = "Tempest Keep",
+				["zone"] = "Serpentshrine Cavern",
 				["class"] = {
 					["single"] = "WARRIOR",
 					["multi"] = {
@@ -29166,26 +29107,9 @@ WeakAurasSaved = {
 				},
 			},
 			["cooldownTextDisabled"] = false,
-			["uid"] = "AmA8PYtV)q2",
+			["uid"] = "N2JMEhD7dP1",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -29198,7 +29122,7 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["semver"] = "1.1.9",
 			["tocversion"] = 20502,
-			["id"] = "TK - Hammer of Justice",
+			["id"] = "Fathom Lord - Tidal Surge 2",
 			["auto"] = false,
 			["useCooldownModRate"] = true,
 			["width"] = 64,
@@ -29207,11 +29131,28 @@ WeakAurasSaved = {
 			},
 			["inverse"] = false,
 			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 135963,
+			["displayIcon"] = 135860,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Missing Defense/Res 70L"] = {
 			["iconSource"] = -1,
@@ -29366,8 +29307,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 103.9766540527344,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -29401,7 +29342,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 103.9766540527344,
 		},
 		["Solarian - Wrath of the Astromancer"] = {
 			["iconSource"] = 0,
@@ -29455,8 +29396,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -29472,7 +29413,7 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -29610,26 +29551,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "nSq1rWSCdYv",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} WRATH ON %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -29655,134 +29578,132 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
-		},
-		["Shahraz - Fatal Right"] = {
-			["iconSource"] = 0,
-			["xOffset"] = 0,
-			["displayText"] = "%p",
-			["yOffset"] = 10,
-			["displayText_format_p_time_dynamic"] = false,
-			["url"] = "https://wago.io/Y5J7NdyVH/8",
 			["actions"] = {
 				["start"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Right.ogg",
-					["do_sound"] = true,
-				},
-				["init"] = {
-					["custom"] = "aura_env.marks = {\n    [1] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_1\",\n    [2] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_2\",\n    [3] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_3\",\n    [4] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_4\",\n    [5] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_5\",\n    [6] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_6\",\n    [7] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_7\",\n    [8] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_8\",\n}",
-					["do_custom"] = true,
+					["message"] = "{rt7} WRATH ON %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
 				},
 			},
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "BOTTOM",
-			["desaturate"] = false,
-			["rotation"] = 90,
-			["font"] = "Friz Quadrata TT",
-			["load"] = {
-				["use_never"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["use_zoneIds"] = true,
-				["encounterid"] = "607",
-				["zoneIds"] = "339",
-			},
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["shadowXOffset"] = 1,
-			["regionType"] = "texture",
-			["blendMode"] = "BLEND",
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\targeting-mark.tga",
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["tocversion"] = 20503,
-			["alpha"] = 1,
-			["uid"] = "KEJ9EtJgYWN",
-			["displayIcon"] = 136202,
-			["outline"] = "OUTLINE",
-			["wagoID"] = "Y5J7NdyVH",
+		},
+		["TK - Hammer of Justice"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "u2Waemdhl",
 			["color"] = {
 				1, -- [1]
-				0.88235294117647, -- [2]
-				0, -- [3]
+				1, -- [2]
+				1, -- [3]
 				1, -- [4]
 			},
+			["preferToUpdate"] = false,
 			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["shadowYOffset"] = -1,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "event",
-			["cooldownEdge"] = true,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/u2Waemdhl/19",
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["type"] = "custom",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["unit"] = "player",
+						["npcId"] = "20036",
+						["spellId"] = 37254,
+						["auranames"] = {
+							"10308", -- [1]
+						},
+						["duration"] = "8",
+						["amount"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_debuffClass"] = false,
+						["use_eventtype"] = true,
+						["event"] = "Cast",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["use_spellId"] = true,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
 						["names"] = {
 						},
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["use_aggro"] = true,
+						["debuffType"] = "HARMFUL",
+						["useName"] = true,
+						["type"] = "aura2",
+						["unevent"] = "timed",
+						["auraspellids"] = {
+							"38626", -- [1]
+						},
+						["use_threatUnit"] = true,
+						["use_npcId"] = true,
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["realSpellName"] = "Impale",
+						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["events"] = "RAID_TARGET_UPDATE",
-						["subeventPrefix"] = "SPELL",
-						["check"] = "event",
-						["custom_type"] = "stateupdate",
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 1 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
-						["debuffType"] = "HELPFUL",
+						["use_genericShowOn"] = true,
+						["unit"] = "player",
+						["useExactSpellId"] = false,
+						["useAffected"] = true,
+						["subeventPrefix"] = "SPELL_BUILDING",
 					},
 					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
 					},
 				}, -- [1]
+				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
 			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
+					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
 				["main"] = {
 					["type"] = "none",
+					["easeType"] = "none",
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
-					["easeType"] = "none",
+					["preset"] = "spiralandpulse",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
+					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
 			},
-			["discrete_rotation"] = 0,
-			["version"] = 8,
+			["desaturate"] = false,
+			["version"] = 19,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
 				}, -- [1]
 				{
-					["text_text_format_n_format"] = "none",
-					["text_text"] = "RIGHT",
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "STUNNED",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -29793,9 +29714,11 @@ WeakAurasSaved = {
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
+					["text_text_format_1.destName_format"] = "none",
 					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
 					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
 					["text_color"] = {
 						1, -- [1]
 						1, -- [2]
@@ -29803,52 +29726,117 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = -1,
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "None",
-					["text_anchorPoint"] = "TOP",
 					["text_visible"] = true,
-					["text_anchorYOffset"] = -48,
-					["text_fontSize"] = 22,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_shadowXOffset"] = 1,
+					["text_fontType"] = "OUTLINE",
 				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = false,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
 			},
-			["height"] = 160,
-			["rotate"] = true,
-			["fontSize"] = 12,
-			["mirror"] = false,
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = false,
+				["use_zone"] = false,
+				["zoneIds"] = "334",
+				["encounterid"] = "2458",
+				["use_zoneIds"] = true,
+				["zone"] = "Tempest Keep",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["PRIEST"] = true,
+						["WARRIOR"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+						["fortyman"] = true,
+					},
+				},
+			},
+			["cooldownTextDisabled"] = false,
+			["uid"] = "AmA8PYtV)q2",
+			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
-			["information"] = {
-			},
-			["anchorPoint"] = "CENTER",
-			["zoom"] = 0,
-			["displayText_format_p_time_precision"] = 1,
-			["wordWrap"] = "WordWrap",
-			["automaticWidth"] = "Auto",
-			["config"] = {
-			},
-			["justify"] = "LEFT",
-			["parent"] = "Tems' BT/MH Pack",
-			["id"] = "Shahraz - Fatal Right",
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["width"] = 160,
-			["fixedWidth"] = 200,
-			["semver"] = "1.1.3",
-			["inverse"] = false,
-			["icon"] = true,
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["regionType"] = "icon",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["cooldown"] = true,
-			["preferToUpdate"] = false,
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "TK - Hammer of Justice",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 135963,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Lurker - Spout Cast"] = {
 			["iconSource"] = 0,
@@ -29902,8 +29890,8 @@ WeakAurasSaved = {
 						["unit"] = "group",
 						["duration"] = "17",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["use_count"] = false,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
@@ -29916,7 +29904,7 @@ WeakAurasSaved = {
 						["remaining_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -29966,8 +29954,8 @@ WeakAurasSaved = {
 						["unit"] = "group",
 						["duration"] = "17",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["use_count"] = false,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
@@ -29980,7 +29968,7 @@ WeakAurasSaved = {
 						["remaining_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -30119,25 +30107,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "otyLpawdGQk",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -30163,7 +30134,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Innervate"] = {
 			["sparkWidth"] = 10,
@@ -30196,10 +30184,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -30518,11 +30506,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -30661,6 +30649,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -30673,13 +30663,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -30703,8 +30692,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Twins Conflag Warner"] = {
 			["user_y"] = 0,
@@ -30762,10 +30750,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["event"] = "Chat Message",
 						["unit"] = "player",
-						["custom"] = "function(event, unit, _, spellId)\n    if event ~= 'UNIT_SPELLCAST_START' or unit == nil then return end\n    \n    local target = unit..'target'\n    \n    if spellId == aura_env.spell.id then\n        aura_env.castStarted(target)\n    end\n    \n    return true\nend",
 						["events"] = "UNIT_SPELLCAST_START",
 						["spellIds"] = {
 						},
+						["custom"] = "function(event, unit, _, spellId)\n    if event ~= 'UNIT_SPELLCAST_START' or unit == nil then return end\n    \n    local target = unit..'target'\n    \n    if spellId == aura_env.spell.id then\n        aura_env.castStarted(target)\n    end\n    \n    return true\nend",
 						["names"] = {
 						},
 						["check"] = "event",
@@ -30915,78 +30903,15 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["height"] = 311.3849487304688,
-			["startAngle"] = 0,
+			["zoom"] = 0,
 			["useAdjustededMax"] = false,
-			["fontSize"] = 40,
+			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
 			["source"] = "import",
-			["preferToUpdate"] = false,
+			["selfPoint"] = "BOTTOM",
 			["cooldown"] = false,
 			["crop_x"] = 0.4,
 			["mirror"] = false,
 			["orientation"] = "CLOCKWISE",
-			["zoom"] = 0,
-			["automaticWidth"] = "Auto",
-			["backgroundColor"] = {
-				0.5, -- [1]
-				0.5, -- [2]
-				0.5, -- [3]
-				0.5, -- [4]
-			},
-			["load"] = {
-				["ingroup"] = {
-					["single"] = "raid",
-					["multi"] = {
-						["group"] = true,
-						["raid"] = true,
-					},
-				},
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["zoneIds"] = "",
-				["class"] = {
-					["single"] = "HUNTER",
-					["multi"] = {
-					},
-				},
-				["zone"] = "Tempest Keep",
-				["encounterid"] = "727",
-				["size"] = {
-					["single"] = "twentyfive",
-					["multi"] = {
-						["ratedpvp"] = true,
-						["fortyman"] = true,
-						["ten"] = true,
-						["twentyfive"] = true,
-						["twenty"] = true,
-						["pvp"] = true,
-					},
-				},
-			},
-			["anchorFrameType"] = "SCREEN",
-			["tocversion"] = 20504,
-			["foregroundColor"] = {
-				0.99607843137255, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["uid"] = "(P1qcBsAked",
-			["justify"] = "LEFT",
-			["semver"] = "1.0.1",
-			["xOffset"] = 25.4361572265625,
-			["id"] = "Twins Conflag Warner",
-			["desaturate"] = false,
-			["frameStrata"] = 1,
-			["width"] = 311.3849487304688,
 			["actions"] = {
 				["start"] = {
 					["glow_frame_type"] = "FRAMESELECTOR",
@@ -31034,195 +30959,14 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
-			["selfPoint"] = "BOTTOM",
-			["inverse"] = false,
-			["backgroundTexture"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Auras\\Aura3",
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 132293,
-		},
-		["Fathom Lord - Tidal Surge 2"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "21964",
-						["spellId"] = 38358,
-						["auranames"] = {
-							"38358", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["message_operator"] = "find('%s')",
-						["use_sourceNpcId"] = true,
-						["amount"] = "0",
-						["group_count"] = "0",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["event"] = "Cast",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "21215",
-						["use_spellId"] = true,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["group_countOperator"] = ">",
-						["genericShowOn"] = "showOnCooldown",
-						["subeventPrefix"] = "SPELL",
-						["use_messageType"] = false,
-						["message"] = "The Lurker Below takes a deep breath",
-						["duration"] = "2.5",
-						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
-						["type"] = "aura2",
-						["use_cloneId"] = false,
-						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
-						["useName"] = true,
-						["unevent"] = "timed",
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["names"] = {
-						},
-						["use_message"] = true,
-						["useExactSpellId"] = false,
-						["useAffected"] = true,
-						["use_unit"] = true,
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "spiralandpulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 19,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "STUNNED",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glow"] = false,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [3]
-			},
-			["height"] = 64,
 			["load"] = {
+				["ingroup"] = {
+					["single"] = "raid",
+					["multi"] = {
+						["group"] = true,
+						["raid"] = true,
+					},
+				},
 				["use_never"] = false,
 				["talent"] = {
 					["multi"] = {
@@ -31234,70 +30978,258 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = true,
 				["use_zone"] = false,
-				["zoneIds"] = "332",
-				["encounterid"] = "626",
-				["use_zoneIds"] = true,
-				["zone"] = "Serpentshrine Cavern",
+				["zoneIds"] = "",
 				["class"] = {
-					["single"] = "WARRIOR",
+					["single"] = "HUNTER",
 					["multi"] = {
-						["PRIEST"] = true,
-						["WARRIOR"] = true,
 					},
 				},
+				["zone"] = "Tempest Keep",
+				["encounterid"] = "727",
 				["size"] = {
+					["single"] = "twentyfive",
 					["multi"] = {
+						["ratedpvp"] = true,
 						["fortyman"] = true,
+						["ten"] = true,
+						["twentyfive"] = true,
+						["twenty"] = true,
+						["pvp"] = true,
 					},
 				},
 			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "N2JMEhD7dP1",
-			["authorOptions"] = {
+			["desaturate"] = false,
+			["displayIcon"] = 132293,
+			["anchorFrameType"] = "SCREEN",
+			["preferToUpdate"] = false,
+			["foregroundColor"] = {
+				0.99607843137255, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
+			["uid"] = "(P1qcBsAked",
+			["justify"] = "LEFT",
+			["semver"] = "1.0.1",
+			["xOffset"] = 25.4361572265625,
+			["id"] = "Twins Conflag Warner",
+			["fontSize"] = 40,
+			["frameStrata"] = 1,
+			["width"] = 311.3849487304688,
+			["startAngle"] = 0,
+			["tocversion"] = 20504,
+			["inverse"] = false,
+			["backgroundColor"] = {
+				0.5, -- [1]
+				0.5, -- [2]
+				0.5, -- [3]
+				0.5, -- [4]
 			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "Fathom Lord - Tidal Surge 2",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 135860,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["automaticWidth"] = "Auto",
+		},
+		["Shahraz - Fatal Right"] = {
+			["iconSource"] = 0,
 			["xOffset"] = 0,
+			["displayText"] = "%p",
+			["yOffset"] = 10,
+			["displayText_format_p_time_dynamic"] = false,
+			["url"] = "https://wago.io/Y5J7NdyVH/8",
+			["actions"] = {
+				["start"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Right.ogg",
+					["do_sound"] = true,
+				},
+				["init"] = {
+					["custom"] = "aura_env.marks = {\n    [1] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_1\",\n    [2] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_2\",\n    [3] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_3\",\n    [4] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_4\",\n    [5] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_5\",\n    [6] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_6\",\n    [7] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_7\",\n    [8] = \"Interface\\\\TargetingFrame\\\\UI-RaidTargetingIcon_8\",\n}",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "BOTTOM",
+			["desaturate"] = false,
+			["rotation"] = 90,
+			["font"] = "Friz Quadrata TT",
+			["load"] = {
+				["use_never"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneIds"] = true,
+				["encounterid"] = "607",
+				["zoneIds"] = "339",
+			},
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["shadowXOffset"] = 1,
+			["regionType"] = "texture",
+			["blendMode"] = "BLEND",
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\targeting-mark.tga",
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["tocversion"] = 20503,
+			["alpha"] = 1,
+			["uid"] = "KEJ9EtJgYWN",
+			["displayIcon"] = 136202,
+			["outline"] = "OUTLINE",
+			["wagoID"] = "Y5J7NdyVH",
+			["color"] = {
+				1, -- [1]
+				0.88235294117647, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
+			["shadowYOffset"] = -1,
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "event",
+			["cooldownEdge"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["unit"] = "player",
+						["names"] = {
+						},
+						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 1 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
+						["subeventPrefix"] = "SPELL",
+						["check"] = "event",
+						["custom_type"] = "stateupdate",
+						["spellIds"] = {
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+			["displayText_format_p_format"] = "timed",
+			["internalVersion"] = 53,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["discrete_rotation"] = 0,
+			["version"] = 8,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_text_format_n_format"] = "none",
+					["text_text"] = "RIGHT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = -1,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "None",
+					["text_anchorPoint"] = "TOP",
+					["text_visible"] = true,
+					["text_anchorYOffset"] = -48,
+					["text_fontSize"] = 22,
+					["anchorXOffset"] = 0,
+					["text_shadowXOffset"] = 1,
+				}, -- [2]
+			},
+			["height"] = 160,
+			["rotate"] = true,
+			["fontSize"] = 12,
+			["mirror"] = false,
+			["authorOptions"] = {
+			},
+			["information"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["zoom"] = 0,
+			["displayText_format_p_time_precision"] = 1,
+			["wordWrap"] = "WordWrap",
+			["automaticWidth"] = "Auto",
+			["config"] = {
+			},
+			["justify"] = "LEFT",
+			["parent"] = "Tems' BT/MH Pack",
+			["id"] = "Shahraz - Fatal Right",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 160,
+			["fixedWidth"] = 200,
+			["semver"] = "1.1.3",
+			["inverse"] = false,
+			["icon"] = true,
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["preferToUpdate"] = false,
 		},
 		["Hydross - Water Tomb"] = {
 			["iconSource"] = 0,
@@ -31353,11 +31285,11 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -31405,15 +31337,15 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["unevent"] = "timed",
 						["type"] = "aura2",
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -31623,25 +31555,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "R64ukdQr7P2",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -31689,7 +31604,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Reliquary - Spirit Shock"] = {
 			["iconSource"] = 0,
@@ -31744,11 +31676,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -31903,6 +31835,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -31915,13 +31849,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -31945,8 +31878,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC - Water Elemental Totem"] = {
 			["iconSource"] = 0,
@@ -31999,11 +31931,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -32141,25 +32073,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "lF0R0Ny(8g2",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -32185,7 +32100,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Kaelthas - Phoenix Spawn"] = {
 			["iconSource"] = 0,
@@ -32398,25 +32330,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "zNkwXTT4jhD",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -32442,7 +32357,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Vashj - Entangle"] = {
 			["iconSource"] = 0,
@@ -32494,11 +32426,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -32508,7 +32440,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -32647,25 +32579,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "rL1fJDETgA5",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -32691,7 +32606,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Reliquary - Deaden"] = {
 			["iconSource"] = 0,
@@ -32745,11 +32677,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -32868,6 +32800,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} DAEDEN ON %c {rt7}",
@@ -32881,13 +32815,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -32911,8 +32844,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Council - Auras"] = {
 			["iconSource"] = -1,
@@ -32971,11 +32903,11 @@ WeakAurasSaved = {
 							"41453", -- [2]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -33129,6 +33061,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -33141,13 +33075,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -33188,8 +33121,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Threat Differential on Nameplates"] = {
 			["authorOptions"] = {
@@ -33258,7 +33190,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_ingroup"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
@@ -33267,11 +33202,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_ingroup"] = false,
 				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -33513,659 +33445,6 @@ WeakAurasSaved = {
 			},
 			["preferToUpdate"] = false,
 		},
-		["Kaelthas - Shock Barrier"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "19622",
-						["spellId"] = 33387,
-						["auranames"] = {
-							"36815", -- [1]
-						},
-						["matchesShowOn"] = "showOnActive",
-						["message_operator"] = "find('%s')",
-						["use_sourceNpcId"] = false,
-						["amount"] = "0",
-						["group_count"] = "0",
-						["range_operator"] = "<=",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["group_countOperator"] = ">",
-						["useAffected"] = true,
-						["use_eventtype"] = true,
-						["message"] = "Thaladred the Darkener sets eyes on",
-						["percenthealth"] = "0",
-						["event"] = "Health",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "",
-						["use_spellId"] = true,
-						["destUnit"] = "player",
-						["use_range"] = true,
-						["use_nameplateType"] = false,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["useExactSpellId"] = false,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["range"] = "12",
-						["realSpellName"] = "Intangible Presence",
-						["genericShowOn"] = "showOnCooldown",
-						["unit"] = "target",
-						["use_npcId"] = true,
-						["use_aggro"] = true,
-						["use_unit"] = true,
-						["names"] = {
-						},
-						["useName"] = true,
-						["use_destName"] = false,
-						["use_cloneId"] = false,
-						["debuffType"] = "HELPFUL",
-						["unevent"] = "timed",
-						["type"] = "aura2",
-						["subeventPrefix"] = "RANGE",
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["percenthealth_operator"] = ">",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["duration"] = "5",
-						["use_message"] = true,
-						["use_percenthealth"] = true,
-						["use_messageType"] = false,
-						["subeventSuffix"] = "_CAST_SUCCESS",
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "spiralandpulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 19,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "BURN SHIELD",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 16,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glow"] = true,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [3]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["zoneIds"] = "334",
-				["encounterid"] = "733",
-				["use_zoneIds"] = true,
-				["zone"] = "Tempest Keep",
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["PRIEST"] = true,
-						["WARRIOR"] = true,
-					},
-				},
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "BncCJ2ZJcCX",
-			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "Kaelthas - Shock Barrier",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 136051,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["xOffset"] = 0,
-		},
-		["TBC Tank Uncrittable Uncrushable Track"] = {
-			["arcLength"] = 360,
-			["controlledChildren"] = {
-				"Missing Defense/Res 70", -- [1]
-				"Missing Defense/Res 70L", -- [2]
-				"Missing Defense/Res 73", -- [3]
-				"Missing Defense/Res 73L", -- [4]
-				"Crush Title", -- [5]
-				"Crush", -- [6]
-				"Def to Cap Title", -- [7]
-				"Def", -- [8]
-				"Res to Cap Title", -- [9]
-				"Res", -- [10]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "tfjhmaZB4",
-			["xOffset"] = 732.7318115234375,
-			["preferToUpdate"] = false,
-			["yOffset"] = -393.4743118286133,
-			["gridType"] = "RD",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["space"] = 2,
-			["url"] = "https://wago.io/tfjhmaZB4/8",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["unit"] = "player",
-						["type"] = "aura2",
-						["spellIds"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
-						["event"] = "Health",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-			},
-			["columnSpace"] = 1,
-			["internalVersion"] = 53,
-			["selfPoint"] = "TOPLEFT",
-			["align"] = "LEFT",
-			["desc"] = "Modified from https://wago.io/8svYsh795\n\nDisplays your current chance to be critically hit by level 70, 71, 72, and 73 mobs.\nAlso, shows how much additional avoidance is needed to be uncrushable.",
-			["stagger"] = 0,
-			["borderInset"] = 1,
-			["version"] = 8,
-			["subRegions"] = {
-			},
-			["fullCircle"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["authorOptions"] = {
-			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["useAnchorPerUnit"] = false,
-			["animate"] = false,
-			["useLimit"] = false,
-			["scale"] = 1,
-			["groupIcon"] = 132110,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["anchorPoint"] = "CENTER",
-			["config"] = {
-			},
-			["constantFactor"] = "RADIUS",
-			["gridWidth"] = 5,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.7",
-			["tocversion"] = 20501,
-			["id"] = "TBC Tank Uncrittable Uncrushable Track",
-			["rotation"] = 0,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["limit"] = 5,
-			["uid"] = "ncSOCaC6Gk5",
-			["rowSpace"] = 1,
-			["grow"] = "DOWN",
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["radius"] = 200,
-		},
-		["Vashj - Panic"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "21964",
-						["spellId"] = "37764",
-						["auranames"] = {
-							"38258", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["message_operator"] = "find('%s')",
-						["use_sourceNpcId"] = false,
-						["amount"] = "0",
-						["group_count"] = "0",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["event"] = "Combat Log",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "",
-						["use_spellId"] = true,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["group_countOperator"] = ">",
-						["genericShowOn"] = "showOnCooldown",
-						["subeventPrefix"] = "SPELL",
-						["use_messageType"] = false,
-						["message"] = "The Lurker Below takes a deep breath",
-						["duration"] = "3",
-						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
-						["type"] = "aura2",
-						["use_cloneId"] = false,
-						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
-						["useName"] = true,
-						["unevent"] = "timed",
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["unit"] = "player",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["names"] = {
-						},
-						["use_message"] = true,
-						["useExactSpellId"] = false,
-						["useAffected"] = true,
-						["use_unit"] = true,
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "spiralandpulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 19,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "FEARED",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glow"] = false,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [3]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["zoneIds"] = "332",
-				["encounterid"] = "628",
-				["use_zoneIds"] = true,
-				["zone"] = "Serpentshrine Cavern",
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["PRIEST"] = true,
-						["WARRIOR"] = true,
-					},
-				},
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "iFu2oBaYX9W",
-			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "Vashj - Panic",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 136184,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["xOffset"] = 0,
-		},
 		["Fathom Lord - The Beast Within"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "u2Waemdhl",
@@ -34276,11 +33555,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "2.5",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -34290,7 +33569,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -34445,25 +33724,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "JobFDMC1cAg",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -34489,7 +33751,670 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
+		},
+		["TBC Tank Uncrittable Uncrushable Track"] = {
+			["arcLength"] = 360,
+			["controlledChildren"] = {
+				"Missing Defense/Res 70", -- [1]
+				"Missing Defense/Res 70L", -- [2]
+				"Missing Defense/Res 73", -- [3]
+				"Missing Defense/Res 73L", -- [4]
+				"Crush Title", -- [5]
+				"Crush", -- [6]
+				"Def to Cap Title", -- [7]
+				"Def", -- [8]
+				"Res to Cap Title", -- [9]
+				"Res", -- [10]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "tfjhmaZB4",
+			["xOffset"] = 732.7318115234375,
+			["preferToUpdate"] = false,
+			["yOffset"] = -393.4743118286133,
+			["gridType"] = "RD",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["space"] = 2,
+			["url"] = "https://wago.io/tfjhmaZB4/8",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["unit"] = "player",
+						["type"] = "aura2",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["event"] = "Health",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["columnSpace"] = 1,
+			["internalVersion"] = 53,
+			["selfPoint"] = "TOPLEFT",
+			["align"] = "LEFT",
+			["desc"] = "Modified from https://wago.io/8svYsh795\n\nDisplays your current chance to be critically hit by level 70, 71, 72, and 73 mobs.\nAlso, shows how much additional avoidance is needed to be uncrushable.",
+			["stagger"] = 0,
+			["uid"] = "ncSOCaC6Gk5",
+			["version"] = 8,
+			["subRegions"] = {
+			},
+			["useLimit"] = false,
+			["radius"] = 200,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["rowSpace"] = 1,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["groupIcon"] = 132110,
+			["animate"] = false,
+			["fullCircle"] = true,
+			["scale"] = 1,
+			["useAnchorPerUnit"] = false,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["grow"] = "DOWN",
+			["borderInset"] = 1,
+			["constantFactor"] = "RADIUS",
+			["gridWidth"] = 5,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.7",
+			["tocversion"] = 20501,
+			["id"] = "TBC Tank Uncrittable Uncrushable Track",
+			["rotation"] = 0,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["sort"] = "none",
+			["config"] = {
+			},
+			["authorOptions"] = {
+			},
+			["anchorPoint"] = "CENTER",
+			["conditions"] = {
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+		},
+		["Vashj - Panic"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "u2Waemdhl",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/u2Waemdhl/19",
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["npcId"] = "21964",
+						["spellId"] = "37764",
+						["auranames"] = {
+							"38258", -- [1]
+						},
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["use_sourceNpcId"] = false,
+						["amount"] = "0",
+						["group_count"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_eventtype"] = true,
+						["event"] = "Combat Log",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["sourceNpcId"] = "",
+						["use_spellId"] = true,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["useGroup_count"] = true,
+						["group_countOperator"] = ">",
+						["genericShowOn"] = "showOnCooldown",
+						["subeventPrefix"] = "SPELL",
+						["use_messageType"] = false,
+						["message"] = "The Lurker Below takes a deep breath",
+						["duration"] = "3",
+						["use_aggro"] = true,
+						["use_threatUnit"] = true,
+						["type"] = "aura2",
+						["use_cloneId"] = false,
+						["debuffType"] = "HARMFUL",
+						["realSpellName"] = "Intangible Presence",
+						["useName"] = true,
+						["unevent"] = "timed",
+						["auraspellids"] = {
+							"38215", -- [1]
+						},
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["unit"] = "player",
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["use_npcId"] = true,
+						["use_spellName"] = false,
+						["spellIds"] = {
+						},
+						["names"] = {
+						},
+						["use_message"] = true,
+						["useExactSpellId"] = false,
+						["useAffected"] = true,
+						["use_unit"] = true,
+					},
+					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "spiralandpulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 19,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "FEARED",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = false,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
+			},
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["zoneIds"] = "332",
+				["encounterid"] = "628",
+				["use_zoneIds"] = true,
+				["zone"] = "Serpentshrine Cavern",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["PRIEST"] = true,
+						["WARRIOR"] = true,
+					},
+				},
+				["size"] = {
+					["multi"] = {
+						["fortyman"] = true,
+					},
+				},
+			},
+			["cooldownTextDisabled"] = false,
+			["uid"] = "iFu2oBaYX9W",
 			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "Vashj - Panic",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 136184,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
+		},
+		["Fathom Lord - Healing Wave"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "u2Waemdhl",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/u2Waemdhl/19",
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["npcId"] = "21964",
+						["spellId"] = 38330,
+						["auranames"] = {
+							"37676", -- [1]
+						},
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["use_sourceNpcId"] = true,
+						["amount"] = "0",
+						["group_count"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_eventtype"] = true,
+						["event"] = "Cast",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["sourceNpcId"] = "21215",
+						["use_spellId"] = true,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["useGroup_count"] = true,
+						["group_countOperator"] = ">",
+						["genericShowOn"] = "showOnCooldown",
+						["subeventPrefix"] = "SPELL",
+						["use_messageType"] = false,
+						["message"] = "The Lurker Below takes a deep breath",
+						["duration"] = "2.5",
+						["use_aggro"] = true,
+						["use_threatUnit"] = true,
+						["type"] = "unit",
+						["use_cloneId"] = false,
+						["debuffType"] = "HARMFUL",
+						["realSpellName"] = "Intangible Presence",
+						["useName"] = true,
+						["unevent"] = "timed",
+						["auraspellids"] = {
+							"38215", -- [1]
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "target",
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["use_npcId"] = true,
+						["use_spellName"] = false,
+						["spellIds"] = {
+						},
+						["names"] = {
+						},
+						["use_message"] = true,
+						["useExactSpellId"] = false,
+						["useAffected"] = true,
+						["use_unit"] = true,
+					},
+					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "spiralandpulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 19,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "INTERRUPT",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = false,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
+			},
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_class"] = false,
+				["use_zone"] = false,
+				["zoneIds"] = "332",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["MAGE"] = true,
+						["WARRIOR"] = true,
+						["SHAMAN"] = true,
+						["ROGUE"] = true,
+					},
+				},
+				["use_zoneIds"] = true,
+				["zone"] = "Serpentshrine Cavern",
+				["encounterid"] = "626",
+				["size"] = {
+					["multi"] = {
+						["fortyman"] = true,
+					},
+				},
+			},
+			["cooldownTextDisabled"] = false,
+			["uid"] = "skyNoS9Kf1S",
+			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "Fathom Lord - Healing Wave",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 136052,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["TK - Fire Shield"] = {
 			["iconSource"] = 0,
@@ -34543,11 +34468,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -34598,11 +34523,11 @@ WeakAurasSaved = {
 							"38626", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -34741,25 +34666,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "NMrI8zofwzm",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -34785,7 +34693,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Alar - Melt Armor OT"] = {
 			["iconSource"] = 0,
@@ -34837,11 +34762,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -34851,7 +34776,7 @@ WeakAurasSaved = {
 						["unit"] = "focus",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -35003,25 +34928,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "JWCTYoYeZS8",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -35047,7 +34955,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Vashj - Tainted Elementals"] = {
 			["iconSource"] = 0,
@@ -35101,8 +35026,8 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = ">",
 						["use_aggro"] = true,
 						["subeventPrefix"] = "SPELL",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
 						["message"] = "The Lurker Below takes a deep breath",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
@@ -35116,7 +35041,7 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -35255,25 +35180,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "dOh1zBGdWqI",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -35299,7 +35207,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Mother Rechts 2"] = {
 			["outline"] = "OUTLINE",
@@ -35331,13 +35256,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 1 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
+						["events"] = "RAID_TARGET_UPDATE",
 						["custom_type"] = "stateupdate",
 						["check"] = "event",
 						["subeventPrefix"] = "SPELL",
-						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 1 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -35548,21 +35473,21 @@ WeakAurasSaved = {
 			["semver"] = "1.8.3",
 			["tocversion"] = 20501,
 			["id"] = "Psy's Rampage Timer (Icon)",
-			["borderInset"] = 1,
+			["config"] = {
+			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["groupIcon"] = 132352,
+			["borderInset"] = 1,
+			["selfPoint"] = "CENTER",
 			["uid"] = "Wg1eiGHa75Z",
-			["config"] = {
-			},
-			["authorOptions"] = {
-			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["groupOffset"] = false,
 			},
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 		},
 		["SSC - Acid Geyser"] = {
 			["iconSource"] = 0,
@@ -35615,11 +35540,11 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -35759,26 +35684,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "nXYmupVxanJ",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} GEYSER ON ME! MOVE AWAY FROM %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -35804,7 +35711,25 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} GEYSER ON ME! MOVE AWAY FROM %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Reliquary - Frenzy"] = {
 			["iconSource"] = 0,
@@ -35858,11 +35783,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -35913,13 +35838,13 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 						},
 						["useName"] = true,
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -36038,6 +35963,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -36050,13 +35977,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -36080,8 +36006,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Fixate"] = {
 			["iconSource"] = 0,
@@ -36133,11 +36058,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -36256,6 +36181,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -36268,13 +36195,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -36298,8 +36224,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Flamestrike"] = {
 			["iconSource"] = 0,
@@ -36351,11 +36276,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -36405,11 +36330,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -36458,11 +36383,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -36511,11 +36436,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -36564,11 +36489,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -36708,6 +36633,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -36720,13 +36647,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -36750,8 +36676,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC - Spell Reflection"] = {
 			["iconSource"] = 0,
@@ -36804,11 +36729,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -36946,25 +36871,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "ooANluMgIYC",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -36990,7 +36898,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Solarian - Psychic Scream"] = {
 			["iconSource"] = 0,
@@ -37044,8 +36969,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -37061,7 +36986,7 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -37199,25 +37124,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "vdtwShRurx8",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -37243,7 +37151,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Fathom Lord - Cataclysmic Bolt"] = {
 			["iconSource"] = 0,
@@ -37446,25 +37371,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "AC1VLV(9w87",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -37490,7 +37398,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Leotheras - Inner Demon"] = {
 			["iconSource"] = 0,
@@ -37693,25 +37618,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "8aBXsFsQB5E",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -37737,7 +37645,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Azgalor - Doom"] = {
 			["iconSource"] = 0,
@@ -37791,13 +37716,13 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["useName"] = true,
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -37937,6 +37862,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt8} DOOM ON %c {rt8}",
@@ -37950,13 +37877,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -38070,8 +37996,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Death Coil"] = {
 			["iconSource"] = 0,
@@ -38123,11 +38048,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -38246,6 +38171,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -38258,13 +38185,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -38288,8 +38214,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Free MC"] = {
 			["iconSource"] = 0,
@@ -38394,8 +38319,8 @@ WeakAurasSaved = {
 						["range_operator"] = "<=",
 						["spellName"] = "Intangible Presence",
 						["showClones"] = false,
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["use_eventtype"] = true,
+						["useExactSpellId"] = false,
 						["useAffected"] = true,
 						["percenthealth"] = "20",
 						["event"] = "Range Check",
@@ -38413,10 +38338,10 @@ WeakAurasSaved = {
 						["use_status"] = false,
 						["useGroup_count"] = true,
 						["unit"] = "player",
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["genericShowOn"] = "showOnCooldown",
 						["subeventPrefix"] = "SPELL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_aggro"] = true,
 						["destUnit"] = "player",
 						["names"] = {
@@ -38435,7 +38360,7 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -38443,7 +38368,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = false,
-						["useExactSpellId"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -38477,7 +38402,7 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["duration"] = "5",
 						["use_range"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["genericShowOn"] = "showOnCooldown",
@@ -38485,7 +38410,7 @@ WeakAurasSaved = {
 						["use_destFlags2"] = false,
 						["use_status"] = false,
 						["useGroup_count"] = true,
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["unit"] = "player",
 						["range"] = "12",
 						["names"] = {
@@ -38508,7 +38433,7 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -38682,25 +38607,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "ymZzptc(HFs",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -38726,7 +38634,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Illidan - Shadow Demon"] = {
 			["iconSource"] = 0,
@@ -38783,11 +38708,11 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -38926,6 +38851,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} DEMONS ON %c {rt7}",
@@ -38939,13 +38866,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -38969,8 +38895,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Def to Cap Title"] = {
 			["iconSource"] = -1,
@@ -39125,8 +39050,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 200,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -39160,7 +39085,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 200,
 		},
 		["BT - Mortal Wound"] = {
 			["iconSource"] = 0,
@@ -39214,11 +39139,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -39374,6 +39299,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -39386,13 +39313,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -39416,8 +39342,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Illidan - Demon Within"] = {
 			["iconSource"] = 0,
@@ -39476,13 +39401,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["type"] = "event",
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -39598,6 +39523,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -39610,13 +39537,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -39640,8 +39566,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Naj'entus - Missing MS"] = {
 			["iconSource"] = 0,
@@ -39693,11 +39618,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -39750,11 +39675,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -39929,6 +39854,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -39941,13 +39868,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -39971,8 +39897,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["FW"] = {
 			["sparkWidth"] = 10,
@@ -40005,10 +39930,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -40376,14 +40301,14 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 20503,
 			["id"] = "Mother Direction Decider 2",
-			["uid"] = "(srJfxXBVhQ",
+			["groupIcon"] = 136184,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "CENTER",
+			["borderInset"] = 1,
+			["uid"] = "(srJfxXBVhQ",
 			["config"] = {
 			},
-			["groupIcon"] = 136184,
-			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -40568,7 +40493,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 		},
-		["Azgalor - Rain of Fire"] = {
+		["Winterchill - Icebolt"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "Y5J7NdyVH",
 			["color"] = {
@@ -40589,64 +40514,60 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["npcId"] = "16024",
-						["spellId"] = "31341",
+						["spellId"] = "28433",
 						["auranames"] = {
-							"31341", -- [1]
+							"31249", -- [1]
 						},
-						["use_genericShowOn"] = true,
-						["destUnit"] = "player",
+						["duration"] = "40",
 						["amount"] = "0",
 						["group_count"] = "0",
-						["spellName"] = "",
+						["spellName"] = "Intangible Presence",
 						["showClones"] = false,
 						["use_eventtype"] = true,
-						["event"] = "Combat Log",
+						["event"] = "Combat Events",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["message"] = "I will not be touched by rabble such as you",
-						["use_spellId"] = true,
-						["use_destUnit"] = true,
+						["use_spellId"] = false,
+						["use_destUnit"] = false,
 						["use_track"] = true,
-						["useIgnoreName"] = false,
 						["use_amount"] = true,
 						["use_destFlags2"] = false,
-						["use_aggro"] = true,
-						["useGroup_count"] = true,
-						["use_exact_spellId"] = true,
-						["genericShowOn"] = "showOnCooldown",
-						["subeventPrefix"] = "SPELL",
-						["useExactSpellId"] = false,
-						["subeventSuffix"] = "_AURA_APPLIED",
-						["use_unit"] = true,
 						["use_status"] = false,
-						["names"] = {
-						},
+						["useGroup_count"] = true,
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
+						["group_countOperator"] = ">",
+						["useExactSpellId"] = false,
+						["use_aggro"] = true,
+						["use_genericShowOn"] = true,
 						["debuffType"] = "HARMFUL",
 						["auraspellids"] = {
-							"41917", -- [1]
+							"38215", -- [1]
 						},
-						["type"] = "combatlog",
-						["use_npcId"] = false,
+						["useName"] = true,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
+						["realSpellName"] = "Impale",
+						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["useName"] = true,
-						["use_message"] = true,
-						["duration"] = "3",
+						["type"] = "aura2",
+						["matchesShowOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["useAffected"] = true,
-						["group_countOperator"] = ">",
+						["names"] = {
+						},
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
 						["unit"] = "nameplate",
 					},
 				}, -- [1]
-				["disjunctive"] = "any",
+				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 53,
@@ -40680,8 +40601,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text_format_s_format"] = "none",
-					["text_text"] = "MOVE OUT",
+					["text_text"] = "TOMBED",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -40705,12 +40625,12 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Accidental Presidency",
 					["text_shadowYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
-					["text_visible"] = true,
+					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
 					["text_justify"] = "CENTER",
@@ -40759,40 +40679,44 @@ WeakAurasSaved = {
 				["class"] = {
 					["single"] = "WARRIOR",
 					["multi"] = {
+						["WARRIOR"] = true,
+						["PRIEST"] = true,
 					},
 				},
-				["zone"] = "Tempest Keep",
+				["zone"] = "Serpentshrine Cavern",
 				["use_zoneIds"] = true,
-				["encounterid"] = "621",
+				["encounterid"] = "618",
 				["zoneIds"] = "329",
 			},
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
-					["message"] = "",
+					["message"] = "{rt7} ICEBOLT ON %c ! HEAL ME {rt7}",
 					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = true,
+					["do_sound"] = false,
 					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\BigWigs\\Media\\Sounds\\Alarm.ogg",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
 				},
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["displayIcon"] = 136186,
+			["displayIcon"] = 135846,
 			["cooldownEdge"] = true,
 			["xOffset"] = 0,
 			["width"] = 64,
@@ -40800,19 +40724,18 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["semver"] = "1.1.3",
 			["tocversion"] = 20503,
-			["id"] = "Azgalor - Rain of Fire",
+			["id"] = "Winterchill - Icebolt",
 			["auto"] = false,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
-			["uid"] = "7zBUezkv54l",
+			["uid"] = "IiKkddlQ(H2",
 			["inverse"] = false,
 			["parent"] = "Tems' BT/MH Pack",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Hydross - Mark of Corruption"] = {
 			["iconSource"] = 0,
@@ -40865,11 +40788,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -41187,25 +41110,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "diSPrxnXBxy",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -41327,7 +41233,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Archimonde - Air Burst Cast"] = {
 			["iconSource"] = 0,
@@ -41384,11 +41307,11 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -41565,6 +41488,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -41577,13 +41502,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -41623,8 +41547,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Vashj - Magic Barrier"] = {
 			["iconSource"] = 0,
@@ -41676,11 +41599,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -41690,7 +41613,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -41865,25 +41788,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Z9wi9hLCxt)",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -41909,7 +41815,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Morogrim - Murloc Spawn"] = {
 			["iconSource"] = 0,
@@ -41961,11 +41884,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -41975,7 +41898,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -42114,25 +42037,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "4oSnQwK9Vqv",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -42158,7 +42064,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["TK - Countercharge"] = {
 			["iconSource"] = 0,
@@ -42212,11 +42135,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -42267,11 +42190,11 @@ WeakAurasSaved = {
 							"38626", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -42410,25 +42333,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "7BmIH6hR5bE",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -42454,7 +42360,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Naj'entus - Tidal Shield"] = {
 			["iconSource"] = 0,
@@ -42506,11 +42429,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -42557,11 +42480,11 @@ WeakAurasSaved = {
 						["useName"] = true,
 						["unit"] = "group",
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -42738,6 +42661,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -42750,13 +42675,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -42809,12 +42733,11 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
-		["Kaelthas - Remote Toy"] = {
+		["Azgalor - Rain of Fire"] = {
 			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
+			["wagoID"] = "Y5J7NdyVH",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -42827,88 +42750,78 @@ WeakAurasSaved = {
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
+			["url"] = "https://wago.io/Y5J7NdyVH/8",
 			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["npcId"] = "18806",
-						["spellId"] = 33387,
+						["npcId"] = "16024",
+						["spellId"] = "31341",
 						["auranames"] = {
-							"37027", -- [1]
+							"31341", -- [1]
 						},
 						["use_genericShowOn"] = true,
-						["message_operator"] = "find('%s')",
 						["destUnit"] = "player",
 						["amount"] = "0",
 						["group_count"] = "0",
-						["range_operator"] = "<=",
-						["spellName"] = "Intangible Presence",
+						["spellName"] = "",
 						["showClones"] = false,
 						["use_eventtype"] = true,
-						["group_countOperator"] = ">",
-						["percenthealth"] = "20",
-						["event"] = "Range Check",
+						["event"] = "Combat Log",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "",
+						["message"] = "I will not be touched by rabble such as you",
 						["use_spellId"] = true,
-						["percenthealth_operator"] = "<=",
-						["use_range"] = true,
-						["use_messageType"] = false,
-						["use_destUnit"] = false,
+						["use_destUnit"] = true,
 						["use_track"] = true,
-						["use_status"] = false,
+						["useIgnoreName"] = false,
 						["use_amount"] = true,
 						["use_destFlags2"] = false,
 						["use_aggro"] = true,
 						["useGroup_count"] = true,
-						["duration"] = "5",
-						["unit"] = "player",
-						["range"] = "12",
+						["use_exact_spellId"] = true,
+						["genericShowOn"] = "showOnCooldown",
 						["subeventPrefix"] = "SPELL",
+						["useExactSpellId"] = false,
+						["subeventSuffix"] = "_AURA_APPLIED",
+						["use_unit"] = true,
+						["use_status"] = false,
 						["names"] = {
 						},
-						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
-						["useExactSpellId"] = false,
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["use_destName"] = false,
-						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["useName"] = true,
-						["type"] = "aura2",
-						["unevent"] = "timed",
 						["auraspellids"] = {
-							"38215", -- [1]
+							"41917", -- [1]
 						},
-						["use_unit"] = true,
-						["use_sourceNpcId"] = false,
+						["type"] = "combatlog",
+						["use_threatUnit"] = true,
+						["unevent"] = "timed",
+						["use_npcId"] = false,
+						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["genericShowOn"] = "showOnCooldown",
+						["useName"] = true,
 						["use_message"] = true,
-						["use_percenthealth"] = true,
+						["duration"] = "3",
 						["useAffected"] = true,
-						["message"] = "Thaladred the Darkener sets eyes on",
+						["group_countOperator"] = ">",
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
 						["unit"] = "nameplate",
 					},
 				}, -- [1]
-				["disjunctive"] = "all",
+				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 53,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["easeStrength"] = 3,
 					["type"] = "none",
+					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
@@ -42916,25 +42829,26 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["easeType"] = "none",
 					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
 					["preset"] = "spiralandpulse",
+					["duration_type"] = "seconds",
 				},
 				["finish"] = {
-					["easeStrength"] = 3,
 					["type"] = "none",
+					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
 			},
 			["desaturate"] = false,
-			["version"] = 19,
+			["version"] = 8,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
 				}, -- [1]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text"] = "STUNS",
+					["text_text_format_s_format"] = "none",
+					["text_text"] = "MOVE OUT",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -42958,15 +42872,15 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Accidental Presidency",
 					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
+					["text_text_format_affected_format"] = "none",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
+					["text_visible"] = true,
+					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_justify"] = "CENTER",
 				}, -- [2]
 				{
 					["glowFrequency"] = 0.25,
@@ -42984,9 +42898,9 @@ WeakAurasSaved = {
 					},
 					["glowXOffset"] = 0,
 					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
+					["glow"] = true,
 					["glowLength"] = 10,
-					["glow"] = false,
+					["glowType"] = "buttonOverlay",
 					["glowLines"] = 8,
 					["glowBorder"] = false,
 				}, -- [3]
@@ -43004,70 +42918,68 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = true,
 				["use_zone"] = false,
-				["zoneIds"] = "334",
-				["encounterid"] = "733",
-				["use_zoneIds"] = true,
-				["zone"] = "Tempest Keep",
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["PRIEST"] = true,
-						["WARRIOR"] = true,
-					},
-				},
 				["size"] = {
 					["multi"] = {
 						["fortyman"] = true,
 					},
 				},
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+					},
+				},
+				["zone"] = "Tempest Keep",
+				["use_zoneIds"] = true,
+				["encounterid"] = "621",
+				["zoneIds"] = "329",
 			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "TUupZ1R9pTL",
+			["zoom"] = 0,
+			["config"] = {
+			},
 			["authorOptions"] = {
 			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
 					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
+					["do_sound"] = true,
 					["message_type"] = "SAY",
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
+					["sound"] = "Interface\\AddOns\\BigWigs\\Media\\Sounds\\Alarm.ogg",
 				},
 				["init"] = {
 				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
 			},
 			["regionType"] = "icon",
-			["cooldown"] = true,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "Kaelthas - Remote Toy",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 134514,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["displayIcon"] = 136186,
+			["cooldownEdge"] = true,
 			["xOffset"] = 0,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.1.3",
+			["tocversion"] = 20503,
+			["id"] = "Azgalor - Rain of Fire",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["uid"] = "7zBUezkv54l",
+			["inverse"] = false,
+			["parent"] = "Tems' BT/MH Pack",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
 		},
 		["Lurker - Geyser"] = {
 			["iconSource"] = 0,
@@ -43231,25 +43143,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Cl(Tj8dHo4M",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -43275,7 +43170,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT - Shell of Pain"] = {
 			["iconSource"] = 0,
@@ -43330,11 +43242,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -43473,6 +43385,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -43485,13 +43399,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -43515,8 +43428,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Phase 4"] = {
 			["iconSource"] = 0,
@@ -43869,25 +43781,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "ovyflY99xrf",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -43926,7 +43821,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Vashj - Persuasion"] = {
 			["iconSource"] = 0,
@@ -43982,11 +43894,11 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -44034,15 +43946,15 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["unevent"] = "timed",
 						["type"] = "aura2",
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -44252,25 +44164,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "jLqrreVFSNZ",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -44318,7 +44213,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Alar - Melt Armor"] = {
 			["iconSource"] = 0,
@@ -44370,11 +44282,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -44384,7 +44296,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -44523,26 +44435,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "onyggS1LBha",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} TANK SWAP! Taunt off %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -44568,11 +44462,29 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} TANK SWAP! Taunt off %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
-		["Winterchill - Icebolt"] = {
+		["Kaelthas - Remote Toy"] = {
 			["iconSource"] = 0,
-			["wagoID"] = "Y5J7NdyVH",
+			["wagoID"] = "u2Waemdhl",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -44585,59 +44497,73 @@ WeakAurasSaved = {
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/Y5J7NdyVH/8",
+			["url"] = "https://wago.io/u2Waemdhl/19",
 			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["npcId"] = "16024",
-						["spellId"] = "28433",
+						["npcId"] = "18806",
+						["spellId"] = 33387,
 						["auranames"] = {
-							"31249", -- [1]
+							"37027", -- [1]
 						},
-						["duration"] = "40",
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["destUnit"] = "player",
 						["amount"] = "0",
 						["group_count"] = "0",
+						["range_operator"] = "<=",
 						["spellName"] = "Intangible Presence",
 						["showClones"] = false,
 						["use_eventtype"] = true,
-						["event"] = "Combat Events",
+						["group_countOperator"] = ">",
+						["percenthealth"] = "20",
+						["event"] = "Range Check",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["use_spellId"] = false,
+						["sourceNpcId"] = "",
+						["use_spellId"] = true,
+						["percenthealth_operator"] = "<=",
+						["use_range"] = true,
+						["use_messageType"] = false,
 						["use_destUnit"] = false,
 						["use_track"] = true,
+						["use_status"] = false,
 						["use_amount"] = true,
 						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
-						["subeventPrefix"] = "SPELL",
-						["group_countOperator"] = ">",
-						["useExactSpellId"] = false,
 						["use_aggro"] = true,
-						["use_genericShowOn"] = true,
+						["useGroup_count"] = true,
+						["duration"] = "5",
+						["unit"] = "player",
+						["range"] = "12",
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
+						["useExactSpellId"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["use_destName"] = false,
+						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
+						["useName"] = true,
+						["type"] = "aura2",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["useName"] = true,
-						["use_npcId"] = true,
-						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
-						["unit"] = "player",
+						["use_unit"] = true,
+						["use_sourceNpcId"] = false,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
 						["use_threatUnit"] = true,
-						["use_spellName"] = true,
+						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["type"] = "aura2",
-						["matchesShowOn"] = "showOnActive",
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["genericShowOn"] = "showOnCooldown",
+						["use_message"] = true,
+						["use_percenthealth"] = true,
 						["useAffected"] = true,
-						["names"] = {
-						},
+						["message"] = "Thaladred the Darkener sets eyes on",
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -44651,8 +44577,8 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
+					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
@@ -44660,25 +44586,25 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["easeType"] = "none",
 					["easeStrength"] = 3,
-					["preset"] = "spiralandpulse",
 					["duration_type"] = "seconds",
+					["preset"] = "spiralandpulse",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
+					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
 			},
 			["desaturate"] = false,
-			["version"] = 8,
+			["version"] = 19,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
 				}, -- [1]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text"] = "TOMBED",
+					["text_text"] = "STUNS",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -44702,15 +44628,15 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Accidental Presidency",
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 16,
+					["text_fontSize"] = 18,
 					["anchorXOffset"] = 0,
-					["text_justify"] = "CENTER",
+					["text_fontType"] = "OUTLINE",
 				}, -- [2]
 				{
 					["glowFrequency"] = 0.25,
@@ -44728,9 +44654,9 @@ WeakAurasSaved = {
 					},
 					["glowXOffset"] = 0,
 					["glowScale"] = 1,
-					["glow"] = true,
-					["glowLength"] = 10,
 					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = false,
 					["glowLines"] = 8,
 					["glowBorder"] = false,
 				}, -- [3]
@@ -44748,70 +44674,69 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = true,
 				["use_zone"] = false,
+				["zoneIds"] = "334",
+				["encounterid"] = "733",
+				["use_zoneIds"] = true,
+				["zone"] = "Tempest Keep",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["PRIEST"] = true,
+						["WARRIOR"] = true,
+					},
+				},
 				["size"] = {
 					["multi"] = {
 						["fortyman"] = true,
 					},
 				},
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["WARRIOR"] = true,
-						["PRIEST"] = true,
-					},
-				},
-				["zone"] = "Serpentshrine Cavern",
-				["use_zoneIds"] = true,
-				["encounterid"] = "618",
-				["zoneIds"] = "329",
 			},
-			["zoom"] = 0,
-			["config"] = {
+			["cooldownTextDisabled"] = false,
+			["uid"] = "TUupZ1R9pTL",
+			["xOffset"] = 0,
+			["authorOptions"] = {
 			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} ICEBOLT ON %c ! HEAL ME {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
+			["regionType"] = "icon",
+			["cooldown"] = true,
+			["conditions"] = {
 			},
 			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "Kaelthas - Remote Toy",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 134514,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["displayIcon"] = 135846,
-			["cooldownEdge"] = true,
-			["xOffset"] = 0,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.3",
-			["tocversion"] = 20503,
-			["id"] = "Winterchill - Icebolt",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["uid"] = "IiKkddlQ(H2",
-			["inverse"] = false,
-			["parent"] = "Tems' BT/MH Pack",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
 			},
 		},
 		["Solarian - Great Heal"] = {
@@ -44866,8 +44791,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -44883,7 +44808,7 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -45021,25 +44946,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "TRr6jlIhioM",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -45065,7 +44973,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Gurtogg - Acidic Wound"] = {
 			["iconSource"] = 0,
@@ -45119,8 +45044,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -45137,7 +45062,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -45313,6 +45238,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -45326,13 +45253,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -45374,8 +45300,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Lurker - Spout CD"] = {
 			["iconSource"] = 0,
@@ -45429,8 +45354,8 @@ WeakAurasSaved = {
 						["unit"] = "group",
 						["duration"] = "60",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["use_count"] = false,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
@@ -45443,7 +45368,7 @@ WeakAurasSaved = {
 						["remaining_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -45493,8 +45418,8 @@ WeakAurasSaved = {
 						["unit"] = "group",
 						["duration"] = "60",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["use_count"] = false,
 						["debuffType"] = "HARMFUL",
 						["type"] = "event",
@@ -45507,7 +45432,7 @@ WeakAurasSaved = {
 						["remaining_operator"] = "<=",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -45646,25 +45571,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "EYmf((ESVz(",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -45703,7 +45611,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Council - Hammer of Justice"] = {
 			["iconSource"] = 0,
@@ -45758,11 +45683,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -45879,6 +45804,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -45891,13 +45818,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -45921,8 +45847,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Mother Rechts"] = {
 			["outline"] = "OUTLINE",
@@ -45955,13 +45880,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 1 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
+						["events"] = "RAID_TARGET_UPDATE",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
-						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 1 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -46102,10 +46027,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -46422,11 +46347,11 @@ WeakAurasSaved = {
 						["message"] = "The time is now! Leave none standing",
 						["duration"] = "4",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "event",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -46436,7 +46361,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -46484,11 +46409,11 @@ WeakAurasSaved = {
 						["message"] = "Время пришло! Не щадите никого",
 						["duration"] = "4",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "event",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -46498,7 +46423,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -46546,11 +46471,11 @@ WeakAurasSaved = {
 						["message"] = "Die Zeit ist gekommen! Lasst keinen am Leben",
 						["duration"] = "4",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "event",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -46560,7 +46485,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -46735,25 +46660,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "hHpuPhq5w7Z",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -46779,7 +46687,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Reliquary - Rune Shield"] = {
 			["iconSource"] = 0,
@@ -46834,11 +46759,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -46993,6 +46918,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -47005,13 +46932,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -47035,8 +46961,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Vashj - Phase 3"] = {
 			["iconSource"] = 0,
@@ -47088,11 +47013,11 @@ WeakAurasSaved = {
 						["message"] = "You may want to take cover",
 						["duration"] = "4",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "event",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -47102,7 +47027,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -47150,11 +47075,11 @@ WeakAurasSaved = {
 						["message"] = "Вам не пора прятаться",
 						["duration"] = "4",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "event",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -47164,7 +47089,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -47212,11 +47137,11 @@ WeakAurasSaved = {
 						["message"] = "Geht besser in Deckung",
 						["duration"] = "4",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "event",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -47226,7 +47151,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -47401,25 +47326,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "05CdBTmwCGC",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -47445,7 +47353,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Council - Consecration"] = {
 			["iconSource"] = 0,
@@ -47501,11 +47426,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -47558,11 +47483,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -47614,11 +47539,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -47671,11 +47596,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -47815,6 +47740,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -47827,13 +47754,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -47857,8 +47783,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Morogrim - Earthquake"] = {
 			["iconSource"] = 0,
@@ -47910,11 +47835,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "50",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -47924,7 +47849,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -48099,25 +48024,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "F15TuALAmoQ",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -48156,7 +48064,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT - Fear"] = {
 			["iconSource"] = 0,
@@ -48210,11 +48135,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -48332,6 +48257,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -48344,13 +48271,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -48374,8 +48300,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Gurtogg - Bewildering Strike"] = {
 			["iconSource"] = 0,
@@ -48429,8 +48354,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -48447,7 +48372,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -48566,6 +48491,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -48579,13 +48506,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -48609,8 +48535,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Stun Effects"] = {
 			["iconSource"] = -1,
@@ -48667,11 +48592,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -48789,6 +48714,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -48801,13 +48728,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -48831,8 +48757,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Shahraz - Fatal Forward"] = {
 			["iconSource"] = 0,
@@ -48916,13 +48841,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["spellIds"] = {
-						},
 						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 3 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 3 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
+						["spellIds"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -49230,6 +49155,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -49242,13 +49169,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -49272,8 +49198,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Chaotic Light"] = {
 			["iconSource"] = 0,
@@ -49325,11 +49250,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -49470,6 +49395,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -49482,13 +49409,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -49512,8 +49438,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC/TK - Flash of Light"] = {
 			["iconSource"] = 0,
@@ -49567,11 +49492,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -49620,11 +49545,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -49763,25 +49688,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "D3Qj)HacHKN",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -49807,7 +49715,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT - Curses"] = {
 			["iconSource"] = -1,
@@ -49862,11 +49787,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -50006,6 +49931,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "{rt7} CURSE ON %c {rt7}",
@@ -50019,13 +49946,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -50049,8 +49975,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Reliquary - Spite"] = {
 			["iconSource"] = 0,
@@ -50105,11 +50030,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -50287,6 +50212,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -50299,13 +50226,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -50402,8 +50328,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Encapsulate Range Check"] = {
 			["iconSource"] = -1,
@@ -50536,7 +50461,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "726",
 				["spec"] = {
 					["multi"] = {
 					},
@@ -50545,6 +50469,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "726",
 				["size"] = {
 					["multi"] = {
 					},
@@ -50640,11 +50565,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -50694,11 +50619,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -50748,11 +50673,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -50801,11 +50726,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -50854,11 +50779,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -50996,25 +50921,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "8JQqxU2D3RS",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -51040,7 +50948,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Felmyst: Encapsulate"] = {
 			["outline"] = "OUTLINE",
@@ -51151,8 +51076,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
 			["shadowYOffset"] = -1,
+			["justify"] = "LEFT",
 			["semver"] = "1.0.6",
-			["auto"] = false,
 			["displayText_format_p_time_precision"] = 1,
 			["actions"] = {
 				["start"] = {
@@ -51181,7 +51106,7 @@ WeakAurasSaved = {
 			},
 			["selfPoint"] = "CENTER",
 			["cooldownTextDisabled"] = false,
-			["justify"] = "LEFT",
+			["auto"] = false,
 			["tocversion"] = 20504,
 			["id"] = "Felmyst: Encapsulate",
 			["animation"] = {
@@ -51253,13 +51178,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 2 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
+						["events"] = "RAID_TARGET_UPDATE",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
-						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 2 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -51507,11 +51432,15 @@ WeakAurasSaved = {
 			},
 			["icon"] = false,
 			["sparkOffsetY"] = 0,
-			["uid"] = "BP0ZBUUNn4x",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["config"] = {
-			},
+			["uid"] = "BP0ZBUUNn4x",
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -51531,11 +51460,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["iconSource"] = -1,
@@ -51716,11 +51641,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -51839,6 +51764,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -51851,13 +51778,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -51881,8 +51807,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Hydross - Mark of Hydross"] = {
 			["iconSource"] = 0,
@@ -51935,11 +51860,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -52257,25 +52182,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "BL8I9JrN0YQ",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -52397,7 +52305,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Vashj - Tainted Core"] = {
 			["iconSource"] = 0,
@@ -52607,24 +52532,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "kLx5yh7xse2",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_dest"] = "",
-					["do_sound"] = false,
-					["message_type"] = "WHISPER",
-					["sound"] = " custom",
-					["do_message"] = false,
-					["sound_channel"] = "Ambience",
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -52650,7 +52559,23 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_dest"] = "",
+					["do_sound"] = false,
+					["message_type"] = "WHISPER",
+					["sound"] = " custom",
+					["do_message"] = false,
+					["sound_channel"] = "Ambience",
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 		},
 		["SW"] = {
 			["sparkWidth"] = 10,
@@ -52677,10 +52602,10 @@ WeakAurasSaved = {
 						["event"] = "Chat Message",
 						["custom_type"] = "stateupdate",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["events"] = "CLEU:SPELL_CAST_SUCCESS, GROUP_ROSTER_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, event, _, subEvent, _, _, sourceName, _, _, _, _, _, _, _, spellName)\n    \n    -- Maintain player list\n    if event == \"GROUP_ROSTER_UPDATE\" then\n        \n        -- Remove\n        for _, state in pairs(s) do\n            local unitName = state.name\n            if not UnitInParty(unitName) then\n                state.show = false\n                state.changed = true\n            end\n        end\n        \n        -- Add\n        for unit in WA_IterateGroupMembers(true) do\n            local unitName = UnitName(unit)\n            local isUnitValid = select(2, UnitClass(unitName)) == aura_env.class\n            \n            if aura_env.race ~= \"All\" then\n                isUnitValid = isUnitValid and (UnitRace(unitName) == aura_env.race)\n            end\n            \n            if isUnitValid and not s[unitName] then\n                s[unitName] = {\n                    show = true,\n                    changed = true, \n                    progressType = \"timed\",\n                    duration = 0,\n                    expirationTime = 0,\n                    guid = UnitGUID(unit),\n                    name = unitName\n                }\n            end\n        end\n        \n        return true\n    end\n    \n    -- TODO Handle offline/dead players\n    \n    -- Start timer\n    if subEvent == \"SPELL_CAST_SUCCESS\"\n    and spellName == aura_env.spell\n    and s[sourceName]\n    then\n        local state = s[sourceName]\n        if state and state.show then\n            state.changed = true\n            state.duration = aura_env.cd\n            state.expirationTime = GetTime() + aura_env.cd\n            return true\n        end\n    end\nend",
 						["check"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
@@ -52728,13 +52653,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Access the wago URL for more info",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["sparkOffsetY"] = 0,
+			["iconSource"] = -1,
+			["version"] = 14,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -52854,7 +52774,16 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 8,
-			["iconSource"] = -1,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "-- Settings\naura_env.spells = {\n    [GetSpellInfo(20230)] = true, -- retaliation\n    [GetSpellInfo(871)] = true,  -- shield wall\n    [GetSpellInfo(1719)] = true, -- recklessness\n}\naura_env.class = \"WARRIOR\"\naura_env.race = \"All\"\naura_env.cd = 1800",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
 			["load"] = {
 				["use_ingroup"] = false,
 				["use_never"] = true,
@@ -52888,25 +52817,21 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "-- Settings\naura_env.spells = {\n    [GetSpellInfo(20230)] = true, -- retaliation\n    [GetSpellInfo(871)] = true,  -- shield wall\n    [GetSpellInfo(1719)] = true, -- recklessness\n}\naura_env.class = \"WARRIOR\"\naura_env.race = \"All\"\naura_env.cd = 1800",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
-			["displayIcon"] = "132362",
 			["desaturate"] = false,
+			["displayIcon"] = "132362",
 			["selfPoint"] = "CENTER",
-			["version"] = 14,
-			["uid"] = "2coGAylTz8B",
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
+			["sparkOffsetY"] = 0,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["config"] = {
 			},
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
+			["uid"] = "2coGAylTz8B",
 			["width"] = 146,
 			["icon_side"] = "LEFT",
 			["frameStrata"] = 1,
@@ -53004,11 +52929,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -53148,6 +53073,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -53160,13 +53087,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -53190,8 +53116,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Reliquary - Seethe"] = {
 			["iconSource"] = 0,
@@ -53246,11 +53171,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -53428,6 +53353,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -53440,13 +53367,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -53470,10 +53396,9 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
-		["Fathom Lord - Healing Wave"] = {
+		["Kaelthas - Shock Barrier"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "u2Waemdhl",
 			["color"] = {
@@ -53493,60 +53418,70 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["npcId"] = "21964",
-						["spellId"] = 38330,
+						["npcId"] = "19622",
+						["spellId"] = 33387,
 						["auranames"] = {
-							"37676", -- [1]
+							"36815", -- [1]
 						},
-						["use_genericShowOn"] = true,
+						["matchesShowOn"] = "showOnActive",
 						["message_operator"] = "find('%s')",
-						["use_sourceNpcId"] = true,
+						["use_sourceNpcId"] = false,
 						["amount"] = "0",
 						["group_count"] = "0",
+						["range_operator"] = "<=",
 						["spellName"] = "Intangible Presence",
 						["showClones"] = false,
+						["group_countOperator"] = ">",
+						["useAffected"] = true,
 						["use_eventtype"] = true,
-						["event"] = "Cast",
+						["message"] = "Thaladred the Darkener sets eyes on",
+						["percenthealth"] = "0",
+						["event"] = "Health",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "21215",
+						["sourceNpcId"] = "",
 						["use_spellId"] = true,
+						["destUnit"] = "player",
+						["use_range"] = true,
+						["use_nameplateType"] = false,
 						["use_destUnit"] = false,
 						["use_track"] = true,
+						["useExactSpellId"] = false,
 						["use_amount"] = true,
 						["use_destFlags2"] = false,
 						["use_status"] = false,
 						["useGroup_count"] = true,
-						["group_countOperator"] = ">",
+						["range"] = "12",
+						["use_threatUnit"] = true,
 						["genericShowOn"] = "showOnCooldown",
-						["subeventPrefix"] = "SPELL",
-						["use_messageType"] = false,
-						["message"] = "The Lurker Below takes a deep breath",
-						["duration"] = "2.5",
-						["use_aggro"] = true,
+						["unit"] = "target",
 						["realSpellName"] = "Intangible Presence",
-						["type"] = "unit",
-						["use_cloneId"] = false,
-						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["use_aggro"] = true,
+						["use_unit"] = true,
+						["names"] = {
+						},
 						["useName"] = true,
+						["use_destName"] = false,
+						["use_cloneId"] = false,
+						["debuffType"] = "HELPFUL",
 						["unevent"] = "timed",
+						["type"] = "aura2",
+						["subeventPrefix"] = "RANGE",
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "target",
+						["use_genericShowOn"] = true,
+						["percenthealth_operator"] = ">",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["names"] = {
-						},
+						["duration"] = "5",
 						["use_message"] = true,
-						["useExactSpellId"] = false,
-						["useAffected"] = true,
-						["use_unit"] = true,
+						["use_percenthealth"] = true,
+						["use_messageType"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -53587,7 +53522,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text"] = "INTERRUPT",
+					["text_text"] = "BURN SHIELD",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -53617,7 +53552,7 @@ WeakAurasSaved = {
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
+					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 				}, -- [2]
@@ -53639,7 +53574,7 @@ WeakAurasSaved = {
 					["glowScale"] = 1,
 					["glowType"] = "buttonOverlay",
 					["glowLength"] = 10,
-					["glow"] = false,
+					["glow"] = true,
 					["glowLines"] = 8,
 					["glowBorder"] = false,
 				}, -- [3]
@@ -53656,21 +53591,18 @@ WeakAurasSaved = {
 					},
 				},
 				["use_encounterid"] = true,
-				["use_class"] = false,
 				["use_zone"] = false,
-				["zoneIds"] = "332",
+				["zoneIds"] = "334",
+				["encounterid"] = "733",
+				["use_zoneIds"] = true,
+				["zone"] = "Tempest Keep",
 				["class"] = {
 					["single"] = "WARRIOR",
 					["multi"] = {
-						["MAGE"] = true,
+						["PRIEST"] = true,
 						["WARRIOR"] = true,
-						["SHAMAN"] = true,
-						["ROGUE"] = true,
 					},
 				},
-				["use_zoneIds"] = true,
-				["zone"] = "Serpentshrine Cavern",
-				["encounterid"] = "626",
 				["size"] = {
 					["multi"] = {
 						["fortyman"] = true,
@@ -53678,26 +53610,9 @@ WeakAurasSaved = {
 				},
 			},
 			["cooldownTextDisabled"] = false,
-			["uid"] = "skyNoS9Kf1S",
+			["uid"] = "BncCJ2ZJcCX",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -53710,7 +53625,7 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["semver"] = "1.1.9",
 			["tocversion"] = 20502,
-			["id"] = "Fathom Lord - Healing Wave",
+			["id"] = "Kaelthas - Shock Barrier",
 			["auto"] = false,
 			["useCooldownModRate"] = true,
 			["width"] = 64,
@@ -53719,11 +53634,28 @@ WeakAurasSaved = {
 			},
 			["inverse"] = false,
 			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 136052,
+			["displayIcon"] = 136051,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Fathom Lord - Power Gain"] = {
 			["iconSource"] = 0,
@@ -53775,11 +53707,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -53789,7 +53721,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -53837,11 +53769,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -53851,7 +53783,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -53899,11 +53831,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "combatlog",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -53913,7 +53845,7 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -54163,25 +54095,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "vusxKpKwAWr",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -54246,7 +54161,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT/MH - Frenzy"] = {
 			["iconSource"] = 0,
@@ -54300,11 +54232,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -54444,6 +54376,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -54456,13 +54390,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -54486,8 +54419,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Gaze"] = {
 			["iconSource"] = 0,
@@ -54607,8 +54539,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["subeventPrefix"] = "SPELL",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -54625,7 +54557,7 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -54777,26 +54709,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "vWUNNbS6JTO",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} GAZE ON %c! RUNNING AWAY {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -54822,7 +54736,25 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} GAZE ON %c! RUNNING AWAY {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Def"] = {
 			["iconSource"] = -1,
@@ -54977,8 +54909,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 265,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -55012,7 +54944,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 265,
 		},
 		["BT - Whirlwind"] = {
 			["iconSource"] = 0,
@@ -55067,11 +54999,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -55190,6 +55122,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -55202,13 +55136,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -55232,8 +55165,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["SSC - Frenzy"] = {
 			["iconSource"] = 0,
@@ -55287,11 +55219,11 @@ WeakAurasSaved = {
 							"39031", -- [1]
 							"38664", -- [2]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -55429,25 +55361,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "6(LTwuEP2Px",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -55473,7 +55388,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Hydross - Corruption Shift"] = {
 			["iconSource"] = 0,
@@ -55526,17 +55458,17 @@ WeakAurasSaved = {
 						["duration"] = "3",
 						["unevent"] = "timed",
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["useName"] = true,
 						["use_destNpcId"] = true,
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "group",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -55584,17 +55516,17 @@ WeakAurasSaved = {
 						["duration"] = "3",
 						["unevent"] = "timed",
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["useName"] = true,
 						["use_destNpcId"] = true,
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["realSpellName"] = "Impale",
+						["use_npcId"] = true,
 						["unit"] = "group",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -55804,25 +55736,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "dvIG9cEwaGK",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -55884,7 +55799,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Vashj - Static Charge"] = {
 			["iconSource"] = 0,
@@ -55936,11 +55868,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -55950,7 +55882,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -56089,26 +56021,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "PBoogCDlCs)",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} STATIC ON ME! MOVE AWAY FROM %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -56134,7 +56048,25 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} STATIC ON ME! MOVE AWAY FROM %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Supremus - Phase 1"] = {
 			["iconSource"] = 0,
@@ -56188,8 +56120,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -56206,7 +56138,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -56360,6 +56292,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -56372,13 +56306,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -56415,8 +56348,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["BT - Electric Spur"] = {
 			["iconSource"] = 0,
@@ -56468,11 +56400,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -56611,6 +56543,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -56623,13 +56557,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -56653,10 +56586,9 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
-		["Alar - Flame Patch"] = {
+		["Kaelthas - Mind Control Debuff"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "u2Waemdhl",
 			["color"] = {
@@ -56676,61 +56608,68 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["npcId"] = "21964",
-						["spellId"] = "35383",
+						["npcId"] = "18806",
+						["spellId"] = 33387,
 						["auranames"] = {
-							"35383", -- [1]
+							"36797", -- [1]
 						},
 						["use_genericShowOn"] = true,
 						["message_operator"] = "find('%s')",
-						["use_sourceNpcId"] = false,
+						["destUnit"] = "player",
 						["amount"] = "0",
 						["group_count"] = "0",
+						["range_operator"] = "<=",
 						["spellName"] = "Intangible Presence",
 						["showClones"] = false,
-						["useExactSpellId"] = false,
-						["event"] = "Combat Log",
+						["use_eventtype"] = true,
+						["group_countOperator"] = ">",
+						["percenthealth"] = "20",
+						["event"] = "Range Check",
 						["eventtype"] = "PLAYER_REGEN_DISABLED",
 						["sourceNpcId"] = "",
 						["use_spellId"] = true,
-						["use_destUnit"] = true,
+						["percenthealth_operator"] = "<=",
+						["use_range"] = true,
+						["use_messageType"] = false,
+						["use_destUnit"] = false,
 						["use_track"] = true,
+						["use_status"] = false,
 						["use_amount"] = true,
 						["use_destFlags2"] = false,
 						["use_aggro"] = true,
 						["useGroup_count"] = true,
-						["group_countOperator"] = ">",
-						["use_messageType"] = false,
-						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
-						["destUnit"] = "player",
-						["duration"] = "3",
-						["message"] = "The Lurker Below takes a deep breath",
+						["duration"] = "5",
+						["unit"] = "player",
+						["range"] = "12",
+						["subeventPrefix"] = "SPELL",
 						["names"] = {
 						},
-						["realSpellName"] = "Intangible Presence",
 						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
+						["useExactSpellId"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["use_destName"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["type"] = "combatlog",
 						["useName"] = true,
+						["type"] = "aura2",
 						["unevent"] = "timed",
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
-						["subeventSuffix"] = "_AURA_APPLIED",
-						["unit"] = "player",
+						["use_unit"] = true,
+						["use_sourceNpcId"] = false,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
 						["use_threatUnit"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["use_status"] = false,
+						["genericShowOn"] = "showOnCooldown",
 						["use_message"] = true,
-						["subeventPrefix"] = "SPELL",
+						["use_percenthealth"] = true,
 						["useAffected"] = true,
-						["use_eventtype"] = true,
+						["message"] = "Thaladred the Darkener sets eyes on",
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -56771,7 +56710,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text"] = "MOVE OUT",
+					["text_text"] = "MC ON YOU",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -56806,6 +56745,42 @@ WeakAurasSaved = {
 					["text_fontType"] = "OUTLINE",
 				}, -- [2]
 				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%affected",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_BOTTOM",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+				}, -- [3]
+				{
 					["glowFrequency"] = 0.25,
 					["type"] = "subglow",
 					["useGlowColor"] = false,
@@ -56826,7 +56801,7 @@ WeakAurasSaved = {
 					["glow"] = true,
 					["glowLines"] = 8,
 					["glowBorder"] = false,
-				}, -- [3]
+				}, -- [4]
 			},
 			["height"] = 64,
 			["load"] = {
@@ -56842,7 +56817,7 @@ WeakAurasSaved = {
 				["use_encounterid"] = true,
 				["use_zone"] = false,
 				["zoneIds"] = "334",
-				["encounterid"] = "730",
+				["encounterid"] = "733",
 				["use_zoneIds"] = true,
 				["zone"] = "Tempest Keep",
 				["class"] = {
@@ -56859,26 +56834,9 @@ WeakAurasSaved = {
 				},
 			},
 			["cooldownTextDisabled"] = false,
-			["uid"] = ")apqgL11bI(",
+			["uid"] = "lnTsVepQUXz",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -56891,7 +56849,7 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["semver"] = "1.1.9",
 			["tocversion"] = 20502,
-			["id"] = "Alar - Flame Patch",
+			["id"] = "Kaelthas - Mind Control Debuff",
 			["auto"] = false,
 			["useCooldownModRate"] = true,
 			["width"] = 64,
@@ -56900,11 +56858,29 @@ WeakAurasSaved = {
 			},
 			["inverse"] = false,
 			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 135819,
+			["displayIcon"] = 136206,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} MC ON ME! FREE %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Illidan - Shear"] = {
 			["iconSource"] = 0,
@@ -56963,11 +56939,11 @@ WeakAurasSaved = {
 							"41453", -- [2]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -57118,6 +57094,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -57130,13 +57108,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -57160,8 +57137,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Illidan - Uncaged Wrath"] = {
 			["iconSource"] = 0,
@@ -57219,13 +57195,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -57363,6 +57339,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["do_loop"] = false,
@@ -57378,13 +57356,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -57408,8 +57385,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Fathom Lord - Spitfire Totem"] = {
 			["iconSource"] = 0,
@@ -57463,8 +57439,8 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = ">",
 						["use_aggro"] = true,
 						["subeventPrefix"] = "SPELL",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
 						["message"] = "The Lurker Below takes a deep breath",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -57478,7 +57454,7 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -57617,23 +57593,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "xofgUs8BFJn",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["sound"] = " custom",
-					["do_message"] = false,
-					["sound_channel"] = "Ambience",
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -57659,7 +57620,22 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["sound"] = " custom",
+					["do_message"] = false,
+					["sound_channel"] = "Ambience",
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+			},
 		},
 		["BT - Harpooner's Mark"] = {
 			["iconSource"] = 0,
@@ -57711,11 +57687,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -57834,6 +57810,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -57846,13 +57824,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -57876,8 +57853,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Akama - Interrupts"] = {
 			["iconSource"] = 0,
@@ -58275,6 +58251,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -58287,13 +58265,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -58317,8 +58294,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Solarian - Wrath of the Astromancer Stacks"] = {
 			["iconSource"] = 0,
@@ -58372,8 +58348,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["destUnit"] = "player",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_aggro"] = true,
@@ -58389,7 +58365,7 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -58575,25 +58551,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "IlhEwxXNui9",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -58632,7 +58591,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Archimonde - Air Burst"] = {
 			["iconSource"] = 0,
@@ -58688,11 +58664,11 @@ WeakAurasSaved = {
 							"38215", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -58868,6 +58844,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -58880,13 +58858,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -58931,8 +58908,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kaelthas - Arcane Burst"] = {
 			["iconSource"] = 0,
@@ -59056,8 +59032,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["subeventPrefix"] = "SPELL",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -59074,7 +59050,7 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -59212,25 +59188,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "SssXAgieZu7",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -59256,7 +59215,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Azgalor - Howl of Azgalor"] = {
 			["iconSource"] = 0,
@@ -59314,13 +59290,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -59436,6 +59412,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -59448,13 +59426,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -59478,8 +59455,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Shahraz - Fatal Left"] = {
 			["iconSource"] = 0,
@@ -59562,13 +59538,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["names"] = {
 						},
-						["spellIds"] = {
-						},
 						["events"] = "RAID_TARGET_UPDATE",
+						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 2 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
-						["custom"] = "function(states, event, ...)\n    local mark = GetRaidTargetIndex(\"player\")\n    if mark == 2 then\n        states[\"\"] = {\n            show = true,\n            changed = true,\n            progressType = \"static\",\n            \n        }\n        return true\n    else\n        if states[\"\"] then\n            states[\"\"].show = false\n            states[\"\"].changed = true\n            return true\n        end\n    end\nend\n\n\n",
+						["spellIds"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -59726,11 +59702,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -59868,26 +59844,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "IXz4yz0RdvH",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} INFECTION ON ME! CLEANSE %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -59913,7 +59871,25 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} INFECTION ON ME! CLEANSE %c {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Berserker Rage"] = {
 			["iconSource"] = -1,
@@ -60125,13 +60101,13 @@ WeakAurasSaved = {
 							"41451", -- [2]
 						},
 						["useName"] = false,
-						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
+						["use_npcId"] = false,
 						["unit"] = "target",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -60287,6 +60263,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -60299,13 +60277,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -60357,8 +60334,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Tems' BT/MH Pack"] = {
 			["arcLength"] = 360,
@@ -60506,6 +60482,35 @@ WeakAurasSaved = {
 			["version"] = 8,
 			["subRegions"] = {
 			},
+			["config"] = {
+			},
+			["borderInset"] = 1,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["gridType"] = "RD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -60526,46 +60531,17 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["config"] = {
-			},
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["grow"] = "RIGHT",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["internalVersion"] = 53,
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["grow"] = "RIGHT",
 			["scale"] = 0.75,
-			["xOffset"] = -454.0172526041667,
+			["rowSpace"] = 1,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["borderInset"] = 1,
-			["rotation"] = 0,
+			["xOffset"] = -454.0172526041667,
+			["yOffset"] = 588.8594563802084,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "LEFT",
 			["borderOffset"] = 4,
@@ -60575,21 +60551,21 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["limit"] = 5,
-			["uid"] = "ZYZYm395YYF",
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["yOffset"] = 588.8594563802084,
+			["uid"] = "ZYZYm395YYF",
+			["internalVersion"] = 53,
+			["limit"] = 5,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["rotation"] = 0,
 		},
 		["Illidan - Dark Barrage"] = {
 			["iconSource"] = 0,
@@ -60666,13 +60642,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -60847,6 +60823,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -60859,13 +60837,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -60928,8 +60905,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Missing Defense/Res 73"] = {
 			["iconSource"] = -1,
@@ -61084,8 +61060,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -61119,7 +61095,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 		},
 		["Twins: Flame Touched > 7"] = {
 			["outline"] = "OUTLINE",
@@ -61197,8 +61173,7 @@ WeakAurasSaved = {
 				},
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
+			["displayText"] = " ",
 			["font"] = "Friz Quadrata TT",
 			["version"] = 7,
 			["subRegions"] = {
@@ -61228,31 +61203,13 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = false,
 			},
-			["displayText"] = " ",
+			["shadowYOffset"] = -1,
 			["cooldown"] = false,
 			["fontSize"] = 12,
 			["conditions"] = {
 			},
-			["parent"] = "Fusion: Sunwell",
-			["shadowXOffset"] = 1,
 			["automaticWidth"] = "Auto",
-			["selfPoint"] = "CENTER",
-			["uid"] = "H0D0eRfE731",
-			["regionType"] = "text",
-			["xOffset"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["wordWrap"] = "WordWrap",
-			["displayText_format_p_time_precision"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.6",
-			["zoom"] = 0,
-			["justify"] = "LEFT",
-			["tocversion"] = 20504,
-			["id"] = "Twins: Flame Touched > 7",
-			["url"] = "https://wago.io/BHC3XxUdm/7",
-			["alpha"] = 1,
-			["width"] = 64,
+			["shadowXOffset"] = 1,
 			["actions"] = {
 				["start"] = {
 					["glow_color"] = {
@@ -61278,10 +61235,29 @@ WeakAurasSaved = {
 					["hide_all_glows"] = true,
 				},
 			},
+			["xOffset"] = 0,
+			["uid"] = "H0D0eRfE731",
+			["regionType"] = "text",
+			["wordWrap"] = "WordWrap",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["preferToUpdate"] = false,
+			["displayText_format_p_time_precision"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.6",
+			["zoom"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 20504,
+			["id"] = "Twins: Flame Touched > 7",
+			["authorOptions"] = {
+			},
+			["alpha"] = 1,
+			["width"] = 64,
+			["url"] = "https://wago.io/BHC3XxUdm/7",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["shadowYOffset"] = -1,
+			["selfPoint"] = "CENTER",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -61291,7 +61267,7 @@ WeakAurasSaved = {
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["preferToUpdate"] = false,
+			["parent"] = "Fusion: Sunwell",
 		},
 		["Council - Blizzard"] = {
 			["iconSource"] = 0,
@@ -61347,11 +61323,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -61404,11 +61380,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -61548,6 +61524,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -61560,13 +61538,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -61590,8 +61567,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Council - Arcane Explosion"] = {
 			["iconSource"] = 0,
@@ -61715,8 +61691,8 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnCooldown",
 						["unit"] = "target",
 						["group_countOperator"] = ">",
+						["use_threatUnit"] = true,
 						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
 						["names"] = {
 						},
 						["use_unit"] = true,
@@ -61733,7 +61709,7 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -61872,6 +61848,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -61884,13 +61862,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -61914,8 +61891,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Twins: Conflag Warning"] = {
 			["user_y"] = 0,
@@ -62028,17 +62004,17 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(allstates, event, ...)\n    if event == \"CAST_ON_YOU_UPDATE\" then\n        return true\n    else\n        local _, sub, _, sourceGUID = ...\n        local spellID, spellName = select(12, ...)\n        \n        if sub == \"SPELL_CAST_START\"\n        and aura_env.spells[spellID]\n        then\n            local aura_env = aura_env\n            C_Timer.After(0.1, function()\n                    local units = aura_env.GetAllUnitIDs()\n                    if units[sourceGUID] then\n                        local unit = units[sourceGUID]\n                        if UnitIsUnit(unit..\"target\", \"player\")\n                        then \n                            local name, _, icon,startC, endC = UnitCastingInfo(unit)\n                            local duration, expiration = (endC - startC)/1000, endC/1000\n                            aura_env.unit = unit\n                            \n                            allstates[sourceGUID] = allstates[sourceGUID] or {};\n                            local state = allstates[sourceGUID];\n                            state.show = true;\n                            state.changed = true;\n                            state.autoHide = true;\n                            state.index = sourceGUID\n                            state.resort = true\n                            state.name = name\n                            state.progressType = \"timed\"\n                            state.duration = duration\n                            state.expirationTime = expiration\n                            state.icon = icon or 134400;\n                            WeakAuras.ScanEvents(\"CAST_ON_YOU_UPDATE\")               \n                        end\n                    end\n                end\n            )\n        end\n    end\n    return true\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED CAST_ON_YOU_UPDATE",
 						["event"] = "Health",
 						["unit"] = "player",
 						["customDuration"] = "\n\n\n\n\n",
 						["customName"] = "\n\n",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED CAST_ON_YOU_UPDATE",
+						["spellIds"] = {
+						},
 						["customIcon"] = "\n\n",
 						["names"] = {
 						},
-						["spellIds"] = {
-						},
+						["custom"] = "function(allstates, event, ...)\n    if event == \"CAST_ON_YOU_UPDATE\" then\n        return true\n    else\n        local _, sub, _, sourceGUID = ...\n        local spellID, spellName = select(12, ...)\n        \n        if sub == \"SPELL_CAST_START\"\n        and aura_env.spells[spellID]\n        then\n            local aura_env = aura_env\n            C_Timer.After(0.1, function()\n                    local units = aura_env.GetAllUnitIDs()\n                    if units[sourceGUID] then\n                        local unit = units[sourceGUID]\n                        if UnitIsUnit(unit..\"target\", \"player\")\n                        then \n                            local name, _, icon,startC, endC = UnitCastingInfo(unit)\n                            local duration, expiration = (endC - startC)/1000, endC/1000\n                            aura_env.unit = unit\n                            \n                            allstates[sourceGUID] = allstates[sourceGUID] or {};\n                            local state = allstates[sourceGUID];\n                            state.show = true;\n                            state.changed = true;\n                            state.autoHide = true;\n                            state.index = sourceGUID\n                            state.resort = true\n                            state.name = name\n                            state.progressType = \"timed\"\n                            state.duration = duration\n                            state.expirationTime = expiration\n                            state.icon = icon or 134400;\n                            WeakAuras.ScanEvents(\"CAST_ON_YOU_UPDATE\")               \n                        end\n                    end\n                end\n            )\n        end\n    end\n    return true\nend",
 						["custom_type"] = "stateupdate",
 						["custom_hide"] = "timed",
 					},
@@ -62311,25 +62287,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "8bu4UB(s34B",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} GEYSER ON ME! MOVE AWAY {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = false,
@@ -62355,7 +62314,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "{rt7} GEYSER ON ME! MOVE AWAY {rt7}",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["SSC - Poison Shield"] = {
 			["iconSource"] = 0,
@@ -62408,11 +62384,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38215", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -62550,25 +62526,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "4l4qYVDQOMb",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -62594,7 +62553,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["BT - L5 Arcane Charge"] = {
 			["iconSource"] = 0,
@@ -62649,11 +62625,11 @@ WeakAurasSaved = {
 						["auraspellids"] = {
 							"38626", -- [1]
 						},
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -62794,6 +62770,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -62806,13 +62784,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -62836,52 +62813,82 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
-		["Encapsulate Debuff"] = {
-			["outline"] = "OUTLINE",
-			["iconSource"] = -1,
-			["wagoID"] = "Fh-HW-Mmt",
-			["parent"] = "Encapsulate Nearby",
-			["displayText_format_p_time_dynamic_threshold"] = 60,
+		["TK - Overcharge"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "u2Waemdhl",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
-			["displayText_format_p_time_format"] = 0,
-			["customTextUpdate"] = "event",
-			["automaticWidth"] = "Auto",
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/u2Waemdhl/19",
 			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["showClones"] = true,
-						["type"] = "aura2",
+						["npcId"] = "20036",
+						["spellId"] = "37104",
 						["auranames"] = {
-							"45665", -- [1]
+							"35035", -- [1]
 						},
-						["useRem"] = false,
-						["event"] = "Health",
-						["unit"] = "group",
+						["duration"] = "2",
+						["amount"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_debuffClass"] = false,
+						["use_eventtype"] = true,
+						["event"] = "Combat Log",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["use_spellId"] = true,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
 						["names"] = {
 						},
-						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["use_aggro"] = true,
+						["debuffType"] = "HELPFUL",
+						["useName"] = true,
+						["type"] = "combatlog",
+						["unevent"] = "timed",
+						["auraspellids"] = {
+							"38626", -- [1]
+						},
+						["use_threatUnit"] = true,
+						["use_npcId"] = true,
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["realSpellName"] = "Impale",
+						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["rem"] = "5",
-						["remOperator"] = ">",
-						["useName"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["debuffType"] = "HARMFUL",
+						["use_genericShowOn"] = true,
+						["unit"] = "target",
+						["useExactSpellId"] = false,
+						["useAffected"] = true,
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
 					},
 				}, -- [1]
-				["disjunctive"] = "any",
-				["customTriggerLogic"] = "\n\n",
+				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
 			["internalVersion"] = 53,
 			["keepAspectRatio"] = false,
 			["animation"] = {
@@ -62892,49 +62899,88 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 				["main"] = {
-					["easeStrength"] = 3,
 					["type"] = "none",
-					["duration_type"] = "seconds",
 					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "spiralandpulse",
 				},
 				["finish"] = {
 					["easeStrength"] = 3,
 					["type"] = "none",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-				},
-			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "local unit = aura_env.state.unit\n\nlocal duration = 10\nlocal interval = 0.2\n\nlocal callback = function()\n    WeakAuras.ScanEvents(\"ENCAPSULATE_RANGE_CHECK\", unit)\nend\n\naura_env.tickers[unit] = C_Timer.NewTicker(interval, callback, duration / interval)\n\n\n\n",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-					["custom"] = "local unit = aura_env.state.unit\n\naura_env.tickers[unit]:Cancel()",
-					["do_custom"] = true,
-				},
-				["init"] = {
-					["custom"] = "aura_env.tickers = {}",
-					["do_custom"] = true,
 				},
 			},
 			["desaturate"] = false,
-			["font"] = "Friz Quadrata TT",
-			["version"] = 3,
+			["version"] = 19,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
 				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "HEAL TANK",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = true,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
 			},
 			["height"] = 64,
-			["shadowYOffset"] = -1,
 			["load"] = {
-				["use_encounterid"] = true,
+				["use_never"] = false,
 				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -62942,58 +62988,72 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "726",
+				["use_encounterid"] = false,
+				["use_zone"] = false,
+				["zoneIds"] = "334",
+				["encounterid"] = "2458",
+				["use_zoneIds"] = true,
+				["zone"] = "Tempest Keep",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+						["PRIEST"] = true,
+						["WARRIOR"] = true,
+					},
+				},
 				["size"] = {
 					["multi"] = {
+						["fortyman"] = true,
 					},
 				},
 			},
-			["information"] = {
-			},
-			["fixedWidth"] = 200,
-			["fontSize"] = 12,
-			["source"] = "import",
-			["preferToUpdate"] = false,
-			["shadowXOffset"] = 1,
+			["cooldownTextDisabled"] = false,
+			["uid"] = "ed7L)c8DinY",
+			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
-			["cooldownEdge"] = false,
-			["config"] = {
-			},
-			["regionType"] = "text",
-			["wordWrap"] = "WordWrap",
-			["width"] = 64,
-			["alpha"] = 1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayText_format_p_time_precision"] = 1,
-			["cooldownTextDisabled"] = false,
-			["justify"] = "LEFT",
-			["zoom"] = 0,
-			["semver"] = "1.0.2",
-			["tocversion"] = 20504,
-			["id"] = "Encapsulate Debuff",
-			["displayText"] = "",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "2Ibg2IXi8ke",
-			["inverse"] = false,
-			["url"] = "https://wago.io/Fh-HW-Mmt/3",
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["regionType"] = "icon",
+			["cooldown"] = true,
 			["conditions"] = {
 			},
-			["cooldown"] = false,
 			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "TK - Overcharge",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 135732,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Winterchill - Frost Nova"] = {
 			["iconSource"] = 0,
@@ -63051,13 +63111,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -63173,6 +63233,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -63185,13 +63247,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -63215,8 +63276,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["TBC Party/Raid CD Tracker"] = {
 			["grow"] = "DOWN",
@@ -63299,8 +63359,9 @@ WeakAurasSaved = {
 			["version"] = 14,
 			["subRegions"] = {
 			},
-			["limit"] = 5,
-			["borderInset"] = 1,
+			["rowSpace"] = 1,
+			["config"] = {
+			},
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -63319,25 +63380,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "TOP",
+			["arcLength"] = 360,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["fullCircle"] = true,
+			["radius"] = 200,
 			["animate"] = false,
-			["arcLength"] = 360,
+			["fullCircle"] = true,
 			["scale"] = 1.2,
-			["rotation"] = 0,
+			["anchorPoint"] = "CENTER",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["useLimit"] = false,
-			["rowSpace"] = 1,
+			["limit"] = 5,
+			["rotation"] = 0,
 			["constantFactor"] = "RADIUS",
 			["yOffset"] = -181.8523334720797,
 			["borderOffset"] = 4,
@@ -63347,17 +63408,16 @@ WeakAurasSaved = {
 			["gridWidth"] = 5,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["radius"] = 200,
-			["config"] = {
-			},
-			["authorOptions"] = {
-			},
+			["useLimit"] = false,
 			["uid"] = "oHrtFbypcbo",
+			["borderInset"] = 1,
+			["selfPoint"] = "TOP",
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["anchorPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 		},
 		["Kazrogal - Mark of Kazrogal"] = {
 			["iconSource"] = 0,
@@ -63415,13 +63475,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -63617,6 +63677,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -63629,13 +63691,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -63684,8 +63745,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Kazrogal - Cripple"] = {
 			["iconSource"] = 0,
@@ -63743,13 +63803,13 @@ WeakAurasSaved = {
 							"41917", -- [1]
 						},
 						["useName"] = true,
-						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_aggro"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -63865,6 +63925,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -63877,13 +63939,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -63907,7 +63968,496 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
+		},
+		["Twins: Dark Touched > 7"] = {
+			["outline"] = "OUTLINE",
+			["iconSource"] = -1,
+			["wagoID"] = "BHC3XxUdm",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["displayText_format_p_time_format"] = 0,
+			["customTextUpdate"] = "event",
+			["cooldownEdge"] = false,
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["rem"] = "11",
+						["useStacks"] = true,
+						["auranames"] = {
+						},
+						["unit"] = "raid",
+						["stacks"] = "7",
+						["debuffType"] = "HARMFUL",
+						["showClones"] = true,
+						["useName"] = false,
+						["stacksOperator"] = ">",
+						["useExactSpellId"] = true,
+						["use_includePets"] = true,
+						["subeventPrefix"] = "SPELL",
+						["names"] = {
+						},
+						["event"] = "Health",
+						["spellIds"] = {
+						},
+						["auraspellids"] = {
+							"45347", -- [1]
+						},
+						["remOperator"] = "<",
+						["type"] = "aura2",
+						["subeventSuffix"] = "_CAST_START",
+						["useRem"] = false,
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+			["displayText_format_p_format"] = "timed",
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["displayText"] = " ",
+			["font"] = "Friz Quadrata TT",
+			["version"] = 7,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["height"] = 64,
+			["load"] = {
+				["zoneIds"] = "",
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["encounterid"] = "725",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = false,
+			},
+			["shadowYOffset"] = -1,
+			["cooldown"] = false,
+			["fontSize"] = 12,
+			["conditions"] = {
+			},
+			["automaticWidth"] = "Auto",
+			["shadowXOffset"] = 1,
+			["actions"] = {
+				["start"] = {
+					["glow_color"] = {
+						0.70980392156863, -- [1]
+						0, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glow_thickness"] = 2,
+					["glow_action"] = "show",
+					["do_glow"] = true,
+					["glow_frame_type"] = "UNITFRAME",
+					["glow_border"] = true,
+					["glow_length"] = 20,
+					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
+					["glow_lines"] = 10,
+					["glow_frequency"] = 0,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["hide_all_glows"] = true,
+				},
+			},
+			["xOffset"] = 0,
+			["uid"] = "h6AuVTgHvhc",
+			["regionType"] = "text",
+			["wordWrap"] = "WordWrap",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["preferToUpdate"] = false,
+			["displayText_format_p_time_precision"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.6",
+			["zoom"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 20504,
+			["id"] = "Twins: Dark Touched > 7",
 			["authorOptions"] = {
+			},
+			["alpha"] = 1,
+			["width"] = 64,
+			["url"] = "https://wago.io/BHC3XxUdm/7",
+			["config"] = {
+			},
+			["inverse"] = false,
+			["selfPoint"] = "CENTER",
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["fixedWidth"] = 200,
+			["information"] = {
+			},
+			["parent"] = "Fusion: Sunwell",
+		},
+		["Fathom Lord - Fathom Lurker"] = {
+			["iconSource"] = 0,
+			["wagoID"] = "u2Waemdhl",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/u2Waemdhl/19",
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["npcId"] = "22119",
+						["spellId"] = 38330,
+						["auranames"] = {
+							"37676", -- [1]
+						},
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["use_sourceNpcId"] = true,
+						["amount"] = "0",
+						["group_count"] = "0",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_eventtype"] = true,
+						["percenthealth"] = "20",
+						["event"] = "Health",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["sourceNpcId"] = "21215",
+						["use_spellId"] = true,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["group_countOperator"] = ">",
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["useGroup_count"] = true,
+						["use_messageType"] = false,
+						["duration"] = "2.5",
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
+						["percenthealth_operator"] = "<=",
+						["use_aggro"] = true,
+						["subeventPrefix"] = "SPELL",
+						["use_threatUnit"] = true,
+						["use_npcId"] = true,
+						["message"] = "The Lurker Below takes a deep breath",
+						["use_cloneId"] = false,
+						["debuffType"] = "HARMFUL",
+						["type"] = "unit",
+						["useName"] = true,
+						["auraspellids"] = {
+							"38215", -- [1]
+						},
+						["unevent"] = "timed",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "target",
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["realSpellName"] = "Intangible Presence",
+						["use_spellName"] = false,
+						["spellIds"] = {
+						},
+						["names"] = {
+						},
+						["use_message"] = true,
+						["use_percenthealth"] = true,
+						["useAffected"] = true,
+						["useExactSpellId"] = false,
+					},
+					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["npcId"] = "22119",
+						["spellId"] = 38330,
+						["auranames"] = {
+							"37676", -- [1]
+						},
+						["use_genericShowOn"] = true,
+						["message_operator"] = "find('%s')",
+						["use_sourceNpcId"] = true,
+						["amount"] = "0",
+						["group_count"] = "0",
+						["range_operator"] = "<=",
+						["spellName"] = "Intangible Presence",
+						["showClones"] = false,
+						["use_eventtype"] = true,
+						["percenthealth"] = "20",
+						["event"] = "Range Check",
+						["eventtype"] = "PLAYER_REGEN_DISABLED",
+						["sourceNpcId"] = "21215",
+						["use_spellId"] = true,
+						["use_range"] = true,
+						["useExactSpellId"] = false,
+						["use_destUnit"] = false,
+						["use_track"] = true,
+						["use_messageType"] = false,
+						["use_amount"] = true,
+						["use_destFlags2"] = false,
+						["use_status"] = false,
+						["useGroup_count"] = true,
+						["group_countOperator"] = ">",
+						["unit"] = "target",
+						["range"] = "15",
+						["subeventPrefix"] = "SPELL",
+						["genericShowOn"] = "showOnCooldown",
+						["duration"] = "2.5",
+						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
+						["use_aggro"] = true,
+						["use_unit"] = true,
+						["use_cloneId"] = false,
+						["debuffType"] = "HARMFUL",
+						["names"] = {
+						},
+						["useName"] = true,
+						["auraspellids"] = {
+							"38215", -- [1]
+						},
+						["unevent"] = "timed",
+						["percenthealth_operator"] = "<=",
+						["type"] = "unit",
+						["threatUnit"] = "target",
+						["amount_operator"] = ">",
+						["use_npcId"] = true,
+						["use_spellName"] = false,
+						["spellIds"] = {
+						},
+						["message"] = "The Lurker Below takes a deep breath",
+						["use_message"] = true,
+						["use_percenthealth"] = true,
+						["useAffected"] = true,
+						["subeventSuffix"] = "_CAST_START",
+					},
+					["untrigger"] = {
+						["threatUnit"] = "target",
+						["unit"] = "nameplate",
+					},
+				}, -- [2]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "spiralandpulse",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 19,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "MOVE AWAY",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.destName_format"] = "none",
+					["rotateText"] = "NONE",
+					["text_text_format_1._format"] = "none",
+					["type"] = "subtext",
+					["text_text_format_AFFECTED_format"] = "none",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Accidental Presidency",
+					["text_shadowYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_TOP",
+					["text_anchorYOffset"] = 0,
+					["text_text_format_affected_format"] = "none",
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.25,
+					["type"] = "subglow",
+					["useGlowColor"] = false,
+					["text_color"] = {
+					},
+					["glowThickness"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["glowXOffset"] = 0,
+					["glowScale"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glow"] = true,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [3]
+			},
+			["height"] = 64,
+			["load"] = {
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_encounterid"] = true,
+				["use_zone"] = false,
+				["zoneIds"] = "332",
+				["encounterid"] = "626",
+				["use_zoneIds"] = true,
+				["zone"] = "Serpentshrine Cavern",
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+						["fortyman"] = true,
+					},
+				},
+			},
+			["cooldownTextDisabled"] = false,
+			["uid"] = "SOOEtrrt0Pw",
+			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldown"] = true,
+			["conditions"] = {
+			},
+			["selfPoint"] = "CENTER",
+			["cooldownEdge"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0,
+			["semver"] = "1.1.9",
+			["tocversion"] = 20502,
+			["id"] = "Fathom Lord - Fathom Lurker",
+			["auto"] = false,
+			["useCooldownModRate"] = true,
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["parent"] = "Tems' SSC/TK Pack",
+			["displayIcon"] = 132197,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
 			},
 		},
 		["Leotheras - Consuming Madness"] = {
@@ -64112,26 +64662,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "n2Vpn8e13zH",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "{rt7} MC ON ME! KILL %c {rt7}",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = true,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -64157,544 +64689,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
-		},
-		["Fathom Lord - Fathom Lurker"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "u2Waemdhl",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/u2Waemdhl/19",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "22119",
-						["spellId"] = 38330,
-						["auranames"] = {
-							"37676", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["message_operator"] = "find('%s')",
-						["use_sourceNpcId"] = true,
-						["amount"] = "0",
-						["group_count"] = "0",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["percenthealth"] = "20",
-						["event"] = "Health",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "21215",
-						["use_spellId"] = true,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["group_countOperator"] = ">",
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["use_messageType"] = false,
-						["duration"] = "2.5",
-						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
-						["percenthealth_operator"] = "<=",
-						["use_aggro"] = true,
-						["subeventPrefix"] = "SPELL",
-						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
-						["message"] = "The Lurker Below takes a deep breath",
-						["use_cloneId"] = false,
-						["debuffType"] = "HARMFUL",
-						["type"] = "unit",
-						["useName"] = true,
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["unevent"] = "timed",
-						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "target",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["names"] = {
-						},
-						["use_message"] = true,
-						["use_percenthealth"] = true,
-						["useAffected"] = true,
-						["useExactSpellId"] = false,
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["npcId"] = "22119",
-						["spellId"] = 38330,
-						["auranames"] = {
-							"37676", -- [1]
-						},
-						["use_genericShowOn"] = true,
-						["message_operator"] = "find('%s')",
-						["use_sourceNpcId"] = true,
-						["amount"] = "0",
-						["group_count"] = "0",
-						["range_operator"] = "<=",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["percenthealth"] = "20",
-						["event"] = "Range Check",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["sourceNpcId"] = "21215",
-						["use_spellId"] = true,
-						["use_range"] = true,
-						["useExactSpellId"] = false,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_messageType"] = false,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["group_countOperator"] = ">",
-						["unit"] = "target",
-						["range"] = "15",
-						["subeventPrefix"] = "SPELL",
-						["genericShowOn"] = "showOnCooldown",
-						["duration"] = "2.5",
-						["realSpellName"] = "Intangible Presence",
-						["use_npcId"] = true,
-						["use_aggro"] = true,
-						["use_unit"] = true,
-						["use_cloneId"] = false,
-						["debuffType"] = "HARMFUL",
-						["names"] = {
-						},
-						["useName"] = true,
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["unevent"] = "timed",
-						["percenthealth_operator"] = "<=",
-						["type"] = "unit",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = false,
-						["spellIds"] = {
-						},
-						["message"] = "The Lurker Below takes a deep breath",
-						["use_message"] = true,
-						["use_percenthealth"] = true,
-						["useAffected"] = true,
-						["subeventSuffix"] = "_CAST_START",
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [2]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "spiralandpulse",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 19,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "MOVE AWAY",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.25,
-					["type"] = "subglow",
-					["useGlowColor"] = false,
-					["text_color"] = {
-					},
-					["glowThickness"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["glowXOffset"] = 0,
-					["glowScale"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glow"] = true,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [3]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["zoneIds"] = "332",
-				["encounterid"] = "626",
-				["use_zoneIds"] = true,
-				["zone"] = "Serpentshrine Cavern",
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-			},
-			["cooldownTextDisabled"] = false,
-			["uid"] = "SOOEtrrt0Pw",
-			["authorOptions"] = {
-			},
 			["actions"] = {
 				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
-			["conditions"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["cooldownEdge"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.1.9",
-			["tocversion"] = 20502,
-			["id"] = "Fathom Lord - Fathom Lurker",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["parent"] = "Tems' SSC/TK Pack",
-			["displayIcon"] = 132197,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["xOffset"] = 0,
-		},
-		["Archimonde - Fear"] = {
-			["iconSource"] = 0,
-			["wagoID"] = "Y5J7NdyVH",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/Y5J7NdyVH/8",
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["npcId"] = "16024",
-						["spellId"] = "28433",
-						["auranames"] = {
-							"31970", -- [1]
-						},
-						["duration"] = "40",
-						["amount"] = "0",
-						["group_count"] = "0",
-						["spellName"] = "Intangible Presence",
-						["showClones"] = false,
-						["use_eventtype"] = true,
-						["event"] = "Combat Events",
-						["eventtype"] = "PLAYER_REGEN_DISABLED",
-						["use_spellId"] = false,
-						["use_destUnit"] = false,
-						["use_track"] = true,
-						["use_amount"] = true,
-						["use_destFlags2"] = false,
-						["use_status"] = false,
-						["useGroup_count"] = true,
-						["genericShowOn"] = "showOnCooldown",
-						["use_unit"] = true,
-						["subeventPrefix"] = "SPELL",
-						["group_countOperator"] = ">",
-						["useExactSpellId"] = false,
-						["unit"] = "player",
-						["debuffType"] = "HARMFUL",
-						["use_genericShowOn"] = true,
-						["useName"] = true,
-						["unevent"] = "timed",
-						["auraspellids"] = {
-							"38215", -- [1]
-						},
-						["use_npcId"] = true,
-						["realSpellName"] = "Impale",
-						["threatUnit"] = "target",
-						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["type"] = "aura2",
-						["use_aggro"] = true,
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["useAffected"] = true,
-						["names"] = {
-						},
-					},
-					["untrigger"] = {
-						["threatUnit"] = "target",
-						["unit"] = "nameplate",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "spiralandpulse",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 8,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "FEARED",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_text_format_1.destName_format"] = "none",
-					["rotateText"] = "NONE",
-					["text_text_format_1._format"] = "none",
-					["type"] = "subtext",
-					["text_text_format_AFFECTED_format"] = "none",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Accidental Presidency",
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_TOP",
-					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_justify"] = "CENTER",
-				}, -- [2]
-			},
-			["height"] = 64,
-			["load"] = {
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["use_encounterid"] = true,
-				["use_zone"] = false,
-				["size"] = {
-					["multi"] = {
-						["fortyman"] = true,
-					},
-				},
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-						["WARRIOR"] = true,
-						["PRIEST"] = true,
-					},
-				},
-				["zone"] = "Serpentshrine Cavern",
-				["use_zoneIds"] = true,
-				["encounterid"] = "622",
-				["zoneIds"] = "329",
-			},
-			["zoom"] = 0,
-			["config"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
+					["message"] = "{rt7} MC ON ME! KILL %c {rt7}",
 					["message_custom"] = "function() return UnitName(\"player\") end",
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["do_message"] = true,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["message_format_c_format"] = "none",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
 				},
 				["init"] = {
 				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136147,
-			["cooldownEdge"] = true,
-			["xOffset"] = 0,
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.1.3",
-			["tocversion"] = 20503,
-			["id"] = "Archimonde - Fear",
-			["auto"] = false,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["uid"] = "HvwogBf9RpQ",
-			["inverse"] = false,
-			["parent"] = "Tems' BT/MH Pack",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
 			},
 		},
 		["Crush Title"] = {
@@ -64850,8 +64862,8 @@ WeakAurasSaved = {
 			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["cooldownEdge"] = false,
-			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -64885,7 +64897,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 		},
 		["Reaver - Pounding"] = {
 			["iconSource"] = 0,
@@ -64939,8 +64951,8 @@ WeakAurasSaved = {
 						["percenthealth_operator"] = "<=",
 						["use_aggro"] = true,
 						["subeventPrefix"] = "SPELL",
+						["use_threatUnit"] = true,
 						["use_npcId"] = true,
-						["realSpellName"] = "Intangible Presence",
 						["message"] = "The Lurker Below takes a deep breath",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
@@ -64954,7 +64966,7 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -65093,25 +65105,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "e3Qr1X0fyY1",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -65137,7 +65132,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Council - Judgement"] = {
 			["iconSource"] = 0,
@@ -65195,11 +65207,11 @@ WeakAurasSaved = {
 							"41469", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -65253,11 +65265,11 @@ WeakAurasSaved = {
 							"41469", -- [1]
 						},
 						["unevent"] = "timed",
+						["use_threatUnit"] = true,
 						["use_npcId"] = false,
-						["realSpellName"] = "Intangible Presence",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -65458,6 +65470,8 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
@@ -65470,13 +65484,12 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_custom"] = false,
 					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_sound"] = false,
 				},
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -65521,8 +65534,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Vashj - Toxic Spores"] = {
 			["iconSource"] = 0,
@@ -65574,11 +65586,11 @@ WeakAurasSaved = {
 						["message"] = "The Lurker Below takes a deep breath",
 						["duration"] = "3",
 						["use_aggro"] = true,
-						["realSpellName"] = "Intangible Presence",
+						["use_threatUnit"] = true,
 						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HARMFUL",
-						["use_npcId"] = true,
+						["realSpellName"] = "Intangible Presence",
 						["useName"] = true,
 						["unevent"] = "timed",
 						["auraspellids"] = {
@@ -65588,7 +65600,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -65727,25 +65739,8 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Uydb5jZOTK5",
+			["xOffset"] = 0,
 			["authorOptions"] = {
-			},
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
-					["message_type"] = "SAY",
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-				},
-				["finish"] = {
-					["do_custom"] = false,
-					["do_message"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
 			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
@@ -65771,7 +65766,24 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_type"] = "SAY",
+					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_custom"] = false,
+					["do_message"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+			},
 		},
 		["Water Shield"] = {
 			["iconSource"] = -1,
@@ -66012,8 +66024,7 @@ WeakAurasSaved = {
 				},
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
+			["displayText"] = " ",
 			["font"] = "Friz Quadrata TT",
 			["version"] = 7,
 			["subRegions"] = {
@@ -66043,31 +66054,13 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = false,
 			},
-			["displayText"] = " ",
+			["shadowYOffset"] = -1,
 			["cooldown"] = false,
 			["fontSize"] = 12,
 			["conditions"] = {
 			},
-			["parent"] = "Fusion: Sunwell",
-			["shadowXOffset"] = 1,
 			["automaticWidth"] = "Auto",
-			["selfPoint"] = "CENTER",
-			["uid"] = "E1E2zBNlG(W",
-			["regionType"] = "text",
-			["xOffset"] = 0,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["wordWrap"] = "WordWrap",
-			["displayText_format_p_time_precision"] = 1,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.6",
-			["zoom"] = 0,
-			["justify"] = "LEFT",
-			["tocversion"] = 20504,
-			["id"] = "Twins: Shadowfury (Stun)",
-			["url"] = "https://wago.io/BHC3XxUdm/7",
-			["alpha"] = 1,
-			["width"] = 64,
+			["shadowXOffset"] = 1,
 			["actions"] = {
 				["start"] = {
 					["glow_color"] = {
@@ -66093,10 +66086,29 @@ WeakAurasSaved = {
 					["hide_all_glows"] = true,
 				},
 			},
+			["xOffset"] = 0,
+			["uid"] = "E1E2zBNlG(W",
+			["regionType"] = "text",
+			["wordWrap"] = "WordWrap",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["preferToUpdate"] = false,
+			["displayText_format_p_time_precision"] = 1,
+			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.6",
+			["zoom"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 20504,
+			["id"] = "Twins: Shadowfury (Stun)",
+			["authorOptions"] = {
+			},
+			["alpha"] = 1,
+			["width"] = 64,
+			["url"] = "https://wago.io/BHC3XxUdm/7",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["shadowYOffset"] = -1,
+			["selfPoint"] = "CENTER",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -66106,21 +66118,9 @@ WeakAurasSaved = {
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["preferToUpdate"] = false,
+			["parent"] = "Fusion: Sunwell",
 		},
 	},
-	["editor_font_size"] = 12,
-	["lastArchiveClear"] = 1582156160,
-	["minimap"] = {
-		["minimapPos"] = 344.288079374912,
-		["hide"] = false,
-	},
-	["lastUpgrade"] = 1657752898,
-	["dbVersion"] = 53,
-	["clearOldHistory"] = 30,
-	["registered"] = {
-	},
-	["login_squelch_time"] = 10,
 	["frame"] = {
 		["xOffset"] = -429.5067138671875,
 		["width"] = 829.9999389648438,

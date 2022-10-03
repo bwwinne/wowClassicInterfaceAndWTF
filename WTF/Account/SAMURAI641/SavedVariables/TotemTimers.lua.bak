@@ -207,42 +207,8 @@ TotemTimers_Profiles = {
 		["TimersOnButtons"] = false,
 		["ShowRaidRangeTooltip"] = true,
 		["ShowCooldowns"] = true,
-		["TimerBarColor"] = {
-			["a"] = 1,
-			["r"] = 0.5,
-			["g"] = 0.5,
-			["b"] = 1,
-		},
-		["TimerPositions"] = {
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-50, -- [4]
-				-40, -- [5]
-			}, -- [1]
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-70, -- [4]
-				0, -- [5]
-			}, -- [2]
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-30, -- [4]
-				0, -- [5]
-			}, -- [3]
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-50, -- [4]
-				40, -- [5]
-			}, -- [4]
-		},
+		["EnhanceCDsSize"] = 30,
+		["CrowdControlEnable"] = true,
 		["ESMainTankMenu"] = true,
 		["EarthShieldTargetName"] = true,
 		["WindfuryDownrank"] = false,
@@ -335,8 +301,42 @@ TotemTimers_Profiles = {
 		["WeaponMenuOnRightclick"] = false,
 		["TotemMenuSpacing"] = 0,
 		["WeaponBarDirection"] = "auto",
-		["CrowdControlEnable"] = true,
-		["EnhanceCDsSize"] = 30,
+		["TimerPositions"] = {
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-50, -- [4]
+				-40, -- [5]
+			}, -- [1]
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-70, -- [4]
+				0, -- [5]
+			}, -- [2]
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-30, -- [4]
+				0, -- [5]
+			}, -- [3]
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-50, -- [4]
+				40, -- [5]
+			}, -- [4]
+		},
+		["TimerBarColor"] = {
+			["a"] = 1,
+			["r"] = 0.5,
+			["g"] = 0.5,
+			["b"] = 1,
+		},
 		["LongCooldownsArrange"] = "horizontal",
 		["TimeStyle"] = "mm:ss",
 		["FramePositions"] = {

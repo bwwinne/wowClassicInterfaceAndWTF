@@ -6,3 +6,4 @@ ItemRackOptions: enabled
 Capping_Options: enabled
 Questie: enabled
 WideQuestLog: disabled
+FiveSecondRule: disabled
