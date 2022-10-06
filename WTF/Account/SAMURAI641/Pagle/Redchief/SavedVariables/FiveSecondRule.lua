@@ -27,6 +27,17 @@ FiveSecondRule_Options = {
 		0.9490196078431372, -- [3]
 		0.8579863905906677, -- [4]
 	},
+	["barWidth"] = 155,
+	["showText"] = false,
+	["barTop"] = -668,
+	["statusBarColor"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0.5024307370185852, -- [4]
+	},
+	["barLeft"] = 622,
+	["barHeight"] = 18,
 	["tickSizeRunningWindow"] = {
 		2, -- [1]
 		2, -- [2]
@@ -34,15 +45,4 @@ FiveSecondRule_Options = {
 		2, -- [4]
 		2, -- [5]
 	},
-	["showText"] = false,
-	["barHeight"] = 18,
-	["barLeft"] = 622,
-	["statusBarColor"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0.5024307370185852, -- [4]
-	},
-	["barTop"] = -668,
-	["barWidth"] = 155,
 }

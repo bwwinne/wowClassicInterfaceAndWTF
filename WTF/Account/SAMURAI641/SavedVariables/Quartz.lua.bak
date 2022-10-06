@@ -20,7 +20,7 @@ Quartz3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
-		["Mirror"] = {
+		["EnemyCasts"] = {
 		},
 		["Player"] = {
 			["profiles"] = {
@@ -55,7 +55,7 @@ Quartz3DB = {
 		},
 		["Range"] = {
 		},
-		["EnemyCasts"] = {
+		["Mirror"] = {
 		},
 		["Latency"] = {
 		},
@@ -72,10 +72,10 @@ Quartz3DB = {
 		["Purplechief - Pagle"] = "Default",
 		["Redchief - Incendius"] = "Default",
 		["Bluechief - Incendius"] = "Default",
-		["Agengeoff - Benediction"] = "Default",
+		["Joeybonzo - Incendius"] = "Default",
 		["Bluechief - Pagle"] = "Default",
 		["Orangechief - Pagle"] = "Default",
-		["Joeybonzo - Incendius"] = "Default",
+		["Agengeoff - Benediction"] = "Default",
 		["Cyanchief - Pagle"] = "Default",
 		["Yellowchief - Incendius"] = "Default",
 	},

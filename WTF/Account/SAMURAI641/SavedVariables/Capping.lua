@@ -4,10 +4,10 @@ CappingSettings = {
 		["Redchief - Pagle"] = "Default",
 		["Orangechief - Pagle"] = "Default",
 		["Bluechief - Pagle"] = "Default",
-		["Joeybonzo - Pagle"] = "Default",
+		["Purplechief - Pagle"] = "Default",
 		["Purplechief - Incendius"] = "Default",
 		["Cyanchief - Pagle"] = "Default",
-		["Purplechief - Pagle"] = "Default",
+		["Joeybonzo - Pagle"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

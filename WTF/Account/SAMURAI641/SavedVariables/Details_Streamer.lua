@@ -3,18 +3,18 @@ Details_StreamerDB = {
 	["characters"] = {
 		["Joeybonzo - Pagle"] = "Bluechief - Incendius",
 		["Redchief - Pagle"] = "Bluechief - Incendius",
-		["Purplechief - Pagle"] = "Bluechief - Incendius",
-		["Greychief - Incendius"] = "Bluechief - Incendius",
-		["Joeybonzo - Incendius"] = "Bluechief - Incendius",
-		["Purplechief - Incendius"] = "Bluechief - Incendius",
 		["Bluechieftwo - Incendius"] = "Bluechief - Incendius",
+		["Greychief - Incendius"] = "Bluechief - Incendius",
+		["Agengeoff - Benediction"] = "Bluechief - Incendius",
+		["Purplechief - Incendius"] = "Bluechief - Incendius",
+		["Purplechief - Pagle"] = "Bluechief - Incendius",
 		["Orangechief - Incendius"] = "Bluechief - Incendius",
 		["Redchief - Incendius"] = "Bluechief - Incendius",
 		["Greenchief - Incendius"] = "Bluechief - Incendius",
-		["Bluechief - Incendius"] = "Bluechief - Incendius",
-		["Bluechief - Pagle"] = "Bluechief - Incendius",
 		["Orangechief - Pagle"] = "Bluechief - Incendius",
-		["Agengeoff - Benediction"] = "Bluechief - Incendius",
+		["Bluechief - Pagle"] = "Bluechief - Incendius",
+		["Bluechief - Incendius"] = "Bluechief - Incendius",
+		["Joeybonzo - Incendius"] = "Bluechief - Incendius",
 		["Cyanchief - Pagle"] = "Bluechief - Incendius",
 		["Yellowchief - Incendius"] = "Bluechief - Incendius",
 	},
@@ -53,21 +53,6 @@ Details_StreamerDB = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.2, -- [4]
-			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
-			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -79,12 +64,27 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["use_spark"] = true,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.2, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["y"] = -4.57763671875e-05,
+			["font_size"] = 10,
 			["x"] = 0.000152587890625,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["y"] = -4.57763671875e-05,
-			["author"] = "Details! Team",
+			["use_spark"] = true,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},

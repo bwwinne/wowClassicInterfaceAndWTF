@@ -20,18 +20,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "PALADIN",
-							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["aID"] = "4385-035635B8",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005324,
 							["serial"] = "Player-4385-035635B8",
 							["dps_started"] = false,
 							["total"] = 0.005324,
+							["on_hold"] = false,
 							["damage_taken"] = 268.005324,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Orangechief",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -43,10 +42,11 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1662890643,
 							["delay"] = 0,
-							["aID"] = "4385-035635B8",
+							["classe"] = "PALADIN",
 						}, -- [1]
 						{
 							["flag_original"] = 66888,
@@ -63,9 +63,9 @@ _detalhes_database = {
 							["enemy"] = true,
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["timeMachine"] = 1,
 							["classe"] = "UNGROUPPLAYER",
+							["timeMachine"] = 1,
+							["aID"] = "4385-0458D29F",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 845.008041,
@@ -148,7 +148,7 @@ _detalhes_database = {
 							["damage_taken"] = 6549.008041,
 							["start_time"] = 1662890643,
 							["delay"] = 1662890653,
-							["aID"] = "4385-0458D29F",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -256,14 +256,14 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					844.8531639999986, -- [1]
-					-0.6679449999993782, -- [2]
+					844.8443989999987, -- [1]
+					-0.7174139999993782, -- [2]
 					{
 						-0.0367610000000056, -- [1]
 						[0] = -0.05065399999998022,
 						["alternatepower"] = 0,
 						[3] = 0,
-						[6] = -0.04396300000000331,
+						[6] = -0.04849100000000384,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
@@ -316,10 +316,10 @@ _detalhes_database = {
 				["data_inicio"] = "06:04:04",
 				["end_time"] = 83315.774,
 				["combat_id"] = 1,
-				["frags"] = {
+				["spells_cast_timeline"] = {
 				},
 				["contra"] = "Lisanloah",
-				["spells_cast_timeline"] = {
+				["frags"] = {
 				},
 				["combat_counter"] = 278,
 				["PhaseData"] = {
@@ -455,12 +455,27 @@ _detalhes_database = {
 			["arrow_anchor_x"] = 0,
 			["main_frame_locked"] = false,
 			["row_texture"] = "Details Serenity",
+			["author"] = "Details! Team",
+			["font_size"] = 10,
 			["row_color"] = {
 				0.1, -- [1]
 				0.1, -- [2]
 				0.1, -- [3]
 				0.4, -- [4]
 			},
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["use_spark"] = true,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.2, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -472,22 +487,7 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.2, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["y"] = -4.57763671875e-05,
-			["use_spark"] = true,
 			["x"] = 0.000152587890625,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
@@ -540,6 +540,12 @@ _detalhes_database = {
 			},
 		},
 	},
+	["last_day"] = "05",
+	["last_instance_time"] = 0,
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -551,12 +557,6 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["last_day"] = "01",
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_instance_time"] = 0,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -566,9 +566,9 @@ _detalhes_database = {
 	["savedStyles"] = {
 	},
 	["character_data"] = {
-		["logons"] = 152,
+		["logons"] = 154,
 	},
-	["combat_counter"] = 294,
+	["combat_counter"] = 296,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -592,10 +592,9 @@ _detalhes_database = {
 					["enemy"] = true,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
 					["on_hold"] = false,
-					["aID"] = "4385-0458D29F",
+					["last_dps"] = 0,
+					["classe"] = "UNGROUPPLAYER",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 268.013844,
@@ -603,7 +602,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["total"] = 268.013844,
 					["end_time"] = 1662890644,
-					["damage_taken"] = 0.013844,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Lisanloah",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -671,10 +671,10 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.013844,
 					["start_time"] = 1662890641,
 					["delay"] = 0,
-					["classe"] = "UNGROUPPLAYER",
+					["aID"] = "4385-0458D29F",
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
@@ -686,18 +686,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["aID"] = "4385-035635B8",
-					["last_event"] = 0,
 					["classe"] = "PALADIN",
+					["last_event"] = 0,
+					["aID"] = "4385-035635B8",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.012152,
 					["serial"] = "Player-4385-035635B8",
 					["dps_started"] = false,
 					["end_time"] = 1662890644,
+					["damage_taken"] = 268.012152,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
 					["nome"] = "Orangechief",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -709,10 +709,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 268.012152,
+					["last_dps"] = 0,
 					["start_time"] = 1662890641,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 				}, -- [2]
 			},
 		}, -- [1]
@@ -925,7 +925,5 @@ _detalhes_database = {
 	["cached_roles"] = {
 	},
 	["cached_specs"] = {
-		["Player-4385-044D19B8"] = 252,
-		["Player-4385-0482EE53"] = 263,
 	},
 }

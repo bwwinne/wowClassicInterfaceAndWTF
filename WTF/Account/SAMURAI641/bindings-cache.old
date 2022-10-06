@@ -25,8 +25,8 @@ bind CTRL-F3 NONE
 bind CTRL-F9 CLICK ItemRackBluechiefIncendiusHalf FR:LeftButton
 bind CTRL-F10 CLICK ItemRackBluechiefIncendiusFR:LeftButton
 bind CTRL-1 CLICK BT4Button33:LeftButton
-bind CTRL-2 BONUSACTIONBUTTON5
-bind CTRL-3 BONUSACTIONBUTTON6
+bind CTRL-2 CLICK BT4Button29:LeftButton
+bind CTRL-3 CLICK BT4Button25:LeftButton
 bind CTRL-4 BONUSACTIONBUTTON7
 bind CTRL-5 NONE
 bind CTRL-6 NONE
@@ -62,10 +62,10 @@ bind F11 NONE
 bind F12 SCREENSHOT
 bind P NAMEPLATES
 bind SHIFT-P FRIENDNAMEPLATES
-bind H CLICK BT4Button33:LeftButton
+bind H NONE
 bind N TOGGLECHARACTER0
 bind U TOGGLESHEATH
-bind K CLICK BT4Button35:LeftButton
+bind K CLICK BT4Button33:LeftButton
 bind L TOGGLEAUTORUN
 bind I TOGGLEQUESTLOG
 bind PRINTSCREEN NONE
@@ -109,6 +109,6 @@ bind CTRL-C CLICK BT4Button18:LeftButton
 bind CTRL-Z CLICK BT4Button19:LeftButton
 bind SHIFT-X CLICK BT4Button118:LeftButton
 bind CTRL-X SITORSTAND
-bind NUMPAD7 CLICK BT4Button33:LeftButton
-bind NUMPAD8 CLICK BT4Button29:LeftButton
-bind NUMPAD9 CLICK BT4Button25:LeftButton
+bind NUMPAD7 NONE
+bind NUMPAD8 NONE
+bind NUMPAD9 NONE

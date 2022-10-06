@@ -34,7 +34,7 @@ ThreatPlatesDB = {
 		["Bluechief - Incendius"] = {
 			["welcome"] = true,
 		},
-		["Joeybonzo - Incendius"] = {
+		["Agengeoff - Benediction"] = {
 			["welcome"] = true,
 		},
 		["Bluechief - Pagle"] = {
@@ -43,7 +43,7 @@ ThreatPlatesDB = {
 		["Greenchief - Incendius"] = {
 			["welcome"] = true,
 		},
-		["Agengeoff - Benediction"] = {
+		["Joeybonzo - Incendius"] = {
 			["welcome"] = true,
 		},
 		["Cyanchief - Pagle"] = {
@@ -52,6 +52,9 @@ ThreatPlatesDB = {
 		["Yellowchief - Incendius"] = {
 			["welcome"] = true,
 		},
+	},
+	["global"] = {
+		["version"] = "10.5.3",
 	},
 	["profileKeys"] = {
 		["Joeybonzo - Pagle"] = "Default",
@@ -65,17 +68,22 @@ ThreatPlatesDB = {
 		["Purplechief - Pagle"] = "Default",
 		["Redchief - Incendius"] = "Default",
 		["Bluechief - Incendius"] = "Default",
-		["Joeybonzo - Incendius"] = "Default",
+		["Agengeoff - Benediction"] = "Default",
 		["Bluechief - Pagle"] = "Default",
 		["Greenchief - Incendius"] = "Default",
-		["Agengeoff - Benediction"] = "Default",
+		["Joeybonzo - Incendius"] = "Default",
 		["Cyanchief - Pagle"] = "Default",
 		["Yellowchief - Incendius"] = "Default",
 	},
-	["global"] = {
-		["version"] = "10.5.3-beta1",
-	},
 	["profiles"] = {
+		["Blue"] = {
+			["settings"] = {
+				["frame"] = {
+					["height"] = 52.875,
+					["width"] = 154,
+				},
+			},
+		},
 		["Default"] = {
 			["settings"] = {
 				["elitehealthborder"] = {
@@ -97,14 +105,6 @@ ThreatPlatesDB = {
 				},
 			},
 		},
-		["Blue"] = {
-			["settings"] = {
-				["frame"] = {
-					["height"] = 52.875,
-					["width"] = 154,
-				},
-			},
-		},
 		["Incendius"] = {
 			["settings"] = {
 				["elitehealthborder"] = {
@@ -114,8 +114,8 @@ ThreatPlatesDB = {
 					["texture"] = "Perl v2",
 				},
 				["level"] = {
-					["size"] = 10,
 					["x"] = 76,
+					["size"] = 10,
 				},
 				["frame"] = {
 					["height"] = 52.875,

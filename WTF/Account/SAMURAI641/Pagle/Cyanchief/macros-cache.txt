@@ -1,6 +1,6 @@
 VER 3 0000000001000002 "CD" "136115"
+/use Sunfire Handwraps
 /cast Elemental Mastery
-/use Dark Iron Smoking Pipe
 END
 VER 3 0000000001000001 "TT Cast" "INV_MISC_QUESTIONMARK"
 #showtooltips

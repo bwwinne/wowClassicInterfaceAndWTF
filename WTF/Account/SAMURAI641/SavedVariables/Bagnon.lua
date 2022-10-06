@@ -29,9 +29,14 @@ Bagnon_Sets = {
 	},
 	["mineColor"] = {
 	},
-	["herbColor"] = {
+	["keyColor"] = {
 	},
 	["version"] = "9.2.2",
+	["soulColor"] = {
+	},
+	["fridgeColor"] = {
+	},
+	["colorSlots"] = true,
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -75,18 +80,18 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = -211.0817260742188,
-			["x"] = -441.3314208984375,
+			["y"] = -202.959228515625,
+			["x"] = -225.153076171875,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.319791257381439, -- [4]
 			},
-			["alpha"] = 1,
-			["scale"] = 1,
-			["itemScale"] = 1,
 			["bagBreak"] = false,
+			["itemScale"] = 1,
+			["scale"] = 1,
+			["alpha"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -151,11 +156,11 @@ Bagnon_Sets = {
 			},
 			["color"] = {
 			},
-			["hiddenBags"] = {
-			},
+			["x"] = 582.8156127929688,
 			["hiddenRules"] = {
 			},
-			["x"] = 582.8156127929688,
+			["hiddenBags"] = {
+			},
 		},
 		["bank"] = {
 			["rules"] = {
@@ -188,9 +193,9 @@ Bagnon_Sets = {
 				[7] = false,
 				[8] = false,
 				[10] = false,
-				[11] = false,
-				[5] = false,
 				[9] = false,
+				[5] = false,
+				[11] = false,
 			},
 			["color"] = {
 			},
@@ -200,17 +205,12 @@ Bagnon_Sets = {
 			["x"] = 706.3446044921875,
 			["borderColor"] = {
 			},
-			["alpha"] = 1,
-			["scale"] = 1,
-			["itemScale"] = 1,
 			["columns"] = 8,
+			["itemScale"] = 1,
+			["scale"] = 1,
+			["alpha"] = 1,
 		},
 	},
-	["fridgeColor"] = {
-	},
-	["colorSlots"] = true,
-	["soulColor"] = {
-	},
-	["keyColor"] = {
+	["herbColor"] = {
 	},
 }

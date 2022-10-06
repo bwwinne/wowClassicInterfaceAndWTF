@@ -7,7 +7,7 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["SetMenuWrap"] = "OFF",
-	["EnableQueues"] = "ON",
+	["EnablePerSetQueues"] = "OFF",
 	["Sets"] = {
 		["Ele"] = {
 			["key"] = "F9",
@@ -101,7 +101,7 @@ ItemRackUser = {
 			},
 		},
 	},
-	["EnablePerSetQueues"] = "OFF",
+	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
 	["Alpha"] = 1,
