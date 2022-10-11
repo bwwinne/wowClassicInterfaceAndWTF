@@ -7,13 +7,12 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 235,
 					["tipo"] = 2,
+					["combatId"] = 235,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["totalabsorbed"] = 0.008562,
-							["on_hold"] = false,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -23,32 +22,33 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Cannon <Joeybonzo>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
+							["last_event"] = 1662635875,
+							["aID"] = "4385-0466FBC1",
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008562,
-							["aID"] = "4385-0466FBC1",
+							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 3022674.008562,
 							["classe"] = "DEATHKNIGHT",
-							["serial"] = "Player-4385-0466FBC1",
+							["damage_taken"] = 0.008562,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
 							["end_time"] = 1662635878,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.008562,
+							["on_hold"] = false,
 							["start_time"] = 1662635817,
-							["delay"] = 0,
-							["last_event"] = 1662635875,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -62,20 +62,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["serial"] = "Vehicle-0-4412-609-152-28833-0000199892",
+							["last_event"] = 1662635875,
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3022674.003298,
-							["aID"] = "",
+							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 3022674.003298,
 							["classe"] = "PET",
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Cannon <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[52436] = {
 										["c_amt"] = 7,
@@ -95,16 +95,16 @@ _detalhes_database = {
 										["c_max"] = 36540,
 										["id"] = 52436,
 										["r_dmg"] = 176551,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
+										["r_amt"] = 11,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 25543,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 171,
-										["b_dmg"] = 0,
-										["r_amt"] = 11,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
 									},
 									[52576] = {
 										["c_amt"] = 0,
@@ -123,29 +123,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52576,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 25059.003298,
 							["end_time"] = 1662635878,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 25059.003298,
+							["on_hold"] = false,
 							["start_time"] = 1662635817,
-							["delay"] = 0,
-							["last_event"] = 1662635875,
+							["serial"] = "Vehicle-0-4412-609-152-28833-0000199892",
+							["aID"] = "",
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -157,24 +157,22 @@ _detalhes_database = {
 								["Scarlet Cannon <Joeybonzo>"] = 25059,
 								["Scarlet Cannon"] = 1834,
 							},
-							["aID"] = "28834",
+							["delay"] = 1662635881,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["aID"] = "28834",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 26893.00296,
-							["fight_component"] = true,
-							["timeMachine"] = 1,
-							["dps_started"] = true,
-							["total"] = 26893.00296,
 							["monster"] = true,
+							["fight_component"] = true,
+							["total"] = 26893.00296,
+							["damage_taken"] = 2783320.00296,
 							["on_hold"] = true,
-							["nome"] = "Scarlet Fleet Defender",
+							["timeMachine"] = 1,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -193,16 +191,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[52566] = {
 										["c_amt"] = 0,
@@ -222,28 +220,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52566,
 										["r_dmg"] = 0,
-										["MISS"] = 21,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 511,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 280,
 										["a_amt"] = 0,
 										["n_amt"] = 312,
-										["b_dmg"] = 511,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["MISS"] = 21,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Scarlet Fleet Defender",
+							["dps_started"] = true,
 							["friendlyfire_total"] = 0,
-							["serial"] = "Creature-0-4412-609-152-28834-000A19CCDC",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635881,
-							["damage_taken"] = 2783320.00296,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1662635823,
-							["delay"] = 1662635881,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28834-000A19CCDC",
+							["classe"] = "UNKNOW",
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
@@ -253,81 +253,80 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007442,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1662635878,
 							["on_hold"] = false,
+							["fight_component"] = true,
+							["end_time"] = 1662635878,
+							["damage_taken"] = 239354.007442,
 							["friendlyfire_total"] = 0,
 							["nome"] = "Scarlet Land Cannon",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["aID"] = "28850",
+							["dps_started"] = false,
 							["total"] = 0.007442,
-							["serial"] = "Creature-0-4412-609-152-28850-000019CCBD",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["damage_taken"] = 239354.007442,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1662635878,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28850-000019CCBD",
+							["monster"] = true,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 235,
 					["tipo"] = 3,
+					["combatId"] = 235,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 235,
 					["tipo"] = 7,
+					["combatId"] = 235,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 235,
 					["tipo"] = 9,
+					["combatId"] = 235,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
+							["nome"] = "Joeybonzo",
+							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["grupo"] = true,
-							["nome"] = "Joeybonzo",
-							["buff_uptime"] = 183,
 							["pets"] = {
 								"Scarlet Cannon <Joeybonzo>", -- [1]
 							},
-							["classe"] = "DEATHKNIGHT",
-							["last_event"] = 1662635878,
+							["aID"] = "4385-0466FBC1",
+							["buff_uptime"] = 183,
 							["tipo"] = 4,
+							["last_event"] = 1662635878,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 61,
 										["targets"] = {
 										},
-										["uptime"] = 61,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[52447] = {
 										["activedamt"] = 1,
@@ -336,75 +335,76 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1662635817,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = true,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 61,
 										["targets"] = {
 										},
-										["uptime"] = 61,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 61,
 										["targets"] = {
 										},
-										["uptime"] = 61,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-4385-0466FBC1",
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Cannon <Joeybonzo>",
+							["aID"] = "",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Vehicle-0-4412-609-152-28833-0000199892",
 							["spell_cast"] = {
 								[52435] = 32,
 								[52576] = 4,
 							},
-							["tipo"] = 4,
-							["aID"] = "",
-							["serial"] = "Vehicle-0-4412-609-152-28833-0000199892",
-							["last_event"] = 0,
 						}, -- [2]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Scarlet Fleet Defender",
-							["flag_original"] = 2632,
+							["aID"] = "28834",
 							["spell_cast"] = {
 								[52566] = 280,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28834-000019CCCC",
-							["aID"] = "28834",
+							["flag_original"] = 2632,
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 235,
 					["tipo"] = 2,
+					["combatId"] = 235,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -415,12 +415,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2471087.444,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635817,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 256,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3049566.931566, -- [1]
@@ -429,26 +431,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = -0.01390400000000369,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:17:59",
 				["cleu_timeline"] = {
 				},
@@ -459,43 +481,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:16:57",
-				["end_time"] = 2471149.615,
-				["combat_id"] = 235,
-				["tempo_start"] = 1662635817,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Fleet Defender"] = 161,
-					["Scarlet Land Cannon"] = 14,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 3022674.008562,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -504,25 +499,31 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 3022674.008562,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2471149.615,
+				["combat_id"] = 235,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Fleet Defender"] = 161,
+					["Scarlet Land Cannon"] = 14,
+				},
+				["combat_counter"] = 256,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:16:57",
 				["start_time"] = 2471087.444,
 				["contra"] = "Scarlet Fleet Defender",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [1]
 			{
 				{
-					["combatId"] = 234,
 					["tipo"] = 2,
+					["combatId"] = 234,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -536,20 +537,19 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Ghoul <Joeybonzo>", -- [1]
 							},
+							["tipo"] = 1,
+							["total"] = 2497.001551,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2406.001551,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635596,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 68.001551,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -568,16 +568,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -596,16 +596,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -624,100 +624,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
 										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 385,
-										["targets"] = {
-											["Scarlet Infantryman"] = 385,
-										},
-										["n_dmg"] = 385,
-										["n_min"] = 385,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 385,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Scarlet Infantryman"] = 167,
-										},
-										["n_dmg"] = 167,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 167,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 164,
-										["targets"] = {
-											["Scarlet Infantryman"] = 164,
-										},
-										["n_dmg"] = 164,
-										["n_min"] = 164,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 164,
-										["c_max"] = 0,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -736,60 +652,144 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scarlet Infantryman"] = 167,
+										},
+										["n_dmg"] = 167,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 167,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 385,
+										["targets"] = {
+											["Scarlet Infantryman"] = 385,
+										},
+										["n_dmg"] = 385,
+										["n_min"] = 385,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 385,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 164,
+										["targets"] = {
+											["Scarlet Infantryman"] = 164,
+										},
+										["n_dmg"] = 164,
+										["n_min"] = 164,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 164,
+										["c_max"] = 0,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2497.001551,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635596,
-							["damage_taken"] = 68.001551,
+							["on_hold"] = false,
 							["start_time"] = 1662635587,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.001022,
-							["aID"] = "28609",
 							["damage_from"] = {
 								["Scarlet Ghoul <Joeybonzo>"] = true,
-								["Acherus Geist"] = true,
-								["Death Knight Initiate"] = true,
 								["Joeybonzo"] = true,
+								["Death Knight Initiate"] = true,
+								["Acherus Geist"] = true,
 							},
 							["targets"] = {
 								["Joeybonzo"] = 68,
 								["Death Knight Initiate"] = 440,
 							},
-							["fight_component"] = true,
+							["delay"] = 1662635633,
 							["pets"] = {
 							},
-							["end_time"] = 1662635817,
-							["classe"] = "UNKNOW",
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["aID"] = "28609",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 508.001022,
-							["monster"] = true,
 							["dps_started"] = false,
+							["fight_component"] = true,
+							["end_time"] = 1662635817,
+							["damage_taken"] = 6091.001022,
 							["total"] = 508.001022,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Scarlet Infantryman",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -802,27 +802,27 @@ _detalhes_database = {
 											["Death Knight Initiate"] = 345,
 										},
 										["n_dmg"] = 413,
-										["DODGE"] = 2,
+										["r_amt"] = 0,
 										["n_min"] = 28,
 										["g_dmg"] = 0,
 										["counter"] = 14,
-										["BLOCK"] = 1,
+										["b_dmg"] = 0,
 										["total"] = 413,
 										["c_max"] = 0,
-										["MISS"] = 2,
+										["a_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
 										["c_min"] = 0,
+										["PARRY"] = 1,
+										["BLOCK"] = 1,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
 										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 2,
+										["DODGE"] = 2,
 									}, -- [1]
 									[25710] = {
 										["c_amt"] = 0,
@@ -842,8 +842,8 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 25710,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 95,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -851,26 +851,26 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 95,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["DODGE"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["friendlyfire"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28609-000019CE14",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635633,
-							["damage_taken"] = 6091.001022,
+							["on_hold"] = false,
 							["start_time"] = 1662635777,
-							["delay"] = 1662635633,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28609-000019CE14",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.006191,
-							["aID"] = "28845",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -878,19 +878,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28845-000019CDDD",
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "28845",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 91.006191,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635596,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Ghoul <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -907,68 +908,66 @@ _detalhes_database = {
 										["counter"] = 15,
 										["total"] = 91,
 										["c_max"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 13,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 0.006191,
 							["total"] = 91.006191,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635596,
-							["damage_taken"] = 0.006191,
+							["on_hold"] = false,
 							["start_time"] = 1662635589,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28845-000019CDDD",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 234,
 					["tipo"] = 3,
+					["combatId"] = 234,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorb"] = 0.003904,
 							["last_hps"] = 0,
-							["healing_from"] = {
+							["targets_overheal"] = {
+								["Joeybonzo"] = 84,
 							},
 							["targets"] = {
 							},
-							["targets_absorbs"] = {
-							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.003904,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 84,
+							["iniciar_hps"] = false,
+							["healing_from"] = {
 							},
 							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 84.003904,
 							["total_without_pet"] = 0.003904,
-							["iniciar_hps"] = false,
-							["healing_taken"] = 0.003904,
-							["end_time"] = 1662635596,
-							["total"] = 0.003904,
+							["totalover_without_pet"] = 0.003904,
+							["totaldenied"] = 0.003904,
 							["aID"] = "4385-0466FBC1",
+							["end_time"] = 1662635596,
+							["healing_taken"] = 0.003904,
 							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -990,30 +989,32 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 8,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 8,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["start_time"] = 1662635587,
+							["total"] = 0.003904,
 							["heal_enemy"] = {
 							},
-							["serial"] = "Player-4385-0466FBC1",
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635594,
 							["on_hold"] = false,
-							["totaldenied"] = 0.003904,
-							["delay"] = 0,
-							["tipo"] = 2,
+							["start_time"] = 1662635587,
+							["serial"] = "Player-4385-0466FBC1",
+							["targets_absorbs"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 234,
 					["tipo"] = 7,
+					["combatId"] = 234,
 					["_ActorTable"] = {
 						{
 							["received"] = 30.004794,
@@ -1029,7 +1030,6 @@ _detalhes_database = {
 							["total"] = 30.004794,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45462] = {
 										["total"] = 10,
@@ -1050,142 +1050,143 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.004794,
 							["alternatepower"] = 0.004794,
 							["last_event"] = 1662635592,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.004794,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 234,
 					["tipo"] = 9,
+					["combatId"] = 234,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 31,
+							["pets"] = {
+							},
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53386,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 16,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Joeybonzo",
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 2,
 								[45462] = 1,
 								[47541] = 1,
 							},
-							["debuff_uptime_targets"] = {
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
 							},
-							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635596,
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["buff_uptime"] = 31,
 						}, -- [1]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Scarlet Infantryman",
-							["flag_original"] = 68168,
+							["aID"] = "28609",
 							["spell_cast"] = {
 								[25710] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28609-000019CE14",
-							["aID"] = "28609",
+							["flag_original"] = 68168,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 234,
 					["tipo"] = 2,
+					["combatId"] = 234,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1195,12 +1196,14 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Joeybonzo", -- [1]
 				},
-				["tempo_start"] = 1662635587,
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 255,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3004.973427000001, -- [1]
@@ -1209,21 +1212,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 29.98824500000001,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					2406, -- [1]
@@ -1232,22 +1235,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 30,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:13:16",
 				["cleu_timeline"] = {
 				},
@@ -1258,11 +1262,28 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "07:13:08",
+				["end_time"] = 2470867.191,
+				["combat_id"] = 234,
+				["player_last_events"] = {
+				},
+				["tempo_start"] = 1662635587,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Scarlet Infantryman",
+				["combat_counter"] = 255,
+				["CombatSkillCache"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2497.001551,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1272,42 +1293,22 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2497.001551,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2470867.191,
-				["combat_id"] = 234,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["overall_added"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "07:13:08",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Scarlet Infantryman"] = 1,
 				},
 				["start_time"] = 2470858.985,
 				["TimeData"] = {
 				},
-				["contra"] = "Scarlet Infantryman",
+				["frags"] = {
+					["Scarlet Infantryman"] = 1,
+				},
 			}, -- [2]
 			{
 				{
-					["combatId"] = 233,
 					["tipo"] = 2,
+					["combatId"] = 233,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.008313,
-							["total"] = 413.008313,
 							["damage_from"] = {
 								["Scarlet Ghoul <Joeybonzo>"] = true,
 								["Joeybonzo"] = true,
@@ -1316,23 +1317,22 @@ _detalhes_database = {
 								["Joeybonzo"] = 274,
 								["Scarlet Ghoul <Joeybonzo>"] = 139,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 413.008313,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635557,
+							["monster"] = true,
+							["total"] = 413.008313,
+							["damage_taken"] = 2888.008313,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Ghost",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -1352,8 +1352,8 @@ _detalhes_database = {
 										["c_max"] = 139,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -1361,20 +1361,22 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28846",
-							["serial"] = "Creature-0-4412-609-152-28846-000019CE1A",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635556,
-							["damage_taken"] = 2888.008313,
+							["on_hold"] = false,
 							["start_time"] = 1662635547,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28846-000019CE1A",
+							["fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -1388,20 +1390,19 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Ghoul <Joeybonzo>", -- [1]
 							},
+							["tipo"] = 1,
+							["total"] = 2888.006576,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2785.006576,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635557,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 274.006576,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1420,16 +1421,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 1,
@@ -1448,17 +1449,17 @@ _detalhes_database = {
 										["c_max"] = 471,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 471,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -1477,100 +1478,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
 										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 386,
-										["targets"] = {
-											["Scarlet Ghost"] = 386,
-										},
-										["n_dmg"] = 386,
-										["n_min"] = 386,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 386,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Scarlet Ghost"] = 167,
-										},
-										["n_dmg"] = 167,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 167,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 341,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Ghost"] = 341,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 341,
-										["c_max"] = 341,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 341,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -1589,34 +1506,118 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scarlet Ghost"] = 167,
+										},
+										["n_dmg"] = 167,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 167,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 386,
+										["targets"] = {
+											["Scarlet Ghost"] = 386,
+										},
+										["n_dmg"] = 386,
+										["n_min"] = 386,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 386,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 341,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Ghost"] = 341,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 341,
+										["c_max"] = 341,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 341,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2888.006576,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635557,
-							["damage_taken"] = 274.006576,
+							["on_hold"] = false,
 							["start_time"] = 1662635549,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.006828,
-							["aID"] = "28845",
 							["damage_from"] = {
 								["Scarlet Ghost"] = true,
 							},
@@ -1625,19 +1626,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28845-000019CDB3",
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "28845",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 103.006828,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635557,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Ghoul <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1654,20 +1656,20 @@ _detalhes_database = {
 										["counter"] = 20,
 										["total"] = 103,
 										["c_max"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["BLOCK"] = 2,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
+										["PARRY"] = 2,
+										["BLOCK"] = 2,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 16,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 									[54175] = {
 										["c_amt"] = 0,
@@ -1686,46 +1688,46 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 54175,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 8,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 8,
+										["MISS"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 139.006828,
 							["total"] = 103.006828,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635556,
-							["damage_taken"] = 139.006828,
+							["on_hold"] = false,
 							["start_time"] = 1662635549,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28845-000019CDB3",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 233,
 					["tipo"] = 3,
+					["combatId"] = 233,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 2,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 2.005385,
 							["total_without_pet"] = 86.005385,
 							["total"] = 86.005385,
@@ -1744,12 +1746,9 @@ _detalhes_database = {
 							["healing_taken"] = 86.005385,
 							["fight_component"] = true,
 							["end_time"] = 1662635557,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 2,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -1771,28 +1770,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 8,
 										["n_curado"] = 86,
 										["totaldenied"] = 0,
-										["n_amt"] = 8,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635557,
-							["start_time"] = 1662635550,
 							["totaldenied"] = 0.005385,
+							["start_time"] = 1662635550,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 233,
 					["tipo"] = 7,
+					["combatId"] = 233,
 					["_ActorTable"] = {
 						{
 							["received"] = 50.004274,
@@ -1809,7 +1811,6 @@ _detalhes_database = {
 							["total"] = 50.004274,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -1839,101 +1840,102 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.004274,
 							["alternatepower"] = 0.004274,
 							["last_event"] = 1662635587,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.004274,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 233,
 					["tipo"] = 9,
+					["combatId"] = 233,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 36,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 3,
 										["id"] = 53386,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 13,
@@ -1942,25 +1944,25 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 3,
+								[45477] = 1,
 								[47541] = 1,
 								[45462] = 1,
-								[45477] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635557,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 233,
 					["tipo"] = 2,
+					["combatId"] = 233,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1971,12 +1973,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470858.714,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635547,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 254,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3300.991132, -- [1]
@@ -1985,26 +1989,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 50,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2785, -- [1]
+					86, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 50,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:12:38",
 				["cleu_timeline"] = {
 				},
@@ -2015,42 +2039,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:12:28",
-				["end_time"] = 2470828.707,
-				["combat_id"] = 233,
-				["tempo_start"] = 1662635547,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Ghost"] = 1,
-				},
-				["totals_grupo"] = {
-					2785, -- [1]
-					86, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 50,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2888.006576,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2060,25 +2058,30 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2888.006576,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470828.707,
+				["combat_id"] = 233,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Ghost"] = 1,
+				},
+				["combat_counter"] = 254,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:12:28",
 				["start_time"] = 2470818.617,
 				["contra"] = "Scarlet Ghost",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [3]
 			{
 				{
-					["combatId"] = 232,
 					["tipo"] = 2,
+					["combatId"] = 232,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2092,20 +2095,19 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Ghoul <Joeybonzo>", -- [1]
 							},
+							["tipo"] = 1,
+							["total"] = 2775.003384,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2722.003384,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635539,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 133.003384,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -2124,16 +2126,16 @@ _detalhes_database = {
 										["c_max"] = 532,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 532,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 2,
@@ -2152,16 +2154,16 @@ _detalhes_database = {
 										["c_max"] = 474,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 471,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -2180,16 +2182,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[55078] = {
 										["c_amt"] = 0,
@@ -2208,16 +2210,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55078,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[45462] = {
 										["c_amt"] = 0,
@@ -2236,16 +2238,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45462,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -2264,34 +2266,34 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2775.003384,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635538,
-							["damage_taken"] = 133.003384,
+							["on_hold"] = false,
 							["start_time"] = 1662635532,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.008981,
-							["total"] = 133.008981,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 								["Scarlet Ghoul <Joeybonzo>"] = true,
@@ -2299,23 +2301,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Joeybonzo"] = 133,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 133.008981,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635539,
+							["monster"] = true,
+							["total"] = 133.008981,
+							["damage_taken"] = 2775.008981,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Ghost",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2335,8 +2336,8 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -2344,25 +2345,26 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28846",
-							["serial"] = "Creature-0-4412-609-152-28846-000019CE0A",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635537,
-							["damage_taken"] = 2775.008981,
+							["on_hold"] = false,
 							["start_time"] = 1662635532,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28846-000019CE0A",
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.007934,
-							["aID"] = "28845",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -2370,19 +2372,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28845-000019CDDD",
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "28845",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 53.007934,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635539,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Ghoul <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2399,49 +2402,49 @@ _detalhes_database = {
 										["counter"] = 13,
 										["total"] = 53,
 										["c_max"] = 0,
-										["MISS"] = 2,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 3,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 3,
+										["MISS"] = 2,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 0.007934,
 							["total"] = 53.007934,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635538,
-							["damage_taken"] = 0.007934,
+							["on_hold"] = false,
 							["start_time"] = 1662635532,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28845-000019CDDD",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 232,
 					["tipo"] = 3,
+					["combatId"] = 232,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 21,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 21.004556,
 							["total_without_pet"] = 73.00455600000001,
 							["total"] = 73.00455600000001,
@@ -2460,12 +2463,9 @@ _detalhes_database = {
 							["healing_taken"] = 73.00455600000001,
 							["fight_component"] = true,
 							["end_time"] = 1662635539,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 21,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -2487,28 +2487,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 7,
 										["n_curado"] = 73,
 										["totaldenied"] = 0,
-										["n_amt"] = 7,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635538,
-							["start_time"] = 1662635532,
 							["totaldenied"] = 0.004556,
+							["start_time"] = 1662635532,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 232,
 					["tipo"] = 7,
+					["combatId"] = 232,
 					["_ActorTable"] = {
 						{
 							["received"] = 40.00838,
@@ -2525,7 +2528,6 @@ _detalhes_database = {
 							["total"] = 40.00838,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -2555,101 +2557,102 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.00838,
 							["alternatepower"] = 0.00838,
 							["last_event"] = 1662635537,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.00838,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 232,
 					["tipo"] = 9,
+					["combatId"] = 232,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 3,
 										["targets"] = {
 										},
-										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 28,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53386,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 9,
@@ -2658,25 +2661,25 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 2,
+								[45477] = 1,
 								[47541] = 1,
 								[45462] = 1,
-								[45477] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635539,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 232,
 					["tipo"] = 2,
+					["combatId"] = 232,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2687,12 +2690,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470818.617,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635532,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 253,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					2907.989435, -- [1]
@@ -2701,26 +2706,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 40,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2722, -- [1]
+					73, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 40,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:12:20",
 				["cleu_timeline"] = {
 				},
@@ -2731,42 +2756,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:12:13",
-				["end_time"] = 2470810.496,
-				["combat_id"] = 232,
-				["tempo_start"] = 1662635532,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Ghost"] = 1,
-				},
-				["totals_grupo"] = {
-					2722, -- [1]
-					73, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 40,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2775.003384,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2776,25 +2775,30 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2775.003384,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470810.496,
+				["combat_id"] = 232,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Ghost"] = 1,
+				},
+				["combat_counter"] = 253,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:12:13",
 				["start_time"] = 2470803.578,
 				["contra"] = "Scarlet Ghost",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [4]
 			{
 				{
-					["combatId"] = 231,
 					["tipo"] = 2,
+					["combatId"] = 231,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2808,20 +2812,19 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Ghoul <Joeybonzo>", -- [1]
 							},
+							["tipo"] = 1,
+							["total"] = 2757.001501,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2614.001501,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635526,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 132.001501,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -2840,16 +2843,16 @@ _detalhes_database = {
 										["c_max"] = 458,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 458,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -2868,17 +2871,17 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -2897,16 +2900,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[55078] = {
 										["c_amt"] = 0,
@@ -2925,16 +2928,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55078,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[45462] = {
 										["c_amt"] = 0,
@@ -2953,8 +2956,8 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45462,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -2962,8 +2965,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -2982,34 +2985,34 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2757.001501,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635526,
-							["damage_taken"] = 132.001501,
+							["on_hold"] = false,
 							["start_time"] = 1662635513,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.008303,
-							["total"] = 193.008303,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 								["Scarlet Ghoul <Joeybonzo>"] = true,
@@ -3018,23 +3021,22 @@ _detalhes_database = {
 								["Joeybonzo"] = 132,
 								["Scarlet Ghoul <Joeybonzo>"] = 61,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 193.008303,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635526,
+							["monster"] = true,
+							["total"] = 193.008303,
+							["damage_taken"] = 2757.008303,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Ghost",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3055,34 +3057,35 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 3,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 3,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28846",
-							["serial"] = "Creature-0-4412-609-152-28846-000019CDF6",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635522,
-							["damage_taken"] = 2757.008303,
+							["on_hold"] = false,
 							["start_time"] = 1662635513,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28846-000019CDF6",
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.002534,
-							["aID"] = "28845",
 							["damage_from"] = {
 								["Scarlet Ghost"] = true,
 							},
@@ -3091,19 +3094,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28845-000019CDDD",
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "28845",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 143.002534,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635526,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Ghoul <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3120,49 +3124,48 @@ _detalhes_database = {
 										["counter"] = 24,
 										["total"] = 143,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["PARRY"] = 2,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 17,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["MISS"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 61.002534,
 							["total"] = 143.002534,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635525,
-							["damage_taken"] = 61.002534,
+							["on_hold"] = false,
 							["start_time"] = 1662635513,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28845-000019CDDD",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 231,
 					["tipo"] = 3,
+					["combatId"] = 231,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.004525,
 							["total_without_pet"] = 88.004525,
 							["total"] = 88.004525,
@@ -3181,11 +3184,9 @@ _detalhes_database = {
 							["healing_taken"] = 88.004525,
 							["fight_component"] = true,
 							["end_time"] = 1662635526,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -3206,28 +3207,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 9,
 										["n_curado"] = 88,
 										["totaldenied"] = 0,
-										["n_amt"] = 9,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635523,
-							["start_time"] = 1662635513,
 							["totaldenied"] = 0.004525,
+							["start_time"] = 1662635513,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 231,
 					["tipo"] = 7,
+					["combatId"] = 231,
 					["_ActorTable"] = {
 						{
 							["received"] = 40.005509,
@@ -3244,7 +3248,6 @@ _detalhes_database = {
 							["total"] = 40.005509,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45462] = {
 										["total"] = 20,
@@ -3265,101 +3268,102 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.005509,
 							["alternatepower"] = 0.005509,
 							["last_event"] = 1662635523,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.005509,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 231,
 					["tipo"] = 9,
+					["combatId"] = 231,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 1,
 										["id"] = 55078,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 49,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53386,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 23,
@@ -3370,21 +3374,21 @@ _detalhes_database = {
 								[45462] = 3,
 								[45902] = 3,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635526,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 231,
 					["tipo"] = 2,
+					["combatId"] = 231,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3395,12 +3399,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470802.363,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635513,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 252,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					2950, -- [1]
@@ -3409,26 +3415,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 40,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2614, -- [1]
+					88, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 40,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:12:06",
 				["cleu_timeline"] = {
 				},
@@ -3439,42 +3465,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:11:54",
-				["end_time"] = 2470796.248,
-				["combat_id"] = 231,
-				["tempo_start"] = 1662635513,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Ghost"] = 1,
-				},
-				["totals_grupo"] = {
-					2614, -- [1]
-					88, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 40,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2757.001501,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -3484,30 +3484,34 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2757.001501,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470796.248,
+				["combat_id"] = 231,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Ghost"] = 1,
+				},
+				["combat_counter"] = 252,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:11:54",
 				["start_time"] = 2470784.398,
 				["contra"] = "Scarlet Ghost",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [5]
 			{
 				{
-					["combatId"] = 230,
 					["tipo"] = 2,
+					["combatId"] = 230,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
 							["totalabsorbed"] = 0.005502,
-							["total"] = 482.005502,
 							["damage_from"] = {
 								["Scarlet Ghoul <Joeybonzo>"] = true,
 								["Joeybonzo"] = true,
@@ -3516,23 +3520,22 @@ _detalhes_database = {
 								["Joeybonzo"] = 275,
 								["Scarlet Ghoul <Joeybonzo>"] = 207,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 482.005502,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635505,
+							["monster"] = true,
+							["total"] = 482.005502,
+							["damage_taken"] = 2885.005502,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Ghost",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -3553,29 +3556,31 @@ _detalhes_database = {
 										["c_max"] = 148,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 127,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28846",
-							["serial"] = "Creature-0-4412-609-152-28846-000019CDE4",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635504,
-							["damage_taken"] = 2885.005502,
+							["on_hold"] = false,
 							["start_time"] = 1662635493,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28846-000019CDE4",
+							["fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -3589,20 +3594,19 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Ghoul <Joeybonzo>", -- [1]
 							},
+							["tipo"] = 1,
+							["total"] = 2885.002836,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2754.002836,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635505,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 275.002836,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3621,8 +3625,8 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -3630,8 +3634,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -3650,8 +3654,8 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 219,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -3659,8 +3663,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 219,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -3679,100 +3683,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
 										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 321,
-										["targets"] = {
-											["Scarlet Ghost"] = 321,
-										},
-										["n_dmg"] = 321,
-										["n_min"] = 321,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 321,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Scarlet Ghost"] = 168,
-										},
-										["n_dmg"] = 168,
-										["n_min"] = 84,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 168,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 349,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Ghost"] = 349,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 349,
-										["c_max"] = 349,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 349,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -3791,34 +3711,118 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scarlet Ghost"] = 168,
+										},
+										["n_dmg"] = 168,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 168,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 321,
+										["targets"] = {
+											["Scarlet Ghost"] = 321,
+										},
+										["n_dmg"] = 321,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 321,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 349,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Ghost"] = 349,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 349,
+										["c_max"] = 349,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 349,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2885.002836,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635505,
-							["damage_taken"] = 275.002836,
+							["on_hold"] = false,
 							["start_time"] = 1662635493,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.001691,
-							["aID"] = "28845",
 							["damage_from"] = {
 								["Scarlet Ghost"] = true,
 							},
@@ -3827,19 +3831,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28845-000019CD89",
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "28845",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 131.001691,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635505,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Ghoul <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3854,52 +3859,51 @@ _detalhes_database = {
 										["n_min"] = 6,
 										["g_dmg"] = 26,
 										["counter"] = 24,
-										["BLOCK"] = 3,
+										["r_amt"] = 0,
 										["total"] = 131,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
+										["BLOCK"] = 3,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 15,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 207.001691,
 							["total"] = 131.001691,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635505,
-							["damage_taken"] = 207.001691,
+							["on_hold"] = false,
 							["start_time"] = 1662635493,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28845-000019CD89",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 230,
 					["tipo"] = 3,
+					["combatId"] = 230,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.004246,
 							["total_without_pet"] = 86.004246,
 							["total"] = 86.004246,
@@ -3918,11 +3922,9 @@ _detalhes_database = {
 							["healing_taken"] = 86.004246,
 							["fight_component"] = true,
 							["end_time"] = 1662635505,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -3943,28 +3945,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 9,
 										["n_curado"] = 86,
 										["totaldenied"] = 0,
-										["n_amt"] = 9,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635505,
-							["start_time"] = 1662635496,
 							["totaldenied"] = 0.004246,
+							["start_time"] = 1662635496,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 230,
 					["tipo"] = 7,
+					["combatId"] = 230,
 					["_ActorTable"] = {
 						{
 							["received"] = 60.008826,
@@ -3981,7 +3986,6 @@ _detalhes_database = {
 							["total"] = 60.008826,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -4011,90 +4015,91 @@ _detalhes_database = {
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.008826,
 							["alternatepower"] = 0.008826,
 							["last_event"] = 1662635513,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.008826,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 230,
 					["tipo"] = 9,
+					["combatId"] = 230,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 8,
 										["targets"] = {
 										},
-										["uptime"] = 8,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 36,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["uptime"] = 12,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["uptime"] = 12,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["uptime"] = 12,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 17,
@@ -4103,25 +4108,25 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 3,
+								[45477] = 2,
 								[47541] = 1,
 								[45462] = 1,
-								[45477] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635505,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 230,
 					["tipo"] = 2,
+					["combatId"] = 230,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4132,12 +4137,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470782.955,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635493,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 251,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3366.997796, -- [1]
@@ -4146,26 +4153,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 60,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2754, -- [1]
+					86, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 60,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:11:46",
 				["cleu_timeline"] = {
 				},
@@ -4176,42 +4203,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:11:34",
-				["end_time"] = 2470776.497,
-				["combat_id"] = 230,
-				["tempo_start"] = 1662635493,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Ghost"] = 1,
-				},
-				["totals_grupo"] = {
-					2754, -- [1]
-					86, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 60,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2885.002836,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4221,25 +4222,30 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2885.002836,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470776.497,
+				["combat_id"] = 230,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Ghost"] = 1,
+				},
+				["combat_counter"] = 251,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:11:34",
 				["start_time"] = 2470764.692,
 				["contra"] = "Scarlet Ghost",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [6]
 			{
 				{
-					["combatId"] = 229,
 					["tipo"] = 2,
+					["combatId"] = 229,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -4253,20 +4259,19 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Ghoul <Joeybonzo>", -- [1]
 							},
+							["tipo"] = 1,
+							["total"] = 2904.003965,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2823.003965,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635469,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 75.003965,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -4283,20 +4288,20 @@ _detalhes_database = {
 										["counter"] = 6,
 										["total"] = 965,
 										["c_max"] = 0,
-										["DODGE"] = 1,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
+										["b_dmg"] = 221,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 2,
-										["b_dmg"] = 221,
-										["r_amt"] = 0,
+										["MISS"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -4315,17 +4320,17 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -4344,100 +4349,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 321,
-										["targets"] = {
-											["Scarlet Ghost"] = 321,
-										},
-										["n_dmg"] = 321,
-										["n_min"] = 321,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 321,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Scarlet Ghost"] = 334,
-										},
-										["n_dmg"] = 334,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 334,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 176,
-										["targets"] = {
-											["Scarlet Ghost"] = 176,
-										},
-										["n_dmg"] = 176,
-										["n_min"] = 176,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 176,
-										["c_max"] = 0,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 16,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -4456,34 +4377,118 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scarlet Ghost"] = 334,
+										},
+										["n_dmg"] = 334,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 334,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 321,
+										["targets"] = {
+											["Scarlet Ghost"] = 321,
+										},
+										["n_dmg"] = 321,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 321,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 176,
+										["targets"] = {
+											["Scarlet Ghost"] = 176,
+										},
+										["n_dmg"] = 176,
+										["n_min"] = 176,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 176,
+										["c_max"] = 0,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2904.003965,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635468,
-							["damage_taken"] = 75.003965,
+							["on_hold"] = false,
 							["start_time"] = 1662635453,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.002238,
-							["total"] = 342.002238,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 								["Scarlet Ghoul <Joeybonzo>"] = true,
@@ -4492,23 +4497,22 @@ _detalhes_database = {
 								["Joeybonzo"] = 75,
 								["Scarlet Ghoul <Joeybonzo>"] = 267,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 342.002238,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635469,
+							["monster"] = true,
+							["total"] = 342.002238,
+							["damage_taken"] = 2904.002238,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Ghost",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -4529,34 +4533,35 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 2,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28846",
-							["serial"] = "Creature-0-4412-609-152-28846-000019CDBA",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635466,
-							["damage_taken"] = 2904.002238,
+							["on_hold"] = false,
 							["start_time"] = 1662635453,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28846-000019CDBA",
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.007473,
-							["aID"] = "28845",
 							["damage_from"] = {
 								["Scarlet Ghost"] = true,
 							},
@@ -4565,19 +4570,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28845-000019CDB3",
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "28845",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 81.007473,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635469,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Ghoul <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -4592,52 +4598,52 @@ _detalhes_database = {
 										["n_min"] = 6,
 										["g_dmg"] = 0,
 										["counter"] = 16,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["total"] = 81,
 										["c_max"] = 0,
-										["BLOCK"] = 1,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 2,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
+										["BLOCK"] = 1,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 2,
+										["MISS"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 267.007473,
 							["total"] = 81.007473,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635468,
-							["damage_taken"] = 267.007473,
+							["on_hold"] = false,
 							["start_time"] = 1662635453,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28845-000019CDB3",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 229,
 					["tipo"] = 3,
+					["combatId"] = 229,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 19,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 19.00754,
 							["total_without_pet"] = 60.00754,
 							["total"] = 60.00754,
@@ -4656,12 +4662,9 @@ _detalhes_database = {
 							["healing_taken"] = 60.00754,
 							["fight_component"] = true,
 							["end_time"] = 1662635469,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 19,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -4683,28 +4686,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 9,
 										["n_curado"] = 60,
 										["totaldenied"] = 0,
-										["n_amt"] = 9,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635468,
-							["start_time"] = 1662635453,
 							["totaldenied"] = 0.00754,
+							["start_time"] = 1662635453,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 229,
 					["tipo"] = 7,
+					["combatId"] = 229,
 					["_ActorTable"] = {
 						{
 							["received"] = 40.006999,
@@ -4721,7 +4727,6 @@ _detalhes_database = {
 							["total"] = 40.006999,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 10,
@@ -4751,90 +4756,91 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.006999,
 							["alternatepower"] = 0.006999,
 							["last_event"] = 1662635460,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.006999,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 229,
 					["tipo"] = 9,
+					["combatId"] = 229,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 1,
 										["id"] = 55095,
+										["uptime"] = 15,
 										["targets"] = {
 										},
-										["uptime"] = 15,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 14,
 										["targets"] = {
 										},
-										["uptime"] = 14,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 48,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["uptime"] = 16,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["uptime"] = 16,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["uptime"] = 16,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 29,
@@ -4843,25 +4849,25 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 2,
+								[45477] = 2,
 								[47541] = 1,
 								[45462] = 1,
-								[45477] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635469,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 229,
 					["tipo"] = 2,
+					["combatId"] = 229,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4872,12 +4878,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470764.692,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635453,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 250,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3245.992278, -- [1]
@@ -4886,26 +4894,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 40,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2823, -- [1]
+					60, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 40,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:11:10",
 				["cleu_timeline"] = {
 				},
@@ -4916,42 +4944,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:10:53",
-				["end_time"] = 2470740.429,
-				["combat_id"] = 229,
-				["tempo_start"] = 1662635453,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Ghost"] = 1,
-				},
-				["totals_grupo"] = {
-					2823, -- [1]
-					60, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 40,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2904.003965,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4961,30 +4963,34 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2904.003965,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470740.429,
+				["combat_id"] = 229,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Ghost"] = 1,
+				},
+				["combat_counter"] = 250,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:10:53",
 				["start_time"] = 2470723.852,
 				["contra"] = "Scarlet Ghost",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [7]
 			{
 				{
-					["combatId"] = 228,
 					["tipo"] = 2,
+					["combatId"] = 228,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.007277,
-							["total"] = 604.0072769999999,
 							["damage_from"] = {
 								["Scarlet Ghoul <Joeybonzo>"] = true,
 								["Joeybonzo"] = true,
@@ -4993,23 +4999,22 @@ _detalhes_database = {
 								["Joeybonzo"] = 327,
 								["Scarlet Ghoul <Joeybonzo>"] = 277,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 604.0072769999999,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635440,
+							["monster"] = true,
+							["total"] = 604.0072769999999,
+							["damage_taken"] = 5851.007277,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Ghost",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -5027,32 +5032,34 @@ _detalhes_database = {
 										["counter"] = 10,
 										["total"] = 604,
 										["c_max"] = 146,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 146,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["MISS"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28846",
-							["serial"] = "Creature-0-4412-609-152-28846-000019CD90",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635436,
-							["damage_taken"] = 5851.007277,
+							["on_hold"] = false,
 							["start_time"] = 1662635410,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28846-000019CD90",
+							["fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -5066,20 +5073,19 @@ _detalhes_database = {
 							["pets"] = {
 								"Scarlet Ghoul <Joeybonzo>", -- [1]
 							},
+							["tipo"] = 1,
+							["total"] = 5851.001174999999,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5776.001174999999,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635440,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 327.001175,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5098,16 +5104,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 1,
@@ -5126,17 +5132,17 @@ _detalhes_database = {
 										["c_max"] = 498,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 498,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 1,
@@ -5155,100 +5161,16 @@ _detalhes_database = {
 										["c_max"] = 478,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 478,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 386,
-										["targets"] = {
-											["Scarlet Ghost"] = 707,
-										},
-										["n_dmg"] = 707,
-										["n_min"] = 321,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 707,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Scarlet Ghost"] = 335,
-										},
-										["n_dmg"] = 335,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 335,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 170,
-										["targets"] = {
-											["Scarlet Ghost"] = 301,
-										},
-										["n_dmg"] = 301,
-										["n_min"] = 131,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 301,
-										["c_max"] = 0,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 131,
-										["r_amt"] = 0,
+										["spellschool"] = 16,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -5267,34 +5189,118 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scarlet Ghost"] = 335,
+										},
+										["n_dmg"] = 335,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 335,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 386,
+										["targets"] = {
+											["Scarlet Ghost"] = 707,
+										},
+										["n_dmg"] = 707,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 707,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 170,
+										["targets"] = {
+											["Scarlet Ghost"] = 301,
+										},
+										["n_dmg"] = 301,
+										["n_min"] = 131,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 301,
+										["c_max"] = 0,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 131,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 5851.001174999999,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635438,
-							["damage_taken"] = 327.001175,
+							["on_hold"] = false,
 							["start_time"] = 1662635411,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.002551,
-							["aID"] = "28845",
 							["damage_from"] = {
 								["Scarlet Ghost"] = true,
 							},
@@ -5303,19 +5309,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28845-000019CD89",
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "28845",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 75.002551,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635440,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Joeybonzo",
 							["nome"] = "Scarlet Ghoul <Joeybonzo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5334,46 +5341,46 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 277.002551,
 							["total"] = 75.002551,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635438,
-							["damage_taken"] = 277.002551,
+							["on_hold"] = false,
 							["start_time"] = 1662635411,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28845-000019CD89",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 228,
 					["tipo"] = 3,
+					["combatId"] = 228,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 7,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 7.006647,
 							["total_without_pet"] = 175.006647,
 							["total"] = 175.006647,
@@ -5392,12 +5399,9 @@ _detalhes_database = {
 							["healing_taken"] = 175.006647,
 							["fight_component"] = true,
 							["end_time"] = 1662635440,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 7,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -5419,28 +5423,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 17,
 										["n_curado"] = 175,
 										["totaldenied"] = 0,
-										["n_amt"] = 17,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635436,
-							["start_time"] = 1662635411,
 							["totaldenied"] = 0.006647,
+							["start_time"] = 1662635411,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 228,
 					["tipo"] = 7,
+					["combatId"] = 228,
 					["_ActorTable"] = {
 						{
 							["received"] = 90.002951,
@@ -5457,7 +5464,6 @@ _detalhes_database = {
 							["total"] = 90.002951,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 40,
@@ -5487,101 +5493,102 @@ _detalhes_database = {
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.002951,
 							["alternatepower"] = 0.002951,
 							["last_event"] = 1662635438,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.002951,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 228,
 					["tipo"] = 9,
+					["combatId"] = 228,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 19,
 										["targets"] = {
 										},
-										["uptime"] = 19,
 										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 17,
 										["targets"] = {
 										},
-										["uptime"] = 17,
 										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 94,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 30,
 										["targets"] = {
 										},
-										["uptime"] = 30,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53386,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 30,
 										["targets"] = {
 										},
-										["uptime"] = 30,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 30,
 										["targets"] = {
 										},
-										["uptime"] = 30,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 36,
@@ -5595,21 +5602,21 @@ _detalhes_database = {
 								[45462] = 2,
 								[47541] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635440,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 228,
 					["tipo"] = 2,
+					["combatId"] = 228,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5620,12 +5627,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470722.664,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635410,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 249,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					6454.98251, -- [1]
@@ -5634,26 +5643,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 90,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					5776, -- [1]
+					175, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 90,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:10:40",
 				["cleu_timeline"] = {
 				},
@@ -5664,45 +5693,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:10:11",
-				["end_time"] = 2470710.519,
-				["combat_id"] = 228,
-				["tempo_start"] = 1662635410,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Peasant"] = 1,
-					["Scarlet Ghost"] = 2,
-					["Scarlet Infantryman"] = 1,
-					["Scarlet Miner"] = 1,
-				},
-				["totals_grupo"] = {
-					5776, -- [1]
-					175, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 90,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 5851.001174999999,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -5712,25 +5712,33 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 5851.001174999999,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470710.519,
+				["combat_id"] = 228,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Peasant"] = 1,
+					["Scarlet Ghost"] = 2,
+					["Scarlet Infantryman"] = 1,
+					["Scarlet Miner"] = 1,
+				},
+				["combat_counter"] = 249,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:10:11",
 				["start_time"] = 2470681.464,
 				["contra"] = "Scarlet Ghost",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [8]
 			{
 				{
-					["combatId"] = 227,
 					["tipo"] = 2,
+					["combatId"] = 227,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -5743,20 +5751,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 2788.006272,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2788.006272,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635384,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 223.006272,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -5775,16 +5782,16 @@ _detalhes_database = {
 										["c_max"] = 520,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 520,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 1,
@@ -5803,16 +5810,16 @@ _detalhes_database = {
 										["c_max"] = 505,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 505,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -5831,100 +5838,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
 										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 642,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Infantryman"] = 642,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 642,
-										["c_max"] = 642,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 642,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Scarlet Infantryman"] = 84,
-										},
-										["n_dmg"] = 84,
-										["n_min"] = 84,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 84,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 160,
-										["targets"] = {
-											["Scarlet Infantryman"] = 160,
-										},
-										["n_dmg"] = 160,
-										["n_min"] = 160,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 160,
-										["c_max"] = 0,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -5943,34 +5866,118 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scarlet Infantryman"] = 84,
+										},
+										["n_dmg"] = 84,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 642,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Infantryman"] = 642,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 642,
+										["c_max"] = 642,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 642,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 160,
+										["targets"] = {
+											["Scarlet Infantryman"] = 160,
+										},
+										["n_dmg"] = 160,
+										["n_min"] = 160,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 160,
+										["c_max"] = 0,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2788.006272,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635384,
-							["damage_taken"] = 223.006272,
+							["on_hold"] = false,
 							["start_time"] = 1662635378,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006222,
-							["total"] = 897.006222,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 								["Death Knight Initiate"] = true,
@@ -5981,23 +5988,22 @@ _detalhes_database = {
 								["Death Knight Initiate"] = 600,
 								["Joeybonzo"] = 223,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 897.006222,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635410,
+							["monster"] = true,
+							["total"] = 897.006222,
+							["damage_taken"] = 4332.006222,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Infantryman",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -6016,20 +6022,20 @@ _detalhes_database = {
 										["counter"] = 13,
 										["total"] = 533,
 										["c_max"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["PARRY"] = 3,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 									[25710] = {
 										["c_amt"] = 0,
@@ -6049,43 +6055,45 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 25710,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 96,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 96,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28609",
-							["serial"] = "Creature-0-4412-609-152-28609-000019CC99",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635410,
-							["damage_taken"] = 4332.006222,
+							["on_hold"] = false,
 							["start_time"] = 1662635378,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28609-000019CC99",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 227,
 					["tipo"] = 3,
+					["combatId"] = 227,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 9,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 9.006063,
 							["total_without_pet"] = 81.006063,
 							["total"] = 81.006063,
@@ -6104,12 +6112,9 @@ _detalhes_database = {
 							["healing_taken"] = 81.006063,
 							["fight_component"] = true,
 							["end_time"] = 1662635384,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 9,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -6131,28 +6136,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 7,
 										["n_curado"] = 81,
 										["totaldenied"] = 0,
-										["n_amt"] = 7,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635384,
-							["start_time"] = 1662635378,
 							["totaldenied"] = 0.006063,
+							["start_time"] = 1662635378,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 227,
 					["tipo"] = 7,
+					["combatId"] = 227,
 					["_ActorTable"] = {
 						{
 							["received"] = 30.006309,
@@ -6169,7 +6177,6 @@ _detalhes_database = {
 							["total"] = 30.006309,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45462] = {
 										["total"] = 10,
@@ -6190,90 +6197,91 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.006309,
 							["alternatepower"] = 0.006309,
 							["last_event"] = 1662635383,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.006309,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 227,
 					["tipo"] = 9,
+					["combatId"] = 227,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 5,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 18,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 11,
@@ -6285,37 +6293,37 @@ _detalhes_database = {
 								[45462] = 1,
 								[47541] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635384,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Scarlet Infantryman",
-							["flag_original"] = 68168,
+							["aID"] = "28609",
 							["spell_cast"] = {
 								[25710] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28609-000019CC99",
-							["aID"] = "28609",
+							["flag_original"] = 68168,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 227,
 					["tipo"] = 2,
+					["combatId"] = 227,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6326,12 +6334,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470680.955,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635378,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 248,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3684.989703, -- [1]
@@ -6340,26 +6350,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 30,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2788, -- [1]
+					81, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 30,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:09:45",
 				["cleu_timeline"] = {
 				},
@@ -6370,42 +6400,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:09:39",
-				["end_time"] = 2470655.836,
-				["combat_id"] = 227,
-				["tempo_start"] = 1662635378,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Infantryman"] = 2,
-				},
-				["totals_grupo"] = {
-					2788, -- [1]
-					81, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 30,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2788.006272,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -6415,25 +6419,30 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2788.006272,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470655.836,
+				["combat_id"] = 227,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Infantryman"] = 2,
+				},
+				["combat_counter"] = 248,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:09:39",
 				["start_time"] = 2470649.627,
 				["contra"] = "Scarlet Infantryman",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [9]
 			{
 				{
-					["combatId"] = 226,
 					["tipo"] = 2,
+					["combatId"] = 226,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -6446,20 +6455,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 3291.007555,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3291.007555,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635307,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 552.007555,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -6478,16 +6486,16 @@ _detalhes_database = {
 										["c_max"] = 534,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 214,
 										["a_dmg"] = 0,
 										["c_min"] = 534,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 214,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -6506,16 +6514,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -6534,100 +6542,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
 										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 321,
-										["targets"] = {
-											["Death Knight Initiate"] = 321,
-										},
-										["n_dmg"] = 321,
-										["n_min"] = 321,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 321,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Death Knight Initiate"] = 167,
-										},
-										["n_dmg"] = 167,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 167,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 178,
-										["targets"] = {
-											["Death Knight Initiate"] = 349,
-										},
-										["n_dmg"] = 349,
-										["n_min"] = 171,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 349,
-										["c_max"] = 0,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -6646,61 +6570,145 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Death Knight Initiate"] = 167,
+										},
+										["n_dmg"] = 167,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 167,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 321,
+										["targets"] = {
+											["Death Knight Initiate"] = 321,
+										},
+										["n_dmg"] = 321,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 321,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 178,
+										["targets"] = {
+											["Death Knight Initiate"] = 349,
+										},
+										["n_dmg"] = 349,
+										["n_min"] = 171,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 349,
+										["c_max"] = 0,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 3291.007555,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635306,
-							["damage_taken"] = 552.007555,
+							["on_hold"] = false,
 							["start_time"] = 1662635294,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.004622,
-							["aID"] = "28406",
 							["damage_from"] = {
 								["Lasheodox"] = true,
-								["Minkero"] = true,
 								["Joeybonzo"] = true,
+								["Minkero"] = true,
 							},
 							["targets"] = {
 								["Joeybonzo"] = 552,
-								["Minkero"] = 1884,
-								["Scarlet Infantryman"] = 139,
 								["Lasheodox"] = 613,
+								["Scarlet Infantryman"] = 139,
+								["Minkero"] = 1884,
 							},
-							["fight_component"] = true,
+							["delay"] = 1662635342,
 							["pets"] = {
 							},
-							["end_time"] = 1662635378,
-							["classe"] = "UNKNOW",
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["aID"] = "28406",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3188.004622,
-							["monster"] = true,
 							["dps_started"] = false,
+							["fight_component"] = true,
+							["end_time"] = 1662635378,
+							["damage_taken"] = 8771.004622,
 							["total"] = 3188.004622,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 422,
 							["nome"] = "Death Knight Initiate",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -6710,31 +6718,31 @@ _detalhes_database = {
 										["n_max"] = 71,
 										["targets"] = {
 											["Joeybonzo"] = 246,
-											["Minkero"] = 258,
-											["Scarlet Infantryman"] = 139,
 											["Lasheodox"] = 257,
+											["Scarlet Infantryman"] = 139,
+											["Minkero"] = 258,
 										},
 										["n_dmg"] = 900,
 										["n_min"] = 54,
 										["g_dmg"] = 0,
 										["counter"] = 19,
-										["MISS"] = 2,
+										["r_amt"] = 0,
 										["total"] = 900,
 										["c_max"] = 0,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["DODGE"] = 2,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
 										["n_amt"] = 14,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["MISS"] = 2,
 									}, -- [1]
 									[52373] = {
 										["c_amt"] = 0,
@@ -6754,17 +6762,17 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52373,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 32,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 32,
+										["MISS"] = 1,
 									},
 									[52372] = {
 										["c_amt"] = 0,
@@ -6784,15 +6792,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52372,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 									[52374] = {
 										["c_amt"] = 0,
@@ -6812,16 +6820,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52374,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
 									},
 									[47632] = {
 										["c_amt"] = 0,
@@ -6840,58 +6848,58 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 47632,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 422,
+							["monster"] = true,
 							["friendlyfire"] = {
 								["Lasheodox"] = {
+									["total"] = 219,
 									["spells"] = {
 										[52373] = 219,
 									},
-									["total"] = 219,
 								},
 								["Minkero"] = {
+									["total"] = 203,
 									["spells"] = {
 										57, -- [1]
 										[52373] = 146,
 									},
-									["total"] = 203,
 								},
 							},
-							["serial"] = "Creature-0-4412-609-152-28406-000019CCE1",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635376,
-							["damage_taken"] = 8771.004622,
+							["on_hold"] = false,
 							["start_time"] = 1662635328,
-							["delay"] = 1662635342,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28406-000019CCE1",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 226,
 					["tipo"] = 3,
+					["combatId"] = 226,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.005756,
 							["total_without_pet"] = 116.005756,
 							["total"] = 116.005756,
@@ -6910,11 +6918,9 @@ _detalhes_database = {
 							["healing_taken"] = 116.005756,
 							["fight_component"] = true,
 							["end_time"] = 1662635307,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -6935,28 +6941,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 11,
 										["n_curado"] = 116,
 										["totaldenied"] = 0,
-										["n_amt"] = 11,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635304,
-							["start_time"] = 1662635294,
 							["totaldenied"] = 0.005756,
+							["start_time"] = 1662635294,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 226,
 					["tipo"] = 7,
+					["combatId"] = 226,
 					["_ActorTable"] = {
 						{
 							["received"] = 60.001492,
@@ -6973,7 +6982,6 @@ _detalhes_database = {
 							["total"] = 60.001492,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -7003,90 +7011,91 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.001492,
 							["alternatepower"] = 0.001492,
 							["last_event"] = 1662635378,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.001492,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 226,
 					["tipo"] = 9,
+					["combatId"] = 226,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 1,
 										["id"] = 55095,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 1,
 										["id"] = 55078,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 39,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 23,
@@ -7095,43 +7104,43 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 2,
+								[47541] = 1,
 								[45477] = 1,
 								[45462] = 2,
-								[47541] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635307,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Death Knight Initiate",
-							["flag_original"] = 68168,
+							["aID"] = "28406",
 							["spell_cast"] = {
 								[52373] = 1,
 								[52372] = 1,
 								[52374] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28406-000019CCE1",
-							["aID"] = "28406",
+							["flag_original"] = 68168,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 226,
 					["tipo"] = 2,
+					["combatId"] = 226,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7141,12 +7150,14 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Joeybonzo", -- [1]
 				},
-				["tempo_start"] = 1662635294,
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 247,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					6478.98093, -- [1]
@@ -7155,21 +7166,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 59.985702,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					3291, -- [1]
@@ -7178,22 +7189,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 60,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = false,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:08:28",
 				["cleu_timeline"] = {
 				},
@@ -7204,11 +7216,28 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "07:08:15",
+				["end_time"] = 2470578.931,
+				["combat_id"] = 226,
+				["player_last_events"] = {
+				},
+				["tempo_start"] = 1662635294,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Death Knight Initiate",
+				["combat_counter"] = 247,
+				["CombatSkillCache"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 3291.007555,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -7218,67 +7247,47 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 3291.007555,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2470578.931,
-				["combat_id"] = 226,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["overall_added"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "07:08:15",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
 				},
 				["start_time"] = 2470566.128,
 				["TimeData"] = {
 				},
-				["contra"] = "Death Knight Initiate",
+				["frags"] = {
+				},
 			}, -- [10]
 			{
 				{
-					["combatId"] = 225,
 					["tipo"] = 2,
+					["combatId"] = 225,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006699,
-							["aID"] = "28406",
 							["damage_from"] = {
 								["Minkero"] = true,
-								["Lasheodox"] = true,
 								["Joeybonzo"] = true,
+								["Lasheodox"] = true,
 							},
 							["targets"] = {
 								["Minkero"] = 954,
-								["Lasheodox"] = 333,
 								["Joeybonzo"] = 484,
+								["Lasheodox"] = 333,
 							},
-							["fight_component"] = true,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["end_time"] = 1662635294,
-							["classe"] = "UNKNOW",
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["aID"] = "28406",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1771.006699,
-							["monster"] = true,
 							["dps_started"] = false,
+							["fight_component"] = true,
+							["end_time"] = 1662635294,
+							["damage_taken"] = 7764.006699,
 							["total"] = 1771.006699,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 498,
 							["nome"] = "Death Knight Initiate",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -7288,8 +7297,8 @@ _detalhes_database = {
 										["n_max"] = 72,
 										["targets"] = {
 											["Minkero"] = 379,
-											["Lasheodox"] = 179,
 											["Joeybonzo"] = 183,
+											["Lasheodox"] = 179,
 										},
 										["n_dmg"] = 630,
 										["n_min"] = 56,
@@ -7297,20 +7306,20 @@ _detalhes_database = {
 										["counter"] = 15,
 										["total"] = 741,
 										["c_max"] = 111,
-										["MISS"] = 2,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 2,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 111,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 2,
+										["MISS"] = 2,
 									}, -- [1]
 									[52374] = {
 										["c_amt"] = 0,
@@ -7329,15 +7338,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52374,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 									[52373] = {
 										["c_amt"] = 0,
@@ -7347,8 +7356,8 @@ _detalhes_database = {
 										["n_max"] = 157,
 										["targets"] = {
 											["Minkero"] = 575,
-											["Lasheodox"] = 154,
 											["Joeybonzo"] = 230,
+											["Lasheodox"] = 154,
 										},
 										["n_dmg"] = 959,
 										["n_min"] = 73,
@@ -7358,43 +7367,44 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52373,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 2,
 										["a_amt"] = 0,
 										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["DODGE"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 498,
+							["monster"] = true,
 							["friendlyfire"] = {
 								["Joeybonzo"] = {
+									["total"] = 361,
 									["spells"] = {
 										142, -- [1]
 										[52373] = 219,
 									},
-									["total"] = 361,
 								},
 								["Minkero"] = {
+									["total"] = 137,
 									["spells"] = {
 										64, -- [1]
 										[52373] = 73,
 									},
-									["total"] = 137,
 								},
 							},
-							["serial"] = "Creature-0-4412-609-152-28406-000019C5CF",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635294,
-							["damage_taken"] = 7764.006699,
+							["on_hold"] = false,
 							["start_time"] = 1662635251,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28406-000019C5CF",
+							["classe"] = "UNKNOW",
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -7407,20 +7417,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 3359.003056,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3359.003056,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635269,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 845.003056,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -7439,16 +7448,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 2,
@@ -7467,16 +7476,16 @@ _detalhes_database = {
 										["c_max"] = 505,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 482,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -7495,100 +7504,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
 										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 385,
-										["targets"] = {
-											["Death Knight Initiate"] = 385,
-										},
-										["n_dmg"] = 385,
-										["n_min"] = 385,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 385,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 83,
-										["targets"] = {
-											["Death Knight Initiate"] = 166,
-										},
-										["n_dmg"] = 166,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 166,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 175,
-										["targets"] = {
-											["Death Knight Initiate"] = 175,
-										},
-										["n_dmg"] = 175,
-										["n_min"] = 175,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 175,
-										["c_max"] = 0,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -7607,45 +7532,129 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 83,
+										["targets"] = {
+											["Death Knight Initiate"] = 166,
+										},
+										["n_dmg"] = 166,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 166,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 385,
+										["targets"] = {
+											["Death Knight Initiate"] = 385,
+										},
+										["n_dmg"] = 385,
+										["n_min"] = 385,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 385,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 175,
+										["targets"] = {
+											["Death Knight Initiate"] = 175,
+										},
+										["n_dmg"] = 175,
+										["n_min"] = 175,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 175,
+										["c_max"] = 0,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 3359.003056,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635261,
-							["damage_taken"] = 845.003056,
+							["on_hold"] = false,
 							["start_time"] = 1662635251,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 225,
 					["tipo"] = 3,
+					["combatId"] = 225,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.002694,
 							["total_without_pet"] = 118.002694,
 							["total"] = 118.002694,
@@ -7664,11 +7673,9 @@ _detalhes_database = {
 							["healing_taken"] = 118.002694,
 							["fight_component"] = true,
 							["end_time"] = 1662635269,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -7689,28 +7696,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 10,
 										["n_curado"] = 118,
 										["totaldenied"] = 0,
-										["n_amt"] = 10,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635261,
-							["start_time"] = 1662635251,
 							["totaldenied"] = 0.002694,
+							["start_time"] = 1662635251,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 225,
 					["tipo"] = 7,
+					["combatId"] = 225,
 					["_ActorTable"] = {
 						{
 							["received"] = 60.007169,
@@ -7727,7 +7737,6 @@ _detalhes_database = {
 							["total"] = 60.007169,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -7757,101 +7766,102 @@ _detalhes_database = {
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.007169,
 							["alternatepower"] = 0.007169,
 							["last_event"] = 1662635294,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.007169,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 225,
 					["tipo"] = 9,
+					["combatId"] = 225,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 1,
 										["id"] = 55095,
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 8,
 										["targets"] = {
 										},
-										["uptime"] = 8,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 61,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 18,
 										["targets"] = {
 										},
-										["uptime"] = 18,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53386,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 18,
 										["targets"] = {
 										},
-										["uptime"] = 18,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 18,
 										["targets"] = {
 										},
-										["uptime"] = 18,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 18,
@@ -7860,42 +7870,42 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 2,
+								[45477] = 2,
 								[47541] = 1,
 								[45462] = 1,
-								[45477] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635269,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Death Knight Initiate",
-							["flag_original"] = 68168,
+							["aID"] = "28406",
 							["spell_cast"] = {
 								[52374] = 1,
 								[52373] = 2,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28406-000019C5CF",
-							["aID"] = "28406",
+							["flag_original"] = 68168,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 225,
 					["tipo"] = 2,
+					["combatId"] = 225,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7906,12 +7916,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470566.015,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635251,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 246,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					5129.971435, -- [1]
@@ -7920,22 +7932,84 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 59.98969299999999,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
+				["totals_grupo"] = {
+					3359, -- [1]
+					118, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 60,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "07:07:49",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Death Knight Initiate",
+				["TotalElapsedCombatTime"] = 2470539.215,
+				["CombatEndedAt"] = 2470539.215,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 3359.003056,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Joeybonzo"] = 118.002694,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2470539.215,
+				["combat_id"] = 225,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+				},
+				["combat_counter"] = 246,
 				["player_last_events"] = {
 					["Joeybonzo"] = {
 						{
@@ -8017,81 +8091,18 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["data_fim"] = "07:07:49",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Death Knight Initiate",
-				["TotalElapsedCombatTime"] = 2470539.215,
-				["CombatEndedAt"] = 2470539.215,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "07:07:32",
-				["end_time"] = 2470539.215,
-				["combat_id"] = 225,
-				["tempo_start"] = 1662635251,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-				},
-				["totals_grupo"] = {
-					3359, -- [1]
-					118, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 60,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Joeybonzo"] = 118.002694,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 3359.003056,
-						}, -- [1]
-					},
-				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:07:32",
 				["start_time"] = 2470522.267,
 				["contra"] = "Death Knight Initiate",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [11]
 			{
 				{
-					["combatId"] = 224,
 					["tipo"] = 2,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -8104,20 +8115,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 3275.001615,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3275.001615,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635227,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 712.001615,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -8136,8 +8146,8 @@ _detalhes_database = {
 										["c_max"] = 540,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -8145,8 +8155,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -8165,16 +8175,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -8193,100 +8203,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[47632] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 321,
-										["targets"] = {
-											["Death Knight Initiate"] = 321,
-										},
-										["n_dmg"] = 321,
-										["n_min"] = 321,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 321,
-										["c_max"] = 0,
-										["id"] = 47632,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55078] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 84,
-										["targets"] = {
-											["Death Knight Initiate"] = 167,
-										},
-										["n_dmg"] = 167,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 167,
-										["c_max"] = 0,
-										["id"] = 55078,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 173,
-										["targets"] = {
-											["Death Knight Initiate"] = 330,
-										},
-										["n_dmg"] = 330,
-										["n_min"] = 157,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 330,
-										["c_max"] = 0,
-										["id"] = 45462,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 16,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -8305,34 +8231,118 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[55078] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Death Knight Initiate"] = 167,
+										},
+										["n_dmg"] = 167,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 167,
+										["c_max"] = 0,
+										["id"] = 55078,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[47632] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 321,
+										["targets"] = {
+											["Death Knight Initiate"] = 321,
+										},
+										["n_dmg"] = 321,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 321,
+										["c_max"] = 0,
+										["id"] = 47632,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[45462] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 173,
+										["targets"] = {
+											["Death Knight Initiate"] = 330,
+										},
+										["n_dmg"] = 330,
+										["n_min"] = 157,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 330,
+										["c_max"] = 0,
+										["id"] = 45462,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 3275.001615,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635220,
-							["damage_taken"] = 712.001615,
+							["on_hold"] = false,
 							["start_time"] = 1662635208,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006886,
-							["total"] = 712.006886,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 							},
@@ -8340,35 +8350,22 @@ _detalhes_database = {
 								["Joeybonzo"] = 639,
 								["Minkero"] = 73,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 712.006886,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635227,
+							["monster"] = true,
+							["total"] = 712.006886,
+							["damage_taken"] = 3275.006886,
 							["friendlyfire_total"] = 146,
-							["friendlyfire"] = {
-								["Minkero"] = {
-									["spells"] = {
-										[52373] = 73,
-									},
-									["total"] = 73,
-								},
-								["Joeybonzo"] = {
-									["spells"] = {
-										[52373] = 73,
-									},
-									["total"] = 73,
-								},
-							},
 							["nome"] = "Death Knight Initiate",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -8387,17 +8384,17 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 									[52373] = {
 										["c_amt"] = 0,
@@ -8417,15 +8414,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52373,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 									[52374] = {
 										["c_amt"] = 0,
@@ -8444,44 +8441,57 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52374,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+								["Minkero"] = {
+									["total"] = 73,
+									["spells"] = {
+										[52373] = 73,
+									},
+								},
+								["Joeybonzo"] = {
+									["total"] = 73,
+									["spells"] = {
+										[52373] = 73,
 									},
 								},
 							},
+							["dps_started"] = false,
 							["aID"] = "28406",
-							["serial"] = "Creature-0-4412-609-152-28406-000019C581",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635224,
-							["damage_taken"] = 3275.006886,
+							["on_hold"] = false,
 							["start_time"] = 1662635209,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28406-000019C581",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 224,
 					["tipo"] = 3,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.003799,
 							["total_without_pet"] = 114.003799,
 							["total"] = 114.003799,
@@ -8500,11 +8510,9 @@ _detalhes_database = {
 							["healing_taken"] = 114.003799,
 							["fight_component"] = true,
 							["end_time"] = 1662635227,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -8525,28 +8533,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 11,
 										["n_curado"] = 114,
 										["totaldenied"] = 0,
-										["n_amt"] = 11,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635220,
-							["start_time"] = 1662635208,
 							["totaldenied"] = 0.003799,
+							["start_time"] = 1662635208,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 224,
 					["tipo"] = 7,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 						{
 							["received"] = 60.003125,
@@ -8563,7 +8574,6 @@ _detalhes_database = {
 							["total"] = 60.003125,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -8593,90 +8603,91 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.003125,
 							["alternatepower"] = 0.003125,
 							["last_event"] = 1662635219,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.003125,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 224,
 					["tipo"] = 9,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 2,
 										["id"] = 55095,
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 13,
 										["appliedamt"] = 1,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 1,
 										["id"] = 55078,
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["uptime"] = 11,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 57,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 19,
 										["targets"] = {
 										},
-										["uptime"] = 19,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 19,
 										["targets"] = {
 										},
-										["uptime"] = 19,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 19,
 										["targets"] = {
 										},
-										["uptime"] = 19,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 24,
@@ -8685,42 +8696,42 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 2,
+								[47541] = 1,
 								[45477] = 2,
 								[45462] = 2,
-								[47541] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635227,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Death Knight Initiate",
-							["flag_original"] = 68168,
+							["aID"] = "28406",
 							["spell_cast"] = {
 								[52373] = 1,
 								[52374] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28406-000019C581",
-							["aID"] = "28406",
+							["flag_original"] = 68168,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 224,
 					["tipo"] = 2,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8731,12 +8742,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470521.789,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635208,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 245,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3986.997039, -- [1]
@@ -8745,26 +8758,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 60,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					3275, -- [1]
+					114, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 60,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = false,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:07:08",
 				["cleu_timeline"] = {
 				},
@@ -8775,41 +8808,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:06:49",
-				["end_time"] = 2470498.768,
-				["combat_id"] = 224,
-				["tempo_start"] = 1662635208,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-				},
-				["totals_grupo"] = {
-					3275, -- [1]
-					114, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 60,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 3275.001615,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -8819,25 +8827,29 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 3275.001615,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470498.768,
+				["combat_id"] = 224,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+				},
+				["combat_counter"] = 245,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:06:49",
 				["start_time"] = 2470480.005,
 				["contra"] = "Death Knight Initiate",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [12]
 			{
 				{
-					["combatId"] = 223,
 					["tipo"] = 2,
+					["combatId"] = 223,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -8851,20 +8863,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 2593.005583,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2593.005583,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635084,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 139.005583,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -8884,8 +8895,8 @@ _detalhes_database = {
 										["c_max"] = 543,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
@@ -8893,8 +8904,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -8913,16 +8924,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 216,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 216,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -8941,16 +8952,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[55078] = {
 										["c_amt"] = 0,
@@ -8969,16 +8980,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55078,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[45462] = {
 										["c_amt"] = 1,
@@ -8997,16 +9008,16 @@ _detalhes_database = {
 										["c_max"] = 324,
 										["id"] = 45462,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 324,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -9025,57 +9036,56 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2593.005583,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635208,
-							["damage_taken"] = 139.005583,
+							["on_hold"] = false,
 							["start_time"] = 1662635075,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.00452,
-							["total"] = 67.00452,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 							},
 							["targets"] = {
 								["Joeybonzo"] = 67,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 67.00452,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635084,
+							["monster"] = true,
+							["total"] = 67.00452,
+							["damage_taken"] = 2593.00452,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Scarlet Captain",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -9094,17 +9104,17 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									[52221] = {
 										["c_amt"] = 0,
@@ -9123,44 +9133,45 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52221,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28611",
-							["serial"] = "Creature-0-4412-609-152-28611-000019CC36",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635081,
-							["damage_taken"] = 2593.00452,
+							["on_hold"] = false,
 							["start_time"] = 1662635078,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28611-000019CC36",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 223,
 					["tipo"] = 3,
+					["combatId"] = 223,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.006385,
 							["total_without_pet"] = 91.006385,
 							["total"] = 91.006385,
@@ -9179,11 +9190,9 @@ _detalhes_database = {
 							["healing_taken"] = 91.006385,
 							["fight_component"] = true,
 							["end_time"] = 1662635084,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -9204,28 +9213,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 8,
 										["n_curado"] = 91,
 										["totaldenied"] = 0,
-										["n_amt"] = 8,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635082,
-							["start_time"] = 1662635075,
 							["totaldenied"] = 0.006385,
+							["start_time"] = 1662635075,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 223,
 					["tipo"] = 7,
+					["combatId"] = 223,
 					["_ActorTable"] = {
 						{
 							["received"] = 50.004251,
@@ -9242,7 +9254,6 @@ _detalhes_database = {
 							["total"] = 50.004251,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -9272,90 +9283,91 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.004251,
 							["alternatepower"] = 0.004251,
 							["last_event"] = 1662635208,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.004251,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 223,
 					["tipo"] = 9,
+					["combatId"] = 223,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 1,
 										["id"] = 55095,
+										["uptime"] = 8,
 										["targets"] = {
 										},
-										["uptime"] = 8,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 27,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 9,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 14,
@@ -9367,37 +9379,37 @@ _detalhes_database = {
 								[45462] = 1,
 								[45477] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635084,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Scarlet Captain",
-							["flag_original"] = 68168,
+							["aID"] = "28611",
 							["spell_cast"] = {
 								[52221] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28611-000019CC36",
-							["aID"] = "28611",
+							["flag_original"] = 68168,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 223,
 					["tipo"] = 2,
+					["combatId"] = 223,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9408,12 +9420,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470479.359,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635075,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 244,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					2659.969429999998, -- [1]
@@ -9422,22 +9436,85 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 49.99276499999999,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
+				["totals_grupo"] = {
+					2593, -- [1]
+					91, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 50,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "07:04:45",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scarlet Captain",
+				["TotalElapsedCombatTime"] = 2470355.524,
+				["CombatEndedAt"] = 2470355.524,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2593.005583,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Joeybonzo"] = 91.006385,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2470355.524,
+				["combat_id"] = 223,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Scarlet Captain"] = 1,
+				},
+				["combat_counter"] = 244,
 				["player_last_events"] = {
 					["Joeybonzo"] = {
 						{
@@ -9519,82 +9596,18 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "07:04:45",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Captain",
-				["TotalElapsedCombatTime"] = 2470355.524,
-				["CombatEndedAt"] = 2470355.524,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "07:04:36",
-				["end_time"] = 2470355.524,
-				["combat_id"] = 223,
-				["tempo_start"] = 1662635075,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scarlet Captain"] = 1,
-				},
-				["totals_grupo"] = {
-					2593, -- [1]
-					91, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 50,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Joeybonzo"] = 91.006385,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2593.005583,
-						}, -- [1]
-					},
-				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:04:36",
 				["start_time"] = 2470346.38,
 				["contra"] = "Scarlet Captain",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [13]
 			{
 				{
-					["combatId"] = 222,
 					["tipo"] = 2,
+					["combatId"] = 222,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -9606,20 +9619,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 1390.005034,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1390.005034,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635031,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 0.005034,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -9638,44 +9650,44 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
-									[55095] = {
+									[45477] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 77,
+										["n_max"] = 241,
 										["targets"] = {
-											["Citizen of Havenshire"] = 77,
+											["Citizen of Havenshire"] = 241,
 										},
-										["n_dmg"] = 77,
-										["n_min"] = 77,
+										["n_dmg"] = 241,
+										["n_min"] = 241,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 77,
+										["total"] = 241,
 										["c_max"] = 0,
-										["id"] = 55095,
+										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[47632] = {
 										["c_amt"] = 0,
@@ -9694,16 +9706,44 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 47632,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[55095] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 77,
+										["targets"] = {
+											["Citizen of Havenshire"] = 77,
+										},
+										["n_dmg"] = 77,
+										["n_min"] = 77,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 77,
+										["c_max"] = 0,
+										["id"] = 55095,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[45462] = {
 										["c_amt"] = 0,
@@ -9722,57 +9762,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45462,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45477] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 241,
-										["targets"] = {
-											["Citizen of Havenshire"] = 241,
-										},
-										["n_dmg"] = 241,
-										["n_min"] = 241,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 241,
-										["c_max"] = 0,
-										["id"] = 45477,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1390.005034,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635030,
-							["damage_taken"] = 0.005034,
+							["on_hold"] = false,
 							["start_time"] = 1662635024,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -9783,52 +9796,51 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["total"] = 0.00793,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00793,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
 							["end_time"] = 1662635031,
+							["fight_component"] = true,
+							["total"] = 0.00793,
+							["damage_taken"] = 2373.00793,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Citizen of Havenshire",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
 							["aID"] = "28577",
-							["serial"] = "Creature-0-4412-609-152-28577-000019CBDD",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["damage_taken"] = 2373.00793,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1662635031,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28577-000019CBDD",
+							["monster"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 222,
 					["tipo"] = 3,
+					["combatId"] = 222,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 0.007339,
 							["total_without_pet"] = 44.007339,
 							["total"] = 44.007339,
@@ -9847,11 +9859,9 @@ _detalhes_database = {
 							["healing_taken"] = 44.007339,
 							["fight_component"] = true,
 							["end_time"] = 1662635031,
-							["targets_overheal"] = {
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -9872,28 +9882,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 5,
 										["n_curado"] = 44,
 										["totaldenied"] = 0,
-										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635030,
-							["start_time"] = 1662635024,
 							["totaldenied"] = 0.007339,
+							["start_time"] = 1662635024,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 222,
 					["tipo"] = 7,
+					["combatId"] = 222,
 					["_ActorTable"] = {
 						{
 							["received"] = 40.004796,
@@ -9910,7 +9923,6 @@ _detalhes_database = {
 							["total"] = 40.004796,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45477] = {
 										["total"] = 20,
@@ -9931,90 +9943,91 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.004796,
 							["alternatepower"] = 0.004796,
 							["last_event"] = 1662635075,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.004796,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 222,
 					["tipo"] = 9,
+					["combatId"] = 222,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 3,
 										["targets"] = {
 										},
-										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 2,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 21,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 5,
@@ -10025,21 +10038,21 @@ _detalhes_database = {
 								[45477] = 1,
 								[45462] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635031,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 222,
 					["tipo"] = 2,
+					["combatId"] = 222,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10050,12 +10063,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470345.795,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635024,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 243,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					1389.992892, -- [1]
@@ -10064,26 +10079,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 40,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1390, -- [1]
+					44, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 40,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:03:52",
 				["cleu_timeline"] = {
 				},
@@ -10094,42 +10129,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:03:45",
-				["end_time"] = 2470302.507,
-				["combat_id"] = 222,
-				["tempo_start"] = 1662635024,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Citizen of Havenshire"] = 1,
-				},
-				["totals_grupo"] = {
-					1390, -- [1]
-					44, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 40,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 1390.005034,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -10139,25 +10148,30 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 1390.005034,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470302.507,
+				["combat_id"] = 222,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Citizen of Havenshire"] = 1,
+				},
+				["combat_counter"] = 243,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:03:45",
 				["start_time"] = 2470296.107,
 				["contra"] = "Citizen of Havenshire",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [14]
 			{
 				{
-					["combatId"] = 221,
 					["tipo"] = 2,
+					["combatId"] = 221,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -10170,20 +10184,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 4196.006679,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4196.006679,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662635023,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 1504.006679,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10202,16 +10215,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 1,
@@ -10230,72 +10243,16 @@ _detalhes_database = {
 										["c_max"] = 558,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 558,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[45462] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 399,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Citizen of Havenshire"] = 399,
+										["extra"] = {
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 399,
-										["c_max"] = 399,
-										["id"] = 45462,
-										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 399,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[55095] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78,
-										["targets"] = {
-											["Citizen of Havenshire"] = 620,
-										},
-										["n_dmg"] = 620,
-										["n_min"] = 77,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 620,
-										["c_max"] = 0,
-										["id"] = 55095,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									},
 									[45477] = {
 										["c_amt"] = 1,
@@ -10314,57 +10271,112 @@ _detalhes_database = {
 										["c_max"] = 467,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 467,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[45462] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 399,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Citizen of Havenshire"] = 399,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 399,
+										["c_max"] = 399,
+										["id"] = 45462,
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 399,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[55095] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 78,
+										["targets"] = {
+											["Citizen of Havenshire"] = 620,
+										},
+										["n_dmg"] = 620,
+										["n_min"] = 77,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 620,
+										["c_max"] = 0,
+										["id"] = 55095,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 4196.006679,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635022,
-							["damage_taken"] = 1504.006679,
+							["on_hold"] = false,
 							["start_time"] = 1662635007,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006825,
-							["total"] = 1504.006825,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 							},
 							["targets"] = {
 								["Joeybonzo"] = 1504,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1504.006825,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662635023,
+							["monster"] = true,
+							["total"] = 1504.006825,
+							["damage_taken"] = 4196.006825,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Citizen of Havenshire",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10381,20 +10393,20 @@ _detalhes_database = {
 										["counter"] = 12,
 										["total"] = 1504,
 										["c_max"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 									[52262] = {
 										["c_amt"] = 0,
@@ -10412,43 +10424,45 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 52262,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 2,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28576",
-							["serial"] = "Creature-0-4412-609-152-28576-000019CBC9",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635022,
-							["damage_taken"] = 4196.006825,
+							["on_hold"] = false,
 							["start_time"] = 1662635010,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28576-000019CBC9",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 221,
 					["tipo"] = 3,
+					["combatId"] = 221,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 39,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 39.006078,
 							["total_without_pet"] = 70.006078,
 							["total"] = 70.006078,
@@ -10467,12 +10481,9 @@ _detalhes_database = {
 							["healing_taken"] = 70.006078,
 							["fight_component"] = true,
 							["end_time"] = 1662635023,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 39,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -10494,28 +10505,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 10,
 										["n_curado"] = 70,
 										["totaldenied"] = 0,
-										["n_amt"] = 10,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662635022,
-							["start_time"] = 1662635007,
 							["totaldenied"] = 0.006078,
+							["start_time"] = 1662635007,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 221,
 					["tipo"] = 7,
+					["combatId"] = 221,
 					["_ActorTable"] = {
 						{
 							["received"] = 50.001959,
@@ -10532,7 +10546,6 @@ _detalhes_database = {
 							["total"] = 50.001959,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 20,
@@ -10562,26 +10575,26 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.001959,
 							["alternatepower"] = 0.001959,
 							["last_event"] = 1662635022,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.001959,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 221,
 					["tipo"] = 9,
+					["combatId"] = 221,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[11196] = {
 										["activedamt"] = -1,
@@ -10590,74 +10603,75 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1662635016,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 1,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 15,
 										["targets"] = {
 										},
-										["uptime"] = 15,
 										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 48,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["uptime"] = 16,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["uptime"] = 16,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["uptime"] = 16,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 16,
@@ -10669,37 +10683,37 @@ _detalhes_database = {
 								[45462] = 1,
 								[45477] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662635023,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Citizen of Havenshire",
-							["flag_original"] = 68168,
+							["aID"] = "28576",
 							["spell_cast"] = {
 								[52262] = 2,
 							},
-							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-4412-609-152-28576-000099CBA9",
-							["aID"] = "28576",
+							["flag_original"] = 68168,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 221,
 					["tipo"] = 2,
+					["combatId"] = 221,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10710,12 +10724,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470295.574,
-				["overall_added"] = true,
+				["tempo_start"] = 1662635007,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 242,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					5700, -- [1]
@@ -10724,26 +10740,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 50,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					4196, -- [1]
+					70, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 50,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:03:44",
 				["cleu_timeline"] = {
 				},
@@ -10754,42 +10790,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:03:28",
-				["end_time"] = 2470294.396,
-				["combat_id"] = 221,
-				["tempo_start"] = 1662635007,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Citizen of Havenshire"] = 3,
-				},
-				["totals_grupo"] = {
-					4196, -- [1]
-					70, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 50,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 4196.006679,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -10799,25 +10809,30 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 4196.006679,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470294.396,
+				["combat_id"] = 221,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Citizen of Havenshire"] = 3,
+				},
+				["combat_counter"] = 242,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:03:28",
 				["start_time"] = 2470278.313,
 				["contra"] = "Citizen of Havenshire",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [15]
 			{
 				{
-					["combatId"] = 220,
 					["tipo"] = 2,
+					["combatId"] = 220,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -10829,20 +10844,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 472.007893,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 472.007893,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662634997,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 0.007893,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[45477] = {
 										["c_amt"] = 0,
@@ -10861,16 +10875,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[45462] = {
 										["c_amt"] = 0,
@@ -10889,34 +10903,34 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45462,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 472.007893,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662634996,
-							["damage_taken"] = 0.007893,
+							["on_hold"] = false,
 							["start_time"] = 1662634993,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.003254,
-							["aID"] = "28577",
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 								["Stefknight"] = true,
@@ -10924,22 +10938,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Stefknight"] = 338,
 							},
-							["fight_component"] = true,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["end_time"] = 1662635007,
-							["classe"] = "UNKNOW",
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["aID"] = "28577",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 338.003254,
-							["monster"] = true,
 							["dps_started"] = false,
+							["fight_component"] = true,
+							["end_time"] = 1662635007,
+							["damage_taken"] = 1407.003254,
 							["total"] = 338.003254,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Citizen of Havenshire",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10958,65 +10972,64 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["friendlyfire"] = {
 							},
-							["serial"] = "Creature-0-4412-609-152-28577-000119CB75",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662635000,
-							["damage_taken"] = 1407.003254,
+							["on_hold"] = false,
 							["start_time"] = 1662634997,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28577-000119CB75",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 220,
 					["tipo"] = 3,
+					["combatId"] = 220,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorb"] = 0.007653,
 							["last_hps"] = 0,
-							["healing_from"] = {
+							["targets_overheal"] = {
+								["Joeybonzo"] = 15,
 							},
 							["targets"] = {
 							},
-							["targets_absorbs"] = {
-							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.007653,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 15,
+							["iniciar_hps"] = false,
+							["healing_from"] = {
 							},
 							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 15.007653,
 							["total_without_pet"] = 0.007653,
-							["iniciar_hps"] = false,
-							["healing_taken"] = 0.007653,
-							["end_time"] = 1662634997,
-							["total"] = 0.007653,
+							["totalover_without_pet"] = 0.007653,
+							["totaldenied"] = 0.007653,
 							["aID"] = "4385-0466FBC1",
+							["end_time"] = 1662634997,
+							["healing_taken"] = 0.007653,
 							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -11038,30 +11051,32 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 2,
 										["n_curado"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["start_time"] = 1662634993,
+							["total"] = 0.007653,
 							["heal_enemy"] = {
 							},
-							["serial"] = "Player-4385-0466FBC1",
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662634996,
 							["on_hold"] = false,
-							["totaldenied"] = 0.007653,
-							["delay"] = 0,
-							["tipo"] = 2,
+							["start_time"] = 1662634993,
+							["serial"] = "Player-4385-0466FBC1",
+							["targets_absorbs"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 220,
 					["tipo"] = 7,
+					["combatId"] = 220,
 					["_ActorTable"] = {
 						{
 							["received"] = 20.007102,
@@ -11077,7 +11092,6 @@ _detalhes_database = {
 							["total"] = 20.007102,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45462] = {
 										["total"] = 10,
@@ -11098,102 +11112,103 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.007102,
 							["alternatepower"] = 0.007102,
 							["last_event"] = 1662635007,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.007102,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 220,
 					["tipo"] = 9,
+					["combatId"] = 220,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 3,
 										["targets"] = {
 										},
-										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 12,
+							["pets"] = {
+							},
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 3,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Joeybonzo",
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45462] = 1,
 							},
-							["debuff_uptime_targets"] = {
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
 							},
-							["nome"] = "Joeybonzo",
 							["last_event"] = 1662634997,
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["buff_uptime"] = 12,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 220,
 					["tipo"] = 2,
+					["combatId"] = 220,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -11203,12 +11218,14 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Joeybonzo", -- [1]
 				},
-				["tempo_start"] = 1662634993,
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 241,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					809.995439, -- [1]
@@ -11217,21 +11234,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 20,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					472, -- [1]
@@ -11240,22 +11257,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 20,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:03:18",
 				["cleu_timeline"] = {
 				},
@@ -11266,11 +11284,28 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "07:03:14",
+				["end_time"] = 2470268.386,
+				["combat_id"] = 220,
+				["player_last_events"] = {
+				},
+				["tempo_start"] = 1662634993,
+				["spells_cast_timeline"] = {
+				},
+				["contra"] = "Citizen of Havenshire",
+				["combat_counter"] = 241,
+				["CombatSkillCache"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 472.007893,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -11280,37 +11315,18 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 472.007893,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2470268.386,
-				["combat_id"] = 220,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["overall_added"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "07:03:14",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Citizen of Havenshire"] = 2,
 				},
 				["start_time"] = 2470265.177,
 				["TimeData"] = {
 				},
-				["contra"] = "Citizen of Havenshire",
+				["frags"] = {
+					["Citizen of Havenshire"] = 2,
+				},
 			}, -- [16]
 			{
 				{
-					["combatId"] = 219,
 					["tipo"] = 2,
+					["combatId"] = 219,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -11323,20 +11339,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 1736.00142,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1736.00142,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662634969,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 352.00142,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -11355,16 +11370,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -11383,16 +11398,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -11411,16 +11426,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[55078] = {
 										["c_amt"] = 0,
@@ -11439,16 +11454,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55078,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[45462] = {
 										["c_amt"] = 0,
@@ -11467,16 +11482,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45462,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -11495,34 +11510,34 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1736.00142,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662634968,
-							["damage_taken"] = 352.00142,
+							["on_hold"] = false,
 							["start_time"] = 1662634964,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.003143,
-							["total"] = 352.003143,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 								["Stefknight"] = true,
@@ -11530,23 +11545,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Joeybonzo"] = 352,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 352.003143,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662634969,
+							["monster"] = true,
+							["total"] = 352.003143,
+							["damage_taken"] = 2189.003143,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Citizen of Havenshire",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -11563,48 +11577,50 @@ _detalhes_database = {
 										["counter"] = 4,
 										["total"] = 352,
 										["c_max"] = 0,
-										["DODGE"] = 1,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28576",
-							["serial"] = "Creature-0-4412-609-152-28576-000019CB66",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662634968,
-							["damage_taken"] = 2189.003143,
+							["on_hold"] = false,
 							["start_time"] = 1662634967,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28576-000019CB66",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 219,
 					["tipo"] = 3,
+					["combatId"] = 219,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 51,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 51.002593,
 							["total_without_pet"] = 9.002593,
 							["total"] = 9.002593,
@@ -11623,12 +11639,9 @@ _detalhes_database = {
 							["healing_taken"] = 9.002593,
 							["fight_component"] = true,
 							["end_time"] = 1662634969,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 51,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -11650,28 +11663,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 6,
 										["n_curado"] = 9,
 										["totaldenied"] = 0,
-										["n_amt"] = 6,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662634968,
-							["start_time"] = 1662634964,
 							["totaldenied"] = 0.002593,
+							["start_time"] = 1662634964,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 219,
 					["tipo"] = 7,
+					["combatId"] = 219,
 					["_ActorTable"] = {
 						{
 							["received"] = 40.00625,
@@ -11688,7 +11704,6 @@ _detalhes_database = {
 							["total"] = 40.00625,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45902] = {
 										["total"] = 10,
@@ -11718,48 +11733,48 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.00625,
 							["alternatepower"] = 0.00625,
 							["last_event"] = 1662634993,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.00625,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 219,
 					["tipo"] = 9,
+					["combatId"] = 219,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 3,
 										["targets"] = {
 										},
-										["uptime"] = 3,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 4,
 										["targets"] = {
 										},
-										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[49560] = {
 										["activedamt"] = -1,
@@ -11768,63 +11783,64 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1662634966,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 20,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 5,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53386,
+										["uptime"] = 5,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 5,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 5,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 7,
@@ -11833,25 +11849,25 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[45902] = 1,
+								[45477] = 1,
 								[47541] = 1,
 								[45462] = 1,
-								[45477] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662634969,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 219,
 					["tipo"] = 2,
+					["combatId"] = 219,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -11862,12 +11878,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470265.177,
-				["overall_added"] = true,
+				["tempo_start"] = 1662634964,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 240,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					2087.993365, -- [1]
@@ -11876,26 +11894,46 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 40,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1736, -- [1]
+					9, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 40,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "07:02:50",
 				["cleu_timeline"] = {
 				},
@@ -11906,42 +11944,16 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "07:02:44",
-				["end_time"] = 2470240.466,
-				["combat_id"] = 219,
-				["tempo_start"] = 1662634964,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Citizen of Havenshire"] = 1,
-				},
-				["totals_grupo"] = {
-					1736, -- [1]
-					9, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 40,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 1736.00142,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -11951,25 +11963,30 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 1736.00142,
-						}, -- [1]
-					},
+				},
+				["end_time"] = 2470240.466,
+				["combat_id"] = 219,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Citizen of Havenshire"] = 1,
+				},
+				["combat_counter"] = 240,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:02:44",
 				["start_time"] = 2470235.008,
 				["contra"] = "Citizen of Havenshire",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [17]
 			{
 				{
-					["combatId"] = 218,
 					["tipo"] = 2,
+					["combatId"] = 218,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -11982,20 +11999,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 2585.00347,
 							["classe"] = "DEATHKNIGHT",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2585.00347,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1662634950,
-							["friendlyfire_total"] = 0,
 							["aID"] = "4385-0466FBC1",
+							["damage_taken"] = 825.00347,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -12014,16 +12030,16 @@ _detalhes_database = {
 										["c_max"] = 509,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 483,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[45902] = {
 										["c_amt"] = 0,
@@ -12042,16 +12058,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45902,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[45477] = {
 										["c_amt"] = 0,
@@ -12070,16 +12086,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 45477,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 									[55078] = {
 										["c_amt"] = 0,
@@ -12098,16 +12114,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55078,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[45462] = {
 										["c_amt"] = 1,
@@ -12126,16 +12142,16 @@ _detalhes_database = {
 										["c_max"] = 358,
 										["id"] = 45462,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 358,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[55095] = {
 										["c_amt"] = 0,
@@ -12154,57 +12170,56 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 55095,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 2585.00347,
-							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662634950,
-							["damage_taken"] = 825.00347,
+							["on_hold"] = false,
 							["start_time"] = 1662634943,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4385-0466FBC1",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.005582,
-							["total"] = 825.005582,
 							["damage_from"] = {
 								["Joeybonzo"] = true,
 							},
 							["targets"] = {
 								["Joeybonzo"] = 825,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["monster"] = true,
-							["fight_component"] = true,
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 825.005582,
-							["on_hold"] = false,
-							["dps_started"] = false,
 							["end_time"] = 1662634950,
+							["monster"] = true,
+							["total"] = 825.005582,
+							["damage_taken"] = 2585.005582,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Citizen of Havenshire",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -12221,48 +12236,50 @@ _detalhes_database = {
 										["counter"] = 5,
 										["total"] = 825,
 										["c_max"] = 412,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["PARRY"] = 1,
 										["c_min"] = 412,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 1,
+										["a_dmg"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
 							["aID"] = "28576",
-							["serial"] = "Creature-0-4412-609-152-28576-000019CB60",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1662634950,
-							["damage_taken"] = 2585.005582,
+							["on_hold"] = false,
 							["start_time"] = 1662634945,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4412-609-152-28576-000019CB60",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 218,
 					["tipo"] = 3,
+					["combatId"] = 218,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Joeybonzo"] = true,
+							["targets_overheal"] = {
+								["Joeybonzo"] = 659,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "4385-0466FBC1",
+							["classe"] = "DEATHKNIGHT",
 							["totalover"] = 659.005666,
 							["total_without_pet"] = 1416.005666,
 							["total"] = 1416.005666,
@@ -12281,12 +12298,9 @@ _detalhes_database = {
 							["healing_taken"] = 1416.005666,
 							["fight_component"] = true,
 							["end_time"] = 1662634964,
-							["targets_overheal"] = {
-								["Joeybonzo"] = 659,
-							},
+							["heal_enemy_amt"] = 0,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[50475] = {
 										["c_amt"] = 0,
@@ -12307,9 +12321,9 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 7,
 										["n_curado"] = 75,
 										["totaldenied"] = 0,
-										["n_amt"] = 7,
 										["absorbed"] = 0,
 									},
 									[18610] = {
@@ -12332,28 +12346,31 @@ _detalhes_database = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
+										["n_amt"] = 8,
 										["n_curado"] = 1341,
 										["totaldenied"] = 0,
-										["n_amt"] = 8,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["classe"] = "DEATHKNIGHT",
+							["healing_from"] = {
+								["Joeybonzo"] = true,
+							},
+							["tipo"] = 2,
 							["custom"] = 0,
 							["last_event"] = 1662634964,
-							["start_time"] = 1662634943,
 							["totaldenied"] = 0.005666,
+							["start_time"] = 1662634943,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "4385-0466FBC1",
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 218,
 					["tipo"] = 7,
+					["combatId"] = 218,
 					["_ActorTable"] = {
 						{
 							["received"] = 30.006348,
@@ -12370,7 +12387,6 @@ _detalhes_database = {
 							["total"] = 30.006348,
 							["nome"] = "Joeybonzo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[45462] = {
 										["total"] = 10,
@@ -12391,101 +12407,102 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.006348,
 							["alternatepower"] = 0.006348,
 							["last_event"] = 1662634949,
-							["aID"] = "4385-0466FBC1",
 							["tipo"] = 3,
+							["aID"] = "4385-0466FBC1",
 							["serial"] = "Player-4385-0466FBC1",
-							["totalover"] = 0.006348,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 218,
 					["tipo"] = 9,
+					["combatId"] = 218,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[55095] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55095,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[55078] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 55078,
+										["uptime"] = 5,
 										["targets"] = {
 										},
-										["uptime"] = 5,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 27,
 							["aID"] = "4385-0466FBC1",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[377749] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 377749,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[53386] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 53386,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[51915] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 51915,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[48266] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 48266,
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 7,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 12,
@@ -12496,21 +12513,21 @@ _detalhes_database = {
 								[45462] = 1,
 								[45902] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["nome"] = "Joeybonzo",
 							["last_event"] = 1662634950,
+							["classe"] = "DEATHKNIGHT",
 							["pets"] = {
 							},
-							["classe"] = "DEATHKNIGHT",
 							["serial"] = "Player-4385-0466FBC1",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 218,
 					["tipo"] = 2,
+					["combatId"] = 218,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -12521,12 +12538,14 @@ _detalhes_database = {
 					"Joeybonzo", -- [1]
 				},
 				["CombatStartedAt"] = 2470234.359,
-				["overall_added"] = true,
+				["tempo_start"] = 1662634943,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 239,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					3410, -- [1]
@@ -12535,22 +12554,85 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 30,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
+				["totals_grupo"] = {
+					2585, -- [1]
+					1416, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 30,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "07:02:31",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Citizen of Havenshire",
+				["TotalElapsedCombatTime"] = 6.762000000104308,
+				["CombatEndedAt"] = 2470221.452,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Joeybonzo"] = 2585.00347,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Joeybonzo"] = 75.00566599999999,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 2470221.452,
+				["combat_id"] = 218,
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Citizen of Havenshire"] = 1,
+				},
+				["combat_counter"] = 239,
 				["player_last_events"] = {
 					["Joeybonzo"] = {
 						{
@@ -12684,76 +12766,12 @@ _detalhes_database = {
 						["n"] = 9,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "07:02:31",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Citizen of Havenshire",
-				["TotalElapsedCombatTime"] = 6.762000000104308,
-				["CombatEndedAt"] = 2470221.452,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "07:02:24",
-				["end_time"] = 2470221.452,
-				["combat_id"] = 218,
-				["tempo_start"] = 1662634943,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Citizen of Havenshire"] = 1,
-				},
-				["totals_grupo"] = {
-					2585, -- [1]
-					1416, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 30,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Joeybonzo"] = 75.00566599999999,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Joeybonzo"] = 2585.00347,
-						}, -- [1]
-					},
-				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
+				["data_inicio"] = "07:02:24",
 				["start_time"] = 2470214.69,
 				["contra"] = "Citizen of Havenshire",
-				["TimeData"] = {
+				["spells_cast_timeline"] = {
 				},
 			}, -- [18]
 		},
@@ -12773,17 +12791,17 @@ _detalhes_database = {
 		},
 		["width"] = 120,
 		["height"] = 18,
-		["cooldowns"] = {
-		},
+		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
 		},
-		["framme_locked"] = false,
+		["cooldowns"] = {
+		},
 		["pos"] = {
 		},
 	},
-	["last_version"] = "3.4.09825",
+	["last_version"] = "3.4.0 10033",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -12795,10 +12813,10 @@ _detalhes_database = {
 		},
 		["last_coach_name"] = false,
 	},
-	["on_death_menu"] = true,
+	["on_death_menu"] = false,
 	["nick_tag_cache"] = {
-		["nextreset"] = 1663206240,
-		["last_version"] = 14,
+		["nextreset"] = 1666525486,
+		["last_version"] = 15,
 	},
 	["last_instance_id"] = 0,
 	["announce_interrupts"] = {
@@ -12846,6 +12864,44 @@ _detalhes_database = {
 			["useplayercolor"] = true,
 			["playSound"] = false,
 		},
+		["DETAILS_PLUGIN_VANGUARD"] = {
+			["tank_block_size_height"] = 50,
+			["show_power_bar"] = false,
+			["first_run"] = false,
+			["aura_timer_text_size"] = 14,
+			["tank_block_castbar_size_height"] = 16,
+			["show_health_bar"] = true,
+			["aura_offset_y"] = 0,
+			["enabled"] = true,
+			["show_cast_bar"] = false,
+			["author"] = "Terciob",
+			["tank_block_size"] = 150,
+			["bar_height"] = 24,
+			["tank_block_texture"] = "Details Serenity",
+			["tank_block_color"] = {
+				0.074509, -- [1]
+				0.035294, -- [2]
+				0.035294, -- [3]
+				0.832845, -- [4]
+			},
+			["tank_block_height"] = 40,
+			["tank_block_powerbar_size_height"] = 10,
+			["show_inc_bars"] = true,
+		},
+		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+			["enabled"] = true,
+			["encounter_timers_bw"] = {
+			},
+			["max_emote_segments"] = 3,
+			["last_section_selected"] = "main",
+			["author"] = "Terciob",
+			["window_scale"] = 1,
+			["hide_on_combat"] = false,
+			["show_icon"] = 5,
+			["opened"] = 0,
+			["encounter_timers_dbm"] = {
+			},
+		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
 				1, -- [1]
@@ -12870,32 +12926,17 @@ _detalhes_database = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["arrow_anchor_y"] = 0,
+			["use_square_mode"] = false,
 			["arrow_anchor_x"] = 0,
-			["main_frame_locked"] = false,
+			["row_height"] = 20,
 			["row_texture"] = "Details Serenity",
-			["author"] = "Details! Team",
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = 1.52587890625e-05,
-				["x"] = 9.1552734375e-05,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["scale"] = 1,
+			["point"] = "CENTER",
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -4.57763671875e-05,
+			["use_spark"] = true,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -12903,113 +12944,852 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["use_spark"] = true,
 			["font_size"] = 10,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = 1.52587890625e-05,
+				["x"] = 9.1552734375e-05,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
 			["x"] = 0.000152587890625,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["point"] = "CENTER",
-			["scale"] = 1,
-			["row_height"] = 20,
-			["use_square_mode"] = false,
-		},
-		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-			["enabled"] = true,
-			["encounter_timers_bw"] = {
+			["y"] = -4.57763671875e-05,
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
 			},
-			["max_emote_segments"] = 3,
-			["last_section_selected"] = "main",
-			["author"] = "Terciob",
-			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
-			["show_icon"] = 5,
-			["opened"] = 0,
-			["hide_on_combat"] = false,
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
-		["DETAILS_PLUGIN_VANGUARD"] = {
-			["tank_block_size_height"] = 50,
-			["show_power_bar"] = false,
-			["first_run"] = false,
-			["aura_timer_text_size"] = 14,
-			["tank_block_castbar_size_height"] = 16,
-			["show_health_bar"] = true,
-			["aura_offset_y"] = 0,
-			["enabled"] = true,
-			["show_cast_bar"] = false,
-			["author"] = "Terciob",
-			["tank_block_size"] = 150,
-			["bar_height"] = 24,
-			["tank_block_texture"] = "Details Serenity",
-			["show_inc_bars"] = true,
-			["tank_block_powerbar_size_height"] = 10,
-			["tank_block_height"] = 40,
-			["tank_block_color"] = {
-				0.074509, -- [1]
-				0.035294, -- [2]
-				0.035294, -- [3]
-				0.832845, -- [4]
-			},
-		},
-	},
-	["last_day"] = "08",
-	["cached_talents"] = {
-	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["character_data"] = {
-		["logons"] = 14,
+	["last_day"] = "08",
+	["cached_roles"] = {
+		["Player-4385-0466FBC1"] = "DAMAGER",
 	},
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = false,
-			["verticalSnap"] = false,
-			["isLocked"] = false,
-			["is_open"] = false,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
+	["cached_talents"] = {
+		["Player-4385-0466FBC1"] = {
+			{
+				135770, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				2, -- [7]
+			}, -- [1]
+			{
+				135067, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				250, -- [6]
+				5, -- [7]
+			}, -- [2]
+			{
+				132455, -- [1]
+				0, -- [2]
 				1, -- [3]
 				1, -- [4]
 				1, -- [5]
-			},
-			["snap"] = {
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 0,
-					["x"] = 0.00018310546875,
-					["w"] = 310,
-					["h"] = 158,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
+				250, -- [6]
+				2, -- [7]
+			}, -- [3]
+			{
+				237529, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				250, -- [6]
+				1, -- [7]
+			}, -- [4]
+			{
+				237529, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [5]
+			{
+				237518, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				5, -- [7]
+			}, -- [6]
+			{
+				132090, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [7]
+			{
+				237533, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [8]
+			{
+				132284, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [9]
+			{
+				132205, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				1, -- [5]
+				250, -- [6]
+				1, -- [7]
+			}, -- [10]
+			{
+				136005, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [11]
+			{
+				237536, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [12]
+			{
+				237512, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				1, -- [7]
+			}, -- [13]
+			{
+				136181, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [14]
+			{
+				135675, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				1, -- [7]
+			}, -- [15]
+			{
+				135771, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [16]
+			{
+				132094, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [17]
+			{
+				136211, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [18]
+			{
+				135277, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				1, -- [7]
+			}, -- [19]
+			{
+				135772, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [20]
+			{
+				132330, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				5, -- [7]
+			}, -- [21]
+			{
+				237531, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [22]
+			{
+				136168, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				1, -- [7]
+			}, -- [23]
+			{
+				136080, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				1, -- [5]
+				250, -- [6]
+				5, -- [7]
+			}, -- [24]
+			{
+				135372, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				3, -- [7]
+			}, -- [25]
+			{
+				236310, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				2, -- [7]
+			}, -- [26]
+			{
+				135378, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				1, -- [5]
+				250, -- [6]
+				2, -- [7]
+			}, -- [27]
+			{
+				237517, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				1, -- [5]
+				250, -- [6]
+				2, -- [7]
+			}, -- [28]
+			{
+				135892, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				5, -- [7]
+			}, -- [29]
+			{
+				136223, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
+				2, -- [5]
+				251, -- [6]
+				2, -- [7]
+			}, -- [30]
+			{
+				136141, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				5, -- [7]
+			}, -- [31]
+			{
+				237520, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				1, -- [7]
+			}, -- [32]
+			{
+				132388, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				1, -- [7]
+			}, -- [33]
+			{
+				136213, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				2, -- [5]
+				251, -- [6]
+				1, -- [7]
+			}, -- [34]
+			{
+				135849, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				2, -- [7]
+			}, -- [35]
+			{
+				135833, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				1, -- [7]
+			}, -- [36]
+			{
+				132734, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [37]
+			{
+				135840, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [38]
+			{
+				135294, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				2, -- [7]
+			}, -- [39]
+			{
+				135791, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [40]
+			{
+				136107, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				5, -- [7]
+			}, -- [41]
+			{
+				135152, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				1, -- [7]
+			}, -- [42]
+			{
+				135728, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				2, -- [7]
+			}, -- [43]
+			{
+				132147, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [44]
+			{
+				135773, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				2, -- [7]
+			}, -- [45]
+			{
+				136083, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [46]
+			{
+				237526, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [47]
+			{
+				135859, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				2, -- [7]
+			}, -- [48]
+			{
+				132373, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [49]
+			{
+				252994, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				251, -- [6]
+				5, -- [7]
+			}, -- [50]
+			{
+				135305, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				5, -- [7]
+			}, -- [51]
+			{
+				135609, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [52]
+			{
+				135714, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [53]
+			{
+				136187, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				2, -- [5]
+				251, -- [6]
+				1, -- [7]
+			}, -- [54]
+			{
+				252994, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				2, -- [5]
+				251, -- [6]
+				1, -- [7]
+			}, -- [55]
+			{
+				135864, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [56]
+			{
+				132148, -- [1]
+				0, -- [2]
+				8, -- [3]
+				1, -- [4]
+				2, -- [5]
+				251, -- [6]
+				3, -- [7]
+			}, -- [57]
+			{
+				136126, -- [1]
+				3, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [58]
+			{
+				136144, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [59]
+			{
+				237524, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [60]
+			{
+				136066, -- [1]
+				0, -- [2]
+				8, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [61]
+			{
+				136207, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [62]
+			{
+				136119, -- [1]
+				0, -- [2]
+				6, -- [3]
+				4, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [63]
+			{
+				132099, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [64]
+			{
+				136132, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [65]
+			{
+				132182, -- [1]
+				0, -- [2]
+				11, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [66]
+			{
+				136195, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [67]
+			{
+				136127, -- [1]
+				0, -- [2]
+				9, -- [3]
+				1, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [68]
+			{
+				132109, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [69]
+			{
+				136196, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				5, -- [7]
+			}, -- [70]
+			{
+				132728, -- [1]
+				0, -- [2]
+				8, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [71]
+			{
+				136182, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [72]
+			{
+				136120, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [73]
+			{
+				136194, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [74]
+			{
+				135775, -- [1]
+				0, -- [2]
+				7, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [75]
+			{
+				237532, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [76]
+			{
+				135564, -- [1]
+				0, -- [2]
+				10, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				5, -- [7]
+			}, -- [77]
+			{
+				237534, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [78]
+			{
+				132095, -- [1]
+				0, -- [2]
+				9, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				3, -- [7]
+			}, -- [79]
+			{
+				135695, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				5, -- [7]
+			}, -- [80]
+			{
+				135774, -- [1]
+				2, -- [2]
+				1, -- [3]
+				1, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [81]
+			{
+				132152, -- [1]
+				0, -- [2]
+				7, -- [3]
+				4, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [82]
+			{
+				237530, -- [1]
+				0, -- [2]
+				9, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [83]
+			{
+				136056, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				252, -- [6]
+				5, -- [7]
+			}, -- [84]
+			{
+				237510, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				252, -- [6]
+				1, -- [7]
+			}, -- [85]
+			{
+				237511, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [86]
+			{
+				136199, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				3, -- [5]
+				252, -- [6]
+				2, -- [7]
+			}, -- [87]
+			{
+				136224, -- [1]
+				0, -- [2]
+				7, -- [3]
+				1, -- [4]
+				3, -- [5]
+				252, -- [6]
+				5, -- [7]
+			}, -- [88]
+		},
 	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_realversion"] = 146,
 	["combat_id"] = 235,
 	["savedStyles"] = {
 	},
-	["force_font_outline"] = "",
-	["combat_counter"] = 256,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["combat_counter"] = 257,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -13023,7 +13803,6 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1297,
 					["totalabsorbed"] = 0.6040240000000001,
-					["total"] = 3132859.604024,
 					["damage_from"] = {
 						["Scarlet Captain"] = true,
 						["Grik'nir the Cold"] = true,
@@ -13039,14 +13818,14 @@ _detalhes_database = {
 						["Ragged Timber Wolf"] = true,
 						["Small Crag Boar"] = true,
 						["Crag Boar"] = true,
-						["Scarlet Ghost"] = true,
+						["Death Knight Initiate"] = true,
 						["Citizen of Havenshire"] = true,
 						["Scarlet Farm Hound"] = true,
-						["Dark Rider of Acherus"] = true,
 						["Ragged Young Wolf"] = true,
+						["Dark Rider of Acherus"] = true,
 						["Acherus Deathcharger"] = true,
 						["Frostmane Novice"] = true,
-						["Death Knight Initiate"] = true,
+						["Scarlet Ghost"] = true,
 					},
 					["targets"] = {
 						["Scarlet Captain"] = 10532,
@@ -13064,32 +13843,32 @@ _detalhes_database = {
 						["Ragged Timber Wolf"] = 58,
 						["Small Crag Boar"] = 896,
 						["Crag Boar"] = 681,
-						["Scarlet Farm Hound"] = 6568,
+						["Death Knight Initiate"] = 16641,
 						["Scarlet Ghost"] = 20060,
 						["Rabbit"] = 10,
-						["Citizen of Havenshire"] = 16514,
+						["Ragged Young Wolf"] = 362,
 						["Scarlet Land Cannon"] = 239354,
 						["Dark Rider of Acherus"] = 4118,
-						["Ragged Young Wolf"] = 362,
+						["Citizen of Havenshire"] = 16514,
 						["Frostmane Novice"] = 84,
-						["Death Knight Initiate"] = 16641,
+						["Scarlet Farm Hound"] = 6568,
 					},
 					["pets"] = {
 						"Eye of Acherus <Joeybonzo>", -- [1]
 						"Scarlet Ghoul <Joeybonzo>", -- [2]
 						"Scarlet Cannon <Joeybonzo>", -- [3]
 					},
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 23791.604024,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 109508.604024,
-					["last_event"] = 0,
+					["delay"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1658833441,
-					["classe"] = "PALADIN",
+					["total"] = 3132859.604024,
 					["aID"] = "4385-03E1C683",
+					["on_hold"] = false,
 					["nome"] = "Joeybonzo",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13114,36 +13893,36 @@ _detalhes_database = {
 									["Ragged Timber Wolf"] = 38,
 									["Small Crag Boar"] = 637,
 									["Crag Boar"] = 400,
-									["Scarlet Ghost"] = 6361,
+									["Death Knight Initiate"] = 6139,
 									["Rabbit"] = 10,
 									["Citizen of Havenshire"] = 6013,
-									["Scarlet Farm Hound"] = 2374,
-									["Dark Rider of Acherus"] = 1207,
 									["Ragged Young Wolf"] = 282,
+									["Dark Rider of Acherus"] = 1207,
+									["Scarlet Farm Hound"] = 2374,
 									["Frostmane Novice"] = 70,
-									["Death Knight Initiate"] = 6139,
+									["Scarlet Ghost"] = 6361,
 								},
 								["n_dmg"] = 26714,
 								["n_min"] = 0,
 								["g_dmg"] = 2736,
 								["counter"] = 480,
-								["EVADE"] = 1,
+								["MISS"] = 4,
 								["total"] = 40398,
 								["c_max"] = 543,
-								["extra"] = {
-								},
-								["id"] = 1,
+								["DODGE"] = 5,
+								["EVADE"] = 1,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
-								["b_dmg"] = 1516,
+								["r_amt"] = 0,
 								["a_amt"] = 0,
 								["PARRY"] = 7,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["r_amt"] = 0,
+								["b_dmg"] = 1516,
 								["n_amt"] = 405,
-								["DODGE"] = 5,
-								["MISS"] = 4,
+								["id"] = 1,
+								["extra"] = {
+								},
 							}, -- [1]
 							[47632] = {
 								["c_amt"] = 1,
@@ -13157,9 +13936,9 @@ _detalhes_database = {
 									["Scarlet Ghost"] = 1735,
 									["Dark Rider of Acherus"] = 318,
 									["Shadowy Tormentor"] = 636,
-									["Citizen of Havenshire"] = 703,
-									["Scarlet Medic"] = 383,
 									["Death Knight Initiate"] = 1345,
+									["Scarlet Medic"] = 383,
+									["Citizen of Havenshire"] = 703,
 									["Scarlet Farm Hound"] = 703,
 								},
 								["n_dmg"] = 7486,
@@ -13170,15 +13949,15 @@ _detalhes_database = {
 								["c_max"] = 642,
 								["id"] = 47632,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 22,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[55095] = {
 								["c_amt"] = 0,
@@ -13191,13 +13970,13 @@ _detalhes_database = {
 									["Scarlet Infantryman"] = 1240,
 									["Scarlet Ghost"] = 1595,
 									["Stable Master Kitrik"] = 306,
+									["Unworthy Initiate"] = 379,
+									["Death Knight Initiate"] = 856,
+									["Dark Rider of Acherus"] = 306,
+									["Scarlet Medic"] = 465,
+									["Shadowy Tormentor"] = 182,
 									["Citizen of Havenshire"] = 1335,
 									["Scarlet Farm Hound"] = 481,
-									["Shadowy Tormentor"] = 182,
-									["Scarlet Medic"] = 465,
-									["Dark Rider of Acherus"] = 306,
-									["Death Knight Initiate"] = 856,
-									["Unworthy Initiate"] = 379,
 								},
 								["n_dmg"] = 8045,
 								["n_min"] = 0,
@@ -13207,15 +13986,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 55095,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 102,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[20187] = {
 								["c_amt"] = 0,
@@ -13234,15 +14013,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 20187,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[25741] = {
 								["c_amt"] = 0,
@@ -13251,8 +14030,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 7,
 								["targets"] = {
-									["Crag Boar"] = 126,
 									["Rockjaw Raider"] = 94,
+									["Crag Boar"] = 126,
 								},
 								["n_dmg"] = 220,
 								["n_min"] = 0,
@@ -13262,15 +14041,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 25741,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 40,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[45902] = {
 								["c_amt"] = 12,
@@ -13283,12 +14062,12 @@ _detalhes_database = {
 									["Scarlet Infantryman"] = 3141,
 									["Scarlet Ghost"] = 4095,
 									["Dark Rider of Acherus"] = 625,
-									["Citizen of Havenshire"] = 2908,
-									["Shadowy Tormentor"] = 587,
-									["Scarlet Farm Hound"] = 1184,
-									["Scarlet Medic"] = 1270,
-									["Death Knight Initiate"] = 2784,
 									["Unworthy Initiate"] = 633,
+									["Death Knight Initiate"] = 2784,
+									["Scarlet Medic"] = 1270,
+									["Shadowy Tormentor"] = 587,
+									["Citizen of Havenshire"] = 2908,
+									["Scarlet Farm Hound"] = 1184,
 								},
 								["n_dmg"] = 13207,
 								["n_min"] = 0,
@@ -13296,20 +14075,20 @@ _detalhes_database = {
 								["counter"] = 77,
 								["total"] = 19103,
 								["c_max"] = 558,
-								["DODGE"] = 5,
+								["extra"] = {
+								},
 								["id"] = 45902,
 								["r_dmg"] = 0,
-								["b_dmg"] = 1238,
+								["a_dmg"] = 0,
 								["MISS"] = 2,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["n_amt"] = 56,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 1238,
+								["DODGE"] = 5,
 							},
 							[25742] = {
 								["c_amt"] = 0,
@@ -13318,14 +14097,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 9,
 								["targets"] = {
-									["Small Crag Boar"] = 259,
+									["Ragged Timber Wolf"] = 20,
 									["Grik'nir the Cold"] = 27,
 									["Ragged Young Wolf"] = 80,
+									["Frostmane Novice"] = 14,
+									["Small Crag Boar"] = 259,
+									["Frostmane Troll Whelp"] = 591,
 									["Burly Rockjaw Trogg"] = 91,
 									["Rockjaw Trogg"] = 77,
-									["Frostmane Troll Whelp"] = 591,
-									["Frostmane Novice"] = 14,
-									["Ragged Timber Wolf"] = 20,
 								},
 								["n_dmg"] = 1159,
 								["n_min"] = 0,
@@ -13335,15 +14114,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 25742,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 186,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[45462] = {
 								["c_amt"] = 10,
@@ -13356,12 +14135,12 @@ _detalhes_database = {
 									["Scarlet Infantryman"] = 1150,
 									["Scarlet Ghost"] = 1675,
 									["Dark Rider of Acherus"] = 463,
-									["Citizen of Havenshire"] = 2121,
-									["Shadowy Tormentor"] = 175,
-									["Scarlet Farm Hound"] = 496,
-									["Scarlet Medic"] = 706,
-									["Death Knight Initiate"] = 1867,
 									["Unworthy Initiate"] = 493,
+									["Death Knight Initiate"] = 1867,
+									["Scarlet Medic"] = 706,
+									["Shadowy Tormentor"] = 175,
+									["Citizen of Havenshire"] = 2121,
+									["Scarlet Farm Hound"] = 496,
 								},
 								["n_dmg"] = 6808,
 								["n_min"] = 0,
@@ -13369,20 +14148,20 @@ _detalhes_database = {
 								["counter"] = 54,
 								["total"] = 10298,
 								["c_max"] = 399,
+								["a_dmg"] = 0,
 								["EVADE"] = 1,
-								["id"] = 45462,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
+								["extra"] = {
+								},
 								["r_amt"] = 0,
-								["b_dmg"] = 384,
+								["a_amt"] = 0,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["b_dmg"] = 384,
 								["n_amt"] = 40,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["DODGE"] = 1,
+								["id"] = 45462,
 							},
 							[55078] = {
 								["c_amt"] = 0,
@@ -13395,12 +14174,12 @@ _detalhes_database = {
 									["Scarlet Infantryman"] = 1078,
 									["Scarlet Ghost"] = 1288,
 									["Dark Rider of Acherus"] = 246,
-									["Citizen of Havenshire"] = 531,
-									["Shadowy Tormentor"] = 82,
-									["Scarlet Farm Hound"] = 581,
-									["Scarlet Medic"] = 249,
-									["Death Knight Initiate"] = 992,
 									["Unworthy Initiate"] = 324,
+									["Death Knight Initiate"] = 992,
+									["Scarlet Medic"] = 249,
+									["Shadowy Tormentor"] = 82,
+									["Citizen of Havenshire"] = 531,
+									["Scarlet Farm Hound"] = 581,
 								},
 								["n_dmg"] = 5952,
 								["n_min"] = 0,
@@ -13410,15 +14189,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 55078,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 71,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[45477] = {
 								["c_amt"] = 2,
@@ -13431,13 +14210,13 @@ _detalhes_database = {
 									["Scarlet Infantryman"] = 2144,
 									["Scarlet Ghost"] = 2725,
 									["Stable Master Kitrik"] = 235,
+									["Unworthy Initiate"] = 711,
+									["Death Knight Initiate"] = 2658,
+									["Dark Rider of Acherus"] = 953,
+									["Scarlet Medic"] = 941,
+									["Shadowy Tormentor"] = 287,
 									["Citizen of Havenshire"] = 2903,
 									["Scarlet Farm Hound"] = 749,
-									["Shadowy Tormentor"] = 287,
-									["Scarlet Medic"] = 941,
-									["Dark Rider of Acherus"] = 953,
-									["Death Knight Initiate"] = 2658,
-									["Unworthy Initiate"] = 711,
 								},
 								["n_dmg"] = 15105,
 								["n_min"] = 0,
@@ -13447,28 +14226,29 @@ _detalhes_database = {
 								["c_max"] = 478,
 								["id"] = 45477,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 62,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["serial"] = "Player-4385-03E1C683",
+					["classe"] = "PALADIN",
 					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1658832148,
-					["delay"] = 0,
-					["damage_taken"] = 23791.604024,
+					["serial"] = "Player-4385-03E1C683",
+					["end_time"] = 1658833441,
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -13484,18 +14264,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["total"] = 38.063638,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 38.063638,
-					["serial"] = "Creature-0-4411-0-51-705-00005FC2F9",
+					["delay"] = 0,
 					["fight_component"] = true,
-					["end_time"] = 1658833441,
+					["total"] = 38.063638,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 532.063638,
 					["nome"] = "Ragged Young Wolf",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13517,30 +14297,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 2,
-								["MISS"] = 3,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 26,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 3,
+								["DODGE"] = 2,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["aID"] = "705",
-					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 532.063638,
+					["aID"] = "705",
+					["classe"] = "UNKNOW",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1658833383,
-					["delay"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4411-0-51-705-00005FC2F9",
+					["end_time"] = 1658833441,
 				}, -- [2]
 				{
 					["flag_original"] = 68136,
@@ -13555,17 +14335,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1658833893,
-					["on_hold"] = false,
+					["aID"] = "704",
+					["damage_taken"] = 87.01801,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 16.01801,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-704-00005FC318",
 					["dps_started"] = false,
-					["total"] = 16.01801,
+					["end_time"] = 1658833893,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 87.01801,
+					["last_dps"] = 0,
 					["nome"] = "Ragged Timber Wolf",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13587,29 +14367,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 7,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["fight_component"] = true,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["fight_component"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
 					["start_time"] = 1658833877,
-					["serial"] = "Creature-0-4411-0-51-704-00005FC318",
-					["aID"] = "704",
+					["delay"] = 0,
+					["total"] = 16.01801,
 				}, -- [3]
 				{
 					["flag_original"] = 68136,
@@ -13621,33 +14401,33 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
+					["classe"] = "UNKNOW",
+					["damage_taken"] = 10.012647,
 					["aID"] = "721",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.012647,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-721-00005F6B46",
 					["fight_component"] = true,
 					["end_time"] = 1658833934,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 10.012647,
+					["on_hold"] = false,
 					["nome"] = "Rabbit",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["dps_started"] = false,
-					["total"] = 0.012647,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["total"] = 0.012647,
+					["dps_started"] = false,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1658833931,
-					["serial"] = "Creature-0-4411-0-51-721-00005F6B46",
-					["classe"] = "UNKNOW",
+					["delay"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [4]
 				{
 					["flag_original"] = 68136,
@@ -13662,17 +14442,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1658834110,
-					["on_hold"] = false,
+					["aID"] = "707",
+					["damage_taken"] = 530.054557,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 52.054557,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-707-00005FC3F3",
 					["dps_started"] = false,
-					["total"] = 52.054557,
+					["end_time"] = 1658834110,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 530.054557,
+					["last_dps"] = 0,
 					["nome"] = "Rockjaw Trogg",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13694,31 +14474,31 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["MISS"] = 1,
+								["DODGE"] = 1,
 								["extra"] = {
 								},
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["n_amt"] = 32,
-								["DODGE"] = 1,
-								["MISS"] = 1,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["fight_component"] = true,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["fight_component"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
 					["start_time"] = 1658834041,
-					["serial"] = "Creature-0-4411-0-51-707-00005FC3F3",
-					["aID"] = "707",
+					["delay"] = 0,
+					["total"] = 52.054557,
 				}, -- [5]
 				{
 					["flag_original"] = 68136,
@@ -13731,17 +14511,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1658834130,
-					["on_hold"] = false,
+					["aID"] = "724",
+					["damage_taken"] = 363.034672,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 37.034672,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-724-00005FC40D",
 					["dps_started"] = false,
-					["total"] = 37.034672,
+					["end_time"] = 1658834130,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 363.034672,
+					["last_dps"] = 0,
 					["nome"] = "Burly Rockjaw Trogg",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13762,30 +14542,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["DODGE"] = 2,
+								["extra"] = {
+								},
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 20,
-								["extra"] = {
-								},
-								["DODGE"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["fight_component"] = true,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["fight_component"] = true,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
 					["start_time"] = 1658834081,
-					["serial"] = "Creature-0-4411-0-51-724-00005FC40D",
-					["aID"] = "724",
+					["delay"] = 0,
+					["total"] = 37.034672,
 				}, -- [6]
 				{
 					["flag_original"] = 68136,
@@ -13800,17 +14580,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["damage_taken"] = 954.057396,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
-					["aID"] = "708",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 174.057396,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-708-00005FCDA0",
 					["dps_started"] = false,
 					["end_time"] = 1658834469,
 					["fight_component"] = true,
-					["damage_taken"] = 954.057396,
+					["last_dps"] = 0,
 					["nome"] = "Small Crag Boar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13832,30 +14612,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["MISS"] = 2,
+								["extra"] = {
+								},
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 68,
-								["extra"] = {
-								},
-								["MISS"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 174.057396,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["total"] = 174.057396,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
 					["start_time"] = 1658834332,
-					["serial"] = "Creature-0-4411-0-51-708-00005FCDA0",
-					["classe"] = "UNKNOW",
+					["delay"] = 0,
+					["aID"] = "708",
 				}, -- [7]
 				{
 					["flag_original"] = 68168,
@@ -13866,20 +14646,21 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 452,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-706-00005FC518",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["fight_component"] = true,
+					["damage_taken"] = 2329.113429,
+					["aID"] = "706",
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 452.1134289999999,
-					["dps_started"] = false,
 					["monster"] = true,
+					["fight_component"] = true,
 					["total"] = 452.1134289999999,
-					["on_hold"] = false,
-					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
+					["last_event"] = 0,
 					["nome"] = "Frostmane Troll Whelp",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13900,31 +14681,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 2,
+								["MISS"] = 3,
+								["DODGE"] = 6,
 								["extra"] = {
 								},
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["n_amt"] = 151,
-								["DODGE"] = 6,
-								["MISS"] = 3,
+								["b_dmg"] = 2,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["end_time"] = 1658834936,
+					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 2329.113429,
+					["end_time"] = 1658834936,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1658834641,
-					["serial"] = "Creature-0-4411-0-51-706-00005FC518",
-					["aID"] = "706",
+					["delay"] = 0,
+					["dps_started"] = false,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
@@ -13935,21 +14715,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 13,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-946-00005FC944",
 					["pets"] = {
 					},
-					["total"] = 13.01045,
+					["on_hold"] = false,
+					["fight_component"] = true,
 					["aID"] = "946",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 13.01045,
-					["monster"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1658835717,
-					["friendlyfire"] = {
-					},
-					["tipo"] = 1,
+					["monster"] = true,
+					["total"] = 13.01045,
+					["damage_taken"] = 84.01045,
+					["last_event"] = 0,
 					["nome"] = "Frostmane Novice",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13970,15 +14749,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 2,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[6949] = {
 								["c_amt"] = 0,
@@ -13997,28 +14776,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6949,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1658835717,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 84.01045,
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1658835707,
-					["serial"] = "Creature-0-4411-0-51-946-00005FC944",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [9]
 				{
 					["flag_original"] = 2632,
@@ -14029,21 +14809,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 82,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-808-00005FC8B7",
 					["pets"] = {
 					},
-					["total"] = 82.007514,
+					["on_hold"] = false,
+					["fight_component"] = true,
 					["aID"] = "808",
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 82.007514,
-					["monster"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1658835752,
-					["friendlyfire"] = {
-					},
-					["tipo"] = 1,
+					["monster"] = true,
+					["total"] = 82.007514,
+					["damage_taken"] = 107.007514,
+					["last_event"] = 0,
 					["nome"] = "Grik'nir the Cold",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14064,15 +14843,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 4,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 13,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 4,
+								["r_amt"] = 0,
 							}, -- [1]
 							[6957] = {
 								["c_amt"] = 0,
@@ -14090,15 +14869,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6957,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[21030] = {
 								["c_amt"] = 0,
@@ -14117,28 +14896,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 21030,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 2,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1658835752,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 107.007514,
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1658835722,
-					["serial"] = "Creature-0-4411-0-51-808-00005FC8B7",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["classe"] = "UNKNOW",
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
@@ -14149,21 +14929,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 58,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4411-0-51-1718-00005FCEDE",
 					["pets"] = {
 					},
-					["total"] = 58.047534,
-					["fight_component"] = true,
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
 					["aID"] = "1718",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 58.047534,
-					["monster"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1658836056,
-					["friendlyfire"] = {
-					},
-					["tipo"] = 1,
+					["fight_component"] = true,
+					["total"] = 58.047534,
+					["damage_taken"] = 596.0475339999999,
+					["last_event"] = 0,
 					["nome"] = "Rockjaw Raider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14184,30 +14963,31 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 1,
+								["DODGE"] = 1,
+								["MISS"] = 2,
 								["extra"] = {
 								},
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["n_amt"] = 23,
-								["MISS"] = 2,
-								["DODGE"] = 1,
+								["b_dmg"] = 1,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1658836056,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 596.0475339999999,
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1658836000,
-					["serial"] = "Creature-0-4411-0-51-1718-00005FCEDE",
-					["classe"] = "UNKNOW",
+					["delay"] = 0,
+					["monster"] = true,
 				}, -- [11]
 				{
 					["flag_original"] = 68136,
@@ -14220,17 +15000,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["end_time"] = 1660963699,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 681.0321589999999,
-					["aID"] = "1125",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 153.032159,
-					["serial"] = "Creature-0-4390-0-25845-1125-0000004262",
+					["delay"] = 0,
 					["dps_started"] = false,
 					["total"] = 153.032159,
 					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Crag Boar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14251,31 +15031,31 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 5,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 30,
-								["b_dmg"] = 5,
-								["r_amt"] = 0,
+								["DODGE"] = 1,
+								["MISS"] = 2,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
+					["fight_component"] = true,
 					["friendlyfire"] = {
 					},
-					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["damage_taken"] = 681.0321589999999,
 					["start_time"] = 1660963635,
-					["delay"] = 0,
-					["end_time"] = 1660963699,
+					["serial"] = "Creature-0-4390-0-25845-1125-0000004262",
+					["aID"] = "1125",
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
@@ -14288,20 +15068,21 @@ _detalhes_database = {
 						["Joeybonzo"] = 2123,
 						["Jabrolta"] = 632,
 					},
-					["monster"] = true,
+					["serial"] = "Creature-0-4412-609-152-29519-000019AB92",
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
-					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2755.013678,
-					["delay"] = 0,
 					["dps_started"] = false,
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1662633053,
-					["damage_taken"] = 5426.013677999999,
-					["aID"] = "29519",
+					["friendlyfire"] = {
+					},
+					["last_event"] = 0,
 					["nome"] = "Unworthy Initiate",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14323,15 +15104,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 13,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[52373] = {
 								["c_amt"] = 0,
@@ -14351,15 +15132,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52373,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 4,
 								["a_amt"] = 0,
 								["n_amt"] = 10,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[52372] = {
 								["c_amt"] = 0,
@@ -14378,15 +15159,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52372,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[52374] = {
 								["c_amt"] = 0,
@@ -14405,30 +15186,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52374,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["DODGE"] = 1,
+								["extra"] = {
+								},
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
-								["extra"] = {
-								},
-								["DODGE"] = 1,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 2755.013678,
+					["aID"] = "29519",
 					["last_dps"] = 0,
-					["tipo"] = 1,
+					["total"] = 2755.013678,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["tipo"] = 1,
+					["damage_taken"] = 5426.013677999999,
 					["start_time"] = 1662633023,
-					["serial"] = "Creature-0-4412-609-152-29519-000019AB92",
-					["on_hold"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [13]
 				{
 					["flag_original"] = 4369,
@@ -14440,16 +15220,16 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["classe"] = "PET",
+					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.027833,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4412-609-152-28511-000019C4DF",
 					["dps_started"] = false,
 					["end_time"] = 1662633227,
-					["total"] = 0.027833,
+					["damage_taken"] = 1552.027833,
 					["ownerName"] = "Joeybonzo",
 					["nome"] = "Eye of Acherus <Joeybonzo>",
 					["spells"] = {
@@ -14457,74 +15237,53 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 1552.027833,
+					["on_hold"] = false,
 					["aID"] = "28511",
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["last_dps"] = 0,
 					["start_time"] = 1662633224,
-					["serial"] = "Creature-0-4412-609-152-28511-000019C4DF",
-					["classe"] = "PET",
+					["delay"] = 0,
+					["total"] = 0.027833,
 				}, -- [14]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.059414,
-					["dps_started"] = false,
 					["damage_from"] = {
 						["Joeybonzo"] = true,
 						["Scarlet Infantryman"] = true,
-						["Lasheodox"] = true,
+						["Scarlet Captain"] = true,
 						["Minkero"] = true,
 						["Scarlet Medic"] = true,
-						["Scarlet Captain"] = true,
+						["Lasheodox"] = true,
 					},
 					["targets"] = {
 						["Joeybonzo"] = 2929,
 						["Scarlet Infantryman"] = 1921,
-						["Lasheodox"] = 613,
+						["Scarlet Captain"] = 1344,
 						["Scarlet Peasant"] = 1081,
 						["Minkero"] = 212,
 						["Scarlet Medic"] = 833,
-						["Scarlet Captain"] = 1344,
+						["Lasheodox"] = 613,
 					},
-					["friendlyfire"] = {
-						["Minkero"] = {
-							["spells"] = {
-								64, -- [1]
-								[52373] = 73,
-							},
-							["total"] = 137,
-						},
-						["Lasheodox"] = {
-							["spells"] = {
-								[52373] = 73,
-							},
-							["total"] = 73,
-						},
-						["Joeybonzo"] = {
-							["spells"] = {
-								[52373] = 438,
-							},
-							["total"] = 438,
-						},
-					},
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 648,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 8933.059414000001,
-					["end_time"] = 1662633872,
-					["monster"] = true,
 					["total"] = 8933.059414000001,
-					["aID"] = "28406",
-					["fight_component"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1662633872,
+					["damage_taken"] = 22229.059414,
+					["tipo"] = 1,
 					["nome"] = "Death Knight Initiate",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 3,
@@ -14535,11 +15294,11 @@ _detalhes_database = {
 								["targets"] = {
 									["Joeybonzo"] = 1238,
 									["Scarlet Infantryman"] = 877,
-									["Lasheodox"] = 257,
+									["Scarlet Captain"] = 402,
 									["Scarlet Peasant"] = 709,
 									["Minkero"] = 0,
 									["Scarlet Medic"] = 206,
-									["Scarlet Captain"] = 402,
+									["Lasheodox"] = 257,
 								},
 								["n_dmg"] = 3277,
 								["n_min"] = 0,
@@ -14547,20 +15306,20 @@ _detalhes_database = {
 								["counter"] = 71,
 								["total"] = 3689,
 								["c_max"] = 145,
-								["MISS"] = 7,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 7,
+								["b_dmg"] = 71,
 								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 4,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 50,
-								["b_dmg"] = 71,
-								["r_amt"] = 0,
+								["DODGE"] = 7,
+								["MISS"] = 7,
 							}, -- [1]
 							[52373] = {
 								["c_amt"] = 0,
@@ -14571,11 +15330,11 @@ _detalhes_database = {
 								["targets"] = {
 									["Joeybonzo"] = 1234,
 									["Scarlet Infantryman"] = 792,
-									["Lasheodox"] = 356,
+									["Scarlet Captain"] = 361,
 									["Scarlet Peasant"] = 372,
 									["Minkero"] = 212,
 									["Scarlet Medic"] = 225,
-									["Scarlet Captain"] = 361,
+									["Lasheodox"] = 356,
 								},
 								["n_dmg"] = 3552,
 								["n_min"] = 0,
@@ -14585,16 +15344,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52373,
 								["r_dmg"] = 0,
-								["DODGE"] = 2,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 8,
 								["a_amt"] = 0,
 								["n_amt"] = 37,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["DODGE"] = 2,
 							},
 							[52372] = {
 								["c_amt"] = 0,
@@ -14603,10 +15362,11 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 255,
 								["targets"] = {
-									["Joeybonzo"] = 241,
 									["Scarlet Captain"] = 502,
-									["Scarlet Medic"] = 255,
 									["Scarlet Infantryman"] = 252,
+									["Minkero"] = 0,
+									["Scarlet Medic"] = 255,
+									["Joeybonzo"] = 241,
 								},
 								["n_dmg"] = 1250,
 								["n_min"] = 0,
@@ -14616,15 +15376,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52372,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[52374] = {
 								["c_amt"] = 0,
@@ -14633,10 +15393,11 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 80,
 								["targets"] = {
-									["Joeybonzo"] = 216,
 									["Scarlet Captain"] = 79,
-									["Scarlet Medic"] = 147,
 									["Scarlet Infantryman"] = 0,
+									["Minkero"] = 0,
+									["Scarlet Medic"] = 147,
+									["Joeybonzo"] = 216,
 								},
 								["n_dmg"] = 442,
 								["n_min"] = 0,
@@ -14646,8 +15407,8 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52374,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 2,
@@ -14655,53 +15416,100 @@ _detalhes_database = {
 								["successful_casted"] = 4,
 								["a_amt"] = 0,
 								["n_amt"] = 6,
+								["a_dmg"] = 0,
+								["DODGE"] = 1,
+							},
+							[47632] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Minkero"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 47632,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
+					["fight_component"] = true,
+					["aID"] = "28406",
 					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28406-000119C62C",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 22229.059414,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+						["Minkero"] = {
+							["total"] = 137,
+							["spells"] = {
+								0, -- [1]
+								[52373] = 0,
+							},
+						},
+						["Joeybonzo"] = {
+							["total"] = 438,
+							["spells"] = {
+								0, -- [1]
+								[52373] = 0,
+							},
+						},
+						["Lasheodox"] = {
+							["total"] = 73,
+							["spells"] = {
+								[52373] = 0,
+							},
+						},
+					},
 					["start_time"] = 1662633714,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-4412-609-152-28406-000119C62C",
+					["on_hold"] = false,
 				}, -- [15]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.073074,
-					["total"] = 6308.073074000001,
 					["damage_from"] = {
 						["Joeybonzo"] = true,
-						["Scarlet Ghoul <Joeybonzo>"] = true,
-						["Death Knight Initiate"] = true,
 						["Acherus Geist"] = true,
+						["Death Knight Initiate"] = true,
+						["Scarlet Ghoul <Joeybonzo>"] = true,
 					},
 					["targets"] = {
 						["Joeybonzo"] = 2784,
 						["Death Knight Initiate"] = 1332,
 						["Acherus Geist"] = 2192,
 					},
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["on_hold"] = false,
-					["dps_started"] = false,
+					["monster"] = true,
+					["damage_taken"] = 22520.073074,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 6308.073074000001,
-					["fight_component"] = true,
-					["monster"] = true,
 					["end_time"] = 1662633872,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["total"] = 6308.073074000001,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Scarlet Infantryman",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -14720,20 +15528,20 @@ _detalhes_database = {
 								["counter"] = 106,
 								["total"] = 3905,
 								["c_max"] = 62,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 8,
+								["b_dmg"] = 120,
 								["MISS"] = 16,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 9,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 72,
-								["b_dmg"] = 120,
-								["r_amt"] = 0,
+								["DODGE"] = 8,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[53399] = {
 								["c_amt"] = 0,
@@ -14754,17 +15562,17 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 53399,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["MISS"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 58,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 10,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["n_amt"] = 10,
-								["b_dmg"] = 58,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["DODGE"] = 1,
 							},
 							[25710] = {
 								["c_amt"] = 0,
@@ -14783,32 +15591,34 @@ _detalhes_database = {
 								["counter"] = 16,
 								["total"] = 1494,
 								["c_max"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["id"] = 25710,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
+								["b_dmg"] = 0,
 								["MISS"] = 3,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 16,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 11,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 1,
+								["a_dmg"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
 					["aID"] = "28609",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28609-000019C74C",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662633731,
-					["delay"] = 0,
-					["damage_taken"] = 22520.073074,
+					["serial"] = "Creature-0-4412-609-152-28609-000019C74C",
+					["fight_component"] = true,
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
@@ -14821,24 +15631,22 @@ _detalhes_database = {
 						["Death Knight Initiate"] = 550,
 						["Joeybonzo"] = 1022,
 					},
-					["total"] = 1572.035785,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["damage_taken"] = 11876.035785,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1572.035785,
-					["dps_started"] = false,
-					["on_hold"] = false,
-					["monster"] = true,
 					["end_time"] = 1662633935,
-					["fight_component"] = true,
-					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["total"] = 1572.035785,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Scarlet Captain",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -14856,20 +15664,20 @@ _detalhes_database = {
 								["counter"] = 20,
 								["total"] = 878,
 								["c_max"] = 123,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
 								["MISS"] = 2,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 4,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 12,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 1,
 							}, -- [1]
 							[52221] = {
 								["c_amt"] = 0,
@@ -14889,8 +15697,8 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52221,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["MISS"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 1,
@@ -14898,25 +15706,26 @@ _detalhes_database = {
 								["successful_casted"] = 9,
 								["a_amt"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["a_dmg"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
+					["friendlyfire_total"] = 0,
+					["fight_component"] = true,
 					["aID"] = "28611",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28611-000019C7C0",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1662633878,
-					["delay"] = 0,
-					["damage_taken"] = 11876.035785,
+					["serial"] = "Creature-0-4412-609-152-28611-000019C7C0",
+					["on_hold"] = false,
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.02934,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Joeybonzo"] = true,
 						["Mancarric"] = true,
@@ -14925,23 +15734,22 @@ _detalhes_database = {
 						["Joeybonzo"] = 1001,
 						["Mancarric"] = 293,
 					},
-					["end_time"] = 1662633967,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 992.02934,
 					["aID"] = "28683",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1294.02934,
-					["fight_component"] = true,
-					["dps_started"] = false,
 					["total"] = 1294.02934,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["fight_component"] = true,
+					["end_time"] = 1662633967,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Stable Master Kitrik",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -14959,20 +15767,20 @@ _detalhes_database = {
 								["counter"] = 8,
 								["total"] = 1294,
 								["c_max"] = 0,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
 								["MISS"] = 2,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 4,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 1,
 							}, -- [1]
 							[52265] = {
 								["c_amt"] = 0,
@@ -14990,27 +15798,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52265,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28683-0000175810",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662633944,
-					["delay"] = 0,
-					["damage_taken"] = 992.02934,
+					["serial"] = "Creature-0-4412-609-152-28683-0000175810",
+					["friendlyfire"] = {
+					},
 				}, -- [18]
 				{
 					["flag_original"] = 2632,
@@ -15023,24 +15833,22 @@ _detalhes_database = {
 						["Joeybonzo"] = 2923,
 						["Death Knight Initiate"] = 298,
 					},
-					["total"] = 3221.056778,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["damage_taken"] = 6317.056778000001,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 3221.056778,
-					["dps_started"] = false,
-					["on_hold"] = false,
-					["monster"] = true,
 					["end_time"] = 1662633967,
-					["fight_component"] = true,
-					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["total"] = 3221.056778,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Scarlet Medic",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -15060,16 +15868,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 1,
 							}, -- [1]
 							[15498] = {
 								["c_amt"] = 0,
@@ -15089,16 +15897,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 15498,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 17,
 								["a_amt"] = 0,
 								["n_amt"] = 12,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 2,
 							},
 							[13864] = {
 								["c_amt"] = 0,
@@ -15116,27 +15924,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 13864,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 3,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
+						["tipo"] = 2,
 					},
+					["friendlyfire_total"] = 0,
+					["fight_component"] = true,
 					["aID"] = "28608",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28608-000019C4C3",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1662633908,
-					["delay"] = 0,
-					["damage_taken"] = 6317.056778000001,
+					["serial"] = "Creature-0-4412-609-152-28608-000019C4C3",
+					["on_hold"] = false,
 				}, -- [19]
 				{
 					["flag_original"] = 68168,
@@ -15147,24 +15957,22 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 2260,
 					},
-					["on_hold"] = false,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["monster"] = true,
+					["dps_started"] = false,
+					["damage_taken"] = 4118.011106999999,
 					["aID"] = "28768",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2260.011107,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1662634152,
-					["dps_started"] = false,
 					["total"] = 2260.011107,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["end_time"] = 1662634152,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Dark Rider of Acherus",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -15183,43 +15991,43 @@ _detalhes_database = {
 								["c_max"] = 127,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["PARRY"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 							}, -- [1]
-							[52356] = {
+							[50688] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 62,
+								["n_max"] = 142,
 								["targets"] = {
-									["Joeybonzo"] = 62,
+									["Joeybonzo"] = 1076,
 								},
-								["n_dmg"] = 62,
+								["n_dmg"] = 1076,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 62,
+								["counter"] = 8,
+								["total"] = 1076,
 								["c_max"] = 0,
-								["id"] = 52356,
+								["id"] = 50688,
 								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 2,
+								["a_amt"] = 0,
+								["n_amt"] = 8,
+								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
 							},
 							[52372] = {
 								["c_amt"] = 0,
@@ -15238,15 +16046,42 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52372,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[52356] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 62,
+								["targets"] = {
+									["Joeybonzo"] = 62,
+								},
+								["n_dmg"] = 62,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 62,
+								["c_max"] = 0,
+								["id"] = 52356,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 1,
+								["a_amt"] = 0,
+								["n_amt"] = 1,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[52374] = {
 								["c_amt"] = 0,
@@ -15265,54 +16100,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52374,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 2,
 								["a_amt"] = 0,
 								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[50688] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 142,
-								["targets"] = {
-									["Joeybonzo"] = 1076,
-								},
-								["n_dmg"] = 1076,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 8,
-								["total"] = 1076,
-								["c_max"] = 0,
-								["id"] = 50688,
-								["r_dmg"] = 0,
+								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 2,
-								["a_amt"] = 0,
-								["n_amt"] = 8,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28768-000019C77F",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662634121,
-					["delay"] = 0,
-					["damage_taken"] = 4118.011106999999,
+					["serial"] = "Creature-0-4412-609-152-28768-000019C77F",
+					["friendlyfire"] = {
+					},
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
@@ -15323,24 +16133,22 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 507,
 					},
-					["on_hold"] = false,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["monster"] = true,
+					["dps_started"] = false,
+					["damage_taken"] = 2666.012351,
 					["aID"] = "28769",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 507.012351,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1662634152,
-					["dps_started"] = false,
 					["total"] = 507.012351,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["end_time"] = 1662634152,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Shadowy Tormentor",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -15359,8 +16167,8 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["MISS"] = 2,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 3,
@@ -15368,20 +16176,22 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 8,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 2,
+								["a_dmg"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28769-000019C6E8",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662634123,
-					["delay"] = 0,
-					["damage_taken"] = 2666.012351,
+					["serial"] = "Creature-0-4412-609-152-28769-000019C6E8",
+					["friendlyfire"] = {
+					},
 				}, -- [21]
 				{
 					["flag_original"] = 2632,
@@ -15391,23 +16201,22 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 57,
 					},
-					["dps_started"] = false,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["total"] = 57.00430400000001,
+					["damage_taken"] = 0.004304000000000001,
 					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 57.00430400000001,
-					["on_hold"] = false,
-					["end_time"] = 1662634152,
-					["monster"] = true,
-					["total"] = 57.00430400000001,
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["dps_started"] = false,
+					["end_time"] = 1662634152,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Acherus Deathcharger",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -15426,8 +16235,8 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["MISS"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 1,
@@ -15435,52 +16244,53 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 6,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 1,
+								["a_dmg"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
+					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["friendlyfire"] = {
 					},
-					["friendlyfire_total"] = 0,
-					["serial"] = "Vehicle-0-4412-609-152-28782-000019C77F",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662634135,
-					["delay"] = 0,
-					["damage_taken"] = 0.004304000000000001,
+					["serial"] = "Vehicle-0-4412-609-152-28782-000019C77F",
+					["monster"] = true,
 				}, -- [22]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.04950399999999999,
-					["dps_started"] = false,
 					["damage_from"] = {
 						["Joeybonzo"] = true,
 						["Skullbashin"] = true,
 						["Stefknight"] = true,
 					},
 					["targets"] = {
-						["Skullbashin"] = 1291,
 						["Joeybonzo"] = 4843,
+						["Skullbashin"] = 1291,
+						["Stefknight"] = 0,
 					},
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 6134.049504000001,
-					["friendlyfire"] = {
-					},
 					["monster"] = true,
+					["dps_started"] = false,
 					["total"] = 6134.049504000001,
-					["aID"] = "28576",
-					["end_time"] = 1662634526,
+					["damage_taken"] = 19899.049504,
+					["tipo"] = 1,
 					["nome"] = "Citizen of Havenshire",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 2,
@@ -15489,8 +16299,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 213,
 								["targets"] = {
-									["Skullbashin"] = 1291,
 									["Joeybonzo"] = 4843,
+									["Skullbashin"] = 1291,
+									["Stefknight"] = 0,
 								},
 								["n_dmg"] = 5336,
 								["n_min"] = 0,
@@ -15498,20 +16309,20 @@ _detalhes_database = {
 								["counter"] = 43,
 								["total"] = 6134,
 								["c_max"] = 412,
-								["MISS"] = 2,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["DODGE"] = 2,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 6,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 31,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 2,
+								["MISS"] = 2,
 							}, -- [1]
 							[52262] = {
 								["c_amt"] = 0,
@@ -15529,27 +16340,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52262,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 5,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
+						["tipo"] = 2,
 					},
+					["end_time"] = 1662634526,
+					["aID"] = "28576",
 					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28576-000019C9C5",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 19899.049504,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662634479,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-4412-609-152-28576-000019C9C5",
+					["fight_component"] = true,
 				}, -- [23]
 				{
 					["flag_original"] = 68168,
@@ -15560,24 +16372,22 @@ _detalhes_database = {
 					["targets"] = {
 						["Joeybonzo"] = 636,
 					},
-					["on_hold"] = false,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["monster"] = true,
+					["dps_started"] = false,
+					["damage_taken"] = 6568.014555000001,
 					["aID"] = "28766",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 636.014555,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1662634646,
-					["dps_started"] = false,
 					["total"] = 636.014555,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["end_time"] = 1662634646,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Scarlet Farm Hound",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 2,
@@ -15596,8 +16406,8 @@ _detalhes_database = {
 								["c_max"] = 105,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["DODGE"] = 1,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["extra"] = {
 								},
 								["PARRY"] = 2,
@@ -15605,25 +16415,26 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 9,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["DODGE"] = 1,
+								["a_dmg"] = 0,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28766-000019C76A",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662634621,
-					["delay"] = 0,
-					["damage_taken"] = 6568.014555000001,
+					["serial"] = "Creature-0-4412-609-152-28766-000019C76A",
+					["friendlyfire"] = {
+					},
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
 					["totalabsorbed"] = 0.041687,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Scarlet Ghoul <Joeybonzo>"] = true,
 						["Joeybonzo"] = true,
@@ -15632,23 +16443,22 @@ _detalhes_database = {
 						["Joeybonzo"] = 1216,
 						["Scarlet Ghoul <Joeybonzo>"] = 951,
 					},
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["end_time"] = 1662635440,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 20060.041687,
 					["aID"] = "28846",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2167.041687,
-					["fight_component"] = true,
-					["dps_started"] = false,
 					["total"] = 2167.041687,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["fight_component"] = true,
+					["end_time"] = 1662635440,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Scarlet Ghost",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 4,
@@ -15667,37 +16477,38 @@ _detalhes_database = {
 								["counter"] = 38,
 								["total"] = 2167,
 								["c_max"] = 148,
-								["DODGE"] = 5,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
 								["MISS"] = 2,
-								["extra"] = {
-								},
+								["a_amt"] = 0,
 								["PARRY"] = 3,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["extra"] = {
+								},
 								["n_amt"] = 24,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["DODGE"] = 5,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28846-000019CD90",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662635349,
-					["delay"] = 0,
-					["damage_taken"] = 20060.041687,
+					["serial"] = "Creature-0-4412-609-152-28846-000019CD90",
+					["friendlyfire"] = {
+					},
 				}, -- [25]
 				{
 					["flag_original"] = 8465,
 					["totalabsorbed"] = 0.039478,
-					["on_hold"] = false,
 					["damage_from"] = {
 						["Scarlet Ghost"] = true,
 					},
@@ -15707,21 +16518,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28845-000019CD89",
-					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 677.0394779999999,
-					["end_time"] = 1662635440,
+					["delay"] = 0,
 					["dps_started"] = false,
+					["end_time"] = 1662635440,
 					["total"] = 677.0394779999999,
-					["aID"] = "28845",
 					["ownerName"] = "Joeybonzo",
 					["nome"] = "Scarlet Ghoul <Joeybonzo>",
-					["last_event"] = 0,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -15737,23 +16546,23 @@ _detalhes_database = {
 								["n_min"] = 0,
 								["g_dmg"] = 66,
 								["counter"] = 124,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["total"] = 677,
 								["c_max"] = 0,
-								["BLOCK"] = 6,
+								["b_dmg"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 5,
 								["DODGE"] = 8,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["PARRY"] = 5,
+								["BLOCK"] = 6,
+								["successful_casted"] = 0,
 								["extra"] = {
 								},
-								["PARRY"] = 5,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
 								["n_amt"] = 90,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 5,
+								["a_dmg"] = 0,
 							}, -- [1]
 							[54175] = {
 								["c_amt"] = 0,
@@ -15772,27 +16581,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 54175,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 1,
 							},
 						},
+						["tipo"] = 2,
 					},
+					["damage_taken"] = 951.0394779999999,
+					["aID"] = "28845",
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 951.0394779999999,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662635345,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-4412-609-152-28845-000019CD89",
+					["classe"] = "PET",
 				}, -- [26]
 				{
 					["flag_original"] = 2632,
@@ -15804,24 +16616,22 @@ _detalhes_database = {
 						["Scarlet Cannon <Joeybonzo>"] = 25059,
 						["Scarlet Cannon"] = 84,
 					},
-					["on_hold"] = false,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["monster"] = true,
+					["dps_started"] = false,
+					["damage_taken"] = 2783320.007242,
 					["aID"] = "28834",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 25143.007242,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1662635879,
-					["dps_started"] = false,
 					["total"] = 25143.007242,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["end_time"] = 1662635879,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Scarlet Fleet Defender",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -15840,15 +16650,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[52566] = {
 								["c_amt"] = 0,
@@ -15868,28 +16678,30 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 52566,
 								["r_dmg"] = 0,
-								["MISS"] = 19,
-								["extra"] = {
-								},
+								["r_amt"] = 0,
+								["b_dmg"] = 511,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 280,
 								["a_amt"] = 0,
 								["n_amt"] = 292,
-								["b_dmg"] = 511,
-								["r_amt"] = 0,
+								["extra"] = {
+								},
+								["MISS"] = 19,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28834-000A19CCDC",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662635821,
-					["delay"] = 0,
-					["damage_taken"] = 2783320.007242,
+					["serial"] = "Creature-0-4412-609-152-28834-000A19CCDC",
+					["friendlyfire"] = {
+					},
 				}, -- [27]
 				{
 					["flag_original"] = 2632,
@@ -15899,36 +16711,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["on_hold"] = false,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["monster"] = true,
+					["dps_started"] = false,
+					["damage_taken"] = 239354.015688,
 					["aID"] = "28850",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.015688,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1662635879,
-					["dps_started"] = false,
 					["total"] = 0.015688,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["end_time"] = 1662635879,
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["nome"] = "Scarlet Land Cannon",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28850-000019CCBD",
+					["fight_component"] = true,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662635876,
-					["delay"] = 0,
-					["damage_taken"] = 239354.015688,
+					["serial"] = "Creature-0-4412-609-152-28850-000019CCBD",
+					["friendlyfire"] = {
+					},
 				}, -- [28]
 			},
 		}, -- [1]
@@ -15943,7 +16755,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "4385-03E1C683",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 354.206039,
 					["total_without_pet"] = 3093.206038999999,
 					["total"] = 3093.206038999999,
@@ -15956,13 +16768,15 @@ _detalhes_database = {
 					["totalabsorb"] = 0.2060390000000001,
 					["last_hps"] = 0,
 					["targets"] = {
-						["Joeybonzo"] = 2934,
+						["Joeybonzo"] = 0,
 					},
 					["totalover_without_pet"] = 0.2060390000000001,
 					["healing_taken"] = 3093.206038999999,
 					["fight_component"] = true,
 					["end_time"] = 1658835752,
-					["heal_enemy_amt"] = 0,
+					["targets_overheal"] = {
+						["Joeybonzo"] = 0,
+					},
 					["nome"] = "Joeybonzo",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15985,9 +16799,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_amt"] = 1,
 								["n_curado"] = 45,
 								["totaldenied"] = 0,
-								["n_amt"] = 1,
 								["absorbed"] = 0,
 							},
 							[50475] = {
@@ -16010,25 +16824,48 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 328,
 								["n_curado"] = 3048,
+								["absorbed"] = 0,
+							},
+							[18610] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Joeybonzo"] = 0,
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Joeybonzo"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 18610,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
+								["n_amt"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["targets_overheal"] = {
-						["Joeybonzo"] = 336,
-					},
-					["tipo"] = 2,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["totaldenied"] = 0.2060390000000001,
-					["start_time"] = 1658835298,
-					["delay"] = 0,
 					["classe"] = "PALADIN",
+					["aID"] = "4385-03E1C683",
+					["custom"] = 0,
+					["tipo"] = 2,
+					["start_time"] = 1658835298,
+					["totaldenied"] = 0.2060390000000001,
+					["delay"] = 0,
+					["last_event"] = 0,
 				}, -- [1]
 			},
 		}, -- [2]
@@ -16037,9 +16874,9 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 1600.186157,
-					["resource"] = 0.194681,
+					["resource"] = 0.285215,
 					["targets"] = {
-						["Joeybonzo"] = 1510,
+						["Joeybonzo"] = 0,
 					},
 					["pets"] = {
 					},
@@ -16056,7 +16893,7 @@ _detalhes_database = {
 								["id"] = 45902,
 								["totalover"] = 0,
 								["targets"] = {
-									["Joeybonzo"] = 650,
+									["Joeybonzo"] = 0,
 								},
 								["counter"] = 68,
 							},
@@ -16065,7 +16902,7 @@ _detalhes_database = {
 								["id"] = 45477,
 								["totalover"] = 0,
 								["targets"] = {
-									["Joeybonzo"] = 400,
+									["Joeybonzo"] = 0,
 								},
 								["counter"] = 43,
 							},
@@ -16074,7 +16911,7 @@ _detalhes_database = {
 								["id"] = 45462,
 								["totalover"] = 0,
 								["targets"] = {
-									["Joeybonzo"] = 460,
+									["Joeybonzo"] = 0,
 								},
 								["counter"] = 49,
 							},
@@ -16082,13 +16919,13 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1297,
+					["last_event"] = 0,
 					["aID"] = "4385-0466FBC1",
 					["tipo"] = 3,
-					["totalover"] = 0.005359,
 					["alternatepower"] = 0.186157,
+					["totalover"] = 0.005359,
 					["serial"] = "Player-4385-0466FBC1",
-					["last_event"] = 0,
+					["flag_original"] = 1297,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -16100,56 +16937,56 @@ _detalhes_database = {
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[21183] = {
-								["counter"] = 0,
+								["refreshamt"] = 17,
 								["activedamt"] = -6,
 								["appliedamt"] = 0,
 								["id"] = 21183,
 								["uptime"] = 51,
 								["targets"] = {
 								},
-								["refreshamt"] = 17,
+								["counter"] = 0,
 							},
 							[11196] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["appliedamt"] = 0,
 								["activedamt"] = -1,
-								["uptime"] = 0,
-								["id"] = 11196,
 								["actived_at"] = 1662635016,
+								["id"] = 11196,
+								["uptime"] = 0,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							[55095] = {
-								["counter"] = 0,
+								["refreshamt"] = 19,
 								["activedamt"] = 0,
 								["appliedamt"] = 41,
 								["id"] = 55095,
 								["uptime"] = 375,
 								["targets"] = {
 								},
-								["refreshamt"] = 19,
+								["counter"] = 0,
 							},
 							[49560] = {
-								["counter"] = 0,
+								["refreshamt"] = 0,
 								["appliedamt"] = 0,
 								["activedamt"] = -7,
-								["actived_at"] = 11638441002,
-								["id"] = 49560,
 								["uptime"] = 0,
+								["id"] = 49560,
+								["actived_at"] = 11638441002,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[55078] = {
-								["counter"] = 0,
+								["refreshamt"] = 11,
 								["activedamt"] = 0,
 								["appliedamt"] = 36,
 								["id"] = 55078,
 								["uptime"] = 274,
 								["targets"] = {
 								},
-								["refreshamt"] = 11,
+								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -16162,155 +16999,155 @@ _detalhes_database = {
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[19740] = {
-								["counter"] = 0,
+								["refreshamt"] = 0,
 								["activedamt"] = 7,
 								["appliedamt"] = 7,
 								["id"] = 19740,
 								["uptime"] = 58,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
+								["counter"] = 0,
 							},
 							[51915] = {
-								["counter"] = 0,
+								["refreshamt"] = 0,
 								["activedamt"] = 44,
 								["appliedamt"] = 44,
 								["id"] = 51915,
 								["uptime"] = 586,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
-							},
-							[52447] = {
-								["refreshamt"] = 0,
-								["appliedamt"] = 1,
-								["activedamt"] = 1,
-								["uptime"] = 0,
-								["id"] = 52447,
-								["actived_at"] = 1662635817,
-								["targets"] = {
-								},
 								["counter"] = 0,
-							},
-							[53386] = {
-								["counter"] = 0,
-								["activedamt"] = 15,
-								["appliedamt"] = 15,
-								["id"] = 53386,
-								["uptime"] = 71,
-								["targets"] = {
-								},
-								["refreshamt"] = 3,
-							},
-							[48778] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 48778,
-								["uptime"] = 10,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[377749] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 119,
-								["appliedamt"] = 119,
-								["id"] = 377749,
-								["uptime"] = 1374,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[21084] = {
-								["counter"] = 0,
-								["activedamt"] = 16,
-								["appliedamt"] = 16,
-								["id"] = 21084,
-								["uptime"] = 101,
-								["targets"] = {
-								},
-								["refreshamt"] = 2,
-							},
-							[52263] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = 52263,
-								["uptime"] = 8,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[48266] = {
-								["counter"] = 0,
-								["activedamt"] = 44,
-								["appliedamt"] = 44,
-								["id"] = 48266,
-								["uptime"] = 586,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[465] = {
-								["counter"] = 0,
-								["activedamt"] = 66,
-								["appliedamt"] = 66,
-								["id"] = 465,
-								["uptime"] = 725,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[51852] = {
-								["counter"] = 0,
-								["activedamt"] = 6,
-								["appliedamt"] = 6,
-								["id"] = 51852,
-								["uptime"] = 6,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[20594] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 20594,
-								["uptime"] = 8,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[52693] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 52693,
-								["uptime"] = 30,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[21082] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 21082,
-								["uptime"] = 11,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
 							},
 							[20154] = {
-								["refreshamt"] = 22,
+								["counter"] = 0,
 								["activedamt"] = 61,
 								["appliedamt"] = 61,
 								["id"] = 20154,
 								["uptime"] = 559,
 								["targets"] = {
 								},
+								["refreshamt"] = 22,
+							},
+							[53386] = {
+								["refreshamt"] = 3,
+								["activedamt"] = 15,
+								["appliedamt"] = 15,
+								["id"] = 53386,
+								["uptime"] = 71,
+								["targets"] = {
+								},
 								["counter"] = 0,
+							},
+							[52693] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 52693,
+								["uptime"] = 30,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[377749] = {
+								["counter"] = 0,
+								["activedamt"] = 119,
+								["appliedamt"] = 119,
+								["id"] = 377749,
+								["uptime"] = 1374,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[21084] = {
+								["refreshamt"] = 2,
+								["activedamt"] = 16,
+								["appliedamt"] = 16,
+								["id"] = 21084,
+								["uptime"] = 101,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[52263] = {
+								["counter"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 52263,
+								["uptime"] = 8,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[48266] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 44,
+								["appliedamt"] = 44,
+								["id"] = 48266,
+								["uptime"] = 586,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[465] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 66,
+								["appliedamt"] = 66,
+								["id"] = 465,
+								["uptime"] = 725,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[51852] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 6,
+								["appliedamt"] = 6,
+								["id"] = 51852,
+								["uptime"] = 6,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[20594] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 20594,
+								["uptime"] = 8,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[48778] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 48778,
+								["uptime"] = 10,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[21082] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 21082,
+								["uptime"] = 11,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[52447] = {
+								["counter"] = 0,
+								["appliedamt"] = 1,
+								["activedamt"] = 1,
+								["actived_at"] = 1662635817,
+								["id"] = 52447,
+								["uptime"] = 0,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
@@ -16321,228 +17158,228 @@ _detalhes_database = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
-						[20154] = 38,
-						[47541] = 24,
+						[45477] = 43,
+						[21082] = 1,
 						[45902] = 77,
-						[21084] = 13,
+						[20154] = 38,
 						[52263] = 2,
 						[52481] = 1,
 						[20271] = 4,
 						[45462] = 53,
 						[20594] = 1,
 						[635] = 1,
-						[21082] = 1,
-						[45477] = 43,
+						[47541] = 24,
+						[21084] = 13,
 					},
-					["buff_uptime"] = 4133,
+					["last_event"] = 0,
 					["aID"] = "4385-03E1C683",
 					["tipo"] = 4,
-					["nome"] = "Joeybonzo",
 					["buff_uptime_targets"] = {
 					},
+					["nome"] = "Joeybonzo",
 					["serial"] = "Player-4385-03E1C683",
-					["last_event"] = 0,
+					["buff_uptime"] = 4133,
 				}, -- [1]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Frostmane Novice",
-					["flag_original"] = 68168,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[6949] = 1,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "946",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4411-0-51-946-00005FC944",
-					["pets"] = {
-					},
+					["flag_original"] = 68168,
 				}, -- [2]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Grik'nir the Cold",
-					["flag_original"] = 2632,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[6957] = 2,
 						[21030] = 2,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "808",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4411-0-51-808-00005FC8B7",
-					["pets"] = {
-					},
+					["flag_original"] = 2632,
 				}, -- [3]
 				{
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Unworthy Initiate",
-					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["pets"] = {
 					},
 					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["aID"] = "29519",
 					["spell_cast"] = {
 						[52373] = 4,
 						[52372] = 1,
 						[52374] = 2,
 					},
+					["last_event"] = 0,
+					["aID"] = "29519",
 					["serial"] = "Creature-0-4412-609-152-29519-000019AB92",
-					["classe"] = "UNKNOW",
+					["monster"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 4369,
 					["ownerName"] = "Joeybonzo",
 					["nome"] = "Eye of Acherus <Joeybonzo>",
+					["tipo"] = 4,
 					["spell_cast"] = {
 						[52006] = 1,
 					},
-					["pets"] = {
-					},
+					["classe"] = "PET",
 					["last_event"] = 0,
 					["aID"] = "28511",
-					["tipo"] = 4,
 					["serial"] = "Creature-0-4412-609-152-28511-000019C4DF",
-					["classe"] = "PET",
+					["pets"] = {
+					},
 				}, -- [5]
 				{
 					["fight_component"] = true,
-					["flag_original"] = 68168,
+					["pets"] = {
+					},
 					["nome"] = "Death Knight Initiate",
-					["aID"] = "28406",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						[52373] = 14,
 						[52372] = 3,
 						[52374] = 7,
 					},
 					["monster"] = true,
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
 					["tipo"] = 4,
+					["aID"] = "28406",
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4412-609-152-28406-000119C62C",
-					["last_event"] = 0,
+					["flag_original"] = 68168,
 				}, -- [6]
 				{
 					["monster"] = true,
-					["fight_component"] = true,
-					["nome"] = "Scarlet Infantryman",
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["flag_original"] = 2632,
 					["spell_cast"] = {
 						[53399] = 10,
 						[25710] = 16,
 					},
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4412-609-152-28609-000019C74C",
+					["nome"] = "Scarlet Infantryman",
 					["aID"] = "28609",
+					["pets"] = {
+					},
+					["flag_original"] = 2632,
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4412-609-152-28609-000019C74C",
+					["fight_component"] = true,
 				}, -- [7]
 				{
 					["fight_component"] = true,
-					["aID"] = "28611",
-					["flag_original"] = 68168,
+					["pets"] = {
+					},
 					["nome"] = "Scarlet Captain",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						[52221] = 9,
 					},
 					["monster"] = true,
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
 					["tipo"] = 4,
+					["aID"] = "28611",
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4412-609-152-28611-000019C7C0",
-					["last_event"] = 0,
+					["flag_original"] = 68168,
 				}, -- [8]
 				{
 					["fight_component"] = true,
-					["aID"] = "28608",
-					["flag_original"] = 2632,
+					["pets"] = {
+					},
 					["nome"] = "Scarlet Medic",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						[15498] = 17,
 						[13864] = 3,
 					},
 					["monster"] = true,
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
 					["tipo"] = 4,
+					["aID"] = "28608",
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4412-609-152-28608-000019C4C3",
-					["last_event"] = 0,
+					["flag_original"] = 2632,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "28683",
-					["nome"] = "Stable Master Kitrik",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
 					["spell_cast"] = {
 						[52265] = 2,
 					},
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4412-609-152-28683-0000175810",
+					["nome"] = "Stable Master Kitrik",
 					["last_event"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["aID"] = "28683",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4412-609-152-28683-0000175810",
+					["monster"] = true,
 				}, -- [10]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[52356] = 1,
-						[52372] = 2,
-						[52374] = 2,
-						[50688] = 2,
-					},
+					["flag_original"] = 68168,
 					["nome"] = "Dark Rider of Acherus",
-					["pets"] = {
+					["tipo"] = 4,
+					["spell_cast"] = {
+						[50688] = 2,
+						[52372] = 2,
+						[52356] = 1,
+						[52374] = 2,
 					},
 					["fight_component"] = true,
-					["flag_original"] = 68168,
-					["aID"] = "28768",
 					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "28768",
 					["serial"] = "Creature-0-4412-609-152-28768-000019C77F",
-					["tipo"] = 4,
+					["pets"] = {
+					},
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["monster"] = true,
-					["nome"] = "Citizen of Havenshire",
-					["pets"] = {
-					},
-					["fight_component"] = true,
 					["spell_cast"] = {
 						[52262] = 5,
 					},
-					["tipo"] = 4,
-					["aID"] = "28577",
-					["serial"] = "Creature-0-4412-609-152-28577-000019CA42",
+					["nome"] = "Citizen of Havenshire",
 					["classe"] = "UNKNOW",
-				}, -- [12]
-				{
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[52566] = 280,
-					},
-					["nome"] = "Scarlet Fleet Defender",
 					["pets"] = {
 					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
-					["aID"] = "28834",
+					["aID"] = "28577",
 					["last_event"] = 0,
-					["serial"] = "Creature-0-4412-609-152-28834-000019CCCC",
 					["tipo"] = 4,
+					["serial"] = "Creature-0-4412-609-152-28577-000019CA42",
+					["monster"] = true,
+				}, -- [12]
+				{
+					["monster"] = true,
+					["flag_original"] = 2632,
+					["nome"] = "Scarlet Fleet Defender",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						[52566] = 280,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "28834",
+					["serial"] = "Creature-0-4412-609-152-28834-000019CCCC",
+					["pets"] = {
+					},
 				}, -- [13]
 			},
 		}, -- [4]
@@ -16555,74 +17392,6 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["spells_cast_timeline"] = {
-		},
-		["tempo_start"] = 1658833434,
-		["cleu_timeline"] = {
-		},
-		["alternate_power"] = {
-		},
-		["combat_counter"] = 127,
-		["totals"] = {
-			3195851.319052002, -- [1]
-			3093.164560999999, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 1600.160094,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-			["frags_total"] = 0,
-			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = "07:03:55",
-		["end_time"] = 2471149.615,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["totals_grupo"] = {
-			3132859.596586, -- [1]
-			3093.197217999999, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 1600.180798,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-		},
-		["overall_refreshed"] = true,
-		["frags"] = {
-		},
-		["hasSaved"] = true,
 		["segments_added"] = {
 			{
 				["elapsed"] = 62.17100000008941,
@@ -16865,43 +17634,142 @@ _detalhes_database = {
 				["clock"] = "06:33:53",
 			}, -- [40]
 		},
-		["data_fim"] = "07:17:59",
-		["overall_enemy_name"] = "-- x -- x --",
-		["CombatSkillCache"] = {
+		["tempo_start"] = 1658833434,
+		["cleu_timeline"] = {
 		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 127,
+		["totals"] = {
+			3195851.319052002, -- [1]
+			3093.164560999999, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 1600.160094,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "07:03:55",
+		["end_time"] = 2471149.615,
+		["last_events_tables"] = {
+		},
+		["totals_grupo"] = {
+			3132859.596586, -- [1]
+			3093.197217999999, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 1600.180798,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+		},
+		["overall_refreshed"] = true,
 		["PhaseData"] = {
 			{
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
-			["damage_section"] = {
+			["damage"] = {
 			},
 			["heal_section"] = {
 			},
 			["heal"] = {
 			},
-			["damage"] = {
+			["damage_section"] = {
 			},
+		},
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = "07:17:59",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["frags"] = {
 		},
 		["start_time"] = 2469787.859999999,
 		["TimeData"] = {
 		},
-		["last_events_tables"] = {
+		["cleu_events"] = {
+			["n"] = 1,
 		},
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["force_font_outline"] = "",
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["isLocked"] = false,
+			["is_open"] = false,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 0,
+					["x"] = 0.00018310546875,
+					["w"] = 310,
+					["h"] = 158,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
 	},
-	["last_realversion"] = 146,
-	["benchmark_db"] = {
-		["frame"] = {
-		},
+	["character_data"] = {
+		["logons"] = 15,
 	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -16909,8 +17777,11 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["cached_roles"] = {
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
+		["Player-4385-0466FBC1"] = 252,
 	},
 }

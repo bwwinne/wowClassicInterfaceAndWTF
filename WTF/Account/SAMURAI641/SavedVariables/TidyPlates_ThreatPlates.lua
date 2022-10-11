@@ -54,7 +54,7 @@ ThreatPlatesDB = {
 		},
 	},
 	["global"] = {
-		["version"] = "10.5.3",
+		["version"] = "10.5.4",
 	},
 	["profileKeys"] = {
 		["Joeybonzo - Pagle"] = "Default",

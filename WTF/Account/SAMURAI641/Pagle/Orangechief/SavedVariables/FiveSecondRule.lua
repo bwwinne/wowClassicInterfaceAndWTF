@@ -27,17 +27,17 @@ FiveSecondRule_Options = {
 		0.95, -- [3]
 		1, -- [4]
 	},
-	["tickSizeRunningWindow"] = {
-	},
+	["barWidth"] = 117,
 	["showText"] = true,
-	["barHeight"] = 11,
-	["barLeft"] = 90,
+	["barTop"] = -68,
 	["statusBarColor"] = {
 		0, -- [1]
 		0, -- [2]
 		1, -- [3]
 		0.95, -- [4]
 	},
-	["barTop"] = -68,
-	["barWidth"] = 117,
+	["barLeft"] = 90,
+	["barHeight"] = 11,
+	["tickSizeRunningWindow"] = {
+	},
 }

@@ -11,6 +11,8 @@ bind X CLICK BT4Button117:LeftButton
 bind Z CLICK BT4Button37:LeftButton
 bind NUMLOCK NONE
 bind BUTTON4 NONE
+bind PAGEUP VEHICLEAIMUP
+bind PAGEDOWN VEHICLEAIMDOWN
 bind R CLICK BT4Button63:LeftButton
 bind SHIFT-R CLICK BT4Button69:LeftButton
 bind 7 NONE
@@ -32,7 +34,7 @@ bind CTRL-5 NONE
 bind CTRL-6 NONE
 bind CTRL-7 CLICK BT4Button35:LeftButton
 bind CTRL-8 NONE
-bind CTRL-9 CLICK BT4Button28:LeftButton
+bind CTRL-9 CLICK BT4Button27:LeftButton
 bind CTRL-0 CLICK BT4Button36:LeftButton
 bind SHIFT-1 ACTIONBUTTON7
 bind SHIFT-2 ACTIONBUTTON8

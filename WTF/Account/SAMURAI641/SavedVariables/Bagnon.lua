@@ -80,8 +80,10 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = -202.959228515625,
-			["x"] = -225.153076171875,
+			["search"] = true,
+			["y"] = -219.0772094726563,
+			["x"] = -182.988037109375,
+			["sort"] = false,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -193,8 +195,8 @@ Bagnon_Sets = {
 				[7] = false,
 				[8] = false,
 				[10] = false,
-				[9] = false,
 				[5] = false,
+				[9] = false,
 				[11] = false,
 			},
 			["color"] = {
