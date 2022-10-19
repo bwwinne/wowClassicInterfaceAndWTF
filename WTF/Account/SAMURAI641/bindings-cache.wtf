@@ -58,8 +58,8 @@ bind C CLICK BT4Button66:LeftButton
 bind B OPENALLBAGS
 bind SHIFT-B NONE
 bind F8 RAIDTARGET1
-bind F9 CLICK ItemRackCyanchiefPagleEle:LeftButton
-bind F10 CLICK ItemRackCyanchiefPagleResto:LeftButton
+bind F9 CLICK ItemRackBluechiefPagleThreat:LeftButton
+bind F10 CLICK ItemRackBluechiefPagleTank:LeftButton
 bind F11 NONE
 bind F12 SCREENSHOT
 bind P NAMEPLATES

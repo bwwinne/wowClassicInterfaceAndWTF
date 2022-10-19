@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.26 (9th October 2022)
+-- 	Leatrix Plus 3.0.34 (17th October 2022)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.26"
+	LeaPlusLC["AddonVer"] = "3.0.34"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -567,6 +567,7 @@
 		or	(LeaPlusLC["NoStickyChat"]			~= LeaPlusDB["NoStickyChat"])			-- Disable sticky chat
 		or	(LeaPlusLC["UseArrowKeysInChat"]	~= LeaPlusDB["UseArrowKeysInChat"])		-- Use arrow keys in chat
 		or	(LeaPlusLC["NoChatFade"]			~= LeaPlusDB["NoChatFade"])				-- Disable chat fade
+		or	(LeaPlusLC["ClassColorsInChat"]		~= LeaPlusDB["ClassColorsInChat"])		-- Use class colors in chat
 		or	(LeaPlusLC["RecentChatWindow"]		~= LeaPlusDB["RecentChatWindow"])		-- Recent chat window
 		or	(LeaPlusLC["MaxChatHstory"]			~= LeaPlusDB["MaxChatHstory"])			-- Increase chat history
 		or	(LeaPlusLC["FilterChatMessages"]	~= LeaPlusDB["FilterChatMessages"])		-- Filter chat messages
@@ -941,6 +942,18 @@
 
 				},
 
+				-- Netherdrakes
+				["MuteNetherdrakes"] = {
+
+					-- sound/creature/netherdrake/
+					"hugewingflap1.ogg#556477",
+					"hugewingflap2.ogg#556479",
+					"hugewingflap3.ogg#556476",
+					"netherdrakea.ogg#556475",
+					"netherdrakeb.ogg#556478",
+
+				},
+
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -969,26 +982,27 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -192, false, "If checked, the mechanical guild vault idle sound will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -212, false, "If checked, the ready check sound will be muted.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 140, -72)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 140, -92, false, "If checked, bike mount sounds will be muted.|n|nThis applies to Mekgineer's Chopper and Mechano-hog.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 140, -112, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteGyrocopters", "Gyrocopters", 140, -132, false, "If checked, gyrocopters will be muted.|n|nThis applies to the engineering flying machine mounts.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteStriders", "Mechstriders", 140, -152, false, "If checked, mechanostriders will be quieter.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteMechSteps", "Mechsteps", 140, -172, false, "If checked, footsteps for mechanical mounts will be muted.")
+			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 150, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 150, -92, false, "If checked, bike mount sounds will be muted.|n|nThis applies to Mekgineer's Chopper and Mechano-hog.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 150, -112, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteGyrocopters", "Gyrocopters", 150, -132, false, "If checked, gyrocopters will be muted.|n|nThis applies to the engineering flying machine mounts.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteStriders", "Mechstriders", 150, -152, false, "If checked, mechanostriders will be quieter.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteMechSteps", "Mechsteps", 150, -172, false, "If checked, footsteps for mechanical mounts will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteNetherdrakes", "Netherdrakes", 150, -192, false, "If checked, netherdrakes will be quieter.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Pets", 264, -72)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteYawns", "Yawns", 264, -92, false, "If checked, yawns from hunter pet cats will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteScreech", "Screech", 264, -112, false, "If checked, Screech will be muted.|n|nThis is a spell used by some flying pets.")
+			LeaPlusLC:MakeTx(SoundPanel, "Pets", 284, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteYawns", "Yawns", 284, -92, false, "If checked, yawns from hunter pet cats will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteScreech", "Screech", 284, -112, false, "If checked, Screech will be muted.|n|nThis is a spell used by some flying pets.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Misc", 388, -72)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteAdal", "A'dal", 388, -92, false, "If checked, A'dal in Shattrath City will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteRipper", "Ripper", 388, -112, false, "If checked, the Arcanite Ripper guitar sound will be muted.")
+			LeaPlusLC:MakeTx(SoundPanel, "Misc", 418, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteAdal", "A'dal", 418, -92, false, "If checked, A'dal in Shattrath City will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteRipper", "Ripper", 418, -112, false, "If checked, the Arcanite Ripper guitar sound will be muted.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
-				LeaPlusCB[k].f:SetWidth(80)
-				if LeaPlusCB[k].f:GetStringWidth() > 80 then
-					LeaPlusCB[k]:SetHitRectInsets(0, -70, 0, 0)
+				LeaPlusCB[k].f:SetWidth(90)
+				if LeaPlusCB[k].f:GetStringWidth() > 90 then
+					LeaPlusCB[k]:SetHitRectInsets(0, -80, 0, 0)
 				else
 					LeaPlusCB[k]:SetHitRectInsets(0, -LeaPlusCB[k].f:GetStringWidth() + 4, 0, 0)
 				end
@@ -1620,6 +1634,13 @@
 						or npcID == "18253" -- Archmage Leryda (Violet Signet, Karazhan)
 						then
 							return true
+						end
+						-- Same but for specific NPCs with special requirements
+						if npcID == "32540" then -- Lillehoff (The Sons of Hodir Quartermaster, The Storm Peaks)
+							local name, description, standingID = GetFactionInfoByID(1119)
+							if standingID and standingID >= 8 then -- Dont automate quests if exalted
+								return true
+							end
 						end
 						-- Ignore specific NPCs for accepting quests only
 						if actionType == "Accept" then
@@ -5224,7 +5245,7 @@
 			editBox:SetScript("OnKeyDown", function() end)
 
 			-- Load library
-			if not LibStub("LibCandyBar", true) then
+			if not LibStub("LibCandyBar-3.0", true) then
 				Leatrix_Plus:LeaPlusCandyBar()
 			end
 
@@ -5370,6 +5391,39 @@
 								mybar:SetPoint(LeaPlusLC["FlightBarA"], UIParent, LeaPlusLC["FlightBarR"], LeaPlusLC["FlightBarX"], LeaPlusLC["FlightBarY"])
 								mybar:SetScale(LeaPlusLC["FlightBarScale"])
 								mybar:SetWidth(LeaPlusLC["FlightBarWidth"])
+
+								-- Setup sound files
+								local mt
+								local Seconds600, Seconds540, Seconds480, Seconds420, Seconds360
+								local Seconds300, Seconds240, Seconds180, Seconds120, Seconds060
+								local Seconds030, Seconds020, Seconds010
+
+								local destination = Enum.VoiceTtsDestination.LocalPlayback
+								local speed = -2
+
+								if LeaPlusLC["FlightBarSpeech"] == "On" then
+									C_Timer.After(1, function()
+										C_VoiceChat.SpeakText(0, L["Flight commenced."], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+									end)
+									mybar:AddUpdateFunction(function(bar)
+										mt = bar.remaining
+											if mt > 600 and mt < 601 and not Seconds600 then Seconds600 = true; C_VoiceChat.SpeakText(0, L["Ten minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 540 and mt < 541 and not Seconds540 then Seconds540 = true; C_VoiceChat.SpeakText(0, L["Nine minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 480 and mt < 481 and not Seconds480 then Seconds480 = true; C_VoiceChat.SpeakText(0, L["Eight minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 420 and mt < 421 and not Seconds420 then Seconds420 = true; C_VoiceChat.SpeakText(0, L["Seven minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 360 and mt < 361 and not Seconds360 then Seconds360 = true; C_VoiceChat.SpeakText(0, L["Six minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 300 and mt < 301 and not Seconds300 then Seconds300 = true; C_VoiceChat.SpeakText(0, L["Five minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 240 and mt < 241 and not Seconds240 then Seconds240 = true; C_VoiceChat.SpeakText(0, L["Four minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 180 and mt < 181 and not Seconds180 then Seconds180 = true; C_VoiceChat.SpeakText(0, L["Three minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 120 and mt < 121 and not Seconds120 then Seconds120 = true; C_VoiceChat.SpeakText(0, L["Two minutes"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 060 and mt < 061 and not Seconds060 then Seconds060 = true; C_VoiceChat.SpeakText(0, L["One minute"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 030 and mt < 031 and not Seconds030 then Seconds030 = true; C_VoiceChat.SpeakText(0, L["Thirty seconds"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 020 and mt < 021 and not Seconds020 then Seconds020 = true; C_VoiceChat.SpeakText(0, L["Twenty seconds"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										elseif mt > 010 and mt < 011 and not Seconds010 then Seconds010 = true; C_VoiceChat.SpeakText(0, L["Ten seconds"], destination, speed, GetCVar("Sound_MasterVolume") * 100)
+										end
+									end)
+								end
+
 								if faction == "Alliance" then
 									mybar:SetColor(0, 0.5, 1, 0.5)
 								else
@@ -5570,9 +5624,10 @@
 			LeaPlusLC:MakeCB(FlightPanel, "FlightBarBackground", "Show background", 16, -92, false, "If checked, the flight progress bar background texture will be shown.")
 			LeaPlusLC:MakeCB(FlightPanel, "FlightBarDestination", "Show destination", 16, -112, false, "If checked, the flight progress bar destination will be shown.")
 			LeaPlusLC:MakeCB(FlightPanel, "FlightBarFillBar", "Fill instead of drain", 16, -132, false, "If checked, the flight progress bar background will fill instead of drain.")
+			LeaPlusLC:MakeCB(FlightPanel, "FlightBarSpeech", "Speak the remaining time", 16, -152, false, "If checked, the remaining flight time will be spoken using text to speech.|n|nChanges to this setting will take effect on the next flight you take.")
 
-			LeaPlusLC:MakeTx(FlightPanel, "Contribute", 16, -172)
-			LeaPlusLC:MakeCB(FlightPanel, "FlightBarContribute", "Help contribute flight times", 16, -192, false, "If checked, you will be prompted to submit missing flight times.")
+			LeaPlusLC:MakeTx(FlightPanel, "Contribute", 16, -192)
+			LeaPlusLC:MakeCB(FlightPanel, "FlightBarContribute", "Help contribute flight times", 16, -212, false, "If checked, you will be prompted to submit missing flight times.")
 
 			LeaPlusLC:MakeTx(FlightPanel, "Scale", 356, -72)
 			LeaPlusLC:MakeSL(FlightPanel, "FlightBarScale", "Drag to set the flight progress bar scale.", 1, 5, 0.1, 356, -92, "%.2f")
@@ -5700,6 +5755,7 @@
 				LeaPlusLC["FlightBarBackground"] = "On"
 				LeaPlusLC["FlightBarDestination"] = "On"
 				LeaPlusLC["FlightBarFillBar"] = "Off"; SetProgressBarFillMode()
+				LeaPlusLC["FlightBarSpeech"] = "Off"
 				LeaPlusLC["FlightBarContribute"] = "On"
 				-- Reset live progress bar
 				if LeaPlusLC.FlightProgressBar then
@@ -5759,7 +5815,7 @@
 			local ChatFilterPanel = LeaPlusLC:CreatePanel("Filter chat messages", "ChatFilterPanel")
 
 			LeaPlusLC:MakeTx(ChatFilterPanel, "Settings", 16, -72)
-			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockSpellLinks", "Block spell links during combat", 16, -92, false, "If checked, messages containing spell links will be blocked while you are in combat.|n|nThis is useful for blocking spell interrupt spam.|n|nThis applies to the say, party, raid, instance and emote channels.")
+			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockSpellLinks", "Block spell links during combat", 16, -92, false, "If checked, messages containing spell links will be blocked while you are in combat.|n|nThis is useful for blocking spell interrupt spam.|n|nThis applies to the say, party, raid and emote channels.")
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockDrunkenSpam", "Block drunken spam", 16, -112, false, "If checked, drunken messages will be blocked unless they apply to your character.|n|nThis applies to the system channel.")
 			LeaPlusLC:MakeCB(ChatFilterPanel, "BlockDuelSpam", "Block duel spam", 16, -132, false, "If checked, duel victory and retreat messages will be blocked unless your character took part in the duel.|n|nThis applies to the system channel.")
 
@@ -5828,8 +5884,6 @@
 					ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY_LEADER", ChatFilterFunc)
 					ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID", ChatFilterFunc)
 					ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_LEADER", ChatFilterFunc)
-					ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT", ChatFilterFunc)
-					ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT_LEADER", ChatFilterFunc)
 					ChatFrame_AddMessageEventFilter("CHAT_MSG_EMOTE", ChatFilterFunc)
 				else
 					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_SAY", ChatFilterFunc)
@@ -5837,8 +5891,6 @@
 					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_PARTY_LEADER", ChatFilterFunc)
 					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_RAID", ChatFilterFunc)
 					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_RAID_LEADER", ChatFilterFunc)
-					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_INSTANCE_CHAT", ChatFilterFunc)
-					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_INSTANCE_CHAT_LEADER", ChatFilterFunc)
 					ChatFrame_RemoveMessageEventFilter("CHAT_MSG_EMOTE", ChatFilterFunc)
 				end
 				if LeaPlusLC["BlockDrunkenSpam"] == "On" or LeaPlusLC["BlockDuelSpam"] == "On" then
@@ -6073,6 +6125,28 @@
 
 			-- Function to set vanity controls layout
 			local function SetVanityControlsLayout()
+
+				-- ElvUI_WrathArmory: Position helm and cloak checkboxes
+				if LeaPlusLC.ElvUI then
+					local E = LeaPlusLC.ElvUI:GetModule("ElvUI_WrathArmory", true)
+					if E then
+						LeaPlusCB["ShowHelm"].f:SetText(L["H"])
+						LeaPlusCB["ShowHelm"].f:ClearAllPoints()
+						LeaPlusCB["ShowHelm"].f:SetPoint("RIGHT", LeaPlusCB["ShowHelm"], "LEFT", 4, 0)
+						LeaPlusCB["ShowHelm"]:ClearAllPoints()
+						LeaPlusCB["ShowHelm"]:SetPoint("BOTTOMLEFT", CharacterFrame, "BOTTOMLEFT", 80, 110)
+						LeaPlusCB["ShowHelm"]:SetHitRectInsets(-LeaPlusCB["ShowHelm"].f:GetStringWidth() + 4, 3, 0, 0)
+						LeaPlusCB["ShowCloak"].f:SetText(L["C"])
+						LeaPlusCB["ShowCloak"].f:ClearAllPoints()
+						LeaPlusCB["ShowCloak"].f:SetPoint("RIGHT", LeaPlusCB["ShowCloak"], "LEFT", 4, 0)
+						LeaPlusCB["ShowCloak"]:ClearAllPoints()
+						LeaPlusCB["ShowCloak"]:SetPoint("LEFT", LeaPlusCB["ShowHelm"], "RIGHT", 4, 0)
+						LeaPlusCB["ShowCloak"]:SetHitRectInsets(-LeaPlusCB["ShowCloak"].f:GetStringWidth() + 4, 3, 0, 0)
+						return
+					end
+				end
+
+				-- Position helm and cloak checkboxes
 				if LeaPlusLC["VanityAltLayout"] == "On" then
 					-- Alternative layout
 					LeaPlusCB["ShowHelm"].f:SetText(L["H"])
@@ -6566,6 +6640,18 @@
 
 			local function ToggleStats(startup)
 
+				-- ElvUI_WrathArmory: Make character model full size
+				if LeaPlusLC.ElvUI then
+					local E = LeaPlusLC.ElvUI:GetModule("ElvUI_WrathArmory", true)
+					if E then
+						CharacterModelFrame:ClearAllPoints()
+						CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
+						CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
+						return
+					end
+				end
+
+				-- Toggle dressup stats
 				if LeaPlusLC["HideDressupStats"] == "On" then
 					CharacterResistanceFrame:Hide()
 					if CSC_HideStatsPanel then
@@ -6589,7 +6675,9 @@
 						LeaPlusCB["ShowHelm"]:Hide()
 						LeaPlusCB["ShowCloak"]:Hide()
 					end
+
 				else
+
 					CharacterResistanceFrame:Show()
 					if CSC_ShowStatsPanel then
 						-- CharacterStatsTBC is installed
@@ -6613,6 +6701,7 @@
 						LeaPlusCB["ShowCloak"]:Show()
 					end
 				end
+
 			end
 
 			-- Toggle stats with middle mouse button
@@ -7918,20 +8007,39 @@
 		--	Use class colors in chat
 		----------------------------------------------------------------------
 
-		do
+		if LeaPlusLC["ClassColorsInChat"] == "On" then
 
-			-- Function to set class colors
-			local function SetClassCol()
-				if LeaPlusLC["ClassColorsInChat"] == "On" then
-					SetCVar("chatClassColorOverride", "0")
-				else
-					SetCVar("chatClassColorOverride", "1")
+			SetCVar("chatClassColorOverride", "0")
+
+			C_Timer.After(0.1, function()
+
+				-- Set local channel colors and lock checkboxes
+				for i = 1, 18 do
+					if _G["ChatConfigChatSettingsLeftCheckBox" .. i .. "Check"] then
+						ToggleChatColorNamesByClassGroup(true, _G["ChatConfigChatSettingsLeftCheckBox" .. i .. "Check"]:GetParent().type)
+						if _G["ChatConfigChatSettingsLeftCheckBox" .. i .. "ColorClasses"] then
+							LeaPlusLC:LockItem(_G["ChatConfigChatSettingsLeftCheckBox" .. i .. "ColorClasses"], true)
+						end
+					end
 				end
-			end
 
-			-- Set class colors on startup and when option is clicked (if enabled)
-			LeaPlusCB["ClassColorsInChat"]:HookScript("OnClick", SetClassCol)
-			if LeaPlusLC["ClassColorsInChat"] == "On" then SetClassCol() end
+				-- Set global channel colors
+				for i = 1, 50 do
+					ToggleChatColorNamesByClassGroup(true, "CHANNEL" .. i)
+				end
+
+				-- Lock global channel checkboxes on startup
+				hooksecurefunc("ChatConfig_CreateCheckboxes", function(self, checkBoxTable, checkBoxTemplate, title)
+					if ChatConfigChannelSettingsLeft.checkBoxTable then
+						for i = 1, 50 do
+							if _G["ChatConfigChannelSettingsLeftCheckBox" .. i .. "ColorClasses"] then
+								LeaPlusLC:LockItem(_G["ChatConfigChannelSettingsLeftCheckBox" .. i .. "ColorClasses"], true)
+							end
+						end
+					end
+				end)
+
+			end)
 
 		end
 
@@ -7990,13 +8098,9 @@
 				if LeaPlusLC["UnivGroupColor"] == "On" then
 					ChangeChatColor("RAID", 0.67, 0.67, 1)
 					ChangeChatColor("RAID_LEADER", 0.46, 0.78, 1)
-					ChangeChatColor("INSTANCE_CHAT", 0.67, 0.67, 1)
-					ChangeChatColor("INSTANCE_CHAT_LEADER", 0.46, 0.78, 1)
 				else
 					ChangeChatColor("RAID", 1, 0.50, 0)
 					ChangeChatColor("RAID_LEADER", 1, 0.28, 0.04)
-					ChangeChatColor("INSTANCE_CHAT", 1, 0.50, 0)
-					ChangeChatColor("INSTANCE_CHAT_LEADER", 1, 0.28, 0.04)
 				end
 			end
 
@@ -12354,6 +12458,7 @@
 				LeaPlusLC:LoadVarChk("FlightBarBackground", "On")			-- Show flight times bar background
 				LeaPlusLC:LoadVarChk("FlightBarDestination", "On")			-- Show flight times bar destination
 				LeaPlusLC:LoadVarChk("FlightBarFillBar", "Off")				-- Show flight times bar fill mode
+				LeaPlusLC:LoadVarChk("FlightBarSpeech", "Off")				-- Show flight times bar speech
 
 				LeaPlusLC:LoadVarChk("FlightBarContribute", "On")			-- Show flight times contribute
 				LeaPlusLC:LoadVarAnc("FlightBarA", "TOP")					-- Show flight times anchor
@@ -12725,6 +12830,7 @@
 			LeaPlusDB["FlightBarBackground"]	= LeaPlusLC["FlightBarBackground"]
 			LeaPlusDB["FlightBarDestination"]	= LeaPlusLC["FlightBarDestination"]
 			LeaPlusDB["FlightBarFillBar"]		= LeaPlusLC["FlightBarFillBar"]
+			LeaPlusDB["FlightBarSpeech"]		= LeaPlusLC["FlightBarSpeech"]
 
 			LeaPlusDB["FlightBarContribute"]	= LeaPlusLC["FlightBarContribute"]
 			LeaPlusDB["FlightBarA"]				= LeaPlusLC["FlightBarA"]
@@ -12868,8 +12974,6 @@
 			-- Universal group color (LeaPlusLC["UnivGroupColor"])
 			ChangeChatColor("RAID", 1, 0.50, 0)
 			ChangeChatColor("RAID_LEADER", 1, 0.28, 0.04)
-			ChangeChatColor("INSTANCE_CHAT", 1, 0.50, 0)
-			ChangeChatColor("INSTANCE_CHAT_LEADER", 1, 0.28, 0.04)
 
 			-- Use class colors in chat (LeaPlusLC["ClassColorsInChat"])
 			SetCVar("chatClassColorOverride", "1")
@@ -12887,6 +12991,22 @@
 		----------------------------------------------------------------------
 		-- Restore default values for options that require reloads
 		----------------------------------------------------------------------
+
+		-- Use class colors
+		if LeaPlusDB["ClassColorsInChat"] == "On" then
+			if wipe or (not wipe and LeaPlusLC["ClassColorsInChat"] == "Off") then
+				-- Restore local channel color
+				for i = 1, 18 do
+					if _G["ChatConfigChatSettingsLeftCheckBox" .. i .. "Check"] then
+						ToggleChatColorNamesByClassGroup(false, _G["ChatConfigChatSettingsLeftCheckBox" .. i .. "Check"]:GetParent().type)
+					end
+				end
+				-- Restore global channel color
+				for i = 1, 50 do
+					ToggleChatColorNamesByClassGroup(false, "CHANNEL" .. i)
+				end
+			end
+		end
 
 		-- Enhance minimap restore round minimap if wipe or enhance minimap is toggled off
 		if LeaPlusDB["MinimapModder"] == "On" and LeaPlusDB["SquareMinimap"] == "On" then
@@ -12919,14 +13039,6 @@
 				if AuctionFrameAuctions.duration then
 					LeaPlusDB["AHDuration"] = AuctionFrameAuctions.duration
 				end
-			end
-		end
-
-		-- Set locked options to original values (set before they were locked)
-		if LeaPlusLC.ElvUI then
-			for k, v in pairs(LeaLockList) do
-				LeaPlusLC[k] = v
-				LeaPlusDB[k] = v
 			end
 		end
 
@@ -14831,6 +14943,7 @@
 				LeaPlusDB["FlightBarBackground"] = "Off"		-- Show flight times bar background
 				LeaPlusDB["FlightBarDestination"] = "On"		-- Show flight times bar destination
 				LeaPlusDB["FlightBarFillBar"] = "Off"			-- Show flight times bar fill mode
+				LeaPlusDB["FlightBarSpeech"] = "On"				-- Show flight times bar speech
 				LeaPlusDB["FlightBarContribute"] = "On"			-- Show flight times contribute
 
 				-- Interface: Manage frames
@@ -15169,8 +15282,8 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoStickyChat"				, 	"Disable sticky chat"			,	340, -92,	true,	"If checked, sticky chat will be disabled.|n|nNote that this does not apply to temporary chat windows.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UseArrowKeysInChat"		, 	"Use arrow keys in chat"		, 	340, -112, 	true,	"If checked, you can press the arrow keys to move the insertion point left and right in the chat frame.|n|nIf unchecked, the arrow keys will use the default keybind setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoChatFade"				, 	"Disable chat fade"				, 	340, -132, 	true,	"If checked, chat text will not fade out after a time period.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnivGroupColor"			,	"Universal group color"			,	340, -152,	false,	"If checked, raid chat and instance chat will both be colored blue (to match the default party chat color).")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColorsInChat"			,	"Use class colors in chat"		,	340, -172,	false,	"If checked, class colors will be used in the chat frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnivGroupColor"			,	"Universal group color"			,	340, -152,	false,	"If checked, raid chat will be colored blue (to match the default party chat color).")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColorsInChat"			,	"Use class colors in chat"		,	340, -172,	true,	"If checked, class colors will be used in the chat frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RecentChatWindow"			,	"Recent chat window"			, 	340, -192, 	true,	"If checked, you can hold down the control key and click a chat tab to view recent chat in a copy-friendly window.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -212, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).|n|nEnabling this option may prevent some chat text from showing during login.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FilterChatMessages"		, 	"Filter chat messages"			,	340, -232, 	true,	"If checked, you can block spell links, drunken spam and duel spam.")

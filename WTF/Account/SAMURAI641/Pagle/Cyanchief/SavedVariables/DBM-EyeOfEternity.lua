@@ -1,0 +1,26 @@
+
+DBMEyeOfEternity_SavedStats = {
+	["Malygos"] = {
+		["normal25LastTime"] = 464.7710000000079,
+		["normalPulls"] = 1,
+		["challengeKills"] = 0,
+		["normal25BestTime"] = 464.7710000000079,
+		["challengeBestRank"] = 0,
+		["mythicKills"] = 0,
+		["lfr25Kills"] = 0,
+		["heroic25Pulls"] = 0,
+		["lfr25Pulls"] = 0,
+		["normal25Pulls"] = 3,
+		["normalLastTime"] = 369.6330000000307,
+		["normalKills"] = 1,
+		["mythicPulls"] = 0,
+		["heroic25Kills"] = 0,
+		["heroicKills"] = 0,
+		["timewalkerPulls"] = 0,
+		["normal25Kills"] = 1,
+		["heroicPulls"] = 0,
+		["timewalkerKills"] = 0,
+		["normalBestTime"] = 369.6330000000307,
+		["challengePulls"] = 0,
+	},
+}

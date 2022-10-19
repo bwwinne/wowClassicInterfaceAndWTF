@@ -87,7 +87,7 @@ character_hunter_settings = {
 	["show_text"] = true,
 	["ooc_alpha"] = 0,
 	["cooldown_r"] = 0.95,
-	["auto_cast_a"] = 1,
+	["fontsize"] = 12,
 	["clip_b"] = 0,
 	["one_bar"] = false,
 	["backplane_alpha"] = 0.5,
@@ -108,7 +108,7 @@ character_hunter_settings = {
 	["clip_a"] = 0.7,
 	["show_multishot_clip_bar"] = true,
 	["point"] = "CENTER",
-	["fontsize"] = 12,
+	["auto_cast_a"] = 1,
 }
 character_castbar_settings = {
 	["enabled"] = true,

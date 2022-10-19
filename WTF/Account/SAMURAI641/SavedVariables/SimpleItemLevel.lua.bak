@@ -1,0 +1,5 @@
+
+SimpleItemLevelDB = {
+	["bags"] = false,
+	["character"] = false,
+}
